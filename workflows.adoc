@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: workflows.html 
+keywords:  
+summary:  
+---
+= 워크플로우
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP REST API를 사용하여 ONTAP 시스템을 관리하고 다른 스토리지 관리 작업을 수행할 수 있습니다. 각 작업은 하나 이상의 API 호출로 구성된 워크플로 프로세스를 사용하여 설명됩니다.

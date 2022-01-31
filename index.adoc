@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: ONTAP 자동화 문서 포털에 오신 것을 환영합니다. 
+---
+= ONTAP 자동화
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+사용 가능한 여러 옵션 중 하나를 사용하여 ONTAP 스토리지 시스템의 구축 및 관리를 자동화할 수 있습니다. ONTAP REST API는 다양한 자동화 기술의 토대를 제공합니다.
+
+
+
+== 새로운 기능 알아보기
+
+* link:new_ontap_automation.html["ONTAP 9.10.1 자동화의 새로운 기능"]
+
+
+
+
+== 더 많은 정보를 얻고 동료들과 교류하십시오
+
+* link:get_more_information.html["자세한 정보"]
+

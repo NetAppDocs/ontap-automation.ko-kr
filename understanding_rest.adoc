@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: understanding_rest.html 
+keywords:  
+summary:  
+---
+= ONTAP REST API 이해
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+버전 9.6부터 ONTAP에는 REST 웹 서비스 API가 포함되어 있습니다. REST API를 사용하여 ONTAP 스토리지 리소스를 구축하고 관리할 수 있습니다. API를 사용하기 전에 설계, 아키텍처 구성 요소 및 제한 사항을 이해해야 합니다.

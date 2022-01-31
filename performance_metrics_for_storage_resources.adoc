@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: performance_metrics_for_storage_resources.html 
+keywords:  
+summary:  
+---
+= 스토리지 리소스에 대한 성능 메트릭
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP은 선택한 SVM 스토리지 오브젝트 및 프로토콜에 대한 성능 메트릭을 수집하고 REST API를 통해 이 정보를 보고합니다. 이 데이터를 사용하여 ONTAP 시스템의 성능을 모니터링할 수 있습니다.
+
+특정 스토리지 오브젝트 또는 프로토콜에서 성능 데이터는 다음 세 가지 범주로 분류됩니다.
+
+* IOPS
+* 지연 시간
+* 처리량
+
+
+각 범주 내에서 다음 데이터 유형 중 하나 이상을 사용할 수 있습니다.
+
+* 읽기(R)
+* 쓰기(W)
+* 기타(O)
+* 합계(T)
+
+
+다음 표에는 ONTAP REST API를 통해 사용할 수 있는 성능 데이터와 추가된 릴리즈가 요약되어 있습니다. 자세한 내용은 ONTAP 시스템의 REST API 온라인 설명서 페이지를 참조하십시오.
+
+|===
+| 스토리지 오브젝트 또는 프로토콜입니다 | IOPS | 지연 시간 | 처리량 | ONTAP 릴리즈 
+
+
+| 이더넷 포트 | 해당 없음 | 해당 없음 | RWT | 9.8 
+
+
+| FC 포트 | RWOT | RWOT | RWT | 9.8 
+
+
+| IP 인터페이스 | 해당 없음 | 해당 없음 | RWT | 9.8 
+
+
+| FC 인터페이스 | RWOT | RWOT | RWT | 9.8 
+
+
+| NVMe 네임스페이스 | RWOT | RWOT | RWOT | 9.8 
+
+
+| qtree 통계 | 원시 RWOT | 해당 없음 | 원시 RWOT | 9.8 
+
+
+| Volume FlexCache(볼륨 저장) | RWOT | RWOT | RWT | 9.8 
+
+
+| 노드 - 프로세스 활용도 | 수치 값으로서 프로세스 활용 | 수치 값으로서 프로세스 활용 | 수치 값으로서 프로세스 활용 | 9.8 
+
+
+| 클라우드 볼륨 | RWOT | RWOT | 유연하지 않습니다 | 9.7 
+
+
+| LUN을 클릭합니다 | RWOT | RWOT | RWOT | 9.7 
+
+
+| 집계 | RWOT | RWOT | RWOT | 9.7 
+
+
+| SVM NFS 프로토콜 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM CIFS 프로토콜 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM FCP 프로토콜 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM iSCSI 프로토콜 | RWOT | RWOT | RWT | 9.7 
+
+
+| SVM NVMe 프로토콜 | RWOT | RWOT | RWT | 9.7 
+
+
+| 클러스터 | RWOT | RWOT | RWOT | 9.6 
+
+
+| 볼륨 | RWOT | RWOT | RWOT | 9.6 
+|===

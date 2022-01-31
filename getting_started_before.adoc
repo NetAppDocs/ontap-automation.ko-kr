@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: getting_started_before.html 
+keywords:  
+summary:  
+---
+= 시작하기 전에
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP REST API 사용을 준비하기 위해 몇 가지 단계를 수행해야 합니다.
+
+
+
+===== ONTAP 9를 사용해 보십시오
+
+ONTAP 9에 대한 경험이 있어야 합니다. 여기에는 기본 개념 및 용어에 대한 이해와 시스템 관리 경험이 포함됩니다. 을 참조하십시오 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/home.html["ONTAP 9 개념"^] 시작하십시오.
+
+
+
+===== REST 개념 및 구현을 검토합니다
+
+반드시 검토하십시오 link:understanding_rest.html["ONTAP REST API 이해"] REST 개념과 ONTAP REST API의 설계 방식에 대한 자세한 내용을 확인하십시오.
+
+
+
+===== 소프트웨어 개발 배경
+
+하나 이상의 프로그래밍 언어 및 curl과 같은 일반적인 유틸리티를 포함하여 소프트웨어 개발 기술 및 프로세스에 대한 약간의 경험이 있으면 도움이 됩니다.
+
+
+
+===== 자세한 정보를 확인하십시오
+
+에 나와 있는 추가 정보 리소스를 숙지해야 합니다 link:get_more_information.html["자세한 정보를 확인하십시오"].

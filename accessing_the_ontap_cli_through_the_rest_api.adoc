@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: accessing_the_ontap_cli_through_the_rest_api.html 
+keywords:  
+summary:  
+---
+= REST API를 통해 ONTAP CLI 액세스
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+CLI 및 ONTAPI API 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP은 CLI에 액세스할 수 있는 REST 엔드포인트를 제공합니다. 이 통과 연결 기능을 사용하여 모든 CLI 명령을 실행할 수 있습니다. REST 엔드포인트를 사용하면 AutoSupport 데이터가 반환되므로 NetApp은 REST API의 격차를 파악하고 향후 릴리즈를 개선할 수 있습니다.
+
+CLI 명령을 수행하려면 다음과 같은 규칙에 따라 구성된 REST API 호출을 수행해야 합니다.
+
+* 리소스 경로
+* 필드 이름
+* HTTP 메서드
+
+
+CLI 액세스를 위한 기본 리소스 경로는 '/private/CLI'입니다. REST API를 통해 CLI에 액세스하는 방법에 대한 자세한 내용은 ONTAP API 온라인 설명서 페이지를 참조하십시오.
+
+
+NOTE: NetApp은 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. CLI 패스스루 기능을 사용하는 방법의 예를 위해 리포지토리에 액세스할 수 있습니다.
+
+https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["ONTAP REST Python GitHub 리포지토리 - CLI passthrough 샘플"^]
