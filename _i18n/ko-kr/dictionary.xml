@@ -1034,4 +1034,11 @@
   <block id="f4e160ea26107615e4033f710d587db2" category="sidebar">워크플로 1 클러스터 연락처를 업데이트하고 작업 상태를 확인합니다</block>
   <block id="fa3072c5dcc3c24dc044383b1ee6e52d" category="sidebar">ONTAP 및 Ansible</block>
   <block id="1cad56f823354795cae3db2ac36569ec" category="sidebar">자동화 블로그</block>
+  <block id="4921daa1d1156e8a0f7fe7b45dfc92fb" category="section-title">ONTAPI에서 SnapDiff 가용성 변경</block>
+  <block id="e5e32a25be86538826bb7ce943294815" category="paragraph">ONTAP 9.10.1부터 SnapDiff v1 및 v2 ONTAPI 호출은 호출할 수 없습니다. SnapDiff v1 또는 v2 ONTAPI 호출을 호출하는 타사 응용 프로그램은 ONTAP 9.10.1부터 작동하지 않습니다. ONTAP 사용자는 ONTAP 9.10.1로 업그레이드하기 전에 백업 응용 프로그램이 SnapDiff v3 REST 호출을 지원하는지 확인해야 합니다.</block>
+  <block id="d96bdb3acb68ad565307604365b57f70" category="paragraph">ONTAP 릴리즈 간 SnapDiff API 가용성은 다음과 같이 정의됩니다.</block>
+  <block id="c731207305059b4146b7b02e506607f9" category="list-text">ONTAP 9.7 및 이전 릴리즈: v1 및 v2(ONTAPI만 해당)</block>
+  <block id="a7fc2881def06d9d5d2e90252bccd071" category="list-text">ONTAP 9.8–9.9.1:v1, v2 및 v3(ONTAPI와 REST API 모두)</block>
+  <block id="1a7f82d18a27e10799e90edeb79d7ff5" category="list-text">ONTAP 9.10.1:v3만 해당(REST API만 해당)</block>
+  <block id="798181468fa815b909228f2f21549271" category="paragraph">자세한 내용은 를 참조하십시오<block ref="6e7f74aa9001f0524a965144f528bbc2" category="inline-link-rx"></block>.</block>
 </blocks>
