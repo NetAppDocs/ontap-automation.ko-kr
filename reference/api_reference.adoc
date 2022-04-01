@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: reference/api_reference.html 
+keywords:  
+summary:  
+---
+= API 참조입니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 모든 ONTAP REST API 호출에 대한 세부 정보에 액세스할 수 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
+
+
+NOTE: 로컬 ONTAP 시스템이나 NetApp 개발자 네트워크 웹 사이트에서 API 참조 콘텐츠에 액세스할 수 있습니다.
+
+
+
+== ONTAP API 설명서 페이지에 액세스합니다
+
+[role="lead"]
+로컬 ONTAP 시스템에서 ONTAP API 온라인 설명서 페이지에 액세스할 수 있습니다.
+
+다음 항목이 있어야 합니다.
+
+* ONTAP 클러스터 관리 LIF의 IP 주소 또는 호스트 이름입니다
+* ONTAP REST API 액세스 권한이 있는 계정의 사용자 이름 및 암호
+
+
+.단계
+. 브라우저에 URL을 입력하고 * Enter * 를 누릅니다.
++
+"https://<ip_address>/docs/api`
+
+. ONTAP 계정을 사용하여 로그인합니다.
++
+ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 API 호출과 함께 표시됩니다.
+
+. 개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.
+
+
+
+
+== NetApp DevNet에서 참조 콘텐츠에 액세스
+
+[role="lead"]
+ONTAP REST API 참조 문서는 NetApp 개발자 네트워크 웹 사이트에서 액세스할 수 있습니다.
+
+.단계
+. NetApp 개발자 네트워크 웹 사이트에서 * ONTAP REST API * 페이지로 이동합니다.
++
+https://devnet.netapp.com/restapi.php["NetApp DevNet: ONTAP REST API"^]
+
+. 아래로 스크롤하고 * 온라인 REST API 참조 * 아래에서 해당 ONTAP 버전에 대한 링크를 클릭합니다.
++
+ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 API 호출과 함께 표시됩니다.
+
+. 개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.
+

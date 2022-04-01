@@ -1,0 +1,8 @@
+---
+section: rn
+title: 릴리즈 노트
+entries:
+- title: 새로운 소식
+  url: "/rn/whats_new.html"
+- title: ONTAP 릴리즈 노트
+  url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508

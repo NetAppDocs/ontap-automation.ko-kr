@@ -9,111 +9,55 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn
 sidebar:
   entries:
-  - title: ONTAP 자동화 9.10.1 문서
+  - title: ONTAP 자동화 문서
     url: "/index.html"
-  - title: ONTAP 자동화 옵션
-    url: "/options_for_ontap_automation.html"
-  - title: REST API 시작하기
-    url: "/getting_started_with_the_rest_api.html"
-    entries:
-    - title: 시작하기 전에
-      url: "/getting_started_before.html"
-    - title: 클러스터 소프트웨어 버전을 검색하는 중입니다
-      url: "/retrieving_the_cluster_software_version.html"
-    - title: 헬로우 월드
-      url: "/hello_world.html"
-  - title: ONTAP REST API 이해
-    url: "/understanding_rest.html"
-    entries:
-    - title: REST 구현 세부 정보
-      url: "/rest_implementation_details.html"
-      entries:
-      - title: REST 웹 서비스 기반
-        url: "/rest_web_services_foundation.html"
-      - title: ONTAP REST API 버전 관리
-        url: "/ontap_rest_api_versioning.html"
-      - title: ONTAP API 액세스 방법
-        url: "/how_to_access_the_ontap_api.html"
-      - title: 기본 작동 특성
-        url: "/basic_operational_characteristics.html"
-      - title: API 요청을 제어하는 입력 변수입니다
-        url: "/input_variables_controlling_an_api_request.html"
-      - title: API 응답을 해석합니다
-        url: "/interpreting_an_api_response.html"
-      - title: 작업 개체를 사용하여 비동기 처리가 작동하는 방식
-        url: "/how_asynchronous_processing_works_using_the_job_object.html"
-    - title: REST API 사용 시 추가 고려 사항
-      url: "/additional_considerations_when_using_the_rest_api.html"
-      entries:
-      - title: 개체 참조 및 액세스
-        url: "/object_references_and_access.html"
-      - title: ONTAPI API 및 ONTAP CLI 사용자
-        url: "/users_of_the_ontapi_api_and_ontap_cli.html"
-      - title: REST API를 통해 ONTAP CLI 액세스
-        url: "/accessing_the_ontap_cli_through_the_rest_api.html"
-      - title: RBAC를 사용한 보안
-        url: "/security_using_rbac.html"
-      - title: 스토리지 리소스에 대한 성능 메트릭
-        url: "/performance_metrics_for_storage_resources.html"
-    - title: REST 리소스 범주에 대한 요약입니다
-      url: "/summary_of_the_rest_resource_categories.html"
-      entries:
-      - title: 응용 프로그램
-        url: "/application.html"
-      - title: 클라우드
-        url: "/cloud.html"
-      - title: 클러스터
-        url: "/cluster.html"
-      - title: 네임 서비스
-        url: "/name_services.html"
-      - title: NAS
-        url: "/nas.html"
-      - title: NDMP
-        url: "/ndmp.html"
-      - title: 네트워킹
-        url: "/networking.html"
-      - title: NVMe를 참조하십시오
-        url: "/nvme.html"
-      - title: 오브젝트 저장소
-        url: "/object_store.html"
-      - title: 산
-        url: "/san.html"
-      - title: 보안
-        url: "/security.html"
-      - title: SnapLock
-        url: "/snaplock.html"
-      - title: SnapMirror를 참조하십시오
-        url: "/snapmirror.html"
-      - title: 스토리지
-        url: "/storage.html"
-      - title: 지원
-        url: "/support.html"
-      - title: SVM
-        url: "/svm.html"
-  - title: 워크플로우
-    url: "/workflows.html"
-    entries:
-    - title: 워크플로 프로세스 사용 준비
-      url: "/preparing_to_use_the_workflow_processes.html"
-    - title: 워크플로 1 클러스터 연락처를 업데이트하고 작업 상태를 확인합니다
-      url: "/workflow_1__updating_the_cluster_contact_and_checking_job_state.html"
-  - title: Python 사용
-    url: "/using_python.html"
-    entries:
-    - title: NetApp ONTAP Python 클라이언트 라이브러리
-      url: "/netapp_ontap_python_client_library.html"
-      entries:
-      - title: Python 클라이언트 라이브러리 사용 준비
-        url: "/preparing_to_use_the_python_client_library.html"
-      - title: 클러스터 구성을 검색하는 스크립트입니다
-        url: "/script_to_retrieve_the_cluster_configuration.html"
-  - title: API 참조입니다
-    url: "/api_reference.html"
-  - title: ONTAP 및 Ansible
-    url: "/ontap_ansible.html"
-  - title: 자동화 블로그
-    url: "/blogs.html"
-  - title: 자세한 정보를 확인하십시오
-    url: "/get_more_information.html"
+  - section: rn
+  - section: get-started
+  - section: rest
+  - section: workflows
+  - section: python
+  - section: reference
+  - section: automate
+  - section: additional
   - title: 법적 고지
     url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리즈 노트
+      url: "/rn/whats_new.html"
+    - title: ONTAP 자동화 옵션
+      url: "/get-started/ontap_automation_options.html"
+    - title: REST API 사용 준비
+      url: "/get-started/prepare.html"
+    - title: 헬로우 월드
+      url: "/get-started/hello_world.html"
+  - title: ONTAP REST API를 참조하십시오
+    links:
+    - title: REST 구현 세부 정보
+      url: "/rest/rest_web_services_foundation.html"
+    - title: 추가 고려 사항
+      url: "/rest/object_references_and_access.html"
+    - title: 나머지 리소스 요약
+      url: "/resources/overview_categories.html"
+    - title: API 참조입니다
+      url: "/reference/api_reference.html"
+  - title: 자동화
+    links:
+    - title: Python 클라이언트 라이브러리
+      url: "/python/overview_pcl.html"
+    - title: ONTAP 및 Ansible
+      url: "/automate/ontap_ansible.html"
+    - title: 자동화 블로그
+      url: "/automate/blogs.html"
+  - title: 더 많은 리소스
+    links:
+    - title: 자세한 정보를 확인하십시오
+      url: "/additional/get_more_information.html"
+    - title: NetApp DevNet을 참조하십시오
+      url: https://devnet.netapp.com/restapi.php
+    - title: ONTAP 9 문서
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: ONTAP Select 문서
+      url: https://docs.netapp.com/us-en/ontap-select/

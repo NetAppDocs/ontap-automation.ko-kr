@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: python/script_retrieve_cluster_configuration.html 
+keywords:  
+summary:  
+---
+= 클러스터 구성을 검색하는 스크립트입니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+다음 스크립트는 Python 클라이언트 라이브러리를 사용하는 방법의 간단한 예를 제공합니다. CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP 클러스터 구성을 검색할 수 있습니다.
+
+[source, python]
+----
+##--------------------------------------------------------------------
+#
+# Description: Python script to retrieve the cluster configuration.
+#
+# Usage example:
+#
+# python3 get_cluster.py
+#
+#
+# (C) Copyright 2020 NetApp, Inc.
+#
+# This sample code is provided AS IS, with no support or warranties of
+# any kind, including but not limited for warranties of merchantability
+# or fitness of any kind, expressed or implied. Permission to use,
+# reproduce, modify and create derivatives of the sample code is granted
+# solely for the purpose of researching, designing, developing and
+# testing a software application product for use with NetApp products,
+# provided that the above copyright notice appears in all copies and
+# that the software application product is distributed pursuant to terms
+# no less restrictive than those set forth herein.
+#
+##--------------------------------------------------------------------
+# Global configuration for the library
+from netapp_ontap import config
+# Support for the connection to ONTAP
+from netapp_ontap import HostConnection
+# Specific API needed for this script
+from netapp_ontap.resources import Cluster
+# Create connection to the ONTAP management LIF
+conn = HostConnection("10.236.252.97", username="admin",
+password="mypassword", verify=False)
+# Set connection as the default for all API calls
+config.CONNECTION = conn
+# Create new cluster object
+clus = Cluster()
+# Issue REST API call
+clus.get()
+# Display the cluster configuration
+print(clus)
+....
+----

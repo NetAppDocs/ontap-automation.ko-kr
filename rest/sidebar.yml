@@ -1,0 +1,33 @@
+---
+section: rest
+title: ONTAP REST API를 참조하십시오
+entries:
+- title: REST 구현 세부 정보
+  entries:
+  - title: REST 웹 서비스 기반
+    url: "/rest/rest_web_services_foundation.html"
+  - title: ONTAP REST API 버전 관리
+    url: "/rest/rest_api_versioning.html"
+  - title: REST API 액세스 방법
+    url: "/rest/access_rest_api.html"
+  - title: 기본 작동 특성
+    url: "/rest/operational_characteristics.html"
+  - title: 입력 변수
+    url: "/rest/input_variables.html"
+  - title: API 응답을 해석합니다
+    url: "/rest/interpret_api_response.html"
+  - title: 작업 개체를 사용한 비동기 처리
+    url: "/rest/asynchronous_processing.html"
+- title: 추가 고려 사항
+  entries:
+  - title: 개체 참조 및 액세스
+    url: "/rest/object_references_and_access.html"
+  - title: ONTAPI API 및 ONTAP CLI 사용자
+    url: "/rest/users_ontapi_api_ontap_cli.html"
+  - title: ONTAP CLI에 액세스합니다
+    url: "/rest/access_ontap_cli.html"
+  - title: RBAC를 사용한 보안
+    url: "/rest/security_using_rbac.html"
+  - title: 스토리지 리소스에 대한 성능 메트릭
+    url: "/rest/performance_metrics.html"
+- section: resources

@@ -1,0 +1,8 @@
+---
+section: workflows
+title: 워크플로우
+entries:
+- title: 워크플로우 사용을 준비하십시오
+  url: "/workflows/prepare_workflows.html"
+- title: 워크플로우 1 - 클러스터 연락처를 업데이트하고 상태를 확인합니다
+  url: "/workflows/wf_1_update_cluster_contact.html"

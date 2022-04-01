@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: python/prepare_pcl.html 
+keywords:  
+summary:  
+---
+= Python 클라이언트 라이브러리를 사용할 준비를 합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Python 클라이언트 라이브러리를 사용하기 전에 환경을 준비해야 합니다.
+
+
+
+=== 기본 요구 사항
+
+Python 3.5 이상을 사용해야 합니다. 또한 다음 패키지도 필요합니다.
+
+* 2.22.1 이상 요청
+* 요청 - 툴벨트 0.9.1 이상
+* 마시멜로 3.2.1 이상
+
+
+
+
+=== 패키지 이름 및 버전
+
+Python 클라이언트 라이브러리 패키지의 이름은 * NetApp-ONTAP * 입니다. 패키지에 연결된 버전은 ONTAP 릴리스 내의 클라이언트에 대한 부 버전과 함께 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호의 조합입니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.
+
+
+
+=== 설치
+
+PiP를 사용하여 Python Package Index(PyPi) 웹 사이트에서 NetApp_ONTAP 패키지를 설치해야 합니다.
+
+
+
+=== 설명서 및 추가 리소스
+
+설명서 및 기타 리소스에 대한 링크는 _NetApp 개발자 네트워크_를 참조하십시오.
+
+https://pypi.org/project/netapp-ontap["PyPI:NetApp ONTAP 9.10.1"^]
+
+https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1용 NetApp PCL 설명서"^]
+
+https://devnet.netapp.com/restapi.php["NetApp 개발자 네트워크: ONTAP RESTful API"^]

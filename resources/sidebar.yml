@@ -1,0 +1,38 @@
+---
+section: resources
+title: 나머지 리소스 요약
+entries:
+- title: 개요
+  url: "/resources/overview_categories.html"
+- title: 응용 프로그램
+  url: "/resources/application.html"
+- title: 클라우드
+  url: "/resources/cloud.html"
+- title: 클러스터
+  url: "/resources/cluster.html"
+- title: 네임 서비스
+  url: "/resources/name_services.html"
+- title: NAS
+  url: "/resources/nas.html"
+- title: NDMP
+  url: "/resources/ndmp.html"
+- title: 네트워킹
+  url: "/resources/networking.html"
+- title: NVMe를 참조하십시오
+  url: "/resources/nvme.html"
+- title: 오브젝트 저장소
+  url: "/resources/object_store.html"
+- title: 산
+  url: "/resources/san.html"
+- title: 보안
+  url: "/resources/security.html"
+- title: SnapLock
+  url: "/resources/snaplock.html"
+- title: SnapMirror를 참조하십시오
+  url: "/resources/snapmirror.html"
+- title: 스토리지
+  url: "/resources/storage.html"
+- title: 지원
+  url: "/resources/support.html"
+- title: SVM
+  url: "/resources/svm.html"
