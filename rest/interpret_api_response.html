@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head class="at-element-marker">
-  <title>법적 고지</title>
+  <title>API 응답을 해석합니다</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="법적 고지" />
+  <meta property="og:title" content="API 응답을 해석합니다" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/legal-notices.html" />
-	<meta property="og:description" content="법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다." />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html" />
+	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.">
-  <meta name="keywords" content=" copyrights, notice, trademarks, patents, privacy, open source"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ko-kr/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -148,8 +148,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[법적 고지](https://docs.netapp.com/ko-kr/ontap-automation/legal-notices.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/legal-notices.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[API 응답을 해석합니다](https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/rest/interpret_api_response.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-automation/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
     </div>
     <div class="page-nav-container">
@@ -272,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/legal-notices.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/interpret_api_response.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -429,6 +429,15 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/rest/interpret_api_response.pdf" >
+    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -623,15 +632,6 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/legal-notices.pdf" >
-    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 </li></ul>
@@ -707,7 +707,7 @@
         기본 작동 특성
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/rest/input_variables.html">
         입력 변수
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/rest/interpret_api_response.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/rest/interpret_api_response.html">
         API 응답을 해석합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/rest/asynchronous_processing.html">
         작업 개체를 사용한 비동기 처리
@@ -788,7 +788,7 @@
         자동화 블로그
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/additional/get_more_information.html">
         자세한 정보를 확인하십시오
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/legal-notices.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/legal-notices.html">
         법적 고지
       </a></li></ul>
 </div>
@@ -843,22 +843,246 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">법적 고지</h1>
+  <h1 class="n-doc__component-detail-heading">API 응답을 해석합니다</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 14:37:09 +0000">01/31/2022</time>
+    <time datetime="2022-04-01 16:35:03 +0000">04/01/2022</time>
     
   
 
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p><a href="https://raw.githubusercontent.com/NetAppDocs/common/main/_include/common-legal-notices.adoc">""</a></p>
+<p>각 API 요청은 클라이언트에 대한 응답을 다시 생성합니다. 응답을 검토하여 성공 여부를 확인하고 필요에 따라 추가 데이터를 검색해야 합니다.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="http-상태-코드입니다">HTTP 상태 코드입니다</h3>
+<div class="paragraph">
+<p>ONTAP REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 25%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">코드</th>
+<th class="tableblock halign-left valign-top">사유 구문</th>
+<th class="tableblock halign-left valign-top">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">좋습니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">새 개체를 만들지 않는 호출에 대한 성공 여부를 나타냅니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">201</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">작성됨</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">객체가 성공적으로 생성되었습니다. 응답의 위치 헤더에는 개체의 고유 식별자가 포함됩니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">202</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">수락됨</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">요청을 수행하기 위해 백그라운드 작업이 시작되었지만 아직 완료되지 않았습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">잘못된 요청입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">요청 입력이 인식되지 않거나 부적절합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">401</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">권한이 없습니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">사용자 인증에 실패했습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">금지됨</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">권한 부여(RBAC) 오류로 인해 액세스가 거부되었습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">404</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">찾을 수 없습니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">요청에서 참조되는 리소스가 없습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">405</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">메서드가 허용되지 않습니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">요청의 HTTP 메서드가 리소스에 대해 지원되지 않습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">충돌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">다른 개체를 먼저 만들어야 하거나 요청된 개체가 이미 있으므로 개체를 만들지 못했습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">내부 오류입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">서버에서 일반적인 내부 오류가 발생했습니다.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="응답-헤더">응답 헤더</h3>
+<div class="paragraph">
+<p>ONTAP에서 생성된 HTTP 응답에는 여러 헤더가 포함되어 있습니다.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">위치</dt>
+<dd>
+<p>개체를 만들 때 위치 머리글에는 개체에 할당된 고유 식별자를 포함하여 새 개체에 대한 전체 URL이 포함됩니다.</p>
+</dd>
+<dt class="hdlist1">콘텐츠 유형</dt>
+<dd>
+<p>이것은 보통 '응용 프로그램/HAL+json&#8217;입니다.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="응답-바디">응답 바디</h3>
+<div class="paragraph">
+<p>API 요청으로 인한 응답 본문의 내용은 객체, 처리 유형 및 요청의 성공 또는 실패에 따라 달라집니다. 응답은 항상 JSON으로 렌더링됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>단일 개체</p>
+<div class="paragraph">
+<p>요청에 따라 필드 집합과 함께 단일 개체를 반환할 수 있습니다. 예를 들어, 가져오기를 사용하여 고유 식별자를 사용하여 클러스터의 선택된 속성을 검색할 수 있습니다.</p>
+</div>
+</li>
+<li>
+<p>여러 개의 개체</p>
+<div class="paragraph">
+<p>리소스 컬렉션의 여러 개체를 반환할 수 있습니다. 모든 경우에 사용되는 형식이 일관되게 있으며, 개체 인스턴스의 배열을 포함하는 레코드 및 레코드 수를 나타내는 num_records가 있습니다. 예를 들어, 특정 클러스터에 정의된 노드를 검색할 수 있습니다.</p>
+</div>
+</li>
+<li>
+<p>작업 객체</p>
+<div class="paragraph">
+<p>API 호출이 비동기적으로 처리되는 경우 백그라운드 작업을 고정하는 Job 개체가 반환됩니다. 예를 들어 클러스터 구성을 업데이트하는 데 사용되는 패치 요청은 비동기적으로 처리되고 작업 개체를 반환합니다.</p>
+</div>
+</li>
+<li>
+<p>오류 개체</p>
+<div class="paragraph">
+<p>오류가 발생하면 항상 Error 개체가 반환됩니다. 예를 들어, 클러스터에 대해 정의되지 않은 필드를 변경하려고 하면 오류가 발생합니다.</p>
+</div>
+</li>
+<li>
+<p>JSON 개체가 비어 있습니다</p>
+<div class="paragraph">
+<p>경우에 따라 데이터가 반환되지 않고 응답 본문에 빈 JSON 개체가 포함되는 경우가 있습니다.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hal-연결">HAL 연결</h3>
+<div class="paragraph">
+<p>ONTAP REST API는 HAL을 HATEOAS(Engine of Application State)로 Hypermedia를 지원하는 메커니즘으로 사용한다. 특정 리소스를 식별하는 객체 또는 속성이 반환되면 HAL로 인코딩된 링크도 포함되어 리소스에 대한 추가 세부 정보를 쉽게 찾아 확인할 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="오류">오류</h3>
+<div class="paragraph">
+<p>오류가 발생하면 응답 본문에 오류 객체가 반환됩니다.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">형식</dt>
+<dd>
+<p>오류 개체의 형식은 다음과 같습니다.</p>
+<div class="openblock">
+<div class="content">
+<div class="literalblock">
+<div class="content">
+<pre>"error": {
+"message": "&lt;string&gt;",
+"code": &lt;integer&gt;[,
+"target": "&lt;string&gt;"]
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>코드 값을 사용하여 일반 오류 유형 또는 범주를 확인하고 메시지를 사용하여 특정 오류를 확인할 수 있습니다. 사용 가능한 경우 대상 필드에는 오류와 관련된 특정 사용자 입력이 포함됩니다.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">일반 오류 코드</dt>
+<dd>
+<p>일반적인 오류 코드는 다음 표에 설명되어 있습니다. 특정 API 호출에는 추가 오류 코드가 포함될 수 있습니다.</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">코드</th>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">동일한 식별자를 가진 객체가 이미 있습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">필드 값이 잘못되었거나 누락되었거나 추가 필드가 제공되었습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">작업이 지원되지 않습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">405</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">지정된 식별자가 있는 개체를 찾을 수 없습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">403</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">요청 수행 권한이 거부되었습니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">409</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">리소스가 사용 중입니다.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+</dl>
+</div>
 </div>
 
     </article>
