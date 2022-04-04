@@ -6,6 +6,7 @@ summary:
 ---
 = API 응답을 해석합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

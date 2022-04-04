@@ -6,6 +6,7 @@ summary:
 ---
 = Python 클라이언트 라이브러리를 사용할 준비를 합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

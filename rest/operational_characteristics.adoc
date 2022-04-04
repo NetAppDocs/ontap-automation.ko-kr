@@ -6,6 +6,7 @@ summary:
 ---
 = 기본 작동 특성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary:
 ---
 = 워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary:
 ---
 = 작업 개체를 사용한 비동기 처리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

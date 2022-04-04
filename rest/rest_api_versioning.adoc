@@ -6,6 +6,7 @@ summary:
 ---
 = ONTAP REST API 버전 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

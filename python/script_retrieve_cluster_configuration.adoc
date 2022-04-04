@@ -6,6 +6,7 @@ summary:
 ---
 = 클러스터 구성을 검색하는 스크립트입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

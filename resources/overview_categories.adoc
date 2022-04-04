@@ -6,6 +6,7 @@ summary:
 ---
 = 자원 범주 개요
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

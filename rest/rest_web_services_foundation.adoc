@@ -6,6 +6,7 @@ summary:
 ---
 = REST 웹 서비스 기반
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

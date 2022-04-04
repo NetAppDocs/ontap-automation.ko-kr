@@ -6,6 +6,7 @@ summary: ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 �
 ---
 = ONTAP 자동화 옵션을 이해합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

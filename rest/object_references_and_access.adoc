@@ -6,6 +6,7 @@ summary:
 ---
 = 개체 참조 및 액세스
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

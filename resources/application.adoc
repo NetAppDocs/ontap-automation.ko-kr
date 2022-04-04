@@ -6,6 +6,7 @@ summary:
 ---
 = 응용 프로그램
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

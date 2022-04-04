@@ -6,6 +6,7 @@ summary:
 ---
 = REST API를 통해 ONTAP CLI에 액세스합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

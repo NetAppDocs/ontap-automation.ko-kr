@@ -6,6 +6,7 @@ summary:
 ---
 = ONTAP 및 Ansible 자동화
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

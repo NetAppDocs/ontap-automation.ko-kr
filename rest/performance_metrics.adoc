@@ -6,6 +6,7 @@ summary:
 ---
 = 스토리지 리소스에 대한 성능 메트릭
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

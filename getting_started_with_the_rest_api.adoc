@@ -6,6 +6,7 @@ summary:
 ---
 = REST API 시작하기
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

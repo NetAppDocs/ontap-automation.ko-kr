@@ -6,6 +6,7 @@ summary:
 ---
 = 오브젝트 저장소
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

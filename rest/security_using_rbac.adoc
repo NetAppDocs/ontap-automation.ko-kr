@@ -6,6 +6,7 @@ summary:
 ---
 = RBAC를 사용한 보안
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

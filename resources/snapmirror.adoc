@@ -6,6 +6,7 @@ summary:
 ---
 = SnapMirror를 참조하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
