@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head class="at-element-marker">
-  <title>워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오</title>
+  <title>ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오" />
+  <meta property="og:title" content="ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html" />
+	<meta property="og:description" content="ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다." />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다.">
+  <meta name="keywords" content=" dacl, sacl, permissions, file, api, access, vserver, control, list, access control list, access control"><!-- Icons -->
   <link rel="icon" href="/ko-kr/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오](https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/workflows/wf_1_update_cluster_contact.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-automation/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다](https://docs.netapp.com/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/manage/dacl-sacl-rest-api.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-automation/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -292,13 +292,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/manage/dacl-sacl-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/manage/dacl-sacl-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/manage/dacl-sacl-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -598,15 +598,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/workflows/wf_1_update_cluster_contact.pdf" >
-    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -636,6 +627,15 @@
           
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/manage/dacl-sacl-rest-api.pdf" >
+    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -845,14 +845,14 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/prepare_workflows.html">
         워크플로우 사용을 준비하십시오
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html">
         워크플로우 1 - 클러스터 연락처를 업데이트하고 상태를 확인합니다
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API를 사용하여 ONTAP 관리</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/ems-rest-api.html">
         EMS 이벤트 알림
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html">
         DACL 및 SACL 권한
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> Python 클라이언트 라이브러리</div>
@@ -930,14 +930,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오</h1>
+  <h1 class="n-doc__component-detail-heading">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:51 +0000">04/18/2022</time>
+    <time datetime="2022-04-21 17:04:00 +0000">04/21/2022</time>
     
   
 
@@ -947,117 +947,340 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되기 때문에 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</p>
+<p>ONTAP에서는 SACL(시스템 액세스 제어 목록) 및 DACL(임의 액세스 제어 목록)을 사용하여 파일 개체에 사용 권한을 할당합니다. ONTAP 9.9.1부터 ONTAP REST API에는 파일에 대한 SACL 및 DACL 권한을 할당하고 파일 보안 권한을 자동화하기 위한 엔드포인트가 포함되어 있습니다. (ONTAP 9.9.1 이전 SACL 및 DACL 권한 자동화 옵션에 대해 자세히 알아볼 수 있습니다 <a href="https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/" target="_blank" rel="noopener">"여기"</a>)를 클릭합니다.</p>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="클러스터의-연락처-정보를-업데이트합니다">클러스터의 연락처 정보를 업데이트합니다</h5>
 <div class="paragraph">
-<p>API 호출을 통해 연락처 정보를 업데이트할 수 있습니다. 요청이 비동기적으로 실행되기 때문에 연결된 작업의 성공 여부를 확인해야 합니다.</p>
+<p>ONTAP 9.9.1부터 여러 CLI 명령 또는 ONTAPI 호출 대신 단일 REST API 호출을 사용할 수 있습니다. 다음 예제에서는 ONTAP REST API를 사용하여 파일 권한을 사용하는 방법을 보여 줍니다. 각 예제에서는 표시된 대괄호 &lt;&gt;에 정보를 입력합니다.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">범주</th>
-<th class="tableblock halign-left valign-top">HTTP 메소드</th>
-<th class="tableblock halign-left valign-top">경로</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">클러스터</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">패치</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/클러스터</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
-<p>비동기식</p>
+<p>샘플을 참조할 수도 있습니다 <a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py" target="_blank" rel="noopener">"Python 스크립트"</a> 이 부분에서는 여러 SACL 및 DACL 관련 작업을 자동화하는 방법을 보여 줍니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="유효-사용-권한을-봅니다">유효 사용 권한을 봅니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>get/protocols/file-security/Effective-permissions/' API 호출을 이용하여 특정 파일이나 디렉터리에 대한 현재 권한을 조회할 수 있다.</p>
 </div>
 <div class="listingblock">
-<div class="title">말림</div>
+<div class="title">요청 예:</div>
 <div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
-{
-  "contact": "support@company-demo.com"
-}</code></pre>
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/protocols/file-security/effective-permissions/cf5f271a-1beb-11ea-8fad-005056bb645e/administrator/windows/%2F?share.name=sh1&amp;return_records=true'</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>연관된 식별자가 있는 작업 객체가 반환됩니다.</p>
 </div>
 <div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">{ "job": {
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "_links": {
-    "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
-    }
-  }
-  }
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="작업-상태를-검색합니다">작업 상태를 검색합니다</h5>
-<div class="paragraph">
-<p>비동기 요청이 성공적으로 완료되었는지 확인하려면 작업의 상태를 검색해야 합니다.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">범주</th>
-<th class="tableblock halign-left valign-top">HTTP 메소드</th>
-<th class="tableblock halign-left valign-top">경로</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">클러스터</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">가져오기</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/cluster/jobs/{uuid}</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>동기식이다</p>
-</div>
-<div class="listingblock">
-<div class="title">말림</div>
-<div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>상태 및 기타 필드가 있는 작업 객체가 반환됩니다.</p>
-</div>
-<div class="listingblock">
+<div class="title">응답의 예</div>
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">{
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "description": "PATCH /api/cluster",
-  "state": "success",
-  "message": "success",
-  "code": 0,
-  "_links": {
-    "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="모든-감사-정보를-봅니다">모든 감사 정보를 봅니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>get/protocols/file-security/permissions/' API 호출을 이용하여 특정 파일이나 디렉터리에 대한 모든 감사 정보를 조회할 수 있다.</p>
+</div>
+<div class="listingblock">
+<div class="title">요청 예:</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">응답의 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "svm": {
+    "uuid": "9479099d-5b9f-11eb-9c4e-0050568e8682",
+    "name": "vs1"
+  },
+  "path": "/parent",
+  "owner": "BUILTIN\\Administrators",
+  "group": "BUILTIN\\Administrators",
+  "control_flags": "0x8014",
+  "acls": [
+    {
+      "user": "BUILTIN\\Administrators",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    },
+    {
+      "user": "BUILTIN\\Users",
+      "access": "access_allow",
+      "apply_to": {
+        "files": true,
+        "sub_folders": true,
+        "this_folder": true
+      },
+      "advanced_rights": {
+        "append_data": true,
+        "delete": true,
+        "delete_child": true,
+        "execute_file": true,
+        "full_control": true,
+        "read_attr": true,
+        "read_data": true,
+        "read_ea": true,
+        "read_perm": true,
+        "write_attr": true,
+        "write_data": true,
+        "write_ea": true,
+        "write_owner": true,
+        "synchronize": true,
+        "write_perm": true
+      },
+      "access_control": "file_directory"
+    }
+  ],
+  "inode": 64,
+  "security_style": "mixed",
+  "effective_style": "ntfs",
+  "dos_attributes": "10",
+  "text_dos_attr": "----D---",
+  "user_id": "0",
+  "group_id": "0",
+  "mode_bits": 777,
+  "text_mode_bits": "rwxrwxrwx"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="새-사용-권한-적용">새 사용 권한 적용</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>'POST/protocols/file-security/permissions/' API call을 이용하여 파일이나 디렉터리에 새로운 보안 설명자를 적용할 수 있다.</p>
+</div>
+<div class="listingblock">
+<div class="title">요청 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}' -k 'https://&lt;IP_ADDRESS&gt;/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">응답의 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
     }
   }
 }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="보안-설명자-정보를-업데이트합니다">보안 설명자 정보를 업데이트합니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>patch/protocols/file-security/permissions/' API call을 이용하여, primary owner, group, control flags와 같은 파일이나 디렉터리에 대한 특정 보안 설명자 정보를 업데이트할 수 있다.</p>
+</div>
+<div class="listingblock">
+<div class="title">요청 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X PATCH -d '{ \"control_flags\": \"32788\", \"group\": \"everyone\", \"owner\": \"user1\"}' -k 'https://&lt;IP_ADDRESS&gt;/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent?return_timeout=0'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">응답의 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "job": {
+    "uuid": "6f89e612-5bbd-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/6f89e612-5bbd-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="기존-sacldacl-ace액세스-제어-항목-삭제">기존 SACL/DACL ACE(액세스 제어 항목) 삭제</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Delete/protocols/file-security/permissions/' API 호출을 사용하여 디렉토리에 대한 파일에서 기존 ACE를 삭제할 수 있습니다. 이 예제에서는 변경 내용을 자식 개체로 전파합니다.</p>
+</div>
+<div class="listingblock">
+<div class="title">요청 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X DELETE -d '{ \"access\": \"access_allow\", \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"ignore_paths\": [ \"/parent/child2\" ], \"propagation_mode\": \"propagate\"}' -k 'https://&lt;IP_ADDRESS&gt;/api/protocols/file-security/permissions/9479099d-5b9f-11eb-9c4e-0050568e8682/%2Fparent/acl/himanshu?return_timeout=0'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">응답의 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+  "job": {
+    "uuid": "e5683b61-5bbf-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/e5683b61-5bbf-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-rest-api와-ontap-cli-명령-비교">ONTAP REST API와 ONTAP CLI 명령 비교</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP REST API를 사용하면 대부분의 작업에서 ONTAP CLI보다 더 적은 수의 명령으로 워크플로우를 자동화할 수 있습니다. 예를 들어, 단일 POST API 메서드를 사용하여 여러 CLI 명령을 사용하는 대신 파일에 대한 보안 설명자를 수정할 수 있습니다. 다음 표에는 일반 파일 시스템 권한 작업과 해당 REST API 호출을 완료하는 데 필요한 CLI 명령이 나와 있습니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ONTAP REST API를 참조하십시오</th>
+<th class="tableblock halign-left valign-top">ONTAP CLI를 참조하십시오</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'get/protocols/file-security/Effective-permissions/'</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>'vserver security file-directory show-Effective-permissions&#8217;를 선택합니다</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'POST/PROTOCOLS/FILE-SECURITY/permissions/'</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>'vserver security file-directory NTFS create'</p>
+</li>
+<li>
+<p>'vserver security file-directory NTFS DACL add'</p>
+</li>
+<li>
+<p>'vserver security file-directory NTFS SACL add'</p>
+</li>
+<li>
+<p>'vserver security file-directory policy create&#8217;를 참조하십시오</p>
+</li>
+<li>
+<p>'vserver security file-directory policy task add'</p>
+</li>
+<li>
+<p>'vserver security file-directory apply'</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'패치/프로토콜/파일-보안/권한/'</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>'vserver security file-directory NTFS modify&#8217;를 참조하십시오</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">삭제/프로토콜/파일-보안/권한/'</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>'vserver security file-directory NTFS DACL remove'</p>
+</li>
+<li>
+<p>'vserver security file-directory NTFS SACL remove'</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="관련-정보">관련 정보</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/file_security_permissions.py" target="_blank" rel="noopener">"ONTAP REST API DACL/SACL 권한 예제 Python 스크립트"</a></p>
+</li>
+<li>
+<p><a href="https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis/" target="_blank" rel="noopener">"ONTAP REST API를 통해 파일 보안 권한 관리 간소화"</a></p>
+</li>
+<li>
+<p><a href="https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/" target="_blank" rel="noopener">"ONTAP REST API와 함께 전용 CLI 패스스루 사용(ONTAP 9.9.1 이전 버전의 경우)"</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>

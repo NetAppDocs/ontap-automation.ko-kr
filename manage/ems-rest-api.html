@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head class="at-element-marker">
-  <title>워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오</title>
+  <title>ONTAP REST API로 EMS 이벤트 알림 관리</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오" />
+  <meta property="og:title" content="ONTAP REST API로 EMS 이벤트 알림 관리" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-automation/manage/ems-rest-api.html" />
+	<meta property="og:description" content="REST API로 EMS 설정 관리" />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/ontap-automation/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="REST API로 EMS 설정 관리">
+  <meta name="keywords" content=" ems, configuration, workflow"><!-- Icons -->
   <link rel="icon" href="/ko-kr/ontap-automation/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오](https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/workflows/wf_1_update_cluster_contact.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-automation/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/issues/new?body=Page%3A%20[ONTAP REST API로 EMS 이벤트 알림 관리](https://docs.netapp.com/ko-kr/ontap-automation/manage/ems-rest-api.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-automation/blob/main/manage/ems-rest-api.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-automation/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-automation/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -292,13 +292,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/workflows/wf_1_update_cluster_contact.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/manage/ems-rest-api.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -598,15 +598,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/workflows/wf_1_update_cluster_contact.pdf" >
-    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -634,6 +625,15 @@
             REST API를 사용하여 ONTAP 관리
           </a>
           
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/ontap-automation/pdfs/pages/manage/ems-rest-api.pdf" >
+    <img src="/ko-kr/ontap-automation/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -845,12 +845,12 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/prepare_workflows.html">
         워크플로우 사용을 준비하십시오
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/workflows/wf_1_update_cluster_contact.html">
         워크플로우 1 - 클러스터 연락처를 업데이트하고 상태를 확인합니다
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API를 사용하여 ONTAP 관리</div>
       </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/ems-rest-api.html">
+      <ul><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/ems-rest-api.html">
         EMS 이벤트 알림
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/manage/dacl-sacl-rest-api.html">
         DACL 및 SACL 권한
@@ -930,14 +930,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오</h1>
+  <h1 class="n-doc__component-detail-heading">ONTAP REST API로 EMS 이벤트 알림 관리</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:51 +0000">04/18/2022</time>
+    <time datetime="2022-04-21 17:04:00 +0000">04/21/2022</time>
     
   
 
@@ -947,117 +947,246 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되기 때문에 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</p>
+<p>ONTAP REST API를 사용하여 중요한 EMS(이벤트 관리 시스템) 이벤트 알림이 전송되는 방식을 구성할 수 있으며, 모든 EMS 메시지 또는 특정 속성을 가진 특정 메시지를 검색할 수 있습니다. REST API를 사용하여 EMS 관련 작업을 자동화하여 다른 EMS 메시지 작업 방법에 비해 시간을 절약할 수 있습니다.</p>
 </div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="클러스터의-연락처-정보를-업데이트합니다">클러스터의 연락처 정보를 업데이트합니다</h5>
 <div class="paragraph">
-<p>API 호출을 통해 연락처 정보를 업데이트할 수 있습니다. 요청이 비동기적으로 실행되기 때문에 연결된 작업의 성공 여부를 확인해야 합니다.</p>
+<p>다음 예에서는 ONTAP REST API를 사용하여 EMS 메시지를 사용하는 방법을 보여 줍니다. 각 예제에서는 표시된 대괄호 &lt;&gt;에 정보를 입력합니다. 샘플을 참조할 수도 있습니다 <a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"Python 스크립트"</a> 이를 통해 여러 EMS 관련 활동을 자동화하는 방법을 확인할 수 있습니다.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">범주</th>
-<th class="tableblock halign-left valign-top">HTTP 메소드</th>
-<th class="tableblock halign-left valign-top">경로</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">클러스터</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">패치</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/클러스터</p></td>
-</tr>
-</tbody>
-</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="특정-이벤트-로그를-봅니다">특정 이벤트 로그를 봅니다</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>비동기식</p>
+<p>Get/support/EMS/events API call을 이용하여 최신 메시지, 특정 text가 포함된 메시지, 특정 severity의 메시지 등 특정 event message를 조회할 수 있다.</p>
 </div>
 <div class="listingblock">
-<div class="title">말림</div>
+<div class="title">요청 예: 최신 메시지를 검색합니다</div>
 <div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step01 'https://10.222.81.101/api/cluster'
-{
-  "contact": "support@company-demo.com"
-}</code></pre>
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?fields=message.name&amp;max_records=1'</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>연관된 식별자가 있는 작업 객체가 반환됩니다.</p>
 </div>
 <div class="listingblock">
+<div class="title">응답의 예</div>
 <div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">{ "job": {
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
+<pre class="highlight"><code class="language-json" data-lang="json">"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 6260,
+      "message": {
+        "name": "netinet6.rtr.high.mtu"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/6260"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
   "_links": {
     "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      "href": "/api/support/ems/events?fields=message.name&amp;max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-22T10%3A28%3A29-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=6260&amp;fields=message.name&amp;max_records=1"
     }
   }
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">요청 예: 특정 텍스트 및 심각도를 포함하는 메시지를 검색합니다</div>
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/events?log_message=*disk*&amp;message.severity=alert'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">응답의 예</div>
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"records": [
+    {
+      "node": {
+        "name": "malha-vsim1",
+        "uuid": "da4f9e62-9de3-11ec-976a-005056b369de",
+        "_links": {
+          "self": {
+            "href": "/api/cluster/nodes/da4f9e62-9de3-11ec-976a-005056b369de"
+          }
+        }
+      },
+      "index": 4602,
+      "time": "2022-03-18T06:37:46-04:00",
+      "message": {
+        "severity": "alert",
+        "name": "raid.autoPart.disabled"
+      },
+      "log_message": "raid.autoPart.disabled: Disk auto-partitioning is disabled on this system: the system needs a minimum of 4 usable internal hard disks.",
+      "_links": {
+        "self": {
+          "href": "/api/support/ems/events/malha-vsim1/4602"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/support/ems/events?log_message=*disk*&amp;message.severity=alert&amp;max_records=1"
+    },
+    "next": {
+      "href": "/api/support/ems/events?start.keytime=2022-03-18T06%3A37%3A46-04%3A00&amp;start.node.name=malha-vsim1&amp;start.index=4602&amp;log_message=*disk*&amp;message.severity=alert"
+    }
   }
 }</code></pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="작업-상태를-검색합니다">작업 상태를 검색합니다</h5>
-<div class="paragraph">
-<p>비동기 요청이 성공적으로 완료되었는지 확인하려면 작업의 상태를 검색해야 합니다.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">범주</th>
-<th class="tableblock halign-left valign-top">HTTP 메소드</th>
-<th class="tableblock halign-left valign-top">경로</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">클러스터</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">가져오기</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/cluster/jobs/{uuid}</p></td>
-</tr>
-</tbody>
-</table>
+<div class="sect1">
+<h2 id="기존-ems-설정을-확인한다">기존 EMS 설정을 확인한다</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>동기식이다</p>
+<p>Get/support/EMS/ API call을 이용하여 기존 EMS notification 설정 정보를 조회할 수 있다.</p>
 </div>
 <div class="listingblock">
-<div class="title">말림</div>
+<div class="title">요청 예</div>
 <div class="content">
-<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'</code></pre>
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X GET -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/'</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>상태 및 기타 필드가 있는 작업 객체가 반환됩니다.</p>
 </div>
 <div class="listingblock">
+<div class="title">응답의 예</div>
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">{
-  "uuid": "d877f5bb-3aa7-11e9-b6c6-005056a78c89",
-  "description": "PATCH /api/cluster",
-  "state": "success",
-  "message": "success",
-  "code": 0,
+  "proxy_url": "https://proxyserver.mycompany.com",
+  "proxy_user": "proxy_user",
+  "mail_server": "mail@mycompany.com",
   "_links": {
     "self": {
-      "href": "/api/cluster/jobs/d877f5bb-3aa7-11e9-b6c6-005056a78c89"
+      "href": "/api/resourcelink"
     }
-  }
+  },
+  "pubsub_enabled": "1",
+  "mail_from": "administrator@mycompany.com"
 }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="새-ems-알림-설정을-생성한다">새 EMS 알림 설정을 생성한다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>여러 API 호출을 함께 사용하여 새 EMS 구성을 만들어 메시지 수신 방법과 시기를 사용자 지정할 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>시스템 전체 이메일 설정을 구성합니다. 예를 들면 다음과 같습니다.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -X PATCH -u admin:&lt;PASSWORD&gt; -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems?mail_from=administrator@mycompany.com&amp;mail_server=mail@mycompany.com'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>특정 메시지를 일치시키기 위해 특정 규칙을 사용하는 필터를 정의합니다. 예를 들면 다음과 같습니다.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-filter", "rules.type": ["include"], "rules.message_criteria.severities": ["emergency"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/filters/'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>메시지의 대상을 만듭니다. 예를 들면 다음과 같습니다.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-curl" data-lang="curl">curl -u admin:&lt;PASSWORD&gt; -X POST -d '{"name": "test-destination", "type": "email", "destination": "administrator@mycompany.com", "filters.name": ["important-events"]}' -k 'https://&lt;IP_ADDRESS&gt;/api/support/ems/destinations/'</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-rest-api와-ontap-cli-명령-비교">ONTAP REST API와 ONTAP CLI 명령 비교</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP REST API를 사용하면 대부분의 작업에서 ONTAP CLI보다 더 적은 수의 명령으로 워크플로우를 자동화할 수 있습니다. 예를 들어, 여러 개의 CLI 명령을 사용하는 대신 단일 POST API 메서드를 사용하여 필터를 만들 수 있습니다. 다음 표에는 일반 EMS 작업과 해당 REST API 호출을 완료하는 데 필요한 CLI 명령이 나와 있습니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ONTAP REST API를 참조하십시오</th>
+<th class="tableblock halign-left valign-top">ONTAP CLI를 참조하십시오</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'Get/support/EMS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">이벤트 구성 쇼</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'POST/support/EMS/destinations</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>이벤트 알림 메시지 목적지 작성</p>
+</li>
+<li>
+<p>이벤트 알림 작성</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'Get/support/EMS/events</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">이벤트 로그 쇼</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'POST/support/EMS/filters</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>'이벤트 필터 생성 - 필터 이름 &lt;filtername&gt;'</p>
+</li>
+<li>
+<p>'이벤트 필터 규칙 add-filter-name &lt;filtername&gt;'</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="관련-정보">관련 정보</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py" target="_blank" rel="noopener">"ONTAP REST API EMS 예제 Python 스크립트"</a></p>
+</li>
+<li>
+<p><a href="https://blog.netapp.com/ontap-rest-apis-automate-notification" target="_blank" rel="noopener">"ONTAP REST API: 심각도가 높은 이벤트 자동 알림"</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
