@@ -1096,4 +1096,81 @@
   <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c8d653c789443dfa6dd7b54e86148f7c" category="summary">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다.</block>
+  <block id="c50ee9e545662286884e42e140649f09" category="doc">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다</block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">여기</block>
+  <block id="7d455208ee42ecd7867fb39b027bcf1c" category="paragraph">ONTAP에서는 SACL(시스템 액세스 제어 목록) 및 DACL(임의 액세스 제어 목록)을 사용하여 파일 개체에 사용 권한을 할당합니다. ONTAP 9.9.1부터 ONTAP REST API에는 파일에 대한 SACL 및 DACL 권한을 할당하고 파일 보안 권한을 자동화하기 위한 엔드포인트가 포함되어 있습니다. (ONTAP 9.9.1 이전 SACL 및 DACL 권한 자동화 옵션에 대해 자세히 알아볼 수 있습니다<block ref="9cac8aefabbfb93ff43b7791e34383b9" category="inline-link-rx"></block>)를 클릭합니다.</block>
+  <block id="bf2066acabfd343a809da20949dc54e0" category="paragraph">ONTAP 9.9.1부터 여러 CLI 명령 또는 ONTAPI 호출 대신 단일 REST API 호출을 사용할 수 있습니다. 다음 예제에서는 ONTAP REST API를 사용하여 파일 권한을 사용하는 방법을 보여 줍니다. 각 예제에서는 표시된 대괄호 &lt;&gt;에 정보를 입력합니다.</block>
+  <block id="1099d399c75060b79e3ad383bf9aaaca" category="inline-link">Python 스크립트</block>
+  <block id="52c2a6d4c018d7d1bf8a8eb602e46e7e" category="paragraph">샘플을 참조할 수도 있습니다<block ref="0177ee26baf5ba4c15becf2582f3ab08" category="inline-link-rx"></block> 이 부분에서는 여러 SACL 및 DACL 관련 작업을 자동화하는 방법을 보여 줍니다.</block>
+  <block id="19f7b4a4dbcb6361568e48dfa0435a6c" category="section-title">유효 사용 권한을 봅니다</block>
+  <block id="428084c0000a04b8e91d28436016ef1a" category="paragraph">get/protocols/file-security/Effective-permissions/' API 호출을 이용하여 특정 파일이나 디렉터리에 대한 현재 권한을 조회할 수 있다.</block>
+  <block id="20090a7c19d3f16ea7ce066b8b9f031e" category="listing-title">요청 예:</block>
+  <block id="8b395980037bcca82c69c1da89a28918" category="listing-title">응답의 예</block>
+  <block id="ebc2d9d98f6a4f7b344429c8411e0dab" category="section-title">모든 감사 정보를 봅니다</block>
+  <block id="d2a0c57c327ad35c037b4e63fc912893" category="paragraph">get/protocols/file-security/permissions/' API 호출을 이용하여 특정 파일이나 디렉터리에 대한 모든 감사 정보를 조회할 수 있다.</block>
+  <block id="62119ab02b7f5c5c6d8698c4ec962f3e" category="section-title">새 사용 권한 적용</block>
+  <block id="d56a84695518a1643241bb70bcfd22dc" category="paragraph">'POST/protocols/file-security/permissions/' API call을 이용하여 파일이나 디렉터리에 새로운 보안 설명자를 적용할 수 있다.</block>
+  <block id="6f76c699e041eacfac4485d0f16323e1" category="listing-title">요청 예</block>
+  <block id="7d986aa6827f53816cefdf1f0049c38b" category="section-title">보안 설명자 정보를 업데이트합니다</block>
+  <block id="0b22253d9f6241bf0350ec66f24bfa31" category="paragraph">patch/protocols/file-security/permissions/' API call을 이용하여, primary owner, group, control flags와 같은 파일이나 디렉터리에 대한 특정 보안 설명자 정보를 업데이트할 수 있다.</block>
+  <block id="50c9441280e27d3ff54a612e499e063b" category="section-title">기존 SACL/DACL ACE(액세스 제어 항목) 삭제</block>
+  <block id="d33bccaf67eae3c8f65c012f20973eba" category="paragraph">Delete/protocols/file-security/permissions/' API 호출을 사용하여 디렉토리에 대한 파일에서 기존 ACE를 삭제할 수 있습니다. 이 예제에서는 변경 내용을 자식 개체로 전파합니다.</block>
+  <block id="411009bbd509e2b00a1f4543b3c1ca74" category="section-title">ONTAP REST API와 ONTAP CLI 명령 비교</block>
+  <block id="931f6691d15d77b0e0fe9fc70de2b615" category="paragraph">ONTAP REST API를 사용하면 대부분의 작업에서 ONTAP CLI보다 더 적은 수의 명령으로 워크플로우를 자동화할 수 있습니다. 예를 들어, 단일 POST API 메서드를 사용하여 여러 CLI 명령을 사용하는 대신 파일에 대한 보안 설명자를 수정할 수 있습니다. 다음 표에는 일반 파일 시스템 권한 작업과 해당 REST API 호출을 완료하는 데 필요한 CLI 명령이 나와 있습니다.</block>
+  <block id="de134183bea5df515a6756a539ce6f18" category="cell">ONTAP CLI를 참조하십시오</block>
+  <block id="f778c6da6bf9a458b710a39182352949" category="cell">'get/protocols/file-security/Effective-permissions/'</block>
+  <block id="5f7113a4943de281bc5047f65e391330" category="paragraph">'vserver security file-directory show-Effective-permissions'를 선택합니다</block>
+  <block id="f40f7b5338aed8818a9fcf853a0ee22a" category="cell">'POST/PROTOCOLS/FILE-SECURITY/permissions/'</block>
+  <block id="aa107cbea70d6c241798c9a9d00592e8" category="list-text">'vserver security file-directory NTFS create'</block>
+  <block id="797ea0cd6b9101634027df062146beaa" category="list-text">'vserver security file-directory NTFS DACL add'</block>
+  <block id="eed72d452a46e4df789597794672512f" category="list-text">'vserver security file-directory NTFS SACL add'</block>
+  <block id="421a920288f4b435b433e11f31611cd4" category="list-text">'vserver security file-directory policy create'를 참조하십시오</block>
+  <block id="04e4fcd87af1d9e6c37efc8fbec5165f" category="list-text">'vserver security file-directory policy task add'</block>
+  <block id="d608fe77c8f3415819d5f89e2f46e862" category="list-text">'vserver security file-directory apply'</block>
+  <block id="be1918482fc8de757bc6a0c9475602c7" category="cell">'패치/프로토콜/파일-보안/권한/'</block>
+  <block id="bc8edb1a4258ae50e5280eb11c7f6a5c" category="paragraph">'vserver security file-directory NTFS modify'를 참조하십시오</block>
+  <block id="94e1cc167c8b21e2dee8ae6449422dc8" category="cell">삭제/프로토콜/파일-보안/권한/'</block>
+  <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text">'vserver security file-directory NTFS DACL remove'</block>
+  <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">'vserver security file-directory NTFS SACL remove'</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">관련 정보</block>
+  <block id="be37d97521654067f502ca21542fc23e" category="inline-link">ONTAP REST API DACL/SACL 권한 예제 Python 스크립트</block>
+  <block id="5085ad1bbb70dc377ddd4434496cf250" category="list-text"><block ref="5085ad1bbb70dc377ddd4434496cf250" category="inline-link-rx"></block></block>
+  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">ONTAP REST API를 통해 파일 보안 권한 관리 간소화</block>
+  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
+  <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">ONTAP REST API와 함께 전용 CLI 패스스루 사용(ONTAP 9.9.1 이전 버전의 경우)</block>
+  <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
+  <block id="1517c8d2b9873d41e7190a1ac6ff93cc" category="summary">REST API로 EMS 설정 관리</block>
+  <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">ONTAP REST API로 EMS 이벤트 알림 관리</block>
+  <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">ONTAP REST API를 사용하여 중요한 EMS(이벤트 관리 시스템) 이벤트 알림이 전송되는 방식을 구성할 수 있으며, 모든 EMS 메시지 또는 특정 속성을 가진 특정 메시지를 검색할 수 있습니다. REST API를 사용하여 EMS 관련 작업을 자동화하여 다른 EMS 메시지 작업 방법에 비해 시간을 절약할 수 있습니다.</block>
+  <block id="619a84d9c14dd4e8431c29139707919c" category="paragraph">다음 예에서는 ONTAP REST API를 사용하여 EMS 메시지를 사용하는 방법을 보여 줍니다. 각 예제에서는 표시된 대괄호 &lt;&gt;에 정보를 입력합니다. 샘플을 참조할 수도 있습니다<block ref="93282e4588c19699b4435477b6d0187b" category="inline-link-rx"></block> 이를 통해 여러 EMS 관련 활동을 자동화하는 방법을 확인할 수 있습니다.</block>
+  <block id="c25e3541a8e8d23fbd7bc417366e087a" category="section-title">특정 이벤트 로그를 봅니다</block>
+  <block id="53d5e5ab3f1018d37b93775c447bf8c5" category="paragraph">Get/support/EMS/events API call을 이용하여 최신 메시지, 특정 text가 포함된 메시지, 특정 severity의 메시지 등 특정 event message를 조회할 수 있다.</block>
+  <block id="f615b69d52993b779bce7b1c6728c21d" category="listing-title">요청 예: 최신 메시지를 검색합니다</block>
+  <block id="ce82b9076790e11cac5d1aa3bcd41aa5" category="listing-title">요청 예: 특정 텍스트 및 심각도를 포함하는 메시지를 검색합니다</block>
+  <block id="0cc4ccc760bba90b3392a98e6a6ec9e5" category="section-title">기존 EMS 설정을 확인한다</block>
+  <block id="11bd634909ab0002d27896579c235553" category="paragraph">Get/support/EMS/ API call을 이용하여 기존 EMS notification 설정 정보를 조회할 수 있다.</block>
+  <block id="5415ddffb113099234fe3c0d76f7749a" category="section-title">새 EMS 알림 설정을 생성한다</block>
+  <block id="9bf42ad17c089dd9891c431d5a1c5c2f" category="paragraph">여러 API 호출을 함께 사용하여 새 EMS 구성을 만들어 메시지 수신 방법과 시기를 사용자 지정할 수 있습니다.</block>
+  <block id="2b24417cd71c7c073f9c43c6702b281e" category="list-text">시스템 전체 이메일 설정을 구성합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="d6a7eb66a65f3937689937ed206de56a" category="list-text">특정 메시지를 일치시키기 위해 특정 규칙을 사용하는 필터를 정의합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="4d3eb0a7fcad51868e2c47187c83128f" category="list-text">메시지의 대상을 만듭니다. 예를 들면 다음과 같습니다.</block>
+  <block id="304905cae974c3b05217421398eee9f1" category="paragraph">ONTAP REST API를 사용하면 대부분의 작업에서 ONTAP CLI보다 더 적은 수의 명령으로 워크플로우를 자동화할 수 있습니다. 예를 들어, 여러 개의 CLI 명령을 사용하는 대신 단일 POST API 메서드를 사용하여 필터를 만들 수 있습니다. 다음 표에는 일반 EMS 작업과 해당 REST API 호출을 완료하는 데 필요한 CLI 명령이 나와 있습니다.</block>
+  <block id="2368af484e43b6e0fc7814eb71cba236" category="cell">'Get/support/EMS</block>
+  <block id="8b64f73d0c930b953467d71771168fcb" category="cell">이벤트 구성 쇼</block>
+  <block id="9f14a0e7f948d7c4687191b2963b4b88" category="cell">'POST/support/EMS/destinations</block>
+  <block id="2130e4445c18121e61a0496381717d89" category="list-text">이벤트 알림 메시지 목적지 작성</block>
+  <block id="b0f540062794ffac7297b2f00a005457" category="list-text">이벤트 알림 작성</block>
+  <block id="67263db3668d1ed303c86b613bbb802c" category="cell">'Get/support/EMS/events</block>
+  <block id="3eb95dd087771082d8d97c1dfe80b359" category="cell">이벤트 로그 쇼</block>
+  <block id="7f1ea7967a4a624ec172c4dbad038d5a" category="cell">'POST/support/EMS/filters</block>
+  <block id="9b8f1b89d54261f317c44e8ccd1c91cd" category="list-text">'이벤트 필터 생성 - 필터 이름 &lt;filtername&gt;'</block>
+  <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">'이벤트 필터 규칙 add-filter-name &lt;filtername&gt;'</block>
+  <block id="3b580ecb7e3414e24089f175032dabf3" category="inline-link">ONTAP REST API EMS 예제 Python 스크립트</block>
+  <block id="acfce8bc71a552130aa0ccb8784fe895" category="list-text"><block ref="acfce8bc71a552130aa0ccb8784fe895" category="inline-link-rx"></block></block>
+  <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">ONTAP REST API: 심각도가 높은 이벤트 자동 알림</block>
+  <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
+  <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API를 사용하여 ONTAP 관리</block>
+  <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS 이벤트 알림</block>
+  <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL 및 SACL 권한</block>
 </blocks>
