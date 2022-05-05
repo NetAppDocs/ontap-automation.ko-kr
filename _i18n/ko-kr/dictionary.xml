@@ -126,7 +126,6 @@
   <block id="f5520ac447b7ce4cc60a84b00fe90b91" category="section-title">모니터링된 파일</block>
   <block id="16750416870169f8a547b041c15fb9ca" category="paragraph">추가 모니터링을 위해 특정 파일을 지정할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">포트</block>
-  <block id="a7ed048576f99b28a7ac7d127a048121" category="paragraph">클러스터의 스토리지 포트입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="9ab8fc3354a61f6ad2350f17305fc866" category="section-title">QoS 정책</block>
   <block id="8719f60286ad321c9136cdebcda6779b" category="paragraph">서비스 품질 정책 구성 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="807c87dbc2a84cfb9ed828623f9216ac" category="section-title">QoS 워크로드</block>
@@ -236,7 +235,6 @@
   <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="section-title">CIFS 홈 디렉토리 검색 경로입니다</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">CIFS 서버의 SMB 사용자에 대한 홈 디렉토리는 각 사용자에 대한 개별 SMB 공유를 생성하지 않고 생성할 수 있습니다. 홈 디렉토리 검색 경로는 SVM 루트에서 연결되는 절대 경로 집합입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="396c3f48c117673117684dd56e4ea358" category="section-title">CIFS 로컬 그룹</block>
-  <block id="075f810b99d746a8b62911ab066db558" category="paragraph">CIFS 서버는 공유, 파일 및 디렉토리 액세스 권한을 결정할 때 인증에 로컬 그룹을 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.9에서 도입되었으며 ONTAP 9.10으로 크게 확장되었습니다.</block>
   <block id="b4aed1589395fdc65c17587b27f7bb8c" category="section-title">CIFS 서비스</block>
   <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="bc60013b8245b6824eb1f7867b61b741" category="section-title">CIFS 세션</block>
@@ -293,10 +291,8 @@
   <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">ONTAP 9(CLI 명령 제외)에 대한 설명서를 제공합니다.</block>
   <block id="774a065cb3548cc61fb0ec3bc1494fbe" category="inline-link">ONTAP 9 문서 센터</block>
   <block id="04b0bb6aae6dc41149097cc24034df97" category="list-text"><block ref="04b0bb6aae6dc41149097cc24034df97" category="inline-link-rx"></block></block>
-  <block id="874bbaff78a1a5929b6a69396bce843d" category="paragraph">ONTAP 9 CLI 명령에 대한 설명서를 제공합니다.</block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">ONTAP 및 ONTAP 시스템 관리자 리소스</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
-  <block id="d36ee6fe6aa657c937857a18101e0782" category="paragraph">ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 유용한 링크를 제공합니다.</block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">ONTAP 9 개발자 리소스</block>
   <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">ONTAPI를 통한 REST API 매핑 정보</block>
   <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
@@ -1173,4 +1169,70 @@
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API를 사용하여 ONTAP 관리</block>
   <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS 이벤트 알림</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL 및 SACL 권한</block>
+  <block id="54614c33cd18b45a05af04b2ab151311" category="paragraph">ONTAP 9 CLI 명령에 대한 설명서를 제공합니다.</block>
+  <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 유용한 링크가 포함되어 있습니다.</block>
+  <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 제품 라이브러리</block>
+  <block id="c2d5813d8be4192f243cf259ee486461" category="list-text"><block ref="c2d5813d8be4192f243cf259ee486461" category="inline-link-rx"></block></block>
+  <block id="314c9b4dff5f24c292fa071348953ece" category="paragraph">이전 ONTAP 릴리스에 대한 릴리즈 노트 및 기타 문서에 액세스합니다.</block>
+  <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="section-title">ONTAP 9.11.1</block>
+  <block id="fed998214be47115214a92dcb94e441c" category="paragraph">ONTAP 9.11.1은 거의 100개의 새로운 API 호출을 통해 ONTAP REST API의 기능을 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈에서는 고객이 Data ONTAP API(ONTAPI 또는 ZAPI)에서 ONTAP REST API로 마이그레이션할 수 있도록 지원합니다.</block>
+  <block id="d6e857e52e070e2d7dc74670d30f4681" category="list-text">세분화된 RBAC</block>
+  <block id="abc796662cfaf549fac897b99e75df46" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. 필요에 따라 기존 역할을 사용하거나 새 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 액세스 정의와 연결될 수 있으며, 각 역할은 원하는 액세스 수준과 함께 명령 또는 REST API 호출을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 새로운 액세스 권한도 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다.</block>
+  <block id="a3139937e50cf495467ef74d1e2841ff" category="list-text">성능 카운터</block>
+  <block id="654266e542ab86fb9663ace26fddbb0a" category="list-text">이전 ONTAP 릴리즈에서는 시스템의 작동 특성에 대한 통계 정보를 유지했습니다. 9.11.1 릴리스 버전에서는 이 정보가 향상되어 이제 REST API를 통해 사용할 수 있습니다. 관리자 또는 자동화된 프로세스에서 데이터에 액세스하여 시스템 성능을 확인할 수 있습니다. 카운터 관리자 하위 시스템에서 유지 관리하는 통계 정보는 테이블 및 행을 사용하여 데이터베이스 형식으로 표시됩니다. 이러한 성능 향상을 통해 ONTAP REST API는 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 됩니다.</block>
+  <block id="13a73a2c197166eea31c701558811cf4" category="list-text">애그리게이트 관리</block>
+  <block id="208620b0414871fca67f3c1e66a5d1f3" category="list-text">ONTAP 스토리지 애그리게이트 관리가 향상되었습니다. 업데이트된 REST 엔드포인트를 사용하여 온라인 및 오프라인으로 애그리게이트를 이동하고 스페어를 관리할 수 있습니다.</block>
+  <block id="2da073b1bbcf0d975fb958ca55de6a07" category="list-text">IP 서브넷 기능입니다</block>
+  <block id="5397339ae64eef12a3fbbe9af0ab8470" category="list-text">ONTAP 네트워킹 기능이 IP 서브넷 지원을 포함하도록 확장되었습니다. REST API를 사용하면 ONTAP 클러스터 내에서 IP 서브넷의 구성 및 관리에 액세스할 수 있습니다.</block>
+  <block id="92b25ca356d0711c23fa00a11a838f16" category="list-text">여러 관리자 검증</block>
+  <block id="e7d8af28980ef8f99ebba710f535c906" category="list-text">여러 관리자 확인 기능은 ONTAP 명령 또는 작업에 대한 액세스를 보호하기 위한 유연한 인증 프레임워크를 제공합니다. 제한된 명령을 식별하는 규칙을 정의할 수 있습니다. 사용자가 특정 명령에 대한 액세스를 요청하면 여러 ONTAP 관리자가 적절한 승인을 부여할 수 있습니다.</block>
+  <block id="4f254b5768d1e18364bedb0b2402d10a" category="list-text">SnapMirror의 향상된 기능</block>
+  <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다.</block>
+  <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">이름 서비스 캐시 지원</block>
+  <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">ONTAP 이름 서비스는 성능 및 복원성을 향상시키는 캐싱을 지원하도록 개선되었습니다. 이제 REST API를 통해 이름 서비스 캐시 구성에 액세스할 수 있습니다. 호스트, UNIX 사용자, UNIX 그룹 및 넷그룹을 비롯한 여러 레벨에서 설정을 적용할 수 있습니다.</block>
+  <block id="6c0d25ee401578483c4dfffa365b9ea0" category="section-title">파이버 채널 패브릭</block>
+  <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">FC(파이버 채널) 패브릭 REST API 엔드포인트를 사용하여 FC 네트워크에 대한 정보를 검색할 수 있습니다. 여기에는 ONTAP 클러스터와 FC 패브릭 간 연결, 패브릭을 구성하는 스위치 및 활성 zoneset의 영역이 포함됩니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="0e7eec875e1f37460a721166947e4e8e" category="section-title">IP 서브넷</block>
+  <block id="5a09483804ff20be38e6c855da808ed2" category="paragraph">ONTAP 네트워킹 기능이 IP 서브넷을 지원하도록 확장되었습니다. REST API를 사용하면 ONTAP 클러스터 내에서 IP 서브넷의 구성 및 관리에 액세스할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="751e4e85711e2518633cee5b9da90a2f" category="paragraph">특정 SVM 인스턴스에 대한 추가 성능 메트릭 데이터에 액세스할 수 있습니다. 4개의 목록을 사용할 수 있으며 각 목록은 ONTAP FlexVol 및 FlexGroup 볼륨에 대한 최고의 I/O 활동을 제공합니다. 목록은 다음과 같습니다.</block>
+  <block id="0f558243fbf45f1cd840fff01957f57b" category="list-text">클라이언트</block>
+  <block id="f60bce136c62f7ab3c73aa4f0d5fcae9" category="list-text">디렉토리</block>
+  <block id="91f3a2c0e4424c87689525da44c4db11" category="list-text">파일</block>
+  <block id="bfff97f6c83321c8784e8850db2da12f" category="paragraph">이러한 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="dd1cc17036adbbdb0074432af6a7a58b" category="section-title">MetroCluster SVM</block>
+  <block id="06a467722471a55dde81911330523907" category="paragraph">MetroCluster 구성에서 모든 SVM 쌍에 대한 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="67e3defb688be7685ce637d90e158565" category="paragraph">이전 ONTAP 릴리즈에서는 시스템의 작동 특성에 대한 통계 정보를 유지했습니다. 9.11.1 릴리스와 함께 정보가 향상되어 이제 REST API를 통해 사용할 수 있습니다. 이 기능은 ONTAP REST API를 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 만듭니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="af29aa178ae43211319e28f627e96590" category="section-title">센서</block>
+  <block id="a7eb63cda27c2652ccce4025d6971e7d" category="paragraph">이러한 끝점을 사용하여 모든 플랫폼 환경 센서에 대한 세부 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="d870fba37d68752041265a286259efaf" category="section-title">응용 프로그램 로그</block>
+  <block id="4b3884b394eaf8adab98582dbe5a979d" category="paragraph">독립 실행형 응용 프로그램은 POST 요청을 실행하여 ONTAP 시스템에서 EMS 이벤트 및 선택적으로 생성된 AutoSupport 패키지를 기록할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="ab0cf104f39708eabd07b8cb67e149ba" category="section-title">캐시</block>
+  <block id="9565a5f8023ba13977b682ff9926c605" category="paragraph">ONTAP 이름 서비스는 캐싱을 지원하여 성능과 복원력을 높입니다. 이제 REST API를 통해 이름 서비스 캐시를 구성할 수 있습니다. 호스트, UNIX 사용자, UNIX 그룹 및 넷그룹을 비롯한 여러 레벨에서 설정을 적용할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="4c885663da9566f7ff78e30b5c49bd30" category="section-title">LDAP 스키마</block>
+  <block id="a56273e0ba8ea7b3936e2c23836bce15" category="paragraph">ONTAP에서 사용하는 LDAP 스키마를 생성, 수정 및 나열할 수 있습니다. 4개의 기본 스키마가 포함되어 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="146af53866e72090bed5ee8202fb16a6" category="section-title">넷그룹 파일</block>
+  <block id="519958cfc29f20a2cea0438ac050e8bd" category="paragraph">넷그룹 파일 세부 정보를 검색하고 SVM용 파일을 삭제할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="f2be2bb6f022a2ec208f7b9ce6a2c155" category="section-title">CIFS 접속</block>
+  <block id="292b052ce2719671eb57c58f83562861" category="paragraph">설정된 CIFS 접속 목록을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="4d6ac2d984cc413aff1fe87f7e0fa660" category="paragraph">CIFS 서버는 공유, 파일 및 디렉토리 액세스 권한을 결정할 때 인증에 로컬 그룹을 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.9에서 도입되었으며 ONTAP 9.10으로 크게 확장되었습니다.</block>
+  <block id="494abb7dd5b763270d790ff3ee48084d" category="section-title">CIFS NetBIOS입니다</block>
+  <block id="c775568e4d8c67f72b663a73cb197aba" category="paragraph">클러스터의 NetBIOS 연결에 대한 정보를 표시할 수 있습니다. 세부 정보에는 IP 주소 및 등록된 NetBIOS 이름이 포함됩니다. 이 정보는 이름 확인 문제를 해결하는 데 도움이 될 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="ef5c06085d29fcbcb6138c9c185bda09" category="section-title">CIFS 세션 파일</block>
+  <block id="7c652b32ce4519406f03f09a9ce29110" category="paragraph">여러 필터링 옵션을 기반으로 CIFS 세션에 대해 열려 있는 파일 목록을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="94a2d8f06ad95f4f574506a5f9b95aa7" category="section-title">CIFS 섀도 복사본</block>
+  <block id="7adcc24f3e21384d34551c471bc32af6" category="paragraph">Microsoft 원격 볼륨 섀도 복사본 서비스는 기존 Microsoft VSS 기능의 확장입니다. VSS 기능을 확장하여 SMB 공유의 섀도우 복제를 지원합니다. 이 기능은 이제 ONTAP REST API를 통해 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="6fd52b48358df3c671bb7b3860da8a55" category="section-title">CIFS 사용자 및 그룹 대량 가져오기</block>
+  <block id="63f4ee6b7fd934fe707edb4b8c4d57dc" category="paragraph">새로운 REST API 엔드포인트를 사용하여 CIFS 로컬 사용자, 그룹 및 그룹 구성원 정보를 대량으로 가져올 수 있을 뿐 아니라 요청 상태를 모니터링할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="1deaf7cba2dce61080af964b90af69c6" category="section-title">NFS 연결 클라이언트 맵</block>
+  <block id="dd286c6ea02dd70eb8505c2eae2a0f20" category="paragraph">연결된 클라이언트에 대한 NFS 맵 정보는 새 엔드포인트를 통해 사용할 수 있습니다. 노드, SVM, IP 주소에 대한 세부 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="88882495c6bab93dd3c2b495093552f5" category="section-title">파일이 이동합니다</block>
+  <block id="372394bf9fc945311be3935c83ca5258" category="paragraph">이러한 REST API 엔드포인트를 사용하여 두 FlexVol 볼륨 간 또는 FlexGroup 볼륨 내에서 파일을 이동할 수 있습니다. 요청이 수락되면 진행 상황과 상태를 모니터링할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="283176e6feb211f8532b2c7c9263cd08" category="section-title">풀</block>
+  <block id="d15846f45a1f4b49fe2803b2a7f9a82d" category="paragraph">공유 스토리지 풀을 생성하고 클러스터에서 스토리지 풀을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
+  <block id="e6349d14d4601aa8ecdd1040b495f453" category="paragraph">클러스터의 스토리지 포트입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.11.1로 향상되었습니다.</block>
+  <block id="192e7108f5ecb3d6c9efb673e84c4942" category="paragraph">여러 관리자 확인 기능은 ONTAP 명령 또는 작업에 대한 액세스를 보호하기 위한 유연한 인증 프레임워크를 제공합니다. 다음 영역에서 액세스 정의, 요청 및 승인을 지원하는 새로운 엔드포인트가 17개 있습니다.</block>
+  <block id="1f4da964f8eab62e96e8cfe406e44364" category="list-text">규칙</block>
+  <block id="b134a801a1a3888498968fc4ea760cf7" category="list-text">요청</block>
+  <block id="3d2e7e9224f83f4694b1be45b9e158ba" category="list-text">승인 그룹</block>
+  <block id="91c9a56d680aaaf645cf6a17c6a57626" category="paragraph">여러 관리자가 액세스를 승인할 수 있는 옵션을 제공하면 ONTAP 및 IT 환경의 보안이 향상됩니다. 이러한 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
 </blocks>
