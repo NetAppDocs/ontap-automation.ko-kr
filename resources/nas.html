@@ -939,7 +939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:51 +0000">04/18/2022</time>
+    <time datetime="2022-05-05 12:25:03 +0000">05/05/2022</time>
     
   
 
@@ -966,6 +966,12 @@
 </div>
 </div>
 <div class="sect3">
+<h4 id="cifs-접속">CIFS 접속</h4>
+<div class="paragraph">
+<p>설정된 CIFS 접속 목록을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="cifs-도메인입니다">CIFS 도메인입니다</h4>
 <div class="paragraph">
 <p>CIFS 도메인에 대한 지원이 클러스터 및 SVM 레벨에서 다양한 유형의 엔드포인트로 추가되었습니다. 도메인 구성을 검색할 뿐만 아니라 기본 도메인 컨트롤러를 만들고 제거할 수도 있습니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</p>
@@ -984,15 +990,33 @@
 </div>
 </div>
 <div class="sect3">
+<h4 id="cifs-netbios입니다">CIFS NetBIOS입니다</h4>
+<div class="paragraph">
+<p>클러스터의 NetBIOS 연결에 대한 정보를 표시할 수 있습니다. 세부 정보에는 IP 주소 및 등록된 NetBIOS 이름이 포함됩니다. 이 정보는 이름 확인 문제를 해결하는 데 도움이 될 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="cifs-서비스">CIFS 서비스</h4>
 <div class="paragraph">
 <p>CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</p>
 </div>
 </div>
 <div class="sect3">
+<h4 id="cifs-세션-파일">CIFS 세션 파일</h4>
+<div class="paragraph">
+<p>여러 필터링 옵션을 기반으로 CIFS 세션에 대해 열려 있는 파일 목록을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="cifs-세션">CIFS 세션</h4>
 <div class="paragraph">
 <p>이 API를 사용하여 CIFS 세션에 대한 자세한 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.8 REST API에 도입되었으며 ONTAP 9.9로 향상되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cifs-섀도-복사본">CIFS 섀도 복사본</h4>
+<div class="paragraph">
+<p>Microsoft 원격 볼륨 섀도 복사본 서비스는 기존 Microsoft VSS 기능의 확장입니다. VSS 기능을 확장하여 SMB 공유의 섀도우 복제를 지원합니다. 이 기능은 이제 ONTAP REST API를 통해 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1011,6 +1035,12 @@
 <h4 id="cifs-unix-symlink-매핑">CIFS UNIX symlink 매핑</h4>
 <div class="paragraph">
 <p>CIFS와 UNIX 클라이언트 모두 동일한 데이터 저장소를 액세스할 수 있습니다. UNIX 클라이언트가 심볼 링크를 생성할 때 이러한 매핑은 CIFS 클라이언트를 지원하기 위해 다른 파일 또는 폴더에 대한 참조를 제공합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cifs-사용자-및-그룹-대량-가져오기">CIFS 사용자 및 그룹 대량 가져오기</h4>
+<div class="paragraph">
+<p>새로운 REST API 엔드포인트를 사용하여 CIFS 로컬 사용자, 그룹 및 그룹 구성원 정보를 대량으로 가져올 수 있을 뿐 아니라 요청 상태를 모니터링할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1059,6 +1089,12 @@
 <h4 id="잠금">잠금</h4>
 <div class="paragraph">
 <p>잠금은 여러 클라이언트가 동시에 같은 파일에 액세스하는 파일에 대한 동시 액세스에 제한을 적용하는 동기화 메커니즘입니다. 이러한 끝점을 사용하여 잠금을 검색하고 삭제할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="nfs-연결-클라이언트-맵">NFS 연결 클라이언트 맵</h4>
+<div class="paragraph">
+<p>연결된 클라이언트에 대한 NFS 맵 정보는 새 엔드포인트를 통해 사용할 수 있습니다. 노드, SVM, IP 주소에 대한 세부 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</p>
 </div>
 </div>
 <div class="sect3">
