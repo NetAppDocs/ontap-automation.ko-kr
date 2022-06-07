@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">한국어</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">한국어</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/resources/nvme.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/nvme.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/nvme.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/nvme.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/nvme.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/resources/nvme.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/resources/nvme.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/resources/nvme.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/resources/nvme.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/resources/nvme.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/index.html">
         ONTAP 자동화 문서
       </a></li><li class="subfolders "><a href="#">
@@ -939,61 +931,36 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:51 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:40 +0000">06/07/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>이러한 API 호출을 사용하여 비휘발성 메모리 익스프레스(NVMe)를 지원하는 리소스를 관리할 수 있습니다.</p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="fibre-channel-로그인">Fibre Channel 로그인</h4>
 <div class="paragraph">
 <p>Fibre Channel 로그인은 ONTAP에 로그인한 Fibre Channel 이니시에이터가 구성한 접속을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="nvme-인터페이스">NVMe 인터페이스</h4>
-<div class="paragraph">
-<p>NVMe 인터페이스는 NVMe-oF(NVMe over Fabrics) 프로토콜을 지원하도록 구성된 네트워크 인터페이스입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="nvme-서비스">NVMe 서비스</h4>
-<div class="paragraph">
-<p>NVMe 서비스는 SVM을 위한 NVMe 컨트롤러 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="nvme-하위-시스템-컨트롤러">NVMe 하위 시스템 컨트롤러</h4>
-<div class="paragraph">
-<p>NVMe 하위 시스템 컨트롤러는 호스트와 스토리지 솔루션 간의 동적 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="nvme-하위-시스템-맵">NVMe 하위 시스템 맵</h4>
-<div class="paragraph">
-<p>NVMe 하위 시스템 맵은 NVMe 서브시스템과 NVMe 네임스페이스를 연관한 것입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="nvme-하위-시스템">NVMe 하위 시스템</h4>
-<div class="paragraph">
-<p>NVMe 하위 시스템은 NVMe 연결 호스트 세트에 대한 구성 상태 및 네임스페이스 액세스 제어를 유지합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="네임스페이스">네임스페이스</h4>
 <div class="paragraph">
 <p>NVMe 네임스페이스는 NVMe over Fabrics 프로토콜을 사용하여 SVM에 연결된 호스트에 제공되는 주소 지정 가능한 논리 블록의 모음입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</p>
 </div>
+<div class="paragraph">
+<p>NVMe 인터페이스는 NVMe-oF(NVMe over Fabrics) 프로토콜을 지원하도록 구성된 네트워크 인터페이스입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NVMe 서비스는 SVM을 위한 NVMe 컨트롤러 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NVMe 하위 시스템 컨트롤러는 호스트와 스토리지 솔루션 간의 동적 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NVMe 하위 시스템 맵은 NVMe 서브시스템과 NVMe 네임스페이스를 연관한 것입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>NVMe 하위 시스템은 NVMe 연결 호스트 세트에 대한 구성 상태 및 네임스페이스 액세스 제어를 유지합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</p>
 </div>
 
     </article>
@@ -1141,4 +1108,5 @@
     </script>
     <script src='/ko-kr/ontap-automation/js/www-ntap.js'></script>
     <script src='/ko-kr/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ko-kr/ontap-automation/js/sidebar.js'></script>
   </body></html>

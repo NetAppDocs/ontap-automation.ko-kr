@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">한국어</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">한국어</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-automation/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-automation/rest/operational_characteristics.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/operational_characteristics.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/operational_characteristics.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/operational_characteristics.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/operational_characteristics.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-automation/rest/operational_characteristics.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-automation/rest/operational_characteristics.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-automation/rest/operational_characteristics.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-automation/rest/operational_characteristics.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-automation/rest/operational_characteristics.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -751,7 +743,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-automation/index.html">
         ONTAP 자동화 문서
       </a></li><li class="subfolders "><a href="#">
@@ -939,7 +931,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:51 +0000">04/18/2022</time>
+    <time datetime="2022-06-07 16:06:40 +0000">06/07/2022</time>
     
   
 
@@ -953,14 +945,17 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="요청-및-응답-api-트랜잭션">요청 및 응답 API 트랜잭션</h3>
+<div class="sect1">
+<h2 id="요청-및-응답-api-트랜잭션">요청 및 응답 API 트랜잭션</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>모든 REST API 호출은 클라이언트에 대한 관련 응답을 생성하는 ONTAP 시스템에 대한 HTTP 요청으로 수행됩니다. 이 요청/응답 쌍은 API 트랜잭션으로 간주됩니다. API를 사용하기 전에 요청 및 응답 출력의 내용을 제어하는 데 사용할 수 있는 입력 변수에 대해 잘 알고 있어야 합니다.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="crud-작업-지원">CRUD 작업 지원</h3>
+</div>
+<div class="sect1">
+<h2 id="crud-작업-지원">CRUD 작업 지원</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP REST API를 통해 사용 가능한 각 리소스는 CRUD 모델을 기반으로 액세스됩니다.</p>
 </div>
@@ -984,8 +979,10 @@
 <p>일부 리소스의 경우 일부 작업만 지원됩니다. 각 리소스에 대한 자세한 내용은 ONTAP 클러스터의 ONTAP API 설명서 페이지를 참조하십시오.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="오브젝트-식별자">오브젝트 식별자</h3>
+</div>
+<div class="sect1">
+<h2 id="오브젝트-식별자">오브젝트 식별자</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>각 리소스 인스턴스 또는 개체는 만들 때 고유한 식별자가 할당됩니다. 대부분의 경우 식별자는 128비트 UUID입니다. 이러한 식별자는 특정 ONTAP 클러스터 내에서 전역적으로 고유합니다. 새 개체 인스턴스를 만드는 API 호출을 실행하면 연결된 ID 값이 있는 URL이 HTTP 응답의 위치 헤더에 있는 호출자에게 반환됩니다. 식별자를 추출하여 리소스 인스턴스를 참조할 때 후속 호출에 사용할 수 있습니다.</p>
 </div>
@@ -1002,14 +999,18 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="개체-인스턴스-및-컬렉션">개체 인스턴스 및 컬렉션</h3>
+</div>
+<div class="sect1">
+<h2 id="개체-인스턴스-및-컬렉션">개체 인스턴스 및 컬렉션</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>API 호출은 리소스 경로 및 HTTP 메서드에 따라 특정 개체 인스턴스 또는 개체 컬렉션에 적용될 수 있습니다.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="동기-및-비동기-작업">동기 및 비동기 작업</h3>
+</div>
+<div class="sect1">
+<h2 id="동기-및-비동기-작업">동기 및 비동기 작업</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>ONTAP는 클라이언트로부터 받은 HTTP 요청을 수행하는 두 가지 방법이 있습니다.</p>
 </div>
@@ -1052,8 +1053,10 @@ RETURN_TIMEOUT' 쿼리 매개변수는 비동기 API 호출에서 사용할 수 
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="보안">보안</h3>
+</div>
+<div class="sect1">
+<h2 id="보안">보안</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>REST API와 함께 제공되는 보안은 주로 ONTAP에서 사용할 수 있는 기존 보안 기능을 기반으로 합니다. 다음 보안은 API에서 사용됩니다.</p>
 </div>
@@ -1085,8 +1088,14 @@ RETURN_TIMEOUT' 쿼리 매개변수는 비동기 API 호출에서 사용할 수 
 </li>
 </ul>
 </div>
-<div class="paragraph">
+<div class="ulist">
+<div class="title">관련 정보</div>
+<ul>
+<li>
 <p><a href="security_using_rbac.html">"RBAC를 사용한 보안"</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -1235,4 +1244,5 @@ RETURN_TIMEOUT' 쿼리 매개변수는 비동기 API 호출에서 사용할 수 
     </script>
     <script src='/ko-kr/ontap-automation/js/www-ntap.js'></script>
     <script src='/ko-kr/ontap-automation/js/tabbed-blocks.js'></script>
+    <script src='/ko-kr/ontap-automation/js/sidebar.js'></script>
   </body></html>
