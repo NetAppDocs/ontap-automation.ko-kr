@@ -18,7 +18,7 @@ ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 �
 
 
 
-=== ONTAP 9 리소스
+== ONTAP 9 리소스
 
 * https://docs.netapp.com/us-en/ontap/["ONTAP 9 설명서"^]
 +
@@ -40,7 +40,7 @@ ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 �
 
 
 
-=== ONTAP 9 개발자 리소스
+== ONTAP 9 개발자 리소스
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI를 통한 REST API 매핑 정보"^]
 +
@@ -62,7 +62,7 @@ ONTAP Python 클라이언트 라이브러리를 포함하여 ONTAP REST API를 �
 
 
 
-=== 비디오
+== 비디오
 
 * https://www.youtube.com/watch?v=Wws3SB5d9Ss["NetApp ONTAP Python 클라이언트 라이브러리 시작하기"^]
 +
@@ -72,7 +72,7 @@ NetApp Python 클라이언트 라이브러리에 대한 소개와 라이브러�
 
 
 
-=== NetApp 리소스
+== NetApp 리소스
 
 * https://mysupport.netapp.com/["NetApp 지원"^]
 +
