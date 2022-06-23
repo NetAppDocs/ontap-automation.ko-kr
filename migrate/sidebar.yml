@@ -1,0 +1,10 @@
+---
+section: migrate
+title: REST API로 마이그레이션합니다
+entries:
+- title: 개요
+  url: "/migrate/overview.html"
+- title: REST 매핑에 대한 ONTAPI
+  url: "/migrate/mapping.html"
+- title: 블로그
+  url: "/migrate/blogs.html"

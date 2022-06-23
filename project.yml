@@ -19,6 +19,7 @@ sidebar:
   - section: python
   - section: reference
   - section: automate
+  - section: migrate
   - section: additional
   - title: 법적 고지
     url: "/legal-notices.html"
