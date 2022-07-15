@@ -6,5 +6,7 @@ entries:
   url: "/migrate/overview.html"
 - title: REST 매핑에 대한 ONTAPI
   url: "/migrate/mapping.html"
+- title: 성능 카운터
+  url: "/migrate/performance-counters.html"
 - title: 블로그
   url: "/migrate/blogs.html"
