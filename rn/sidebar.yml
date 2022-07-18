@@ -4,5 +4,7 @@ title: 릴리즈 노트
 entries:
 - title: 새로운 소식
   url: "/rn/whats_new.html"
+- title: 알려진 제한 사항
+  url: "/rn/known_limitations.html"
 - title: ONTAP 릴리즈 노트
   url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508

@@ -1073,4 +1073,12 @@
   <block id="445271c2961902f1af016fe036a233ca" category="paragraph">이 REST API 호출을 사용하여 테이블의 행을 볼 수 있습니다. 이 경우 Counter Manager 개체의 인스턴스가 어떤 것인지 알 수 있습니다.</block>
   <block id="48cea788f1e546862ce3c6b34e79dd3d" category="section-title">특정 Counter Manager 인스턴스를 쿼리합니다</block>
   <block id="3fae5b493cbf17e185ee077370c17c3c" category="paragraph">이 REST API 호출을 사용하여 테이블의 특정 Counter Manager 인스턴스에 대한 성능 카운터 값을 볼 수 있습니다. 이 예에서는 시스템의 전원 공급 장치 중 하나에 대한 성능 카운터 정보를 요청합니다.</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
+  <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다. 이러한 제한 사항은 아래에 설명되어 있습니다. 일반적으로 REST API를 사용할 수 있는 지원되는 모든 ONTAP 릴리스에 각각 적용됩니다. 자세한 내용은 _ONTAP 릴리스_ 필드를 참조하십시오.</block>
+  <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">REST API는 ONTAP 9.6에서 처음 사용할 수 있게 되었습니다.</block>
+  <block id="3a7bd150a3b127f640a55f3e4295ae12" category="paragraph">_ONTAP 릴리스: 지원되는 모든 _</block>
+  <block id="3806b2980e70701200d32d0a7249795f" category="paragraph">모든 REST API 클라이언트 요청은 ONTAP에 의해 수신되고 처리 전에 입력 대기열에 배치됩니다. 도착 속도가 매우 높은 경우 이러한 API 요청을 보유하는 입력 대기 큐가 일시적으로 가득 찰 수 있습니다. 이 경우 각각의 추가 오버플로 요청이 거부됩니다. 다음과 같은 경우:</block>
+  <block id="b313d34412fbec083537488efb6a7265" category="list-text">ONTAP는 들어오는 연결이 대기 대기열 길이를 초과함을 인식하고 연결에 실패했다는 메시지를 기록합니다.</block>
+  <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST 클라이언트는 실패한 연결을 관찰하지만 정확한 동작은 클라이언트에 따라 다를 수 있습니다. 예를 들어 NMSDK 클라이언트에서 "SSL에 연결하지 못했습니다."라는 메시지가 표시됩니다.</block>
+  <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API 입력 대기 큐가 채워지는 경우는 드뭅니다. 그러나 과도한 요청을 거부하면 DOS 공격에 대한 보호가 제공됩니다.</block>
 </blocks>
