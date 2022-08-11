@@ -38,7 +38,6 @@
   <block id="3b182148c9c0009822cea2178fd99584" category="cell">사용자 인증에 실패했습니다.</block>
   <block id="bbf94b34eb32268ada57a3be5062fe7d" category="cell">403</block>
   <block id="722969577a96ca3953e84e3d949dee81" category="cell">금지됨</block>
-  <block id="832bcd57b678ba711a9e21562156a359" category="cell">권한 부여(RBAC) 오류로 인해 액세스가 거부되었습니다.</block>
   <block id="4f4adcbf8c6f66dcfc8a3282ac2bf10a" category="cell">404</block>
   <block id="9e076f5885f5cc16a4b5aeb8de4adff5" category="cell">찾을 수 없습니다</block>
   <block id="24ff0a9484d837d82e7f8f8218e196b6" category="cell">요청에서 참조되는 리소스가 없습니다.</block>
@@ -132,24 +131,6 @@
   <block id="6c5dba7ca23cbe6a8f7fba0f3ffae13c" category="paragraph">ONTAP 애플리케이션은 템플릿, 애플리케이션, 구성 요소, 스냅샷 복사본을 포함한 유형에 따라 정렬됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="7d68becf2598a5efeb5b687dfe7bb035" category="paragraph">정합성 보장 그룹은 스냅샷과 같은 특정 작업을 수행할 때 함께 그룹화되는 볼륨 세트입니다. 이 기능은 단일 볼륨 작업에서 동일한 충돌 일관성 및 데이터 무결성을 단일 볼륨 작업으로 확장합니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
   <block id="000c4dd933d539d502d855e482ad30ed" category="paragraph">이러한 엔드포인트를 사용하여 일관성 그룹의 스냅샷을 복사, 생성, 인벤토리 및 복원할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
-  <block id="1eff307bdee34970a4f1fba8b03f2362" category="doc">RBAC를 사용한 보안</block>
-  <block id="18b4b706d794eaf9349903da4fc0390f" category="paragraph">REST API는 ONTAP를 사용할 때 RBAC(역할 기반 액세스 제어) 기능을 확장합니다. 사용자 지정 역할을 사용하여 사용자 계정을 만들어 REST 끝점에 대한 액세스를 제한할 수 있습니다.</block>
-  <block id="b74460ea0e79c18a13e8aaf7ba6b5575" category="section-title">REST 끝점에 대한 역할을 생성합니다</block>
-  <block id="6a4ac1ce41cb9afd36c8a1b4345eb15a" category="paragraph">REST 역할은 하나 이상의 권한 집합을 통해 정의됩니다. 각 권한은 REST 끝점에 대한 경로 및 연결된 액세스 레벨로 구성됩니다. 각 끝점에 대한 액세스는 세 가지 수준 중 하나로 제공되며 리소스에 대해 사용할 수 있는 HTTP 메서드를 결정합니다. 액세스 수준은 다음과 같습니다.</block>
-  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="list-text">모두</block>
-  <block id="0525ebcee9d40246b4c3fe60fa9dffdf" category="paragraph">모든 HTTP 메소드를 사용할 수 있습니다</block>
-  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="list-text">읽기 전용</block>
-  <block id="38c8b11da703697447ae0e841de8ff94" category="paragraph">GET만 사용할 수 있습니다</block>
-  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">없음</block>
-  <block id="e170b518f0b1211531e4d6a5dc28bd24" category="paragraph">액세스가 허용되지 않습니다</block>
-  <block id="46c2882c6847f54514352d1885b51de6" category="paragraph">다음은 REST 역할에 할당할 수 있는 두 가지 권한의 예입니다.</block>
-  <block id="4fb0f5d620d25bedf9de124abeecb3dd" category="list-text">"access="readonly", path="/api/storage/volumes"</block>
-  <block id="a6c54762c776264191d718908cc8793a" category="list-text">"access="none", path="/api/snapmirror/policies"</block>
-  <block id="fc2e8f1e6bdb078d903709febae2f81c" category="section-title">사용자 지정 역할을 사용하여 사용자 계정을 만듭니다</block>
-  <block id="efce0b822abdb6a64b62590d47b2243d" category="paragraph">높은 수준에서는 다음과 같이 사용자 지정 REST 역할을 사용하여 계정을 만들 수 있습니다.</block>
-  <block id="5cbfeffa3e5b9da20fef5c63f1ade205" category="list-text">HTTP 관리 프로토콜에 대한 액세스 권한이 있는 사용자 계정을 생성합니다.</block>
-  <block id="388dcc6806f032ea576d4bf906f82f93" category="list-text">원하는 권한으로 REST 역할을 생성합니다.</block>
-  <block id="54f15799e869b562c4b17306f16e44af" category="list-text">사용자 계정을 역할에 연결합니다.</block>
   <block id="f8645777304498f78534eb91dd733f91" category="paragraph">비동기적으로 실행되도록 설계된 API 요청을 실행하면 작업 객체가 항상 생성되어 호출자에게 반환됩니다. 이 작업에서는 요청을 처리하는 백그라운드 작업을 설명하고 앵커를 지정합니다. HTTP 상태 코드에 따라 작업의 상태를 검색하여 요청이 성공했는지 확인해야 합니다.</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">API 참조입니다</block>
   <block id="a8309049942086c2cb34d06b79f3e1f8" category="section-title">요청 처리 방법 제어</block>
@@ -467,7 +448,6 @@
   <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">HTTP 수준에서는 API 트랜잭션에 기본 인증이 사용됩니다. base64 문자열에 사용자 이름과 암호가 있는 HTTP 헤더가 각 요청에 추가됩니다.</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">ONTAP 인증</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">ONTAP는 역할 기반 인증 모델을 구현합니다. ONTAP REST API 또는 API 설명서 페이지에 액세스할 때 사용하는 계정에 적절한 권한이 있어야 합니다.</block>
-  <block id="46c2a957c1f02e81b9096c86660e0264" category="paragraph"><block ref="46c2a957c1f02e81b9096c86660e0264" category="inline-link-macro-rx"></block></block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">클러스터 구성을 검색하는 스크립트입니다</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">다음 스크립트는 Python 클라이언트 라이브러리를 사용하는 방법의 간단한 예를 제공합니다. CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP 클러스터 구성을 검색할 수 있습니다.</block>
   <block id="62e19745c2e31bc4e7e9e3351516716c" category="summary">ONTAP 자동화 문서 포털에 오신 것을 환영합니다.</block>
@@ -986,7 +966,6 @@
   <block id="92b25ca356d0711c23fa00a11a838f16" category="list-text">여러 관리자 검증</block>
   <block id="e7d8af28980ef8f99ebba710f535c906" category="list-text">여러 관리자 확인 기능은 ONTAP 명령 또는 작업에 대한 액세스를 보호하기 위한 유연한 인증 프레임워크를 제공합니다. 제한된 명령을 식별하는 규칙을 정의할 수 있습니다. 사용자가 특정 명령에 대한 액세스를 요청하면 여러 ONTAP 관리자가 적절한 승인을 부여할 수 있습니다.</block>
   <block id="4f254b5768d1e18364bedb0b2402d10a" category="list-text">SnapMirror의 향상된 기능</block>
-  <block id="5f3e5b310eaf255b1da217cd7d703fc7" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다.</block>
   <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">이름 서비스 캐시 지원</block>
   <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">ONTAP 이름 서비스는 성능 및 복원성을 향상시키는 캐싱을 지원하도록 개선되었습니다. 이제 REST API를 통해 이름 서비스 캐시 구성에 액세스할 수 있습니다. 호스트, UNIX 사용자, UNIX 그룹 및 넷그룹을 비롯한 여러 레벨에서 설정을 적용할 수 있습니다.</block>
   <block id="392cdf2ebad4890343218b2779c17ff3" category="paragraph">FC(파이버 채널) 패브릭 REST API 엔드포인트를 사용하여 FC 네트워크에 대한 정보를 검색할 수 있습니다. 여기에는 ONTAP 클러스터와 FC 패브릭 간 연결, 패브릭을 구성하는 스위치 및 활성 zoneset의 영역이 포함됩니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
@@ -1081,4 +1060,8 @@
   <block id="b313d34412fbec083537488efb6a7265" category="list-text">ONTAP는 들어오는 연결이 대기 대기열 길이를 초과함을 인식하고 연결에 실패했다는 메시지를 기록합니다.</block>
   <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST 클라이언트는 실패한 연결을 관찰하지만 정확한 동작은 클라이언트에 따라 다를 수 있습니다. 예를 들어 NMSDK 클라이언트에서 "SSL에 연결하지 못했습니다."라는 메시지가 표시됩니다.</block>
   <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API 입력 대기 큐가 채워지는 경우는 드뭅니다. 그러나 과도한 요청을 거부하면 DOS 공격에 대한 보호가 제공됩니다.</block>
+  <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">인증 오류로 인해 액세스가 거부되었습니다.</block>
+  <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다. 이와 관련하여 대량 스냅샷 복사본을 생성 및 관리할 수 있는 지원이 제공됩니다.</block>
+  <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI 보고 도구</block>
+  <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">ONTAPI 보고 도구는 고객과 파트너가 자신의 환경에서 ONTAPI 사용을 식별할 수 있도록 도와줍니다. Python 소프트웨어 외에도 NetApp Lab on Demand의 비디오 및 발전 지원도 제공됩니다. 이 툴은 ONTAPI에서 ONTAP REST API로 마이그레이션할 때 다른 리소스를 제공합니다.</block>
 </blocks>
