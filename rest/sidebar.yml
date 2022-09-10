@@ -28,4 +28,14 @@ entries:
     url: "/rest/access_ontap_cli.html"
   - title: 스토리지 리소스에 대한 성능 메트릭
     url: "/rest/performance_metrics.html"
+- title: RBAC 보안
+  entries:
+  - title: 개요
+    url: "/rest/rbac_overview.html"
+  - title: 역할 및 사용자 작업
+    url: "/rest/rbac_roles_users.html"
+  - title: 역할 정의 예
+    url: "/rest/rbac_sample_roles.html"
+  - title: 역할을 가진 사용자를 생성합니다
+    url: "/rest/rbac_wf_create_user.html"
 - section: resources

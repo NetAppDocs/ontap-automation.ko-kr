@@ -956,7 +956,6 @@
   <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="section-title">ONTAP 9.11.1</block>
   <block id="fed998214be47115214a92dcb94e441c" category="paragraph">ONTAP 9.11.1은 거의 100개의 새로운 API 호출을 통해 ONTAP REST API의 기능을 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈에서는 고객이 Data ONTAP API(ONTAPI 또는 ZAPI)에서 ONTAP REST API로 마이그레이션할 수 있도록 지원합니다.</block>
   <block id="d6e857e52e070e2d7dc74670d30f4681" category="list-text">세분화된 RBAC</block>
-  <block id="abc796662cfaf549fac897b99e75df46" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. 필요에 따라 기존 역할을 사용하거나 새 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 액세스 정의와 연결될 수 있으며, 각 역할은 원하는 액세스 수준과 함께 명령 또는 REST API 호출을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 새로운 액세스 권한도 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다.</block>
   <block id="a3139937e50cf495467ef74d1e2841ff" category="list-text">성능 카운터</block>
   <block id="654266e542ab86fb9663ace26fddbb0a" category="list-text">이전 ONTAP 릴리즈에서는 시스템의 작동 특성에 대한 통계 정보를 유지했습니다. 9.11.1 릴리스 버전에서는 이 정보가 향상되어 이제 REST API를 통해 사용할 수 있습니다. 관리자 또는 자동화된 프로세스에서 데이터에 액세스하여 시스템 성능을 확인할 수 있습니다. 카운터 관리자 하위 시스템에서 유지 관리하는 통계 정보는 테이블 및 행을 사용하여 데이터베이스 형식으로 표시됩니다. 이러한 성능 향상을 통해 ONTAP REST API는 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 됩니다.</block>
   <block id="13a73a2c197166eea31c701558811cf4" category="list-text">애그리게이트 관리</block>
@@ -1064,4 +1063,200 @@
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다. 이와 관련하여 대량 스냅샷 복사본을 생성 및 관리할 수 있는 지원이 제공됩니다.</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI 보고 도구</block>
   <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">ONTAPI 보고 도구는 고객과 파트너가 자신의 환경에서 ONTAPI 사용을 식별할 수 있도록 도와줍니다. Python 소프트웨어 외에도 NetApp Lab on Demand의 비디오 및 발전 지원도 제공됩니다. 이 툴은 ONTAPI에서 ONTAP REST API로 마이그레이션할 때 다른 리소스를 제공합니다.</block>
+  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">RBAC 보안 개요</block>
+  <block id="58722e059e2f5bb0441a986407122c33" category="paragraph">ONTAP에는 강력하고 확장 가능한 RBAC(역할 기반 액세스 제어) 기능이 포함되어 있습니다. REST API 및 CLI를 통해 노출된 리소스에 대한 사용자의 액세스를 제어하는 역할을 각 계정에 다르게 할당할 수 있습니다. 이 역할은 다양한 ONTAP 사용자에 대해 서로 다른 수준의 관리 액세스를 정의합니다.</block>
+  <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">RBAC 발전 요약</block>
+  <block id="d5aca3da13a8a09efdea7a75347a5805" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1로 대폭 향상되었습니다. 을 참조하십시오 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 및 <block ref="5c7637441553bbdd364a0c84153850ad" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="8964641d12d0ef111bd01efe34f212c2" category="section-title">ONTAP 역할</block>
+  <block id="9929e2b53efd5ebe9b5548b705552bf0" category="paragraph">역할은 사용자가 수행할 수 있는 작업을 집합적으로 정의하는 권한 집합입니다. 각 권한은 특정 액세스 경로 및 관련 액세스 수준을 식별합니다. 역할은 사용자 계정에 할당되며 액세스 제어 결정을 내릴 때 ONTAP에 의해 적용됩니다.</block>
+  <block id="062c6b1332887634d0f4ba9bb07e2408" category="section-title">역할 유형</block>
+  <block id="b0ad3654895321cb1caaae438045af81" category="paragraph">역할에는 두 가지 유형이 있습니다. ONTAP이 발전함에 따라 다양한 환경에 맞게 조정되고 도입되었습니다.</block>
+  <block id="506d78eb05f037a1ad45a240957b6c58" category="inline-link-macro">역할 유형 비교</block>
+  <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
+  <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">휴식</block>
+  <block id="411937541f9b6022414480ec98e9755c" category="cell">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. 이후 CLI 액세스도 지원하도록 개선되었습니다.</block>
+  <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">기존</block>
+  <block id="4d43d1a54808136d96375f219fc0dcb2" category="cell">이는 ONTAP 9.6 이전에 포함된 레거시 역할입니다. ONTAP CLI 환경에 도입되었으며 RBAC 보안의 기본 요소로 계속 사용됩니다.</block>
+  <block id="5d113f2038d289f391614c39043629e8" category="section-title">범위</block>
+  <block id="4d3e5f58358b9c29b97affd5e8434a1e" category="paragraph">모든 역할에는 해당 역할이 정의 및 적용되는 범위 또는 컨텍스트가 있습니다. 범위는 특정 역할이 사용되는 위치와 방법을 결정합니다.</block>
+  <block id="8d577cc9e0b9e9935efe5ffbcde09c72" category="admonition">ONTAP 사용자 계정에도 사용자 정의 및 사용 방법을 결정하는 유사한 범위가 있습니다.</block>
+  <block id="e2e4827c9c3b7cf3083d73d425e1d919" category="cell">클러스터 범위가 있는 역할은 ONTAP 클러스터 레벨에 정의되어 있습니다. 클러스터 레벨 사용자 계정과 연결되어 있습니다.</block>
+  <block id="10b210703eb6d8918b4120232efd44e2" category="cell">SVM 범위를 갖는 역할은 특정 데이터 SVM에 대해 정의됩니다. 동일한 SVM의 사용자 계정에 할당됩니다.</block>
+  <block id="7ca07e19b9186cffe90862b73501f251" category="section-title">역할 정의의 소스</block>
+  <block id="3095c79bd4dca87b8e93803274e9088e" category="paragraph">ONTAP 역할은 두 가지 방법으로 정의할 수 있습니다.</block>
+  <block id="e93f79ace029c06aa372cd006dcd9ac3" category="cell">역할 소스</block>
+  <block id="90589c47f06eb971d548591f23c285af" category="cell">맞춤형</block>
+  <block id="6598f0c7620a42efbd140fa0b869d765" category="cell">ONTAP 관리자는 사용자 지정 역할을 만들 수 있습니다. 이러한 역할은 특정 환경 및 보안 요구 사항에 맞게 조정할 수 있습니다.</block>
+  <block id="f09090e6eca8bb5cc1a878687719625a" category="cell">내장</block>
+  <block id="f350fe2d14470302a201ce653aef6dc7" category="cell">맞춤형 역할을 통해 더 많은 유연성을 제공할 뿐만 아니라, 클러스터 및 SVM 레벨에서 모두 사용할 수 있는 기본 제공 역할 세트가 있습니다. 이러한 역할은 미리 정의되어 있으며 일반적인 관리 작업에 사용할 수 있습니다.</block>
+  <block id="62448716698cd3dee76278ec04325dc0" category="section-title">역할 매핑 및 ONTAP 처리</block>
+  <block id="4d2de6f7accbd1a26f13c3928218104e" category="paragraph">사용 중인 ONTAP 릴리즈에 따라 전체 또는 거의 모든 REST API 호출이 하나 이상의 CLI 명령에 매핑됩니다. REST 역할을 만들면 기존 또는 레거시 역할도 만들어집니다. 이 * Mapped * 기존 역할은 해당 CLI 명령을 기반으로 하며 조작하거나 변경할 수 없습니다.</block>
+  <block id="de9e9db15eb710d5170182ee39732a06" category="admonition">역 역할 매핑은 지원되지 않습니다. 즉, 기존 역할을 생성해도 해당 REST 역할은 발생하지 않습니다.</block>
+  <block id="ca0078e4d54742b869eb7b6591aa6af5" category="paragraph">기존 역할은 모든 ONTAP 9 릴리즈에 포함됩니다. 나머지 역할은 나중에 소개되었으며 아래 설명과 같이 발전했습니다.</block>
+  <block id="7648ead63da8c6fc6b7fe57fb62e4522" category="paragraph">REST API는 ONTAP 9.6과 함께 도입되었습니다. 나머지 역할도 이 릴리스에 포함되어 있습니다. 또한 REST 역할을 생성하면 이에 상응하는 기존 역할도 생성됩니다.</block>
+  <block id="6a62a58ede22637d91633cdd7ff505cb" category="paragraph">9.7에서 9.10.1까지의 각 ONTAP 릴리스에는 REST API의 향상된 기능이 포함되어 있습니다. 예를 들어, 각 릴리즈마다 다른 REST 엔드포인트가 추가되었습니다. 그러나 두 역할 유형의 생성 및 관리는 별개였습니다. 또한 ONTAP 9.10.1은 리소스 검증된 엔드포인트인 스냅샷 REST 엔드포인트 "/api/storage/volumes/{vol.uuid}/snapshots"에 대한 REST RBAC 지원을 추가했습니다.</block>
+  <block id="3b2cef6b36a025e216ad35dbd14c61d9" category="paragraph">이 릴리즈에서는 REST API를 사용하여 기존 역할을 구성 및 관리할 수 있는 기능이 추가되었습니다. REST 역할에 대한 추가 액세스 레벨도 추가되었습니다.</block>
+  <block id="61d21be565a36251bbca59c0ffb7571d" category="doc">역할 및 사용자 작업</block>
+  <block id="27aa538dd8ea48453b7b9cda60cec170" category="paragraph">기본적인 RBAC 기능을 이해한 후에는 ONTAP 역할 및 사용자 작업을 시작할 수 있습니다.</block>
+  <block id="a3aaf0e2a971f7f48ed580f3315dca1c" category="section-title">관리 액세스</block>
+  <block id="8cf982806ff9edbe00ff4b0b3bf7d35a" category="paragraph">REST API 또는 명령줄 인터페이스를 통해 ONTAP 역할을 생성하고 관리할 수 있습니다. 액세스 세부 정보는 아래에 설명되어 있습니다.</block>
+  <block id="aba3d4b49c454e1974970e7b5514b001" category="section-title">REST API</block>
+  <block id="eeba57b75c93ed3bdf549a9f1fe3a9d9" category="paragraph">RBAC 역할 및 사용자 계정으로 작업할 때 사용할 수 있는 여러 엔드포인트가 있습니다. 표의 처음 4개는 역할을 만들고 관리하는 데 사용됩니다. 마지막 두 가지는 사용자 계정을 만들고 관리하는 데 사용됩니다.</block>
+  <block id="6463a333fcb15c8030c87eb9b29fbbda" category="admonition">ONTAP 온라인 을 참조하십시오 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 설명서를 참조하십시오.</block>
+  <block id="2a6ba72e93aa7fa676d07973ed2716bb" category="cell">엔드포인트</block>
+  <block id="674137167efaa07fbce7a0d3970c747e" category="cell">'/security/roles'</block>
+  <block id="0d0d537aabf360d3d02a985805096459" category="cell">이 끝점을 사용하면 새 REST 역할을 만들 수 있습니다. ONTAP 9.11.1부터 기존 역할을 만들 수도 있습니다. 이 경우 ONTAP는 입력 매개 변수를 기반으로 역할 유형을 결정합니다. 정의된 역할 목록을 검색할 수도 있습니다.</block>
+  <block id="384efb63fbd15e4529c0409042dd0a1a" category="cell">'/security/roles/{owner.UUID}/{name}'</block>
+  <block id="4523dd66271b63b7a5edc75d6632702b" category="cell">특정 클러스터 또는 SVM 범위 역할을 검색하거나 삭제할 수 있습니다. UUID 값은 역할이 정의된 SVM(클러스터 또는 데이터 SVM)을 식별합니다. 이름 값은 역할의 이름입니다.</block>
+  <block id="b4baf00a357ccbdd857541fc36a0f872" category="cell">'/security/roles/{owner.UUID}/{name}/Privileges'</block>
+  <block id="6f6460bb3399f7f6d49821ddce2e477f" category="cell">이 끝점을 사용하면 특정 역할에 대한 권한을 구성할 수 있습니다. 기본 제공 역할은 검색할 수 있지만 업데이트할 수는 없습니다. 자세한 내용은 ONTAP 릴리스의 API 참조 설명서를 참조하십시오.</block>
+  <block id="dcdf4cd9d3ea33d7d01f5a89aeea75e2" category="cell">'/security/roles/{owner.UUID}/{name}/Privileges/[path]'</block>
+  <block id="6673535977490c777d23ca9e8a45a486" category="cell">특정 권한에 대한 액세스 수준 및 선택적 쿼리 값을 검색, 수정 및 삭제할 수 있습니다. 자세한 내용은 ONTAP 릴리스의 API 참조 설명서를 참조하십시오.</block>
+  <block id="4cc3d3a2aa5bfe51d0d2792c655b67ad" category="cell">'/security/accounts'</block>
+  <block id="2f3b2ba46152562542ab04259b7a8171" category="cell">이 엔드포인트를 사용하면 새 클러스터 또는 SVM 범위 사용자 계정을 생성할 수 있습니다. 계정이 작동하기 전에 몇 가지 유형의 정보를 포함시키거나 추가해야 합니다. 정의된 사용자 계정 목록을 검색할 수도 있습니다.</block>
+  <block id="d1f3dc7907acc82b71574af1080a6310" category="cell">'/security/accounts/{owner.UUID}/{name}'</block>
+  <block id="c27ceb88f7a8fe225b51dff15ba4b354" category="cell">특정 클러스터 또는 SVM 범위 사용자 계정을 검색, 수정, 삭제할 수 있습니다. UUID 값은 사용자가 정의된 SVM(클러스터 또는 데이터 SVM)을 식별합니다. 이름 값은 계정의 이름입니다.</block>
+  <block id="31581907c3d44270d8d9879f8e2de965" category="section-title">명령줄 인터페이스입니다</block>
+  <block id="981e9692e99502c9afcf28db73e6c2b1" category="paragraph">관련 ONTAP CLI 명령어는 다음과 같다. 모든 명령은 클러스터 수준에서 관리자 계정을 통해 액세스합니다.</block>
+  <block id="ee97be03cb04119af45014d815621ce1" category="cell">명령</block>
+  <block id="ca9dd55dcbb8b938f26b7f8dd22f6cca" category="cell">보안 로그인</block>
+  <block id="5f15585a7cb8838549c55b2ec1de4896" category="cell">사용자 로그인을 만들고 관리하는 데 필요한 명령이 들어 있는 디렉토리입니다.</block>
+  <block id="7ed3c6fc57f3b9c9d3312883a677fc0c" category="cell">보안 로그인 REST 역할</block>
+  <block id="49b69c82be3726b8d023f845613b6155" category="cell">사용자 로그인과 관련된 REST 역할을 생성하고 관리하는 데 필요한 명령이 들어 있는 디렉토리입니다.</block>
+  <block id="fd4ee23a0bf3ca82533e1f7a7de27772" category="cell">'보안 로그인 역할</block>
+  <block id="acc4309a3b8e25c32803f433c0a190c0" category="cell">이 디렉터리는 사용자 로그인과 관련된 기존 역할을 만들고 관리하는 데 필요한 명령이 들어 있는 디렉터리입니다.</block>
+  <block id="4decfe07f6af497a150cb2dd84ce7618" category="section-title">역할 정의</block>
+  <block id="46d0a023573398c2cfe398ea504c5b5f" category="paragraph">나머지 역할과 기존 역할은 일련의 특성을 통해 정의됩니다.</block>
+  <block id="1d1608988a11a1204e12efd22bd6a146" category="paragraph">역할은 ONTAP 클러스터 또는 클러스터 내의 특정 데이터 SVM에서 소유할 수 있습니다. 또한 소유자는 역할의 범위를 암시적으로 결정합니다.</block>
+  <block id="b434eb8af08e5c94b9271b86a8217879" category="paragraph">모든 역할은 범위 내에서 고유한 이름을 가져야 합니다. 클러스터 역할의 이름은 ONTAP 클러스터 수준에서 고유해야 하며 SVM 역할은 특정 SVM 내에서 고유해야 합니다.</block>
+  <block id="fd8b8935b85c9f617a16997d45f93c94" category="admonition">새로운 REST 역할의 이름은 기존 역할과 REST 역할 사이에서 고유해야 합니다. REST 역할을 생성하면 이름이 같은 새로운 기존 _mapping_role도 생성되기 때문입니다.</block>
+  <block id="77a2d605b3b7705d7936fcfb6e80b036" category="paragraph">모든 역할에는 하나 이상의 권한이 포함됩니다. 각 권한은 특정 리소스 또는 명령과 연결된 액세스 레벨을 식별합니다.</block>
+  <block id="d4613ce1ce58f0172e8a4a07c9582cdf" category="section-title">권한</block>
+  <block id="71513b4ed1acfdfc0134e001c3c70459" category="paragraph">역할에는 하나 이상의 권한이 포함될 수 있습니다. 각 권한 정의는 튜플이며 특정 리소스 또는 작업에 대한 액세스 수준을 설정합니다.</block>
+  <block id="2fc537b9f7b2c95f698a1e045c1ca8c7" category="section-title">리소스 경로입니다</block>
+  <block id="8d7997d983e5c291ac67b4bdcb361dc9" category="paragraph">리소스 경로는 REST 엔드포인트 또는 CLI 명령/명령 디렉토리 경로로 식별됩니다.</block>
+  <block id="3ef6a048d1b6066d71370555293feb27" category="paragraph">API 끝점이 REST 역할의 대상 리소스를 식별했습니다.</block>
+  <block id="d48e991ebf782fddce90ac99f9825722" category="paragraph">CLI 명령은 기존 역할의 타겟을 식별합니다. 명령 디렉토리를 지정할 수도 있습니다. 그러면 ONTAP CLI 계층에 모든 다운스트림 명령이 포함됩니다.</block>
+  <block id="72eb6abf9272757a5494f0d1f1c91658" category="section-title">액세스 수준</block>
+  <block id="c11c543be73418de845a17c9b23ab220" category="paragraph">액세스 수준은 특정 리소스 경로 또는 명령에 대한 역할의 액세스 유형을 정의합니다. 액세스 수준은 사전 정의된 키워드 집합을 통해 식별됩니다. 세 가지 액세스 수준이 ONTAP 9.6에 도입되었습니다. 기존 역할과 REST 역할 모두에 사용할 수 있습니다. 또한 ONTAP 9.11.1을 사용하여 세 가지 새로운 액세스 수준이 추가되었습니다. 이러한 새로운 액세스 수준은 REST 역할에만 사용할 수 있습니다.</block>
+  <block id="fc803f5069796fe61307ff5fe676cbd7" category="admonition">액세스 수준은 CRUD 모델을 따릅니다. REST에서는 기본 HTTP 메서드(POST, GET, 패치, 삭제)를 기반으로 합니다. 해당 CLI 작업은 일반적으로 REST 작업(생성, 표시, 수정, 삭제)에 매핑됩니다.</block>
+  <block id="8efae7831e5c5b931fbd0fdffa6a02f5" category="cell">Rest 프리미티브</block>
+  <block id="f29ddbfb905eb2593fdcdfb243f9af85" category="cell">추가되었습니다</block>
+  <block id="d597461843a93eb451872eca25dae055" category="cell">REST 역할만 해당</block>
+  <block id="334c4a4c42fdb79d7ebc3e73b517e6f8" category="cell">없음</block>
+  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">해당 없음</block>
+  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">아니요</block>
+  <block id="336ebbb2179beaa7340a4f1620f3af40" category="cell">읽기 전용</block>
+  <block id="a181a603769c1f98ad927e7367c7aa51" category="cell">모두</block>
+  <block id="fe6f3c75abb1936e6f7ac02fee7ec329" category="cell">다운로드, POST, 패치, 삭제</block>
+  <block id="c7bde91eb70d1a5e9e14857d8570759d" category="cell">read_create 를 참조하십시오</block>
+  <block id="af8dda82b9815d5e5e88fc39daf443ac" category="cell">POST를 완료합니다</block>
+  <block id="11efa46f237387b311e6ed482756ac49" category="cell">9.11.1</block>
+  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">예</block>
+  <block id="76d9af335b2ebd589c08f1c7042aed22" category="cell">read_modify 를 참조하십시오</block>
+  <block id="8bf293a5352209dafeeda452e47463e1" category="cell">패치</block>
+  <block id="cd9413b7609c715cd2ea04f2ad78bf07" category="cell">READ_CREATE_MODIFY을 참조하십시오</block>
+  <block id="be049207447aee4b3b964fcfdf13d4c4" category="cell">GET, POST, 패치</block>
+  <block id="884dcd887ad4e373c1d3a4843dfe42bb" category="section-title">선택적 쿼리입니다</block>
+  <block id="96efb45b521e9456d4b68ca329418f93" category="paragraph">기존 역할을 만들 때 * query * 값을 선택적으로 포함하여 명령 또는 명령 디렉터리에 적용할 수 있는 개체의 하위 집합을 식별할 수 있습니다.</block>
+  <block id="9dfb279034f147e1a6d63e6df7793b7c" category="section-title">기본 제공 역할 요약</block>
+  <block id="688e7d719580c276f3323a08e90e074e" category="paragraph">ONTAP에는 클러스터 또는 SVM 레벨에서 사용할 수 있는 사전 정의된 여러 역할이 포함되어 있습니다.</block>
+  <block id="e9a5880d5af5c216a45ea5f482ebbdc6" category="section-title">클러스터 범위 역할</block>
+  <block id="a29d1e32baa8510ee732b38714ca436e" category="paragraph">클러스터 범위에는 몇 가지 기본 제공 역할이 있습니다.</block>
+  <block id="a67eb817d69ac81f9679cbb5fb772e86" category="inline-link">클러스터 관리자를 위한 사전 정의된 역할</block>
+  <block id="f4165272712eca730fd025c8be99cc24" category="paragraph">을 참조하십시오<block ref="fc79fcd5682ae6f93050b7c7772fcdc4" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">역할</block>
+  <block id="21232f297a57a5a743894a0e4a801fc3" category="cell">관리자</block>
+  <block id="592f5f8969ec3d75bac5b8ab43c79097" category="cell">이 역할을 가진 관리자는 제한되지 않은 권한을 가지고 있으며 ONTAP 시스템에서 모든 작업을 수행할 수 있습니다. 모든 클러스터 레벨 및 SVM 레벨 리소스를 구성할 수 있습니다.</block>
+  <block id="ee64de1ad50d8209e64ee58b23e27986" category="cell">AutoSupport</block>
+  <block id="57bd9642e847a3b29211122e0607a60a" category="cell">이는 AutoSupport 계정에 맞게 조정된 특수 역할입니다.</block>
+  <block id="402051f4be0cc3aad33bcf3ac3d6532b" category="cell">백업</block>
+  <block id="b127829b975c13f09f53fae0cc997578" category="cell">시스템을 백업해야 하는 백업 소프트웨어에 대한 특수 역할입니다.</block>
+  <block id="a3d27fe59690195da71747f727cc65de" category="cell">SnapLock</block>
+  <block id="1dc67e09233e3a4da066ebfbaf219403" category="cell">이는 SnapLock 계정에 맞게 조정된 특수 역할입니다.</block>
+  <block id="427bb4b4da498a5963f3dadc25e8c46c" category="cell">이 역할을 가진 관리자는 클러스터 수준에서 모든 항목을 볼 수 있지만 변경할 수는 없습니다.</block>
+  <block id="638949f35c40add2880f18f9302e4cd9" category="cell">관리 기능은 제공되지 않습니다.</block>
+  <block id="0bdc09efa4845da531fb801a6242d2e2" category="section-title">SVM 범위 역할</block>
+  <block id="baf3f4818ac4234a3e911a4bbf33d866" category="paragraph">SVM 범위에는 여러 가지 기본 제공 역할이 있습니다. vsadmin * 은 가장 일반적이고 강력한 기능에 대한 액세스를 제공합니다. 다음과 같은 특정 관리 작업에 맞게 조정된 추가 역할이 몇 가지 있습니다.</block>
+  <block id="862e66b2a82906e827d8f6ecf55928ca" category="list-text">vsadmin - 볼륨</block>
+  <block id="bdcf8208941906ed506ccfdeee8a8211" category="list-text">vsadmin - 프로토콜</block>
+  <block id="e3244459d95a89c8d3d2255d7628a49f" category="list-text">vsadmin - 백업</block>
+  <block id="6d3098c9699f5313e341af5e26f13a37" category="list-text">vsadmin - SnapLock</block>
+  <block id="92722ebe2f2d5895840edfd23a43a5f2" category="list-text">vsadmin - 읽기 전용입니다</block>
+  <block id="49f1ce8717c68bd5f2a0c919ca67c63f" category="inline-link">SVM 관리자를 위한 사전 정의된 역할</block>
+  <block id="9a10e6e952f6eacc1e795338f4d02b34" category="paragraph">을 참조하십시오<block ref="378f776a29927b3c872739179bbda5a6" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="2ed6aabe86be78148516f843c72470e4" category="paragraph">REST * 역할 또는 * 기존 * 역할을 선택하기 전에 차이점을 알고 있어야 합니다. 두 역할 유형을 비교할 수 있는 몇 가지 방법은 아래에 설명되어 있습니다.</block>
+  <block id="14345879670a88a286296097e0a7ba5b" category="admonition">고급 또는 복잡한 RBAC 사용 사례의 경우 일반적으로 기존 역할을 사용해야 합니다.</block>
+  <block id="841222ae8bb7318a3ac2ae4505738eb9" category="section-title">사용자가 ONTAP에 액세스하는 방법</block>
+  <block id="104b04e4a630ab0030959f939359f627" category="paragraph">역할을 생성하기 전에 사용자가 ONTAP 시스템에 액세스하는 방법을 알아야 합니다. 이를 바탕으로 역할 유형을 결정할 수 있습니다.</block>
+  <block id="bf733d8a933c1601697f364223fc7ecb" category="cell">액세스</block>
+  <block id="3c66403d927509420d4b147cb8c66782" category="cell">추천 유형입니다</block>
+  <block id="ada2222aadb87abcf8162506247ab367" category="cell">REST API만 해당</block>
+  <block id="0f6c9ece3d84da1b6fa6a02b7ad0dbfb" category="cell">REST 역할은 REST API와 함께 사용하도록 설계되었습니다.</block>
+  <block id="65d8407bbdbc42f3e1b2ec50e9b22e87" category="cell">REST API 및 CLI</block>
+  <block id="5bc31a66525a874bda1e5c4ad3bc3ceb" category="cell">REST 역할을 정의하여 이에 상응하는 기존 역할을 생성할 수도 있습니다.</block>
+  <block id="78c5b05328e214f8a2434b93f47d5f55" category="cell">CLI만 해당됩니다</block>
+  <block id="51a9e3c779f1be0a43354b1da5831ba0" category="cell">기존 역할을 생성할 수 있습니다.</block>
+  <block id="2dcd39fd89691d20d107d37e822309c0" category="section-title">액세스 경로의 정밀도</block>
+  <block id="8dcea28ae0e36ecb9fb7a7682e6c8323" category="paragraph">REST 역할에 대해 정의된 액세스 경로는 REST 엔드포인트를 기반으로 합니다. 기존 역할의 액세스 경로는 CLI 명령 또는 명령 디렉토리를 기반으로 합니다. 또한 선택적 쿼리 매개 변수를 기존 역할과 함께 포함하여 명령 매개 변수 값에 따라 액세스를 추가로 제한할 수 있습니다.</block>
+  <block id="1fbfc491e444abd15b879cf0b296f868" category="doc">역할 정의 예</block>
+  <block id="ca10180cdf4edf15996acffd8fddb307" category="paragraph">ONTAP RBAC 기능은 환경에 따라 다른 방법으로 사용할 수 있습니다. 다음은 몇 가지 일반적인 시나리오입니다. 각 경우에는 해당 역할 정의의 예를 통해 특정 보안 및 관리 목표에 초점을 맞춥니다.</block>
+  <block id="c1489037f7a15d27fe055dbc42244578" category="admonition">모든 예제에서는 '/api/security/roles'와 파생된 REST 끝점을 사용하여 역할을 만들고 수정합니다. 명확성을 위해, 각 curl 명령은 별도의 JSON 입력 파일을 참조합니다.</block>
+  <block id="6e4ad51ed0c9f59ca29ccce216f868b1" category="section-title">SVM 볼륨 작업으로 액세스 제한</block>
+  <block id="ceb8d53ccfbc6f286a28418188fb0b36" category="paragraph">SVM 내에서 스토리지 볼륨 관리를 제한할 수 있습니다. 아래 예제에서는 처음 만든 다음 선택적으로 업데이트되는 역할을 사용하여 이 작업을 보여 줍니다.</block>
+  <block id="b63872fa53e17ff08ed6b0991c97a083" category="section-title">초기 역할을 생성합니다</block>
+  <block id="e01c59d9614a8f8bfe415754e544d4c2" category="paragraph">기존 역할은 클론 생성을 제외한 모든 주요 볼륨 관리 기능에 대한 액세스를 초기에 허용하기 위해 생성됩니다. 아래에 제시된 역할은 다음과 같은 구체적인 특성으로 정의됩니다.</block>
+  <block id="44b825cf5bc9349a15a7ed51954ce076" category="list-text">가져오기, 생성, 수정 및 삭제를 포함한 모든 CRUD 볼륨 작업을 수행할 수 있습니다</block>
+  <block id="0a98788f622c9b8a786424f59d6f073f" category="list-text">볼륨 클론을 생성할 수 없습니다</block>
+  <block id="dc9f2e350dc3b2372ce00503e56fe71d" category="listing-title">컬의 예</block>
+  <block id="0577bbabd0439eea401a8ec18491d1a6" category="listing-title">JSON 입력 예</block>
+  <block id="65c74070d0b2394b81c796bb60240324" category="section-title">역할을 업데이트합니다</block>
+  <block id="add6cb38f2c78e28a0302df3df6de165" category="paragraph">사용자가 볼륨 클론을 생성할 수도 있도록 동일한 역할을 수정할 수 있습니다.</block>
+  <block id="7f8d84e7d0adb2682a7102214e49dee2" category="section-title">데이터 보호 관리</block>
+  <block id="b3698327f3342304d1a28edbf87cf3d4" category="paragraph">경우에 따라 사용자에게 제한된 데이터 보호 기능을 제공할 수 있습니다. 아래에 나와 있는 기존 역할은 다음과 같은 특징을 통해 정의됩니다.</block>
+  <block id="91b8fb1bf628880e8b9a3976c3a032ab" category="list-text">SnapMirror 관계를 업데이트할 뿐만 아니라 스냅샷을 생성 및 삭제할 수 있습니다</block>
+  <block id="76a4694d3323882a13252de3b8c66853" category="list-text">볼륨 또는 SVM과 같은 상위 레벨의 객체를 생성하거나 수정할 수 없습니다</block>
+  <block id="b36e61796997ee2c786f4fa3ed101f1c" category="section-title">ONTAP 보고서를 생성하는 중입니다</block>
+  <block id="b35f8291d357a94153e63c0665fa6521" category="paragraph">REST 역할을 생성하여 사용자에게 ONTAP 보고서를 생성할 수 있는 기능을 제공할 수 있습니다. 아래에 제시된 역할은 다음과 같은 특성을 가지고 정의됩니다.</block>
+  <block id="3afdfc4bb62414921598f2f4531aaca1" category="list-text">용량 및 성능(예: 볼륨, qtree, LUN, 애그리게이트, 노드, SnapMirror 관계 포함)</block>
+  <block id="9a97a4c8ef433f35c821ef57f10aa45d" category="list-text">더 높은 수준의 오브젝트(예: 볼륨 또는 SVM)를 생성하거나 수정할 수 없음</block>
+  <block id="7341eaad1796dcd6268b71a308240243" category="doc">역할이 있는 사용자를 생성합니다</block>
+  <block id="80f5621e734bd116c58617e6c799fd18" category="paragraph">아래 설명된 워크플로를 사용하여 연결된 REST 역할이 있는 사용자를 생성할 수 있습니다. 워크플로를 검토하기 전에 일반적인 준비 단계를 숙지해야 합니다.</block>
+  <block id="4615b675487f476dd46329e196d46e0b" category="section-title">역할이 할당된 ONTAP 사용자를 생성할 준비를 합니다</block>
+  <block id="d725670416fda4a95c9a41cae84b3730" category="paragraph">역할을 만들고 ONTAP 사용자 계정에 할당하기 전에 먼저 주요 보안 요구 사항 및 옵션을 검토하여 준비해야 합니다.</block>
+  <block id="379385ed06cff6b981e905026b8488d8" category="paragraph">ONTAP 릴리스는 사용 가능한 REST 엔드포인트 및 RBAC 기능을 결정합니다.</block>
+  <block id="7a1d01c8bf21e8d2524e97aacc31c321" category="paragraph">보호할 리소스 또는 명령과 범위(클러스터 또는 SVM)를 식별해야 합니다.</block>
+  <block id="6d1c7815a7f642c3359cf36570ffac64" category="paragraph">리소스 및 범위를 파악한 후에는 부여할 액세스 수준을 결정해야 합니다.</block>
+  <block id="6748cc799bdab9dd5cc6400176d66cda" category="paragraph">사용자는 REST API 또는 CLI 또는 둘 다를 통해 ONTAP에 액세스할 수 있습니다.</block>
+  <block id="cd749c0b40175f0f7a3e7f752af73d13" category="paragraph">기존 기본 제공 역할을 사용하는 것이 더 편리하지만 필요한 경우 새 사용자 지정 역할을 만들 수 있습니다.</block>
+  <block id="e3a373c3aac05fcefd1b150a9d565c2a" category="paragraph">보안 요구 사항 및 ONTAP 액세스를 기반으로 REST 또는 기존 역할을 생성할지 여부를 선택해야 합니다.</block>
+  <block id="b09037a5d82613adb22bd86bae1b60d5" category="section-title">사용자 지정 역할을 가진 사용자를 만듭니다</block>
+  <block id="3182bd07058520c0846c3336ad09822d" category="paragraph">아래에 설명된 워크플로에는 사용자 지정 REST 역할을 만들고 이를 새 사용자 계정에 연결하는 데 필요한 일반적인 단계가 포함되어 있습니다. 사용자와 역할 모두 SVM 범위를 가지고 있으며 특정 데이터 SVM과 연관됩니다.</block>
+  <block id="004e30de2ba3d00309416614b821bc90" category="admonition">워크플로는 전체 프로세스를 설명하기 위한 것입니다. 일부 단계는 선택 사항이거나 사용자 환경에 따라 변경해야 할 수도 있습니다.</block>
+  <block id="c8a5cb28fdf2598f85711cd98aaf6739" category="section-title">클러스터에 있는 데이터 SVM을 나열합니다</block>
+  <block id="c67d7f573196794910d284fa2b59abec" category="paragraph">다음 REST API 호출을 수행하여 클러스터에 SVM을 표시합니다. 각 SVM의 UUID 및 이름이 출력에 제공됩니다.</block>
+  <block id="9c52661d131f07face38ff3baa271d09" category="cell">/api/svm/sSVM</block>
+  <block id="65dc659f4320656f47afc3226f3349b1" category="paragraph">새 사용자 및 역할을 생성할 목록에서 원하는 SVM을 선택합니다.</block>
+  <block id="77dc514382ed988f07bcd3331cb777ce" category="section-title">SVM에 정의된 사용자를 나열합니다</block>
+  <block id="545f01dc5fb27b5a00252c1ab276b8f4" category="paragraph">다음 REST API 호출을 수행하여 선택한 SVM에 정의된 사용자를 나열할 수 있습니다. 소유자 매개 변수를 통해 SVM을 식별할 수 있습니다.</block>
+  <block id="137ef7229d434ea827c18ad48fbf2401" category="cell">/api/security/accounts</block>
+  <block id="d28041a03685d6dbdc892dce400d3d28" category="paragraph">SVM에 이미 정의된 사용자를 기준으로 새 사용자의 이름을 선택합니다.</block>
+  <block id="5f992f28a3b95601a69cc4fd3acdef79" category="section-title">SVM에 정의된 나머지 역할을 나열합니다</block>
+  <block id="79848c3f39849323eb07dde9ce0b5b68" category="paragraph">선택한 SVM에 정의된 역할을 나열하려면 다음 REST API 호출을 수행합니다. 소유자 매개 변수를 통해 SVM을 식별할 수 있습니다.</block>
+  <block id="d2163229a8bdac1e61c4788472dbacd3" category="cell">/API/보안/역할</block>
+  <block id="f8b939ec213ead9efd60e86f833e8fbf" category="paragraph">SVM에 이미 정의된 역할에 따라 새 역할에 맞는 고유한 이름을 선택하십시오.</block>
+  <block id="28e273c48ad039c702e69f06f8455422" category="section-title">사용자 지정 REST 역할을 생성합니다</block>
+  <block id="55fe93e61e9a7bd2f633f326a5e96290" category="paragraph">SVM에서 맞춤형 REST API를 생성하여 다음 REST API 호출을 수행합니다. 이 역할에는 처음에 모든 액세스가 거부되도록 기본 액세스 권한을 * 없음 * 으로 설정하는 하나의 권한만 있습니다.</block>
+  <block id="13914e64af0bb44e86cd3e7e8a6db903" category="paragraph">필요에 따라 3단계를 다시 수행하여 새 역할을 표시합니다. ONTAP CLI에서 역할을 표시할 수도 있습니다.</block>
+  <block id="9f47490b035163018ad57664ebd4231e" category="section-title">5.더 많은 권한을 추가하여 역할을 업데이트합니다</block>
+  <block id="3556b68f25f496c1b49d7a04a2b8db5a" category="paragraph">필요에 따라 권한을 추가하여 역할을 수정하려면 다음 REST API 호출을 수행합니다.</block>
+  <block id="44616b081f16df6bb249edd608d22f26" category="cell">/api/security/roles/{owner.uuid}/{name}/권한</block>
+  <block id="425449fc9249e100beb709a52ce09d93" category="section-title">6.사용자를 생성합니다</block>
+  <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">사용자 계정 생성을 위해 다음 REST API 호출을 수행합니다. 위에서 만든 역할 dprole1은 새 사용자와 관련이 있습니다.</block>
+  <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">역할 없이 사용자를 포함할 수 있습니다. 이 경우 역할을 할당하기 위해 사용자를 수정해야 합니다.</block>
+  <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">새 사용자의 자격 증명을 사용하여 SVM 관리 인터페이스에 로그인할 수 있습니다.</block>
+  <block id="e8d3ba2faa2de68a783129c5654b8806" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="9bad86383b422495c8d6e881b6b0084b" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC 보안</block>
+  <block id="80164c28762060fa56d042df66e7553d" category="sidebar">역할을 가진 사용자를 생성합니다</block>
 </blocks>
