@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_overview.html 
 keywords:  
-summary:  
+summary: 'ONTAP에는 강력하고 확장 가능한 RBAC(역할 기반 액세스 제어) 기능이 포함되어 있습니다. REST API 및 CLI를 통해 노출된 리소스에 대한 사용자의 액세스를 제어하는 역할을 각 계정에 다르게 할당할 수 있습니다. 이 역할은 다양한 ONTAP 사용자에 대해 서로 다른 수준의 관리 액세스를 정의합니다.' 
 ---
 = RBAC 보안 개요
 :hardbreaks:
@@ -39,7 +39,7 @@ NOTE: 각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참�
 | 유형 | 설명 
 
 
-| 휴식 | 나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. 이후 CLI 액세스도 지원하도록 개선되었습니다. 
+| 휴식 | 나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. REST 역할을 생성하면 기존의 _mapping_role이 자동으로 생성됩니다. 
 
 
 | 기존 | 이는 ONTAP 9.6 이전에 포함된 레거시 역할입니다. ONTAP CLI 환경에 도입되었으며 RBAC 보안의 기본 요소로 계속 사용됩니다. 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rest/rbac_roles_users.html 
 keywords:  
-summary:  
+summary: 기본적인 RBAC 기능을 이해한 후에는 ONTAP 역할 및 사용자 작업을 시작할 수 있습니다. 
 ---
 = 역할 및 사용자 작업
 :hardbreaks:
@@ -29,7 +29,7 @@ REST API 또는 명령줄 인터페이스를 통해 ONTAP 역할을 생성하고
 RBAC 역할 및 사용자 계정으로 작업할 때 사용할 수 있는 여러 엔드포인트가 있습니다. 표의 처음 4개는 역할을 만들고 관리하는 데 사용됩니다. 마지막 두 가지는 사용자 계정을 만들고 관리하는 데 사용됩니다.
 
 
-TIP: ONTAP 온라인 을 참조하십시오 link:../reference/api_reference.html["API 참조입니다"] 설명서를 참조하십시오.
+TIP: 온라인으로 ONTAP에 액세스할 수 있습니다 link:../reference/api_reference.html["API 참조입니다"] API 사용 방법의 예를 포함한 자세한 내용은 설명서를 참조하십시오.
 
 [cols="35,65"]
 |===

@@ -17,7 +17,7 @@ summary:
 HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 모든 ONTAP REST API 호출에 대한 세부 정보에 액세스할 수 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
 
 
-NOTE: 로컬 ONTAP 시스템이나 NetApp 개발자 네트워크 웹 사이트에서 API 참조 콘텐츠에 액세스할 수 있습니다.
+NOTE: 로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp에서 유지 관리하는 문서의 정적 복사본에 액세스할 수 있습니다.
 
 
 
@@ -46,19 +46,17 @@ ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 
 
 
 
-== NetApp DevNet에서 참조 콘텐츠에 액세스
+== ONTAP REST API 참조 설명서 사본에 액세스합니다
 
 [role="lead"]
-ONTAP REST API 참조 문서는 NetApp 개발자 네트워크 웹 사이트에서 액세스할 수 있습니다.
+아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.
 
-.단계
-. NetApp 개발자 네트워크 웹 사이트에서 * ONTAP REST API * 페이지로 이동합니다.
-+
+* https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879871/html/["ONTAP 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876964/html/["ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874708/html/["ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2862544/html/["ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2856304/html/["ONTAP 9.6"^]
+
+
 https://devnet.netapp.com/restapi.php["NetApp DevNet: ONTAP REST API"^]
-
-. 아래로 스크롤하고 * 온라인 REST API 참조 * 아래에서 해당 ONTAP 버전에 대한 링크를 클릭합니다.
-+
-ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 API 호출과 함께 표시됩니다.
-
-. 개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.
-

@@ -262,7 +262,6 @@
   <block id="47139a5580026883093b61e1de623719" category="section-title">Ansible 사용</block>
   <block id="a8f88f602880c7c7c74079d3f99ff931" category="inline-link-macro">ONTAP 및 Ansible 자동화</block>
   <block id="c51932c28f2d865cc8b2b0211769ca8f" category="paragraph">HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 모든 ONTAP REST API 호출에 대한 세부 정보에 액세스할 수 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.</block>
-  <block id="765005864f316ffe6cd14a5468133456" category="admonition">로컬 ONTAP 시스템이나 NetApp 개발자 네트워크 웹 사이트에서 API 참조 콘텐츠에 액세스할 수 있습니다.</block>
   <block id="6630ebbabec7748c444af084a44d2b3a" category="paragraph">로컬 ONTAP 시스템에서 ONTAP API 온라인 설명서 페이지에 액세스할 수 있습니다.</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">다음 항목이 있어야 합니다.</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">ONTAP 클러스터 관리 LIF의 IP 주소 또는 호스트 이름입니다</block>
@@ -273,11 +272,8 @@
   <block id="86537fad07b98a84cd28189507075143" category="list-text">ONTAP 계정을 사용하여 로그인합니다.</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 API 호출과 함께 표시됩니다.</block>
   <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.</block>
-  <block id="c94bdeb8a782c72386767d4c7becc162" category="paragraph">ONTAP REST API 참조 문서는 NetApp 개발자 네트워크 웹 사이트에서 액세스할 수 있습니다.</block>
-  <block id="b91bc699a905879f81b6d1321e652cbd" category="list-text">NetApp 개발자 네트워크 웹 사이트에서 * ONTAP REST API * 페이지로 이동합니다.</block>
   <block id="6a63b53f3b2aa312b323d97ef5f8c1ee" category="inline-link">NetApp DevNet: ONTAP REST API</block>
   <block id="3ed5229516b6cbe9a83c3af31dfe7e8f" category="paragraph"><block ref="3ed5229516b6cbe9a83c3af31dfe7e8f" category="inline-link-rx"></block></block>
-  <block id="efb08c83b1593d6a73a8ac4f456e4247" category="list-text">아래로 스크롤하고 * 온라인 REST API 참조 * 아래에서 해당 ONTAP 버전에 대한 링크를 클릭합니다.</block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="paragraph">HTTP 요청에 설정된 매개 변수와 변수를 통해 API 호출이 처리되는 방식을 제어할 수 있습니다.</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP 메서드</block>
   <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">ONTAP REST API에서 지원하는 HTTP 메서드는 다음 표에 나와 있습니다.</block>
@@ -767,7 +763,6 @@
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">나머지 리소스 요약</block>
   <block id="b04c0c0415c8329423a4dc5d04335c63" category="list-text"><block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block></block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">ONTAP API 설명서 페이지에 액세스합니다</block>
-  <block id="9d8a954ab180ff9153df9280ac9c3c7f" category="section-title">NetApp DevNet에서 참조 콘텐츠에 액세스</block>
   <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">ONTAP REST API 및 기타 자동화 기술을 사용하여 빠르게 시작할 수 있습니다. 기본 요청 응답 흐름을 준비하고 이해한 후 curl을 사용하여 간단한 API 호출을 실행할 수 있습니다. 이 준비에서는 라이브 시스템에서 더 복잡한 워크플로우를 사용하기 전에 필요한 도입 및 관점을 제공합니다.</block>
   <block id="625c92078d49d59bd332d26752459a1c" category="doc">ONTAP REST API 사용 준비</block>
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API를 참조하십시오</block>
@@ -1075,7 +1070,6 @@
   <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">휴식</block>
-  <block id="411937541f9b6022414480ec98e9755c" category="cell">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. 이후 CLI 액세스도 지원하도록 개선되었습니다.</block>
   <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">기존</block>
   <block id="4d43d1a54808136d96375f219fc0dcb2" category="cell">이는 ONTAP 9.6 이전에 포함된 레거시 역할입니다. ONTAP CLI 환경에 도입되었으며 RBAC 보안의 기본 요소로 계속 사용됩니다.</block>
   <block id="5d113f2038d289f391614c39043629e8" category="section-title">범위</block>
@@ -1103,7 +1097,6 @@
   <block id="8cf982806ff9edbe00ff4b0b3bf7d35a" category="paragraph">REST API 또는 명령줄 인터페이스를 통해 ONTAP 역할을 생성하고 관리할 수 있습니다. 액세스 세부 정보는 아래에 설명되어 있습니다.</block>
   <block id="aba3d4b49c454e1974970e7b5514b001" category="section-title">REST API</block>
   <block id="eeba57b75c93ed3bdf549a9f1fe3a9d9" category="paragraph">RBAC 역할 및 사용자 계정으로 작업할 때 사용할 수 있는 여러 엔드포인트가 있습니다. 표의 처음 4개는 역할을 만들고 관리하는 데 사용됩니다. 마지막 두 가지는 사용자 계정을 만들고 관리하는 데 사용됩니다.</block>
-  <block id="6463a333fcb15c8030c87eb9b29fbbda" category="admonition">ONTAP 온라인 을 참조하십시오 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 설명서를 참조하십시오.</block>
   <block id="2a6ba72e93aa7fa676d07973ed2716bb" category="cell">엔드포인트</block>
   <block id="674137167efaa07fbce7a0d3970c747e" category="cell">'/security/roles'</block>
   <block id="0d0d537aabf360d3d02a985805096459" category="cell">이 끝점을 사용하면 새 REST 역할을 만들 수 있습니다. ONTAP 9.11.1부터 기존 역할을 만들 수도 있습니다. 이 경우 ONTAP는 입력 매개 변수를 기반으로 역할 유형을 결정합니다. 정의된 역할 목록을 검색할 수도 있습니다.</block>
@@ -1256,7 +1249,18 @@
   <block id="ddb5039e238e533f2698aca2a0cad69a" category="paragraph">사용자 계정 생성을 위해 다음 REST API 호출을 수행합니다. 위에서 만든 역할 dprole1은 새 사용자와 관련이 있습니다.</block>
   <block id="41840c66a2790635e8d2e99b8901a85e" category="admonition">역할 없이 사용자를 포함할 수 있습니다. 이 경우 역할을 할당하기 위해 사용자를 수정해야 합니다.</block>
   <block id="1836147908927f819bbfefefacc2bf08" category="paragraph">새 사용자의 자격 증명을 사용하여 SVM 관리 인터페이스에 로그인할 수 있습니다.</block>
-  <block id="e8d3ba2faa2de68a783129c5654b8806" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="9bad86383b422495c8d6e881b6b0084b" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="sidebar">RBAC 보안</block>
   <block id="80164c28762060fa56d042df66e7553d" category="sidebar">역할을 가진 사용자를 생성합니다</block>
+  <block id="485855357f10b438740d2ed039caaa84" category="admonition">로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp에서 유지 관리하는 문서의 정적 복사본에 액세스할 수 있습니다.</block>
+  <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">ONTAP REST API 참조 설명서 사본에 액세스합니다</block>
+  <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.</block>
+  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
+  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
+  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
+  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
+  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
+  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
+  <block id="57ffddb99e11d6096024019ec78a7294" category="cell">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. REST 역할을 생성하면 기존의 _mapping_role이 자동으로 생성됩니다.</block>
+  <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">온라인으로 ONTAP에 액세스할 수 있습니다 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> API 사용 방법의 예를 포함한 자세한 내용은 설명서를 참조하십시오.</block>
+  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
 </blocks>
