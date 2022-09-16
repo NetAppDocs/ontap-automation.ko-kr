@@ -66,4 +66,4 @@ homepage:
 product-family:
   name: ONTAP
   repo: ontap-family
-  sidebar_label: All ONTAP product documentation
+  sidebar_label: 모든 ONTAP 제품 설명서
