@@ -20,13 +20,9 @@ ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 �
 
 == ONTAP 9 리소스
 
-* https://docs.netapp.com/us-en/ontap/["ONTAP 9 설명서"^]
+* https://docs.netapp.com/us-en/ontap-family/["ONTAP 9 제품 설명서"^]
 +
-ONTAP 9(CLI 명령 제외)에 대한 설명서를 제공합니다.
-
-* https://docs.netapp.com/ontap-9/index.jsp["ONTAP 9 문서 센터"^]
-+
-ONTAP 9 CLI 명령에 대한 설명서를 제공합니다.
+ONTAP 9 제품군에 대한 문서를 제공합니다.
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP 및 ONTAP 시스템 관리자 리소스"^]
 +
@@ -42,7 +38,7 @@ ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 �
 
 == ONTAP 9 개발자 리소스
 
-* https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html["ONTAPI를 통한 REST API 매핑 정보"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["ONTAPI를 통한 REST API 매핑 정보"^]
 +
 키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다.
 

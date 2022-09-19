@@ -200,11 +200,6 @@
   <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="doc">자세한 정보를 확인하십시오</block>
   <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 대한 자세한 내용을 확인하고 도움을 받을 수 있는 몇 가지 추가 리소스가 있습니다.</block>
   <block id="f372ae3b2fda116fe4b7463cbac902c0" category="section-title">ONTAP 9 리소스</block>
-  <block id="5358757de9216cc29d688612a3d72fe1" category="inline-link">ONTAP 9 설명서</block>
-  <block id="7d1750eaf694ea55e3ed364bf2fc1139" category="list-text"><block ref="7d1750eaf694ea55e3ed364bf2fc1139" category="inline-link-rx"></block></block>
-  <block id="85e5e87731b3318f19ef33e2fb42f8b4" category="paragraph">ONTAP 9(CLI 명령 제외)에 대한 설명서를 제공합니다.</block>
-  <block id="774a065cb3548cc61fb0ec3bc1494fbe" category="inline-link">ONTAP 9 문서 센터</block>
-  <block id="04b0bb6aae6dc41149097cc24034df97" category="list-text"><block ref="04b0bb6aae6dc41149097cc24034df97" category="inline-link-rx"></block></block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">ONTAP 및 ONTAP 시스템 관리자 리소스</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">ONTAP 9 개발자 리소스</block>
@@ -942,7 +937,6 @@
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API를 사용하여 ONTAP 관리</block>
   <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS 이벤트 알림</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL 및 SACL 권한</block>
-  <block id="54614c33cd18b45a05af04b2ab151311" category="paragraph">ONTAP 9 CLI 명령에 대한 설명서를 제공합니다.</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 유용한 링크가 포함되어 있습니다.</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 제품 라이브러리</block>
   <block id="c2d5813d8be4192f243cf259ee486461" category="list-text"><block ref="c2d5813d8be4192f243cf259ee486461" category="inline-link-rx"></block></block>
@@ -1264,9 +1258,12 @@
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="1620bfae18b24c9aeb26299384e3355d" category="paragraph">''curl-X get-u admin: password-k <block ref="9b818800381d633e2ed9a126d3941682" category="inline-link-rx"></block></block>
   <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">모든 ONTAP 제품 설명서</block>
-  <block id="a20d3f23c78756d0956a4a3bd47646ab" category="list-text"><block ref="a20d3f23c78756d0956a4a3bd47646ab" category="inline-link-rx"></block></block>
   <block id="33a07a0afe4c29ca167bde428e9fb425" category="inline-link">PyPI:NetApp ONTAP 9.11.1</block>
   <block id="611f39e7dbbbe260d0696b2afbc53c08" category="list-text"><block ref="611f39e7dbbbe260d0696b2afbc53c08" category="inline-link-rx"></block></block>
   <block id="f7767badbb46d1a4a4915155353f9c42" category="inline-link">9.11.1용 NetApp PCL 설명서</block>
   <block id="7b01c72e488a8e4ff65c413ac0e94286" category="list-text"><block ref="7b01c72e488a8e4ff65c413ac0e94286" category="inline-link-rx"></block></block>
+  <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9 제품 설명서</block>
+  <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
+  <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9 제품군에 대한 문서를 제공합니다.</block>
+  <block id="b758498efbf36cda0a88237632f16bc9" category="list-text"><block ref="b758498efbf36cda0a88237632f16bc9" category="inline-link-rx"></block></block>
 </blocks>
