@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords:  
-summary:  
+keywords: REST, web services 
+summary: 'REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.' 
 ---
 = REST 웹 서비스 기반
 :hardbreaks:

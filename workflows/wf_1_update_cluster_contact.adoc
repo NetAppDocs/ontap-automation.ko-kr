@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: workflows/wf_1_update_cluster_contact.html 
-keywords:  
-summary:  
+keywords: workflow 
+summary: 이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되기 때문에 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다. 
 ---
 = 워크플로우 1: 클러스터 연락처를 업데이트하고 작업 상태를 확인하십시오
 :hardbreaks:

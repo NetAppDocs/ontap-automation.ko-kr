@@ -2,7 +2,7 @@
 permalink: manage/ems-rest-api.html 
 sidebar: sidebar 
 keywords: ems, configuration, workflow 
-summary: REST API로 EMS 설정 관리 
+summary: REST API를 이용하여 ONTAP EMS 설정을 관리할 수 있다. 
 ---
 = ONTAP REST API로 EMS 이벤트 알림 관리
 :allow-uri-read: 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/users_ontapi_api_ontap_cli.html 
-keywords: snapdiff 
-summary:  
+keywords: snapdiff, migrating to rest 
+summary: ONTAPI는 ONTAP 스토리지 시스템 관리에 사용할 수 있는 네트워크 관리 SDK를 통해 제공되는 API 호출 집합입니다. REST API와 ONTAPI API 호출은 물론 REST API와 ONTAP CLI 간에는 차이점이 있습니다. 
 ---
 = ONTAPI API 및 ONTAP CLI 사용자
 :hardbreaks:
@@ -32,7 +32,7 @@ ONTAP은 다양한 유형의 SVM(스토리지 가상 머신)을 지원합니다.
 
 == ONTAPI에서 REST로 마이그레이션
 
-REST API는 ONTAP 시스템 관리 자동화를 위한 주요 전략적 선택입니다. 현재 ONTAPI API를 사용 중인 경우 REST API로 마이그레이션을 고려해야 합니다. NetApp은 ONTAPI에서 REST로의 마이그레이션을 지원하는 매핑 문서를 제공합니다.
+REST API는 ONTAP 시스템 관리 자동화를 위한 주요 전략적 선택입니다. 현재 ONTAPI API를 사용 중인 경우 REST API로 마이그레이션을 고려해야 합니다. NetApp은 ONTAPI에서 REST로의 마이그레이션을 지원하는 매핑 문서를 제공합니다. 을 참조하십시오 link:../migrate/mapping.html["ONTAPI를 REST API 매핑에 매핑"] 를 참조하십시오.
 
 
 

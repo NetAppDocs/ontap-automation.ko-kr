@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_api_versioning.html 
-keywords:  
-summary:  
+keywords: versioning, REST API versioning 
+summary: ONTAP 9에 포함된 REST API에는 ONTAP 릴리즈 번호와 독립적인 버전 번호가 할당됩니다. ONTAP 릴리스에 포함된 API 버전과 API 사용에 어떤 영향을 줄 수 있는지 알고 있어야 합니다. 
 ---
 = ONTAP REST API 버전 관리
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rn/known_limitations.html 
-keywords:  
-summary:  
+keywords: limitations, known limitations 
+summary: ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다. 
 ---
 = 알려진 제한 사항
 :hardbreaks:

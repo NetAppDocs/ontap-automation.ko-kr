@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: additional/get_more_information.html 
-keywords:  
-summary:  
+keywords: more information, additional resources 
+summary: ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 대한 자세한 내용을 확인하고 도움을 받을 수 있는 몇 가지 추가 리소스가 있습니다. 
 ---
 = 자세한 정보를 확인하십시오
 :hardbreaks:
@@ -38,15 +38,15 @@ ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 �
 
 == ONTAP 9 개발자 리소스
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["ONTAPI를 통한 REST API 매핑 정보"^]
+* link:../migrate/mapping.html["ONTAPI를 REST API 매핑에 매핑"]
 +
-키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다.
+키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다. 적절한 ONTAP 릴리스를 선택합니다.
 
-* https://pypi.org/project/netapp-ontap["PyPI:NetApp ONTAP 9.11.1"^]
+* https://pypi.org/project/netapp-ontap["사용합니다. NetApp ONTAP"^]
 +
 PyPI의 NetApp Python 클라이언트 라이브러리 패키지
 
-* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1용 NetApp PCL 설명서"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["9.12.1용 NetApp PCL 설명서"^]
 +
 NetApp Python 클라이언트 라이브러리 문서
 

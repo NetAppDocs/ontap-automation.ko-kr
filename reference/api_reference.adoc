@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords:  
-summary:  
+keywords: reference, API reference, ONTAP API documentation 
+summary: API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다. 
 ---
 = API 참조입니다
 :hardbreaks:
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 모든 ONTAP REST API 호출에 대한 세부 정보에 액세스할 수 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
+API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
 
 
 NOTE: 로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp에서 유지 관리하는 문서의 정적 복사본에 액세스할 수 있습니다.
@@ -51,6 +51,7 @@ ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 
 [role="lead"]
 아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.
 
+* https://library.netapp.com/ecmdocs/ECMLP2884821/html/["ONTAP 9.12.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2882307/html/["ONTAP 9.11.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2879871/html/["ONTAP 9.10.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP2876964/html/["ONTAP 9.9.1"^]

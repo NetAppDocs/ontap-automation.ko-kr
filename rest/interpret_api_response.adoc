@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/interpret_api_response.html 
-keywords:  
-summary:  
+keywords: response, api response, status codes 
+summary: 각 API 요청은 클라이언트에 대한 응답을 다시 생성합니다. 응답을 검토하여 성공 여부를 확인하고 필요에 따라 추가 데이터를 검색해야 합니다. 
 ---
 = API 응답을 해석합니다
 :hardbreaks:

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: resources/san.html 
-keywords:  
-summary:  
+keywords: san resources 
+summary: 이러한 API 호출을 사용하여 SAN 리소스를 관리할 수 있습니다. 
 ---
 = 산
 :hardbreaks:

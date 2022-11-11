@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/prepare.html 
-keywords:  
-summary:  
+keywords: prepare, preparation 
+summary: ONTAP REST API 사용을 준비하기 위해 몇 가지 단계를 수행해야 합니다. 
 ---
 = ONTAP REST API 사용 준비
 :hardbreaks:

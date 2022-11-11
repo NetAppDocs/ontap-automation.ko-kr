@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
-keywords:  
-summary: ONTAP 성능 카운터에 액세스하기 위해 ONTAPI에서 ONTAP REST API로 전환합니다. 
+keywords: performance, performance counters 
+summary: ONTAP 카운터 관리자를 사용하면 ONTAP 사용자가 성능 카운터 정보에 액세스하고 다양한 ONTAP 성능 카운터 메트릭을 내보낼 수 있습니다. 
 ---
 = 성능 카운터
 :hardbreaks:
@@ -20,7 +20,7 @@ ONTAP 9.11.1 이전에는 ONTAP 카운터 관리자 개체의 전체 세트에 �
 
 ONTAP 9.11.1부터 ONTAP 사용자는 ONTAP REST API를 사용하여 Counter Manager 개체의 세그먼트에 액세스할 수 있습니다. ONTAPI에서 ONTAP REST API로 자동화 스크립트를 마이그레이션하는 사용자는 성능 카운터 데이터가 ONTAPI에 표시되는 방식과 해당 데이터가 REST API에 제공되는 방식 간의 차이점을 이해해야 합니다.
 
-을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883449["ONTAP 9.11.1 ONTAPI-Rest 카운터 관리자 매핑"^] ONTAP 9.11.1의 REST API에서 사용할 수 있는 ONTAP 카운터 집합에 대한 설명뿐 아니라 ONTAPI와 REST API 소비의 카운터 간 차이점 관련 정보도 제공합니다.
+을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885053["ONTAP 9.12.1 ONTAPI-Rest 카운터 관리자 매핑"^] ONTAP 9.11.1의 REST API에서 사용할 수 있는 ONTAP 카운터 집합에 대한 설명뿐 아니라 ONTAPI와 REST API 소비의 카운터 간 차이점 관련 정보도 제공합니다.
 
 
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/mapping.html 
-keywords:  
-summary:  
+keywords: ONTAPI, REST API, mapping, mapping documentation 
+summary: NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는 방법을 설명하는 문서를 제공합니다. 
 ---
 = ONTAPI를 REST API 매핑에 매핑
 :hardbreaks:
@@ -18,8 +18,9 @@ ONTAP REST API에는 대부분의 분야에서 ONTAPI와 동일한 기능이 포
 
 API 매핑 설명서는 ONTAP 릴리즈에 따라 달라집니다.
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874886["ONTAP 9.8"^]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876895["ONTAP 9.9.1"^]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAP 9.10.1"^]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2882104["ONTAP 9.11.1"^]
+* https://docs.netapp.com/us-en/ontap-restmap-9121["ONTAP 9.12.1"^]
+* https://docs.netapp.com/us-en/ontap-restmap-9111["ONTAP 9.11.1"^]
+* https://docs.netapp.com/us-en/ontap-restmap-9101["ONTAP 9.10.1"^]
+* https://docs.netapp.com/us-en/ontap-restmap-991["ONTAP 9.9.1"^]
+* https://docs.netapp.com/us-en/ontap-restmap-98["ONTAP 9.8"^]
 

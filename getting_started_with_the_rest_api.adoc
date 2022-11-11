@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: getting_started_with_the_rest_api.html 
-keywords:  
-summary:  
+keywords: get started, getting started 
+summary: ONTAP REST API 및 기타 자동화 기술을 사용하여 빠르게 시작할 수 있습니다. 기본 요청 응답 흐름을 준비하고 이해한 후 curl을 사용하여 간단한 API 호출을 실행할 수 있습니다. 
 ---
 = REST API 시작하기
 :hardbreaks:

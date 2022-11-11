@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: automate/ontap_ansible.html 
-keywords:  
-summary:  
+keywords: ansible, automation resources 
+summary: Ansible을 사용하여 ONTAP 스토리지 리소스의 구축 및 관리를 자동화하는 방법을 이해하는 데 도움이 되는 다양한 리소스가 있습니다. 
 ---
 = ONTAP 및 Ansible 자동화
 :hardbreaks:
