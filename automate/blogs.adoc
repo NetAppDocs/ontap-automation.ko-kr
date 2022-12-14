@@ -16,10 +16,12 @@ summary: ONTAP 구축을 자동화할 때 다양한 기술과 접근 방식을 �
 [role="lead"]
 ONTAP 구축을 자동화할 때 다양한 기술과 접근 방식을 이해하는 데 도움이 되는 여러 블로그 문서가 있습니다.
 
+.전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다
 CLI passthrough는 REST API를 사용하여 ONTAP CLI 명령을 실행하는 기술을 제공합니다.
 
 https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["NetApp.IO/2020/11/09/프라이빗-CLI-passthrough-ONTAP-REST-API"^]
 
+.NetApp 및 Ansible 시작하기: Ansible을 설치하십시오
 ONTAP 자동화를 위해 Ansible을 처음 사용하는 경우, 시작하는 것이 좋습니다.
 
 https://netapp.io/2018/10/08/getting-started-with-netapp-and-ansible-install-ansible["NetApp.IO/2018/10/08/getting-started-with-NetApp-and-Ansible-install-Ansible"^]

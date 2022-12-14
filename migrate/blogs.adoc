@@ -16,14 +16,17 @@ summary: ONTAPI에서 ONTAP REST API로 마이그레이션하는 방법을 더 �
 [role="lead"]
 ONTAPI에서 ONTAP REST API로 마이그레이션하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 문서가 있습니다.
 
+.ONTAPI - REST 매핑
 NetApp은 매핑 문서를 통해 독점 ONTAPI API API에서 ONTAP REST API로 이동할 수 있도록 지원합니다.
 
 https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["NetApp.IO/2020/12/17/ontapi-to-rest-mapping"^]
 
+.ONTAP API에서 ONTAP REST API로 자동화 전환
 REST API를 기반으로 ONTAP 자동화 환경을 변환하는 데 사용할 수 있는 몇 가지 기술이 있습니다.
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환
 NetApp은 고객과 파트너가 ONTAP REST API로 전환할 수 있도록 지원합니다.
 
 https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["NetApp.IO/2022/03/21/Transitioning-from-ontapi-using-ontapi-usage-reporting-tool"^]

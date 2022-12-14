@@ -28,6 +28,7 @@ API 호출을 통해 연락처 정보를 업데이트할 수 있습니다. 요�
 
 | 클러스터 | 패치 | /클러스터 
 |===
+.처리 유형
 비동기식
 
 .말림
@@ -38,6 +39,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
   "contact": "support@company-demo.com"
 }
 ----
+.JSON 출력
 연관된 식별자가 있는 작업 객체가 반환됩니다.
 
 [source, json]
@@ -64,6 +66,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 
 | 클러스터 | 가져오기 | /cluster/jobs/{uuid} 
 |===
+.처리 유형
 동기식이다
 
 .말림
@@ -71,6 +74,7 @@ curl -X PATCH -H 'Content-Type: application/json' -u admin:password -k -d @step0
 ----
 curl -X GET -H 'Content-Type: application/json' -u admin:password -k 'https:// 10.222.81.101/api/cluster/jobs/*uuid*'
 ----
+.출력
 상태 및 기타 필드가 있는 작업 객체가 반환됩니다.
 
 [source, json]

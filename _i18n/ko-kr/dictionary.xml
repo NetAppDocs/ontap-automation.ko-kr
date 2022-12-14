@@ -1296,4 +1296,242 @@
   <block id="1559c80340a3552e982d5443b26cb658" category="summary">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 설명서 페이지에 표시된 대로 범주로 구성됩니다.</block>
   <block id="0242de1421b2dbbb8285300eae69f9fc" category="summary">이러한 API 호출을 사용하여 NVMe를 지원하는 리소스를 관리할 수 있습니다.</block>
   <block id="50f3a24b94f9f178410d7708def5ebde" category="summary">이러한 API 호출을 사용하여 SnapLock 기능을 관리할 수 있습니다.</block>
+  <block id="9250e564d64f55011e433f17ac824f44" category="paragraph-title">NDMP 모드입니다</block>
+  <block id="c69526c8ce76ad278f888adee538f04e" category="paragraph-title">NDMP 노드</block>
+  <block id="59b9883b4ec82d64efbe374d16d050a1" category="paragraph-title">NDMP 세션</block>
+  <block id="d6c90b0f4204e92a3f329aaf4ce9e01c" category="paragraph-title">NDMP SVM</block>
+  <block id="26588e848f6effc048fa7260c0143fb6" category="paragraph-title">NDMP SVM 사용자 암호</block>
+  <block id="ab0cf104f39708eabd07b8cb67e149ba" category="paragraph-title">캐시</block>
+  <block id="b075b481f21fbb627e5042d98a2e27c9" category="paragraph-title">DDNS</block>
+  <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="paragraph-title">DNS</block>
+  <block id="bd267bd12514496474e44b08af357845" category="paragraph-title">호스트 레코드입니다</block>
+  <block id="2363dee608bcd9f6ce7f980bfdad5789" category="paragraph-title">LDAP를 지원합니다</block>
+  <block id="4c885663da9566f7ff78e30b5c49bd30" category="paragraph-title">LDAP 스키마</block>
+  <block id="98f8c716c137eebb477ab782d431477c" category="paragraph-title">로컬 호스트</block>
+  <block id="82efbf64272cb17196c4e27b3694cadb" category="paragraph-title">이름 매핑</block>
+  <block id="146af53866e72090bed5ee8202fb16a6" category="paragraph-title">넷그룹 파일</block>
+  <block id="214d81d8672097921e223fb3e62fa879" category="paragraph-title">NIS를 선택합니다</block>
+  <block id="69191005b4ee9f6b5f263cb192e44de2" category="paragraph-title">Unix 사용자 및 그룹</block>
+  <block id="d870fba37d68752041265a286259efaf" category="paragraph-title">응용 프로그램 로그</block>
+  <block id="3b6c41c1f8397d3d6c4a39586bfc97f7" category="paragraph-title">자동 업데이트</block>
+  <block id="6645e0ebb53d4b6e68be7936af3a8039" category="paragraph-title">AutoSupport</block>
+  <block id="c232c3e85ee1366820a448bc348281f4" category="paragraph-title">AutoSupport 메시지</block>
+  <block id="c72a28b1b443b9f22b75ff4529e4b636" category="paragraph-title">구성 백업</block>
+  <block id="d2b5de1cf6ae99abd7206c9547256b80" category="paragraph-title">구성 백업 작업</block>
+  <block id="84a2b6436ddb40c75b8b3e5ad743656f" category="paragraph-title">코어 덤프</block>
+  <block id="2a942848121349f87fa5e6d09b4c0232" category="paragraph-title">있습니다</block>
+  <block id="24db2db65660162c9cae9ae2b55718ea" category="paragraph-title">EMS 대상</block>
+  <block id="88386e1cec5fbbeb2091685054c5c411" category="paragraph-title">EMS 대상 인스턴스</block>
+  <block id="a631a01c80e3de0135e4ab5fa80a3501" category="paragraph-title">EMS 이벤트</block>
+  <block id="d1f48be46780b4da8fc3bc7cdd279568" category="paragraph-title">EMS 필터</block>
+  <block id="43892382daa7fe80f6f1a0c10c47b27c" category="paragraph-title">EMS가 인스턴스를 필터링합니다</block>
+  <block id="c70dd9bf7100bb0727e205edece2fe65" category="paragraph-title">EMS 메시지</block>
+  <block id="ecd2dc08fe228d4f0f3210bdc9b6c90a" category="paragraph-title">필터 인스턴스에 대한 EMS 규칙</block>
+  <block id="245d4f1f6d25ca75b13988e60faba80f" category="paragraph-title">필터 인스턴스에 대한 EMS 규칙 인스턴스입니다</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="paragraph-title">SNMP를 선택합니다</block>
+  <block id="19b833b71103b9973103a10d4028c114" category="paragraph-title">SNMP 트랩 호스트입니다</block>
+  <block id="7e02da6e354a94f76d34d87e880bd155" category="paragraph-title">SNMP 트랩 호스트 인스턴스입니다</block>
+  <block id="e77de590cd71a55fe09a65e34442907d" category="paragraph-title">SNMP 사용자</block>
+  <block id="38c0177ff71717e4ebdead24f8237be5" category="paragraph-title">SNMP 사용자 인스턴스입니다</block>
+  <block id="9ae13d2c1be8f54b085efa704ea4d7ee" category="paragraph-title">메트릭을 취합합니다</block>
+  <block id="0823e490e6bba6fc21a38adab6d7a963" category="paragraph-title">플랙스를 집계합니다</block>
+  <block id="d5350d8759b1ec84607e47908809058e" category="paragraph-title">애그리게이트</block>
+  <block id="b60c0d4d7e79d2d9eb6b397ca8529c4c" category="paragraph-title">브리지</block>
+  <block id="2d4aef30a49a581a6ed89ce840054235" category="paragraph-title">디스크</block>
+  <block id="ae19a8684ec907889cac06096d90615b" category="paragraph-title">파일 클론</block>
+  <block id="88882495c6bab93dd3c2b495093552f5" category="paragraph-title">파일이 이동합니다</block>
+  <block id="f24ce81f056d5acd59788df7f5ab36a1" category="paragraph-title">FlexCache</block>
+  <block id="12b9060463c7d0d9fd882b398f4b6426" category="paragraph-title">FlexCache 원점</block>
+  <block id="f5520ac447b7ce4cc60a84b00fe90b91" category="paragraph-title">모니터링된 파일</block>
+  <block id="283176e6feb211f8532b2c7c9263cd08" category="paragraph-title">풀</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="paragraph-title">포트</block>
+  <block id="9ab8fc3354a61f6ad2350f17305fc866" category="paragraph-title">QoS 정책</block>
+  <block id="807c87dbc2a84cfb9ed828623f9216ac" category="paragraph-title">QoS 워크로드</block>
+  <block id="48b9817af3fdae7035b6862c98196584" category="paragraph-title">Qtree</block>
+  <block id="bb1c10ea5234afcb091a28054d68573b" category="paragraph-title">할당량 보고서</block>
+  <block id="b9104e60761a7668c71846e0def23f3a" category="paragraph-title">할당량 규칙</block>
+  <block id="bb53c62475a4f28295dfd71302a53a3d" category="paragraph-title">쉘프</block>
+  <block id="623fb58af5512173351f2a5e63dd6d85" category="paragraph-title">스냅샷 정책</block>
+  <block id="2a3d38eca452a2699cd2b11129719514" category="paragraph-title">Snapshot 스케줄</block>
+  <block id="0052efad5d260a806d52bfcfe640936f" category="paragraph-title">스위치</block>
+  <block id="5fa1f27a4db085455efad8586d12878b" category="paragraph-title">테이프 장치</block>
+  <block id="161bf0559542afedb1ca0bf946c7ee93" category="paragraph-title">가장 중요한 메트릭</block>
+  <block id="a3e42b640d5ce90ec9ccf40644a7beb2" category="paragraph-title">볼륨 효율성 정책</block>
+  <block id="17d828c8326ae52c5d2a5bd801e5a59b" category="paragraph-title">볼륨 파일</block>
+  <block id="e5a3f41cd596ffa6c5340d3d92b4b3e8" category="paragraph-title">볼륨 스냅샷</block>
+  <block id="91fadc5613280f76b916f1fd236e43e9" category="paragraph-title">타겟</block>
+  <block id="11b0f3090bfc7e369a36e9cc90c4f582" category="paragraph-title">Fibre Channel 로그인</block>
+  <block id="13d28e8dfc702e3456e0767dff9a128a" category="paragraph-title">네임스페이스</block>
+  <block id="65c280309cb16c4db0a31c86b28b804c" category="paragraph-title">NVMe 인터페이스</block>
+  <block id="0845ef772913e6fb6b0cbb8ad6dae1d0" category="paragraph-title">NVMe 서비스</block>
+  <block id="60f0443ad11fd726953afc1b7f16c188" category="paragraph-title">NVMe 하위 시스템 컨트롤러</block>
+  <block id="433ced2138f5d40b7adbfa80ca0f3e16" category="paragraph-title">NVMe 하위 시스템 맵</block>
+  <block id="1361b47201058431e29c4f4e3cab651c" category="paragraph-title">NVMe 하위 시스템</block>
+  <block id="9e476387322a5c250893cf9c5c4ce78c" category="paragraph-title">정책</block>
+  <block id="ea96be9e75d8d3d690aedae5040edf2f" category="paragraph-title">관계</block>
+  <block id="8221f97d1274e16b57c726f05dfc3ea7" category="paragraph-title">관계가 전송됩니다</block>
+  <block id="3824ce9b3abc70c7c5c21eda0ab912d0" category="paragraph-title">용량 풀</block>
+  <block id="51bdc8bf999c93768e182fae54e64934" category="paragraph-title">섀시</block>
+  <block id="9b99bf7d2bfd4b09363304c166832734" category="paragraph-title">클러스터</block>
+  <block id="061ccdcf80b51c459a6a48dd35ed9aa2" category="paragraph-title">카운터 테이블</block>
+  <block id="a940a548ba41bc988f99d51fd02f21de" category="paragraph-title">펌웨어</block>
+  <block id="12ceff2290bb9039beaa8f36d5dec226" category="paragraph-title">작업</block>
+  <block id="e1fb647d9c9ac78261c2aa60b4cac7b5" category="paragraph-title">사용권 인스턴스</block>
+  <block id="05f5893732f0ae263d259d7a6d53ef55" category="paragraph-title">라이센스 관리자</block>
+  <block id="f6aca2dcfee051b254bbcb878dc70d09" category="paragraph-title">추가 수익 실적을</block>
+  <block id="2e97b5e5f53687c2edc46f6cfe0a5451" category="paragraph-title">중개자</block>
+  <block id="1749d12df3df2319d3eee218a277ff83" category="paragraph-title">MetroCluster</block>
+  <block id="7b5585e8b5e62fe2683b466045870056" category="paragraph-title">MetroCluster 진단 프로그램</block>
+  <block id="1a866229c550618dfa1ff7b2bbca3d93" category="paragraph-title">MetroCluster DR 그룹</block>
+  <block id="ffad460970904ec2c9c9af099e0391f8" category="paragraph-title">MetroCluster 상호 연결</block>
+  <block id="cf8683a46a9fce46da2b0e7bac364b41" category="paragraph-title">MetroCluster 노드</block>
+  <block id="4bc6b7be3ed7ef45661c92ef64ef7e57" category="paragraph-title">MetroCluster 작업</block>
+  <block id="dd1cc17036adbbdb0074432af6a7a58b" category="paragraph-title">MetroCluster SVM</block>
+  <block id="187c6ad3a74cc93ac6c2229d398e383e" category="paragraph-title">노드</block>
+  <block id="b137167e861629d461972de6fa2c4574" category="paragraph-title">NTP 키</block>
+  <block id="7e68cdae9094c04d3db96fce117b064c" category="paragraph-title">NTP 서버</block>
+  <block id="20a07d06a4b1bc423793cd5bc530bb3d" category="paragraph-title">동료</block>
+  <block id="ccdb7bf9d93e5652b57cabcc8c41e061" category="paragraph-title">스케줄</block>
+  <block id="af29aa178ae43211319e28f627e96590" category="paragraph-title">센서</block>
+  <block id="719d067b229178f03bcfa1da4ac4dede" category="paragraph-title">소프트웨어</block>
+  <block id="c6e190b284633c48e39e55049da3cce8" category="paragraph-title">웹</block>
+  <block id="53407aeec220be7474e15c2a9f182a5a" category="paragraph-title">애플리케이션 스냅샷</block>
+  <block id="1ddf333c6654f7f89c739dddfb4cc429" category="paragraph-title">응용 프로그램</block>
+  <block id="6165c4352e1504dbaeef34d0cc50c187" category="paragraph-title">정합성 보장 그룹</block>
+  <block id="a3b7af87c74d80ecedac76f490bfc38a" category="paragraph-title">정합성 보장 그룹 스냅샷</block>
+  <block id="ce0be71e33226e4c1db2bcea5959f16b" category="paragraph-title">로그</block>
+  <block id="1d4022cc69557a9759f903689e5c6337" category="paragraph-title">규정 준수 시계</block>
+  <block id="90cf707e60635de8b651c0d98ae0973e" category="paragraph-title">이벤트 보존</block>
+  <block id="45c59e56e0fe071dfc474240e10a2bff" category="paragraph-title">파일 보존 및 권한 삭제</block>
+  <block id="fed16d3aa6b063ea96e275143a07ccb9" category="paragraph-title">파일 지문</block>
+  <block id="1e3a85ebb1c233113bf042fe963e7cf5" category="paragraph-title">법적 증거 자료 보관</block>
+  <block id="2bf344088245c441fd4af9e89e2513c1" category="paragraph-title">BGP 피어 그룹</block>
+  <block id="d89e657dbcb29d1b725fae1a012c3573" category="paragraph-title">이더넷 브로드캐스트 도메인</block>
+  <block id="34b8a9807da64737f07ac9e419c9f546" category="paragraph-title">이더넷 포트</block>
+  <block id="e325fff9585fc408988fbbc8bc5f44b8" category="paragraph-title">이더넷 스위치 포트</block>
+  <block id="d5475e63e438a4a7c94c131d28345b80" category="paragraph-title">이더넷 스위치</block>
+  <block id="6c0d25ee401578483c4dfffa365b9ea0" category="paragraph-title">파이버 채널 패브릭</block>
+  <block id="9f5cdc1f5a4f26490d6217f7d1030e32" category="paragraph-title">파이버 채널 인터페이스</block>
+  <block id="a5745ae7b8ab4ab67a6ba9a615ced665" category="paragraph-title">파이버 채널 포트</block>
+  <block id="08f9a2efa94b3c5213c47c4eeb5ba2fd" category="paragraph-title">HTTP 프록시</block>
+  <block id="2509615af9bbdb5fbb73b349c029291a" category="paragraph-title">IP 인터페이스</block>
+  <block id="fd4c92e6709b093e5c4f8085fb79e919" category="paragraph-title">IP 라우트</block>
+  <block id="7a8bb34f7474b39291c18680a8e2fcec" category="paragraph-title">IP 서비스 정책</block>
+  <block id="0e7eec875e1f37460a721166947e4e8e" category="paragraph-title">IP 서브넷</block>
+  <block id="d686186657dc867241ca2a0f2a61422f" category="paragraph-title">IPspace</block>
+  <block id="eda63b570db82e05c2fd7b5f0c3bb20f" category="paragraph-title">감사</block>
+  <block id="5694877f9acb80427bb084dc540bff58" category="paragraph-title">감사 로그 리디렉션</block>
+  <block id="f2be2bb6f022a2ec208f7b9ce6a2c155" category="paragraph-title">CIFS 접속</block>
+  <block id="31e39608982442406853c159bf64d7ea" category="paragraph-title">CIFS 도메인입니다</block>
+  <block id="ae8f54c516c1e697ca7e99fc7d868bda" category="paragraph-title">CIFS 홈 디렉토리 검색 경로입니다</block>
+  <block id="396c3f48c117673117684dd56e4ea358" category="paragraph-title">CIFS 로컬 그룹</block>
+  <block id="494abb7dd5b763270d790ff3ee48084d" category="paragraph-title">CIFS NetBIOS입니다</block>
+  <block id="b4aed1589395fdc65c17587b27f7bb8c" category="paragraph-title">CIFS 서비스</block>
+  <block id="ef5c06085d29fcbcb6138c9c185bda09" category="paragraph-title">CIFS 세션 파일</block>
+  <block id="bc60013b8245b6824eb1f7867b61b741" category="paragraph-title">CIFS 세션</block>
+  <block id="94a2d8f06ad95f4f574506a5f9b95aa7" category="paragraph-title">CIFS 섀도 복사본</block>
+  <block id="6bd56802bbe66c487b39108b4e4b3f2e" category="paragraph-title">CIFS 공유</block>
+  <block id="064575167733ca9bd85e0b4b367d1ca9" category="paragraph-title">CIFS는 ACL을 공유합니다</block>
+  <block id="2fc8aeb9ce1675007558f9a4a074f9c3" category="paragraph-title">CIFS UNIX symlink 매핑</block>
+  <block id="6fd52b48358df3c671bb7b3860da8a55" category="paragraph-title">CIFS 사용자 및 그룹 대량 가져오기</block>
+  <block id="e99032409deaffcf7a867a648155dc5d" category="paragraph-title">파일 액세스 추적</block>
+  <block id="81584289d536a476e74f5bc4906831af" category="paragraph-title">파일 보안 권한</block>
+  <block id="1a0f4bec43cf474af35c9e77aa8c28af" category="paragraph-title">FPolicy를 참조하십시오</block>
+  <block id="c1746aa388178e56fc9071ad1d30c228" category="paragraph-title">FPolicy 연결</block>
+  <block id="371f109f46145b3f27492990eb0a9113" category="paragraph-title">FPolicy 엔진</block>
+  <block id="3bd9fd6d8026d51bcd37c5f3db077df7" category="paragraph-title">FPolicy 이벤트</block>
+  <block id="cc0e7740c7c0f284b16f9a531a2fb567" category="paragraph-title">FPolicy 정책</block>
+  <block id="7f1fb7408267003fd39631c254d0d9ae" category="paragraph-title">잠금</block>
+  <block id="1deaf7cba2dce61080af964b90af69c6" category="paragraph-title">NFS 연결 클라이언트 맵</block>
+  <block id="4e4e0f527af77484c5cbf5196e421a3d" category="paragraph-title">NFS 연결 클라이언트</block>
+  <block id="5e02bcf13960addb442383f8370c14f1" category="paragraph-title">NFS 엑스포트 정책</block>
+  <block id="6aa53caebe4b6ae8c4c8f34880b6d95d" category="paragraph-title">NFS Kerberos 인터페이스</block>
+  <block id="a925a741511b2b8f933ad6404892439b" category="paragraph-title">NFS Kerberos 영역</block>
+  <block id="2af5a2ae61f951c7a5e94ca007df0d15" category="paragraph-title">NFS 서비스</block>
+  <block id="58799a9de037b62a01e5ef1453837248" category="paragraph-title">Vscan</block>
+  <block id="794e647721bb174bd33eddbe2e97da3d" category="paragraph-title">Vscan 온액세스 정책</block>
+  <block id="67f19b53fb829d6ea610820aab8ecc04" category="paragraph-title">Vscan 주문형 정책</block>
+  <block id="4974caee8c34d629bb161cdea414869a" category="paragraph-title">Vscan 스캐너 풀</block>
+  <block id="2cf615c2df2664a7f35487c706d47001" category="paragraph-title">Vscan 서버 상태</block>
+  <block id="93735cd742fbfd0bc4709b8eab7b7a9c" category="paragraph-title">마이그레이션</block>
+  <block id="20b974944bd89d74b6906ef955914c75" category="paragraph-title">피어 권한</block>
+  <block id="642223473862db290604321fe2ebe763" category="paragraph-title">SVM</block>
+  <block id="9b945efebb006547a94415eadaa12921" category="paragraph-title">계정</block>
+  <block id="5a5fb6684999bac1ca581809abbd53ad" category="paragraph-title">계정 이름입니다</block>
+  <block id="187f8868291bfb72a7e033dd667af916" category="paragraph-title">Active Directory 프록시</block>
+  <block id="346f7f627d1a93bfbf315865554048c6" category="paragraph-title">랜섬웨어 방지</block>
+  <block id="f260003a35e4d85e558fddca87a44bc3" category="paragraph-title">감사 대상</block>
+  <block id="f553cd67933721b76f9ccab00ac4a892" category="paragraph-title">감사 메시지</block>
+  <block id="69500631fd60fd52ad3d029cb8aa50e0" category="paragraph-title">AWS KMS</block>
+  <block id="69e4f9faea00db8647cdf1c81c23c6d8" category="paragraph-title">Azure 키 저장소</block>
+  <block id="5a6c0d2579b31142130f20104fa58ea6" category="paragraph-title">인증서</block>
+  <block id="3031b41cbb19093d814e6930f3e56570" category="paragraph-title">클러스터 보안</block>
+  <block id="de7a4b58aa20c707a993012c821ffcae" category="paragraph-title">GCP KMS</block>
+  <block id="99a98e067af6b09e64f3740767096c96" category="paragraph-title">IPsec</block>
+  <block id="006138580199bd3b75b397daaf66da34" category="paragraph-title">IPsec CA 인증서</block>
+  <block id="edc104bcf18fda8f2113e04baac67d3f" category="paragraph-title">IPsec 정책</block>
+  <block id="3d2b68c7bdb9f30e1ccfb464eeb00966" category="paragraph-title">IPsec 보안 연결</block>
+  <block id="a4c782a0e5bd7be239b96d4d35ffe4fb" category="paragraph-title">키 관리자 구성</block>
+  <block id="5e2f9eab3699a50f20260789850a272c" category="paragraph-title">주요 관리자</block>
+  <block id="afcd6712bee083e0a41753fd140a0495" category="paragraph-title">키 저장소</block>
+  <block id="a49c9c380ec2e13191e995f949a1c440" category="paragraph-title">LDAP 인증</block>
+  <block id="8c4bb3ded6662bac8e6e9acbf843524d" category="paragraph-title">로그인 메시지</block>
+  <block id="6a36d99c2ac30ed84aa720f045f9fb79" category="paragraph-title">NIS 인증</block>
+  <block id="22df0a92ffce80c2c0b94f54238b8ec0" category="paragraph-title">암호 인증</block>
+  <block id="7ceacf64cc5732c8c39d8622d4e2d44c" category="paragraph-title">역할 인스턴스에 대한 권한입니다</block>
+  <block id="28885526cbecfb56bee4aca9d16e4280" category="paragraph-title">공개 키 인증</block>
+  <block id="a5cd3ed116608dac017f14c046ea56bf" category="paragraph-title">역할</block>
+  <block id="74fa3a518ab1198e0b6ab902e54e3958" category="paragraph-title">역할 인스턴스</block>
+  <block id="9097811650a92eb8b7172820dc0a2722" category="paragraph-title">SAML 서비스 공급자</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="paragraph-title">SSH를 클릭합니다</block>
+  <block id="8d74e9b6f76905c251cac67ba143095e" category="paragraph-title">SSH SVM</block>
+  <block id="6c1e0dfe5a404cce67f1db281a50ea76" category="paragraph-title">파이버 채널 프로토콜 서비스</block>
+  <block id="362aaf53838180aef26894961e18a234" category="paragraph-title">파이버 채널 WWPN 별칭</block>
+  <block id="58f3779afe9da9ffdc085dc3064306f7" category="paragraph-title">Igroup</block>
+  <block id="631b740ef1e6620839e8143382936b10" category="paragraph-title">iSCSI 자격 증명</block>
+  <block id="0ce9193c4743638434ef94331f17def2" category="paragraph-title">iSCSI 서비스</block>
+  <block id="401ea405ada422dc57c71ecc462575ab" category="paragraph-title">iSCSI 세션</block>
+  <block id="6f68434a65995c923defc360224ffecc" category="paragraph-title">LUN 특성입니다</block>
+  <block id="2bcfa5513eb7e40b556060fcb5df869d" category="paragraph-title">LUN 매핑</block>
+  <block id="304c5c7bce84cce1f1ab6cffef80fad8" category="paragraph-title">LUN은 보고 노드를 매핑합니다</block>
+  <block id="7b3c6a2d089eb1b6f8959e7e61a50c07" category="paragraph-title">LUN을 클릭합니다</block>
+  <block id="f094fdd1ff33d53f9180e4e35ace68f1" category="paragraph-title">포트 세트</block>
+  <block id="1fbd05569b3face9ed656a6b7e9ed6be" category="paragraph-title">VVol 바인딩</block>
+  <block id="62254758dcfe975098fab22609c8aa79" category="paragraph-title">버킷</block>
+  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="paragraph-title">서비스</block>
+  <block id="bd96d411ebb8705b0ef857c4d7b8c9c9" category="paragraph-title">서비스 버킷</block>
+  <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3 그룹</block>
+  <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3 정책</block>
+  <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다</block>
+  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">NetApp 및 Ansible 시작하기: Ansible을 설치하십시오</block>
+  <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP 요청</block>
+  <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP 응답입니다</block>
+  <block id="59382e918ffb6e6d1580a8b17e6e1e2c" category="paragraph-title">ONTAP 9를 사용해 보십시오</block>
+  <block id="0182974655f974e8429fb64bb3d15eb2" category="paragraph-title">REST 개념 및 구현을 검토합니다</block>
+  <block id="848c9ae1e7e981016f6df28d16d2cedd" category="paragraph-title">소프트웨어 개발 배경</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
+  <block id="a4ed418f7517459e684626971cd74fba" category="paragraph-title">ONTAP 9.7 ~ 9.10.1</block>
+  <block id="b7c35d8ede94054b7692537b058c5b46" category="paragraph-title">소유자 및 범위</block>
+  <block id="76aeab63a36298ab54940aa1b9114b6a" category="paragraph-title">고유한 이름입니다</block>
+  <block id="be3ff25d37468b06e67fe41b257114b5" category="paragraph-title">권한 집합</block>
+  <block id="d5a57aa300472d64ca2f101c95bc3ace" category="paragraph-title">REST 엔드포인트</block>
+  <block id="8fd1235a1416afe3d9fa3dad760179ff" category="paragraph-title">CLI 명령</block>
+  <block id="6215c70dd9ed027468957f47be27bee7" category="paragraph-title">어떤 ONTAP 릴리스를 사용하고 있습니까?</block>
+  <block id="1dd5dc2d82e64f070277b01c3a7d2fb8" category="paragraph-title">보호된 리소스 및 범위를 식별합니다</block>
+  <block id="2141cad14145f8887d823e45da860c83" category="paragraph-title">사용자는 어떤 액세스 권한을 가져야 합니까?</block>
+  <block id="7736c40b92c489577362a6e1a68cf65b" category="paragraph-title">사용자는 ONTAP에 어떻게 액세스합니까?</block>
+  <block id="0a783c3ce00e8d3af4931704ca629ba3" category="paragraph-title">기본 제공 역할 중 하나가 충분합니까, 아니면 사용자 지정 역할이 필요합니까?</block>
+  <block id="531201515c1ec0bfadb1f37e57c2222d" category="paragraph-title">어떤 유형의 역할이 필요합니까?</block>
+  <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">처리 유형</block>
+  <block id="11a1b77794af7e7ad738c9603dcf8730" category="paragraph-title">JSON 출력</block>
+  <block id="29c2c02a361c9d7028472e5d92cd4a54" category="paragraph-title">출력</block>
+  <block id="56aa3ed9dba484ac641c5247a15b1ed6" category="paragraph-title">기본 요구 사항</block>
+  <block id="11593a40313671a88f29e6475859f238" category="paragraph-title">패키지 이름 및 버전</block>
+  <block id="7cd8fb6e31cc946c078d2740c76a9899" category="paragraph-title">설치</block>
+  <block id="9526c4af8cb7f4cacf6131573eda8be8" category="paragraph-title">설명서 및 추가 리소스</block>
+  <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI - REST 매핑</block>
+  <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">ONTAP API에서 ONTAP REST API로 자동화 전환</block>
+  <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환</block>
+  <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">입력 대기열이 가득 차면 REST API 요청이 거부됩니다</block>
 </blocks>

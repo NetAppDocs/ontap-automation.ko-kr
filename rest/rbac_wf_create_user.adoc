@@ -22,16 +22,22 @@ summary: 아래 설명된 워크플로를 사용하여 연결된 REST 역할이 
 
 역할을 만들고 ONTAP 사용자 계정에 할당하기 전에 먼저 주요 보안 요구 사항 및 옵션을 검토하여 준비해야 합니다.
 
+.어떤 ONTAP 릴리스를 사용하고 있습니까?
 ONTAP 릴리스는 사용 가능한 REST 엔드포인트 및 RBAC 기능을 결정합니다.
 
+.보호된 리소스 및 범위를 식별합니다
 보호할 리소스 또는 명령과 범위(클러스터 또는 SVM)를 식별해야 합니다.
 
+.사용자는 어떤 액세스 권한을 가져야 합니까?
 리소스 및 범위를 파악한 후에는 부여할 액세스 수준을 결정해야 합니다.
 
+.사용자는 ONTAP에 어떻게 액세스합니까?
 사용자는 REST API 또는 CLI 또는 둘 다를 통해 ONTAP에 액세스할 수 있습니다.
 
+.기본 제공 역할 중 하나가 충분합니까, 아니면 사용자 지정 역할이 필요합니까?
 기존 기본 제공 역할을 사용하는 것이 더 편리하지만 필요한 경우 새 사용자 지정 역할을 만들 수 있습니다.
 
+.어떤 유형의 역할이 필요합니까?
 보안 요구 사항 및 ONTAP 액세스를 기반으로 REST 또는 기존 역할을 생성할지 여부를 선택해야 합니다.
 
 
@@ -61,6 +67,7 @@ NOTE: 워크플로는 전체 프로세스를 설명하기 위한 것입니다. �
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=name' -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 새 사용자 및 역할을 생성할 목록에서 원하는 SVM을 선택합니다.
 
 
@@ -81,6 +88,7 @@ curl --location -i --request GET 'https://10.222.81.101/api/svm/svms?order_by=na
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/security/accounts/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 SVM에 이미 정의된 사용자를 기준으로 새 사용자의 이름을 선택합니다.
 
 
@@ -101,6 +109,7 @@ SVM에 이미 정의된 사용자를 기준으로 새 사용자의 이름을 선
 ----
 curl --location -i --request GET 'https://10.222.81.101/api/security/roles/?owner.name=dmp' -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 SVM에 이미 정의된 역할에 따라 새 역할에 맞는 고유한 이름을 선택하십시오.
 
 
@@ -135,6 +144,7 @@ SVM에서 맞춤형 REST API를 생성하여 다음 REST API 호출을 수행합
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 필요에 따라 3단계를 다시 수행하여 새 역할을 표시합니다. ONTAP CLI에서 역할을 표시할 수도 있습니다.
 
 
@@ -162,6 +172,7 @@ curl --location -i --request POST 'https://10.222.81.101/api/security/roles' --d
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/roles/752d96be-f17c-11ec-9d19-005056bbad91/dprole1/privileges' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 필요에 따라 3단계를 다시 수행하여 새 역할을 표시합니다. ONTAP CLI에서 역할을 표시할 수도 있습니다.
 
 
@@ -200,4 +211,5 @@ TIP: 역할 없이 사용자를 포함할 수 있습니다. 이 경우 역할을
 ----
 curl --location -i --request POST 'https://10.222.81.101/api/security/accounts' --data @JSONinput -u admin:password -k --header 'Accept: */*'
 ----
+.작업을 마친 후
 새 사용자의 자격 증명을 사용하여 SVM 관리 인터페이스에 로그인할 수 있습니다.
