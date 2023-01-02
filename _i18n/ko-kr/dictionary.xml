@@ -687,7 +687,6 @@
   <block id="62ab609b605a05f43f98599818f46170" category="paragraph">일정을 사용하여 작업 수행을 자동화할 수 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="cb32862c2302b4cbb3b8a44e2226df17" category="paragraph">ONTAP 클러스터에는 클러스터 소프트웨어 프로필, 소프트웨어 패키지 컬렉션, 소프트웨어 기록 컬렉션이 포함됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
   <block id="45cd51d7dc9ee8cde1ea6dfb973f7002" category="paragraph">이러한 끝점을 사용하여 웹 서비스 구성을 업데이트하고 현재 구성을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
-  <block id="3e25960a79dbc69b674cd4ec67a72c62" category="doc">헬로우 월드</block>
   <block id="a30f2db6f9a8c5629dc89b408b5d97e4" category="paragraph">CLI에서 간단한 curl 명령을 실행하여 ONTAP REST API 사용을 시작하고 사용 가능 여부를 확인할 수 있습니다.</block>
   <block id="f1d5e3ebc77f66e2befb5941d10019ee" category="paragraph">curl 유틸리티는 워크스테이션에서 사용할 수 있어야 합니다. 또한 다음이 있어야 합니다.</block>
   <block id="ec4f05f95246e64e1875be5ee79905b2" category="list-text">ONTAP REST API(클러스터 리소스)에 액세스할 수 있는 권한이 있는 계정의 사용자 이름과 암호입니다.</block>
@@ -1534,4 +1533,5 @@
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">ONTAP API에서 ONTAP REST API로 자동화 전환</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">입력 대기열이 가득 차면 REST API 요청이 거부됩니다</block>
+  <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">첫 번째 API 호출입니다</block>
 </blocks>
