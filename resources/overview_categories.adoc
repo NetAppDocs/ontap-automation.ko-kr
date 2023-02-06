@@ -14,9 +14,9 @@ summary: ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 설명
 
 
 [role="lead"]
-ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 설명서 페이지에 표시된 대로 범주로 구성됩니다. 다음은 기본 리소스 경로가 있는 각 리소스에 대한 간략한 설명과 함께 적절한 경우 추가 사용 고려 사항입니다.
+ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 온라인 설명서에 나와 있는 것처럼 범주별로 구성되어 있습니다. 각 리소스에 대한 간략한 설명과 함께 해당되는 경우 추가적인 사용 고려 사항이 아래에 나와 있습니다.
 
-이 섹션에서는 최신 버전의 제품에 대한 REST 리소스에 대해 설명합니다. 이전 버전에서 변경된 내용을 이해해야 하는 경우 _릴리스 정보_를 참조하십시오.
+이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 link:../rn/whats_new.html["ONTAP REST API의 새로운 기능"] 뿐만 아니라 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^].
 
 
 TIP: 나머지 대부분의 끝점에서는 UUID 키를 경로 문자열의 일부로 포함하여 특정 개체 인스턴스를 액세스할 수 있습니다. 그러나 쿼리 매개 변수의 속성 값을 사용하여 개체에 액세스할 수도 있습니다.
@@ -24,5 +24,4 @@ TIP: 나머지 대부분의 끝점에서는 UUID 키를 경로 문자열의 일�
 .관련 정보
 * link:../rest/object_references_and_access.html["추가 REST 고려 사항"]
 * link:../reference/api_reference.html["API 참조입니다"]
-* link:../rn/whats_new.html["ONTAP 릴리즈 노트"]
 

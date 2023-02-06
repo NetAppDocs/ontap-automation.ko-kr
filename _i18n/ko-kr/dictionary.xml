@@ -456,8 +456,6 @@
   <block id="cf304f8d071581c8a16443a669547c31" category="paragraph">LUN은 SAN(Storage Area Network)에 있는 스토리지의 논리적 표현입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">포트 세트는 _포트셋_스토리지 VM과 연결된 Fibre Channel 또는 iSCSI 네트워크 인터페이스의 모음입니다. 이 기능은 이전 릴리스의 ONTAP에 포함되어 있지만 이제 REST API에 지원이 추가되었습니다. 이 REST 리소스 유형은 ONTAP 9.9에 도입되었습니다.</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VVol(VMware Virtual Volume) 바인딩은 클래스 "protocol_endpoint"의 LUN과 클래스 "vVol"의 LUN 간의 연관입니다. VVOL 바인딩 REST API를 사용하여 VVOL 바인딩을 생성, 삭제 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
-  <block id="b2169c6a3a0ae080710868637b995ad7" category="paragraph">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 설명서 페이지에 표시된 대로 범주로 구성됩니다. 다음은 기본 리소스 경로가 있는 각 리소스에 대한 간략한 설명과 함께 적절한 경우 추가 사용 고려 사항입니다.</block>
-  <block id="1d1927ef8ecb65f8a47a28bdaad73c8d" category="paragraph">이 섹션에서는 최신 버전의 제품에 대한 REST 리소스에 대해 설명합니다. 이전 버전에서 변경된 내용을 이해해야 하는 경우 _릴리스 정보_를 참조하십시오.</block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">나머지 대부분의 끝점에서는 UUID 키를 경로 문자열의 일부로 포함하여 특정 개체 인스턴스를 액세스할 수 있습니다. 그러나 쿼리 매개 변수의 속성 값을 사용하여 개체에 액세스할 수도 있습니다.</block>
   <block id="5b601547f8aa3a93b2be784742d56f50" category="paragraph">이러한 API 호출을 사용하여 클러스터 및 SVM 보안 설정을 관리할 수 있습니다.</block>
   <block id="24e7cd4ec777036322f32b55a87d5bce" category="paragraph">클러스터 및 SVM에 대한 사용자 계정 모음이 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -1266,7 +1264,6 @@
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다.</block>
-  <block id="a4b91b72885f9acc20754bbfdf70a0ba" category="paragraph">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다. 이 섹션에서는 사용 가능한 리소스에 대해 설명하고 마이그레이션을 지원하는 데 도움이 되는 기능과 도구를 중점적으로 설명합니다.</block>
   <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">NetApp은 처음에 ONTAP 9.6과 함께 REST API를 도입했습니다. 그 이후로 API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 배포 관리를 자동화할 때 ONTAPI에 대한 우선적이고 전략적인 대안을 제공합니다.</block>
   <block id="67aba80d01179bffdadcdf811b49cc44" category="summary">ONTAP 카운터 관리자를 사용하면 ONTAP 사용자가 성능 카운터 정보에 액세스하고 다양한 ONTAP 성능 카운터 메트릭을 내보낼 수 있습니다.</block>
   <block id="6be98e5db6d305c8664913cfad46b09c" category="inline-link">ONTAP 9.12.1 ONTAPI-Rest 카운터 관리자 매핑</block>
@@ -1534,4 +1531,8 @@
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환</block>
   <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">입력 대기열이 가득 차면 REST API 요청이 거부됩니다</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">첫 번째 API 호출입니다</block>
+  <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 온라인 설명서에 나와 있는 것처럼 범주별로 구성되어 있습니다. 각 리소스에 대한 간략한 설명과 함께 해당되는 경우 추가적인 사용 고려 사항이 아래에 나와 있습니다.</block>
+  <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
+  <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
+  <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다. 마이그레이션을 지원하는 데 사용할 수 있는 많은 유용한 리소스와 도구가 있습니다.</block>
 </blocks>
