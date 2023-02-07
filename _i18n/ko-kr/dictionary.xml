@@ -1535,4 +1535,7 @@
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
   <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
   <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다. 마이그레이션을 지원하는 데 사용할 수 있는 많은 유용한 리소스와 도구가 있습니다.</block>
+  <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.</block>
+  <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
+  <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
 </blocks>

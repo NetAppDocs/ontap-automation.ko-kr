@@ -26,6 +26,11 @@ REST API를 기반으로 ONTAP 자동화 환경을 변환하는 데 사용할 �
 
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["www.netapp.com/blog/transform-automation-ontap-rest-api"^]
 
+.전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다
+CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.
+
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api"^]
+
 .ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환
 NetApp은 고객과 파트너가 ONTAP REST API로 전환할 수 있도록 지원합니다.
 
