@@ -970,36 +970,10 @@
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">REST API로 마이그레이션합니다</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">REST 매핑에 대한 ONTAPI</block>
   <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">블로그</block>
-  <block id="d2fe6ca70e862256ec5db4361e09d5b1" category="paragraph">ONTAP 9.11.1 이전에는 ONTAP 카운터 관리자 개체의 전체 세트에 대한 액세스가 ONTAP CLI 및 ONTAPI 인터페이스로 제한됩니다.</block>
-  <block id="36989422b5cc9879d4b033aff909b8d0" category="paragraph">ONTAP 9.11.1부터 ONTAP 사용자는 ONTAP REST API를 사용하여 Counter Manager 개체의 세그먼트에 액세스할 수 있습니다. ONTAPI에서 ONTAP REST API로 자동화 스크립트를 마이그레이션하는 사용자는 성능 카운터 데이터가 ONTAPI에 표시되는 방식과 해당 데이터가 REST API에 제공되는 방식 간의 차이점을 이해해야 합니다.</block>
-  <block id="caf3ee040de28e9f6d46988870dece28" category="section-title">ONTAPI를 사용하여 성능 카운터에 액세스합니다</block>
-  <block id="acb7e7db7dc26e2ee7f0a6ca7889fc0e" category="paragraph">ONTAPI에서 소비되는 성능 카운터 데이터는 오브젝트로 그룹화됩니다. 예를 들어, 디스크 4개가 포함된 노드의 경우 디스크 성능 카운터 데이터가 객체로 그룹화됩니다. 시스템의 각 물리 디스크는 해당 개체의 인스턴스를 나타내며, ONTAPI를 사용하여 단일 디스크 인스턴스의 개별 성능 카운터에 액세스할 수 있습니다.</block>
-  <block id="3786be7650bb73d3aca4f15ae8918df6" category="section-title">ONTAP REST API를 사용하여 성능 카운터에 액세스</block>
-  <block id="25a6f074faebcb689360e5a8ed4cb46d" category="paragraph">ONTAP REST API를 사용하면 카운터 관리자 객체를 테이블(예: "디스크")로 액세스할 수 있습니다. 즉, 각 카운터 관리자 개체는 고유한 테이블로 표시되고 해당 카운터 관리자 개체의 인스턴스(예: 시스템의 개별 디스크)는 해당 테이블의 행으로 액세스할 수 있습니다. 각 행에는 해당 인스턴스에 대한 여러 개의 개별 성능 카운터가 포함되어 있습니다. 인스턴스에 대한 단일 성능 카운터를 해당 테이블 행의 필드로 액세스할 수 있습니다.</block>
-  <block id="b624cb182b45b8cd771b55f340bd48db" category="paragraph">다음 예에서는 ONTAP REST API를 사용하여 각 성능 카운터에 액세스할 수 있는 방법을 보여 주기 위해 "host_adapter" 카운터 관리자 개체가 표 형식으로 표시됩니다. 시스템에는 여러 호스트 어댑터가 있으며 각 호스트 어댑터에는 고유한 성능 카운터가 있습니다.</block>
   <block id="8306b094d2e16f41079e29117db4bb23" category="cell">인스턴스 이름</block>
-  <block id="fbec7db93c11926b216977db525ae3ab" category="cell">REST 카운터</block>
   <block id="f74fb34c9f03e41b8c43158d192c2d00" category="cell">host_adapter_1</block>
-  <block id="d8a7543b7dce739012bd345b5a03eccb" category="cell">TOTAL_READ_ops</block>
-  <block id="e27bc9a2caed78fe1b2b968b85b1dfd9" category="cell">TOTAL_WRITE_ops</block>
-  <block id="31057b5059a47701f78ecd9a1f74a071" category="cell">바이트 _ 읽기</block>
-  <block id="477dba04d73005ccb3c67063b3a38723" category="cell">바이트 _ 쓰입니다</block>
-  <block id="cf0e377beaa1e7766c218fd657cbbbd2" category="cell">MAX_LINK_DATA_RATE</block>
-  <block id="e1fe7012a83d918a6018ad433c5911c6" category="cell">RSCN_COUNT</block>
   <block id="5179155001c9f520ffb99f72e2b20b26" category="cell">Host_adapter_2</block>
   <block id="e963b19eb0f4d2b1cf056e63183513d8" category="cell">Host_adapter_3</block>
-  <block id="b8e21401d171e2074defa8652af924bd" category="section-title">REST API 예제를 통한 구조 이해</block>
-  <block id="31e2f56402a33c38bb51a024fb126484" category="paragraph">다음 REST API 예제를 사용하여 Counter Manager 테이블의 구조를 이해할 수 있습니다. 또한 REST API를 사용하여 사용 가능한 엔드포인트를 검색하고 이를 사용하여 시스템 성능을 파악할 수 있는 방법도 보여 줍니다. 이 예들은 객체와 여기에 포함된 카운터 값에 대한 보다 자세한 정보를 점차적으로 보여주는 호스트 어댑터 카운터 관리자 개체를 탐구합니다. 시스템에서 이러한 예를 시도할 경우 괄호 &lt;&gt;로 표시된 정보에 대한 값을 제공해야 합니다.</block>
-  <block id="bec1d0d2213e6c86ce1d238db29c19d4" category="section-title">사용 가능한 성능 카운터 테이블을 검색합니다</block>
-  <block id="f277ad098d40e91b5eb2ab7a35f6508e" category="paragraph">이 REST API 호출을 사용하여 쿼리할 수 있는 모든 카운터 관리자 테이블을 검색할 수 있습니다.</block>
-  <block id="5e15906e971267826a4f4e09b907e18d" category="listing-title">예제 응답(간결성을 위해 잘림):</block>
-  <block id="50932c8d3176ea01109499bc172117ea" category="section-title">개별 성능 카운터 테이블을 쿼리합니다</block>
-  <block id="987e44df4701f85b99bed446c53704d0" category="paragraph">이 REST API 호출을 사용하여 하나의 특정 테이블(카운터 관리자 개체)에 대한 설명과 메타데이터를 볼 수 있습니다. 이 출력은 테이블의 용도를 설명하고 각 성능 카운터가 테이블 레코드에 있는 정보 유형을 설명합니다. 이 예에서는 'host_adapter' 테이블을 쿼리합니다.</block>
-  <block id="8a651b733e43788e6c813c286a2ed976" category="listing-title">응답 예:</block>
-  <block id="76f44ea931b02455d8f2c37f92aafe27" category="section-title">성능 카운터 테이블에서 행을 봅니다</block>
-  <block id="445271c2961902f1af016fe036a233ca" category="paragraph">이 REST API 호출을 사용하여 테이블의 행을 볼 수 있습니다. 이 경우 Counter Manager 개체의 인스턴스가 어떤 것인지 알 수 있습니다.</block>
-  <block id="48cea788f1e546862ce3c6b34e79dd3d" category="section-title">특정 Counter Manager 인스턴스를 쿼리합니다</block>
-  <block id="3fae5b493cbf17e185ee077370c17c3c" category="paragraph">이 REST API 호출을 사용하여 테이블의 특정 Counter Manager 인스턴스에 대한 성능 카운터 값을 볼 수 있습니다. 이 예에서는 시스템의 전원 공급 장치 중 하나에 대한 성능 카운터 정보를 요청합니다.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
   <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다. 이러한 제한 사항은 아래에 설명되어 있습니다. 일반적으로 REST API를 사용할 수 있는 지원되는 모든 ONTAP 릴리스에 각각 적용됩니다. 자세한 내용은 _ONTAP 릴리스_ 필드를 참조하십시오.</block>
   <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">REST API는 ONTAP 9.6에서 처음 사용할 수 있게 되었습니다.</block>
@@ -1265,9 +1239,6 @@
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다.</block>
   <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">NetApp은 처음에 ONTAP 9.6과 함께 REST API를 도입했습니다. 그 이후로 API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 배포 관리를 자동화할 때 ONTAPI에 대한 우선적이고 전략적인 대안을 제공합니다.</block>
-  <block id="67aba80d01179bffdadcdf811b49cc44" category="summary">ONTAP 카운터 관리자를 사용하면 ONTAP 사용자가 성능 카운터 정보에 액세스하고 다양한 ONTAP 성능 카운터 메트릭을 내보낼 수 있습니다.</block>
-  <block id="6be98e5db6d305c8664913cfad46b09c" category="inline-link">ONTAP 9.12.1 ONTAPI-Rest 카운터 관리자 매핑</block>
-  <block id="9c05e54babc957a833ecc92ef2e75012" category="paragraph">을 참조하십시오<block ref="73d740243a5716d9ce6f3044b00bac72" category="inline-link-rx"></block> ONTAP 9.11.1의 REST API에서 사용할 수 있는 ONTAP 카운터 집합에 대한 설명뿐 아니라 ONTAPI와 REST API 소비의 카운터 간 차이점 관련 정보도 제공합니다.</block>
   <block id="85689804a28905b0c1195ff1c4debf5c" category="paragraph">ONTAP에 대한 다양한 통계 정보는 Counter Manager 서브시스템에서 캡쳐됩니다. 이 정보에 액세스하여 시스템 성능을 평가할 수 있습니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
   <block id="4ceab4a3abb75365d3643e7027283265" category="paragraph">스위치오버 또는 스위치백 작업 실행을 비롯한 MetroCluster 배포를 생성하고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새롭게 추가되었으며 9.11로 업데이트되었습니다.</block>
   <block id="ef706b335d4d5abcae8612013f999056" category="paragraph">이러한 끝점을 사용하여 모든 플랫폼 환경 센서에 대한 세부 정보를 검색할 수 있습니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
@@ -1538,4 +1509,76 @@
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
   <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
+  <block id="7e9d549a6ae2d8edef3b2cbe603be866" category="summary">ONTAP 카운터 관리자는 각 ONTAP 시스템의 성능에 대한 광범위한 정보를 유지합니다. 이 데이터는 ONTAP 시스템의 성능을 평가하고 성능 목표를 달성하는 데 사용할 수 있는 성능 카운터로 내보냅니다.</block>
+  <block id="f820365d9bff90a726b9e0e66581d39d" category="paragraph">ONTAP 카운터 관리자는 각 ONTAP 시스템의 성능에 대한 광범위한 정보를 유지합니다. 이 데이터는 _performance 카운터_ 세트로 내보내기되므로 ONTAP 시스템의 성능을 평가하고 성능 목표를 달성하는 데 사용할 수 있습니다.</block>
+  <block id="a47c181a1090073afb97b1f1a4307d7d" category="section-title">ONTAP 성능 카운터에 액세스합니다</block>
+  <block id="cdbb9578a759a13c2c7134feb12a72ea" category="paragraph">ONTAP 명령줄 인터페이스를 통해뿐만 아니라 두 개의 서로 다른 API를 사용하여 ONTAP 성능 카운터에 액세스할 수 있습니다.</block>
+  <block id="0c6461c68e8a20bdf018fd0dbc7bc7a5" category="admonition">ONTAP REST API는 ONTAP 구축 관리를 자동화할 때 선호되는 전략적 옵션입니다.</block>
+  <block id="ce0b080944b4c8f4f5ea8092842dc74d" category="section-title">ONTAPI API를 참조하십시오</block>
+  <block id="beae2ae79822078348590dc0ba8ce1b2" category="paragraph">ONTAPI API API는 NetApp Network Manageability SDK에서 사용할 수 있습니다. ONTAPI를 사용할 때 성능 카운터는 개체 컬렉션 내에서 정의됩니다. 각 객체는 시스템의 물리적 또는 가상 구성요소에 해당합니다. 시스템 구성에 따라 각 개체의 인스턴스가 하나 이상 있을 수 있습니다.</block>
+  <block id="f4e84d55cb14c2c5144d25f275bd9f3b" category="paragraph">예를 들어, ONTAP 시스템에 4개의 물리적 디스크가 있는 경우 의 인스턴스가 4개 있습니다<block ref="75688b0220ad16c4e02152b6c2b56424" prefix=" " category="inline-code"></block> 각각 고유한 성능 카운터 집합이 있는 개체입니다. ONTAPI를 사용하여 각 디스크 인스턴스의 개별 카운터에 액세스할 수 있습니다.</block>
+  <block id="6d36845d186d3890b3067fbbdb46a807" category="paragraph">ONTAP 9.11.1부터 REST API를 통해 성능 데이터에 액세스할 수도 있습니다. 이 경우 성능 카운터는 ONTAPI 개체와 동일한 표로 구성됩니다. 각 테이블 행은 ONTAPI 개체의 인스턴스와 같습니다.</block>
+  <block id="769682f5d559ebcb9541e71fb574bef6" category="paragraph">예를 들어, ONTAP 시스템에 4개의 물리 디스크가 있는 경우, 를 참조하십시오<block ref="75688b0220ad16c4e02152b6c2b56424" prefix=" " category="inline-code"></block> 테이블에는 4개의 행이 포함됩니다. 각 행에 개별적으로 액세스할 수 있으며 해당 행의 필드나 열로 사용할 수 있는 자체 성능 카운터 집합이 포함되어 있습니다.</block>
+  <block id="14b8ecb81db2006a9a8b3cc58981aa9c" category="paragraph">ONTAP REST API를 사용하여 성능 카운터에 액세스하기 전에 준비해야 합니다.</block>
+  <block id="167b969eaf908213a52bfc7d95b47339" category="section-title">성능 카운터는 표로 정리되어 있습니다</block>
+  <block id="77ea505a85a8a1dfb8b77911558da1d3" category="paragraph">ONTAPI 개체의 하위 집합은 ONTAP REST API를 통해 사용할 수 있으며 테이블로 표시됩니다. 예를 들어, ONTAPI * hostadapter * 개체는 REST API를 통해 * host_adpater * 테이블로 표시됩니다. 시스템의 각 호스트 어댑터는 자체 성능 카운터 세트가 있는 행입니다.</block>
+  <block id="80ad75217d00ef2075eec658520cf5c9" category="cell">TOTAL_READ_ops_1</block>
+  <block id="7b733195b8d6f71526a1f37ebce6d184" category="cell">TOTAL_WRITE_ops_1</block>
+  <block id="18245b17d333487b4ab2119f59717e24" category="cell">바이트_읽기_1</block>
+  <block id="6fec29bb26cfd8c777d3cb7841c1fd6f" category="cell">바이트_쓰인 공간_1</block>
+  <block id="21990672a0af5fe35999ebaca07834a7" category="cell">MAX_LINK_DATA_RATE_1</block>
+  <block id="ee72c0c0ba5867feec433ba7494cc0a4" category="cell">RSCN_COUNT_1</block>
+  <block id="ada945e170e5b528dc821351ffa1ca14" category="cell">TOTAL_READ_ops_2</block>
+  <block id="a24695010bf2913575b4e484c82362e4" category="cell">TOTAL_WRITE_ops_2</block>
+  <block id="49c7d988cd250ce82f5c163b31f4561b" category="cell">바이트_읽기_2</block>
+  <block id="5a9d32ef76b0dbca01cf7c966e72795b" category="cell">바이트_쓰인 공간_2</block>
+  <block id="67362a66da910fea4f18a6599dd7a61e" category="cell">MAX_LINK_DATA_RATE_2</block>
+  <block id="26515188ac6484810046ed30eb9ecc4f" category="cell">RSCN_COUNT_2</block>
+  <block id="de38d39100fc7fee980a47fd37073bf9" category="cell">TOTAL_READ_ops_3</block>
+  <block id="37388d8a3c10c070facd1451fc7c1d44" category="cell">TOTAL_WRITE_ops_3</block>
+  <block id="30410fbd489b0763b5e4bad491ed57f7" category="cell">바이트_읽기_3</block>
+  <block id="4f127818c5904ea49d8055d43a327c03" category="cell">바이트_쓰인 공간_3</block>
+  <block id="701b5588801318d9288bb78ea2e71583" category="cell">MAX_LINK_DATA_RATE_3</block>
+  <block id="11ac925c4de2f7be1785e44473d87be3" category="cell">RSCN_COUNT_3</block>
+  <block id="63b8106cb2aa672ae3995c5d558d3296" category="section-title">나머지 끝점의 요약</block>
+  <block id="7744b29f6452d3e2eb95c503d0d07edf" category="paragraph">ONTAP 성능 카운터 및 관련 테이블에 액세스할 수 있는 네 가지 주요 엔드포인트가 있습니다.</block>
+  <block id="090ab1896a0449210d800ef238f4b5a6" category="admonition">각 REST 끝점은 읽기 전용 액세스를 제공하며 * GET * HTTP 메서드만 지원합니다. 를 참조하십시오 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="dbba1a079a2db71002bfc2065fb3ea97" category="list-text">* /cluster/counter/tables *</block>
+  <block id="dfa3a3a64218018784f7e9436fe8fc6a" category="paragraph">카운터 테이블 및 해당 스키마 정의의 컬렉션을 반환합니다.</block>
+  <block id="cf4029871e69df9be8d03de70bed514c" category="list-text">* /cluster/counter/tables/{name} *</block>
+  <block id="ada16b5e5eb31075579222dc02c39052" category="paragraph">명명된 단일 카운터 테이블에 대한 정보를 반환합니다.</block>
+  <block id="32bc9a5de05d0316aa8cabd90fd9b85a" category="list-text">* /cluster/counter/tables/{counter_name}/rows *</block>
+  <block id="77841d08a4b26aff7d4266e98154ce37" category="paragraph">명명된 카운터 테이블의 행 컬렉션을 반환합니다.</block>
+  <block id="769b471b30f38933e7b2102ece1306eb" category="list-text">* /cluster/counter/tables/{counter_name}/rows/{id} *</block>
+  <block id="a01a598346c8ee9e07f64ca8b3c6dfb3" category="paragraph">명명된 카운터 테이블에서 특정 행을 반환합니다.</block>
+  <block id="8754d12ba0d161651192001fada04f18" category="section-title">ONTAPI에서 REST API로 마이그레이션</block>
+  <block id="9cfb5bc4e6579f4ac50244e8b2931ed5" category="paragraph">NetApp은 ONTAPI에서 ONTAP REST API로 자동화 코드를 마이그레이션하기 위한 광범위한 지원을 제공합니다. 여기에는 지정된 ONTAPI 개체에 대한 REST API에서 사용할 수 있는 동등한 성능 카운터 테이블을 식별하는 문서가 포함됩니다.</block>
+  <block id="38fa1dfa125f39c71e3841bb1a8acad8" category="paragraph">사용 중인 ONTAP 릴리스에 따라 적절한 매핑 설명서를 참조하십시오.</block>
+  <block id="69171af9658ef4af7c5718f77b0005ea" category="inline-link">ONTAP 9.12.1 성능 카운터 매핑</block>
+  <block id="d80bcff677f986fc21887a1d1191e247" category="list-text"><block ref="d80bcff677f986fc21887a1d1191e247" category="inline-link-rx"></block></block>
+  <block id="54f3a66937c05960457b35fe016ec878" category="inline-link">ONTAP 9.11.1 성능 카운터 매핑</block>
+  <block id="7406cf183a318ad72a9fcbd90c5efa56" category="list-text"><block ref="7406cf183a318ad72a9fcbd90c5efa56" category="inline-link-rx"></block></block>
+  <block id="0780850d56e52d88a8eaefb85c6c63bb" category="section-title">ONTAP REST API를 시작합니다</block>
+  <block id="ae545f118384587cae56a2872c8f5b56" category="paragraph">다음 예제에서는 REST API를 사용하여 ONTAP 성능 카운터에 액세스하는 방법을 보여 줍니다. 여기에는 사용 가능한 테이블 목록을 검색하고 테이블 구조를 탐색하는 작업이 포함됩니다.</block>
+  <block id="5d40b4d1c96be5f3ac1fce29c993e666" category="paragraph">예제를 사용하기 전에 다음 정보를 검토하십시오.</block>
+  <block id="823a6e1d7fe661be55dd3af05f972b11" category="paragraph-title">ONTAP 자격 증명</block>
+  <block id="d9406f35ebb4debde35d5724f54923b6" category="paragraph">암호를 포함한 ONTAP 관리자 계정이 필요합니다.</block>
+  <block id="40800f2ceb1fadf0fb67562c1b95ca89" category="paragraph-title">클러스터 관리 IP</block>
+  <block id="88622e4ee60becc302d495a1fb82ef7a" category="paragraph">ONTAP 시스템에 대해 구성된 클러스터 관리 IP 주소가 필요합니다.</block>
+  <block id="0ba7651aa741c2a52c725e15b6609f90" category="paragraph-title">모든 API 호출은 get 메서드를 사용합니다</block>
+  <block id="e9b76346cc46565647f0a3768c5e7a3c" category="paragraph">아래에 포함된 모든 예제는 HTTP GET 메서드를 사용하여 정보를 검색하는 데만 사용할 수 있습니다.</block>
+  <block id="8edb7db9b7ce12a91e5f7f328c4fd571" category="paragraph-title">변수 대체</block>
+  <block id="842e9897d607f226bc07569db10801dc" category="paragraph">각 curl 예제에는 대문자 및 괄호 텍스트로 표시된 하나 이상의 변수가 포함됩니다. 이러한 변수를 사용자 환경에 적합한 실제 값으로 바꿉니다.</block>
+  <block id="ddfe305f362a09c7825cbb3a71606269" category="paragraph-title">예제는 끝점과 일치합니다</block>
+  <block id="d18abe51873853d22fe390c1932b7e68" category="paragraph">아래 예제 순서는 성능 카운터를 검색하는 데 사용할 수 있는 REST 끝점을 사용하는 방법을 보여 줍니다. 을 참조하십시오 <block ref="1969dd68038c480c3d1e1caf4d6cac68" category="inline-xref-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="409153b432612c0c28d59068b4f722b2" category="section-title">예 1: 모든 성능 카운터 테이블</block>
+  <block id="ba60f1982500153039ce706a8490c8e9" category="paragraph">이 REST API 호출을 사용하여 사용 가능한 모든 카운터 관리자 테이블을 검색할 수 있습니다.</block>
+  <block id="e0da47631d6f2648f3a36bde7e269c3b" category="example-title">컬의 예</block>
+  <block id="bff6b273561ec6570215c14bdba13a26" category="example-title">JSON 출력 예</block>
+  <block id="2520cd8ad21213341252042d4ae11a70" category="section-title">예 2: 특정 테이블에 대한 고급 정보</block>
+  <block id="4deeab1a43ea80fa57c532f7930d6577" category="paragraph">이 REST API 호출을 사용하여 특정 테이블에 대한 설명과 메타데이터를 표시할 수 있습니다. 이 출력에는 테이블의 목적과 각 성능 카운터에 포함된 데이터 유형이 포함됩니다. 이 예에서는 * host_adapter * 테이블을 사용합니다.</block>
+  <block id="8edf37a446938beb909344829dcef098" category="section-title">예 3: 특정 테이블의 모든 행</block>
+  <block id="4482877c1310ddfbbba9fb22dc7df61b" category="paragraph">이 REST API 호출을 사용하여 테이블의 모든 행을 볼 수 있습니다. Counter Manager 개체의 인스턴스를 나타냅니다.</block>
+  <block id="fcecf68c3a713225f78b4de16ac6df03" category="section-title">예제 4: 특정 테이블의 단일 행</block>
+  <block id="0aeaf5f6b15f47a8487668e4d5e041f2" category="paragraph">이 REST API 호출을 사용하여 테이블의 특정 Counter Manager 인스턴스에 대한 성능 카운터 값을 볼 수 있습니다. 이 예에서는 호스트 어댑터 중 하나에 대한 성능 데이터가 요청됩니다.</block>
 </blocks>
