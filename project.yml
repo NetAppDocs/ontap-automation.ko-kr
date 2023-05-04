@@ -53,6 +53,16 @@ homepage:
       url: "/automate/ontap_ansible.html"
     - title: 자동화 블로그
       url: "/automate/blogs.html"
+  - title: REST API로 마이그레이션합니다
+    links:
+    - title: ONTAPI 비활성화
+      url: "/migrate/overview.html"
+    - title: REST 매핑에 대한 ONTAPI
+      url: "/migrate/mapping.html"
+    - title: 성능 카운터
+      url: "/migrate/performance-counters.html"
+    - title: 블로그 기사를 참조하십시오
+      url: "/migrate/blogs.html"
   - title: 더 많은 리소스
     links:
     - title: 자세한 정보를 확인하십시오

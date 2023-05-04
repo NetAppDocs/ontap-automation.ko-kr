@@ -32,7 +32,7 @@ NOTE: ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스
 역할에는 두 가지 유형이 있습니다. ONTAP이 발전함에 따라 다양한 환경에 맞게 조정되고 도입되었습니다.
 
 
-NOTE: 각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 link:../rest/work_roles_users.html#comparing-the-role-types["역할 유형 비교"] 를 참조하십시오.
+NOTE: 각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 link:../rest/rbac_roles_users.html#comparing-the-role-types["역할 유형 비교"] 를 참조하십시오.
 
 [cols="20,80"]
 |===

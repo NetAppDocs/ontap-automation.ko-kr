@@ -100,6 +100,7 @@ NetApp은 ONTAPI에서 ONTAP REST API로 자동화 코드를 마이그레이션�
 
 사용 중인 ONTAP 릴리스에 따라 적절한 매핑 설명서를 참조하십시오.
 
+* https://docs.netapp.com/us-en/ontap-pcmap-9131/["ONTAP 9.13.1 성능 카운터 매핑"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9121/["ONTAP 9.12.1 성능 카운터 매핑"^]
 * https://docs.netapp.com/us-en/ontap-pcmap-9111/["ONTAP 9.11.1 성능 카운터 매핑"^]
 

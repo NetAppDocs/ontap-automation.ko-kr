@@ -168,7 +168,6 @@
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="doc">NAS</block>
   <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">이러한 API 호출을 사용하여 클러스터와 SVM에 대한 CIFS 및 NFS 설정을 관리할 수 있습니다.</block>
   <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">NAS 감사 이벤트를 특정 SVM으로 리디렉션할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
-  <block id="772ba71e6aaaa5e3a9d9cdecd907e2e2" category="paragraph">CIFS 도메인에 대한 지원이 클러스터 및 SVM 레벨에서 다양한 유형의 엔드포인트로 추가되었습니다. 도메인 구성을 검색할 뿐만 아니라 기본 도메인 컨트롤러를 만들고 제거할 수도 있습니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">CIFS 서버의 SMB 사용자에 대한 홈 디렉토리는 각 사용자에 대한 개별 SMB 공유를 생성하지 않고 생성할 수 있습니다. 홈 디렉토리 검색 경로는 SVM 루트에서 연결되는 절대 경로 집합입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="71a26588e1c1d8e12094fdd21dc0d287" category="paragraph">이 API를 사용하여 CIFS 세션에 대한 자세한 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.8 REST API에 도입되었으며 ONTAP 9.9로 향상되었습니다.</block>
@@ -203,11 +202,7 @@
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">ONTAP 9 개발자 리소스</block>
   <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">ONTAPI를 통한 REST API 매핑 정보</block>
   <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
-  <block id="09b968a9a3d2c3977d1e4ac1ccd11b75" category="inline-link">PyPI:NetApp ONTAP 9.10.1</block>
-  <block id="4be092006953c35749a0846e4734167a" category="list-text"><block ref="4be092006953c35749a0846e4734167a" category="inline-link-rx"></block></block>
   <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">PyPI의 NetApp Python 클라이언트 라이브러리 패키지</block>
-  <block id="52c1911015b514cf96a78c24068ce96a" category="inline-link">9.10.1용 NetApp PCL 설명서</block>
-  <block id="dd0ebea31107f6302bac45e38cca3b1d" category="list-text"><block ref="dd0ebea31107f6302bac45e38cca3b1d" category="inline-link-rx"></block></block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python 클라이언트 라이브러리 문서</block>
   <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">NetApp 개발자 네트워크: ONTAP RESTful API</block>
   <block id="6228139d56297e6f87b517feae45bc99" category="list-text"><block ref="6228139d56297e6f87b517feae45bc99" category="inline-link-rx"></block></block>
@@ -362,7 +357,6 @@
   <block id="a4273e3e312edbc9d5bd7c188aecc370" category="doc">네임 서비스</block>
   <block id="4cbf67c663a0aa1becab1170ca932173" category="paragraph">이러한 API 호출을 사용하여 ONTAP에서 지원하는 이름 서비스를 관리할 수 있습니다.</block>
   <block id="83df374f1b14e7e892413b9679071d0f" category="paragraph">DDNS(동적 DNS) 정보를 표시하고 DDNS 하위 시스템을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
-  <block id="f97bb8cb9c33354ac4515053dad458e0" category="paragraph">DNS는 네트워크에서 ONTAP 클러스터의 통합을 지원합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="47ef31c7170557cd8b99e608cdfb0001" category="paragraph">이러한 끝점을 사용하면 지정된 호스트 이름의 IP 주소와 IP 주소의 호스트 이름을 표시할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
   <block id="bf174dc4f6f36d6d0f560f114ed35af0" category="paragraph">LDAP 서버를 사용하여 사용자 정보를 유지할 수 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="6d5bdff627ee96fb9a3d1ce46d18fe48" category="paragraph">이러한 끝점을 사용하여 호스트 이름에 대한 로컬 매핑을 표시하고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
@@ -940,7 +934,6 @@
   <block id="f60bce136c62f7ab3c73aa4f0d5fcae9" category="list-text">디렉토리</block>
   <block id="91f3a2c0e4424c87689525da44c4db11" category="list-text">파일</block>
   <block id="06a467722471a55dde81911330523907" category="paragraph">MetroCluster 구성에서 모든 SVM 쌍에 대한 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
-  <block id="67e3defb688be7685ce637d90e158565" category="paragraph">이전 ONTAP 릴리즈에서는 시스템의 작동 특성에 대한 통계 정보를 유지했습니다. 9.11.1 릴리스와 함께 정보가 향상되어 이제 REST API를 통해 사용할 수 있습니다. 이 기능은 ONTAP REST API를 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 만듭니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
   <block id="292b052ce2719671eb57c58f83562861" category="paragraph">설정된 CIFS 접속 목록을 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
   <block id="4d6ac2d984cc413aff1fe87f7e0fa660" category="paragraph">CIFS 서버는 공유, 파일 및 디렉토리 액세스 권한을 결정할 때 인증에 로컬 그룹을 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.9에서 도입되었으며 ONTAP 9.10으로 크게 확장되었습니다.</block>
   <block id="c775568e4d8c67f72b663a73cb197aba" category="paragraph">클러스터의 NetBIOS 연결에 대한 정보를 표시할 수 있습니다. 세부 정보에는 IP 주소 및 등록된 NetBIOS 이름이 포함됩니다. 이 정보는 이름 확인 문제를 해결하는 데 도움이 될 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다.</block>
@@ -969,7 +962,6 @@
   <block id="9a602388f357467e0f50667f5767b094" category="paragraph"><block ref="9a602388f357467e0f50667f5767b094" category="inline-link-rx"></block></block>
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">REST API로 마이그레이션합니다</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">REST 매핑에 대한 ONTAPI</block>
-  <block id="d6b9ea32b921a9f56de32062ba4b94f3" category="sidebar">블로그</block>
   <block id="8306b094d2e16f41079e29117db4bb23" category="cell">인스턴스 이름</block>
   <block id="f74fb34c9f03e41b8c43158d192c2d00" category="cell">host_adapter_1</block>
   <block id="5179155001c9f520ffb99f72e2b20b26" category="cell">Host_adapter_2</block>
@@ -994,7 +986,6 @@
   <block id="062c6b1332887634d0f4ba9bb07e2408" category="section-title">역할 유형</block>
   <block id="b0ad3654895321cb1caaae438045af81" category="paragraph">역할에는 두 가지 유형이 있습니다. ONTAP이 발전함에 따라 다양한 환경에 맞게 조정되고 도입되었습니다.</block>
   <block id="506d78eb05f037a1ad45a240957b6c58" category="inline-link-macro">역할 유형 비교</block>
-  <block id="91298b899ea8ab62f0d96df3023adad0" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="5d8cc8a3f0f5fa94fdd14f3d1499ea30" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
   <block id="50780f47f6839d47d60bc4555ee00c3f" category="cell">휴식</block>
   <block id="1bfbcce75c3c9a52a464d4cb0984488a" category="cell">기존</block>
@@ -1216,8 +1207,6 @@
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다. 적절한 ONTAP 릴리스를 선택합니다.</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">사용합니다. NetApp ONTAP</block>
   <block id="f1414234dbf1c874f89997d3c54bcfbc" category="list-text"><block ref="f1414234dbf1c874f89997d3c54bcfbc" category="inline-link-rx"></block></block>
-  <block id="1cc0729e83919e90c575ff14c0fce5fc" category="inline-link">9.12.1용 NetApp PCL 설명서</block>
-  <block id="84a1f9d4b229fd80b1a8e5bd8bf448f2" category="list-text"><block ref="84a1f9d4b229fd80b1a8e5bd8bf448f2" category="inline-link-rx"></block></block>
   <block id="d45d9e85cc7b83745a3636a19ac8b2bb" category="summary">ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다.</block>
   <block id="eb0cda77424e206695a7e1df680678f7" category="paragraph">ONTAP 9.12.1은 40개 이상의 새로운 API 호출을 통해 ONTAP REST API의 기능을 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈는 보안 및 NAS 기능 향상에 중점을 둡니다.</block>
   <block id="5f6c185eb38c56187fc699dfbe62654b" category="list-text">보안 강화</block>
@@ -1238,7 +1227,6 @@
   <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="3eef15c3ebe6737054ec7fdccee59ef8" category="summary">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다.</block>
-  <block id="b3a25dcbc5dbce2ff68dbfa04004bcf8" category="admonition">NetApp은 처음에 ONTAP 9.6과 함께 REST API를 도입했습니다. 그 이후로 API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 배포 관리를 자동화할 때 ONTAPI에 대한 우선적이고 전략적인 대안을 제공합니다.</block>
   <block id="85689804a28905b0c1195ff1c4debf5c" category="paragraph">ONTAP에 대한 다양한 통계 정보는 Counter Manager 서브시스템에서 캡쳐됩니다. 이 정보에 액세스하여 시스템 성능을 평가할 수 있습니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
   <block id="4ceab4a3abb75365d3643e7027283265" category="paragraph">스위치오버 또는 스위치백 작업 실행을 비롯한 MetroCluster 배포를 생성하고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새롭게 추가되었으며 9.11로 업데이트되었습니다.</block>
   <block id="ef706b335d4d5abcae8612013f999056" category="paragraph">이러한 끝점을 사용하여 모든 플랫폼 환경 센서에 대한 세부 정보를 검색할 수 있습니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
@@ -1254,10 +1242,8 @@
   <block id="6a03698ef52f46c4a77e198a43a38112" category="paragraph">ONTAP 클러스터 또는 스토리지 네트워크에 사용되는 이더넷 스위치의 구성을 검색하거나 수정할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새롭게 추가되었으며 9.11로 업데이트되었습니다.</block>
   <block id="24b8e2e199d26c8d4795b1e0066f0ade" category="paragraph">FC(파이버 채널) 패브릭 REST API 엔드포인트를 사용하여 FC 네트워크에 대한 정보를 검색할 수 있습니다. 여기에는 ONTAP 클러스터와 FC 패브릭 간 연결, 패브릭을 구성하는 스위치 및 활성 zoneset의 영역이 포함됩니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
   <block id="a26a18125d0bd911657d95ac2181c65d" category="paragraph">ONTAP 네트워킹 기능이 IP 서브넷을 지원하도록 확장되었습니다. REST API를 사용하면 ONTAP 클러스터 내에서 IP 서브넷의 구성 및 관리에 액세스할 수 있습니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
-  <block id="d00ae1caddb315563889c10b5aab0c13" category="paragraph">정합성 보장 그룹은 스냅샷과 같은 특정 작업을 수행할 때 함께 그룹화되는 볼륨 세트입니다. 이 기능은 단일 볼륨 작업에서 동일한 충돌 일관성 및 데이터 무결성을 단일 볼륨 작업으로 확장합니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었으며 9.12로 업데이트되었습니다.</block>
   <block id="7f89e0943d9c0849a52f0db1412bed43" category="paragraph">Amazon Web Services에는 키 및 기타 비밀에 대한 보안 저장소를 제공하는 키 관리 서비스가 포함되어 있습니다. REST API를 통해 이 서비스에 액세스하여 ONTAP에서 클라우드에 암호화 키를 안전하게 저장할 수 있습니다. 또한 NetApp Storage Encryption에 사용되는 인증 키를 생성하고 나열할 수 있습니다. 이 지원은 ONTAP 9.12에 새로 추가되었습니다.</block>
   <block id="00d9cb95eeaf06aed2c944d601467bab" category="paragraph">이 API 호출 집합을 사용하면 Azure 키 저장소를 사용하여 ONTAP 암호화 키를 저장할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
-  <block id="5457b382c48b43492d6c476d117cac17" category="paragraph">키 관리자를 사용하면 ONTAP 내의 클라이언트 모듈이 안전하게 저장된 키를 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.6에 도입되었으며 ONTAP 9.7에 맞게 업데이트되었습니다. 인증 키를 지원하기 위해 ONTAP 9.12가 설치된 또 다른 업데이트가 있습니다.</block>
   <block id="20a5796507ad5434cd0a5cb89dabf3b5" category="paragraph">여러 관리자가 액세스를 승인할 수 있는 옵션을 제공하면 ONTAP 및 IT 환경의 보안이 향상됩니다. 이러한 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
   <block id="64653610bb83e768ab10ed738c71d4f7" category="paragraph">독립 실행형 응용 프로그램은 POST 요청을 실행하여 ONTAP 시스템에서 EMS 이벤트 및 선택적으로 생성된 AutoSupport 패키지를 기록할 수 있습니다. 이 리소스 유형은 ONTAP 9.11.1에서 도입되었습니다</block>
   <block id="1559c80340a3552e982d5443b26cb658" category="summary">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 설명서 페이지에 표시된 대로 범주로 구성됩니다.</block>
@@ -1505,7 +1491,6 @@
   <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 온라인 설명서에 나와 있는 것처럼 범주별로 구성되어 있습니다. 각 리소스에 대한 간략한 설명과 함께 해당되는 경우 추가적인 사용 고려 사항이 아래에 나와 있습니다.</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
   <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
-  <block id="4acb4d74fe00ae1c12d51ed7033cfe13" category="paragraph">ONTAPI API API를 사용하는 경우 ONTAP REST API로 마이그레이션을 시작하는 것이 좋습니다. 마이그레이션을 지원하는 데 사용할 수 있는 많은 유용한 리소스와 도구가 있습니다.</block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
   <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
@@ -1581,4 +1566,67 @@
   <block id="4482877c1310ddfbbba9fb22dc7df61b" category="paragraph">이 REST API 호출을 사용하여 테이블의 모든 행을 볼 수 있습니다. Counter Manager 개체의 인스턴스를 나타냅니다.</block>
   <block id="fcecf68c3a713225f78b4de16ac6df03" category="section-title">예제 4: 특정 테이블의 단일 행</block>
   <block id="0aeaf5f6b15f47a8487668e4d5e041f2" category="paragraph">이 REST API 호출을 사용하여 테이블의 특정 Counter Manager 인스턴스에 대한 성능 카운터 값을 볼 수 있습니다. 이 예에서는 호스트 어댑터 중 하나에 대한 성능 데이터가 요청됩니다.</block>
+  <block id="19a9062545fe4aec02e4bb9d69d9e65d" category="inline-link">9.13.1 용 NetApp PCL 설명서</block>
+  <block id="99984697846692a3881d97799a42681d" category="list-text"><block ref="99984697846692a3881d97799a42681d" category="inline-link-rx"></block></block>
+  <block id="963d435d638b3d71d80951dc73d9e301" category="paragraph">정합성 보장 그룹은 스냅샷과 같은 특정 작업을 수행할 때 함께 그룹화되는 볼륨 세트입니다. 이 기능은 단일 볼륨 작업에서 동일한 충돌 일관성 및 데이터 무결성을 단일 볼륨 작업으로 확장합니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었으며 9.12로 업데이트되었습니다. ONTAP 9.13을 사용하여 메트릭 성능 및 용량 데이터를 검색하는 엔드포인트가 추가되었습니다.</block>
+  <block id="a8b23618c319cee164fb5e3f52338ae8" category="paragraph">키 관리자를 사용하면 ONTAP 내의 클라이언트 모듈이 안전하게 저장된 키를 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.6에 도입되었으며 ONTAP 9.7에 맞게 업데이트되었습니다. 인증 키를 지원하기 위해 ONTAP 9.12가 설치된 또 다른 업데이트가 있습니다. ONTAP 9.13에 복원 기능이 추가되었습니다.</block>
+  <block id="f677f9a733e2a55d249253e8ee3e8921" category="paragraph-title">TOTPS 를 참조하십시오</block>
+  <block id="0e5fb54a649ae9d2dadb9308dc2d69b4" category="paragraph">REST API를 사용하여 로그인 계정에 대해 TOTP(Time-Based One-Time Password) 프로필을 구성하고 SSH를 사용하여 ONTAP에 액세스할 수 있습니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
+  <block id="6f54f32be84451ac2f476ef54a9e35d8" category="paragraph">DNS는 네트워크에서 ONTAP 클러스터의 통합을 지원합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.13으로 개선되었습니다.</block>
+  <block id="0268691e0c9875a7d64cf190b57d3c19" category="paragraph">CIFS 도메인에 대한 지원이 클러스터 및 SVM 레벨에서 다양한 유형의 엔드포인트로 추가되었습니다. 도메인 구성을 검색할 뿐만 아니라 기본 도메인 컨트롤러를 만들고 제거할 수도 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었으며 ONTAP 9.13으로 향상되었습니다.</block>
+  <block id="fc00b2aa4aec9f5df16272d4a62b16d0" category="paragraph-title">EMS 역할 구성</block>
+  <block id="25ee47e7f366103a7fb621883886a827" category="paragraph">EMS 지원 기능을 통해 역할에 할당된 역할 및 액세스 제어 구성을 관리할 수 있습니다. 이렇게 하면 역할 구성에 따라 이벤트 및 메시지를 제한하거나 필터링할 수 있습니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
+  <block id="6fa0e3b9545e1804391d8a9ceffb4a38" category="paragraph">이전 ONTAP 릴리즈에서는 시스템의 작동 특성에 대한 통계 정보를 유지했습니다. 9.11.1 릴리스와 함께 정보가 향상되어 이제 REST API를 통해 사용할 수 있습니다. 이 기능은 ONTAP REST API를 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 만듭니다. 이 자원 유형은 ONTAP 9.11에서 소개되었습니다.</block>
+  <block id="e277905409f479c9f7d224d59ca24ef1" category="paragraph-title">리소스 태그</block>
+  <block id="718f01f530b26a630c97ea9d3dabf463" category="paragraph">태그를 사용하여 REST API 리소스를 그룹화할 수 있습니다. 이렇게 하면 특정 프로젝트 또는 조직 그룹 내의 관련 자원을 연결할 수 있습니다. 태그를 사용하면 리소스를 보다 효율적으로 구성 및 추적할 수 있습니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
+  <block id="6e35f32cbbb6f9e4f935f3e9092771f0" category="paragraph-title">S3 버킷 규칙</block>
+  <block id="6bc2fc1d1d82b40d53835f8a9db33179" category="paragraph">S3 버킷에는 규칙 정의가 포함될 수 있습니다. 각 규칙은 목록 오브젝트이며 버킷 내의 오브젝트에 대해 수행할 동작 집합을 정의합니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
+  <block id="5f6bf2fac8af69fcf38f9b1b785e910e" category="inline-link">PyPI: NetApp ONTAP 9.13.1</block>
+  <block id="1d6690c7f751b90aee685c57c28ea355" category="list-text"><block ref="1d6690c7f751b90aee685c57c28ea355" category="inline-link-rx"></block></block>
+  <block id="3d1c384a3746b6aef27889dab20ca2a0" category="doc">툴 및 소프트웨어</block>
+  <block id="0a88f9e4d64baf56329012472f2f7f1c" category="paragraph">NetApp에서 샘플 Python 스크립트 및 기타 관련 소프트웨어를 제공하여 ONTAPI에서 ONTAP REST API로 마이그레이션하는 데 도움이 됩니다. 이 샘플들 중 가장 중요한 것은 아래에 설명되어 있습니다.</block>
+  <block id="2025f1a4ba0e95c1bd1bd27f08690087" category="inline-link">NetApp ONTAP REST Python</block>
+  <block id="122b5178f05cbf36001150787ae34516" category="admonition">모든 Python 코드 샘플은 에서 사용할 수 있습니다<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> GitHub 리포지토리.</block>
+  <block id="5d22b30ce5603c5346d7b65cbcf3433f" category="paragraph-title">ONTAPI 사용 보고 도구</block>
+  <block id="7842d4d8803b176c1b2259dec8456d2e" category="paragraph">ONTAPI 사용 보고 툴은 NetApp 프로페셔널 서비스, 고객 및 파트너가 ONTAP 환경에서 ONTAPI 사용을 식별할 수 있도록 설계되었습니다. 스크립트는 아래 표에 설명된 세 가지 사용 사례에 대해 제공됩니다.</block>
+  <block id="f907e651164789346ae0a1e257c462d8" category="cell">스크립트</block>
+  <block id="acd8e1efb3d4b4812a351b944b20ca37" category="cell">apache_scraper.py</block>
+  <block id="d58b4e0daf558695b856954865d329b0" category="cell">ONTAP 노드에 대해 실행된 ONTAPI 호출을 찾기 위한 Apache 로그 스크레이퍼입니다</block>
+  <block id="0efaaee27c17eb790ee7383ad12ff286" category="cell">session_stats.py</block>
+  <block id="95ec10ffbde5e94edc43ebffd44f7347" category="cell">ONTAP에서 세션 통계 데이터를 검색하는 CLI 스크립트입니다</block>
+  <block id="3282e0ae607e974457c339eff19c2619" category="cell">zapi_to_rest.py</block>
+  <block id="72af54bf44f3d8ee9be1e4f34a09378e" category="cell">전달된 ONTAPI 호출 및 속성의 나머지 세부 정보를 추출하기 위한 스크립트입니다</block>
+  <block id="6d35e073768c520486a8f6583b2367dd" category="paragraph">을 참조하십시오<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="065b1ca8f53a1fbcdf87961fdd9cf9b2" category="paragraph-title">전용 CLI를 통과합니다</block>
+  <block id="0446fa4ca147c362e3712c199d31f607" category="paragraph">REST API는 ONTAP에서 사용할 수 있는 다양한 기능과 시설을 제공합니다. 그러나 REST API를 통해 ONTAP CLI에 직접 액세스하는 것이 유용한 경우가 있을 수 있습니다.</block>
+  <block id="4dee1eb90de4bde1248e4896c4dc4381" category="inline-link">REST CLI 통과 샘플입니다</block>
+  <block id="dfd00e91a832f40b6d730ced03aa0c44" category="paragraph">이 기능에 대한 소개는 를 참조하십시오 <block ref="430c6d579ad9ddc178e54d66821e7597" category="inline-link-macro-rx"></block>. Python 샘플은 을 참조하십시오<block ref="93e4c8d6cc1dc72ab5e25d8c76e6620b" category="inline-link-rx"></block>.</block>
+  <block id="5b6f04d9b27dfe7b2a32885119050b9f" category="paragraph">Python 클라이언트 라이브러리는 Python을 사용하여 ONTAP REST API에 설치하고 액세스하는 데 사용할 수 있는 패키지입니다. 이를 통해 ONTAP 배포를 자동화하기 위한 강력한 코드를 빠르게 개발할 수 있습니다.</block>
+  <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Python 클라이언트 라이브러리의 예</block>
+  <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Python 클라이언트 라이브러리에 대한 소개는 을 참조하십시오 <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>. Python 샘플은 을 참조하십시오<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>.</block>
+  <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI 비활성화</block>
+  <block id="7f2d7d67765d2784e59992625f3b9f8e" category="paragraph">ONTAPI API API(ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 원래 독점 호출 집합으로, 데이터 스토리지 관리 및 관리 작업의 자동화를 지원합니다. 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화됩니다. ONTAPI를 사용하는 경우 ONTAP REST API로의 마이그레이션을 계획해야 합니다.</block>
+  <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">NetApp은 처음에 ONTAP 9.6과 함께 REST API를 도입했습니다. 그 이후로 REST API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 구축 관리를 자동화할 때 선호하는 전략적 옵션을 제공합니다. 마이그레이션을 지원하는 데 사용할 수 있는 많은 유용한 리소스와 도구가 있습니다.</block>
+  <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 가용성 종료: ONTAPI</block>
+  <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
+  <block id="43b4a2745f58846c59587466ca441f41" category="inline-link">NetApp DevNet: ONTAP REST API</block>
+  <block id="d5925e110eea01252505453208400570" category="list-text"><block ref="d5925e110eea01252505453208400570" category="inline-link-rx"></block></block>
+  <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1 성능 카운터 매핑</block>
+  <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
+  <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
+  <block id="b41840dcdd390cc23a6e04dde600cf7b" category="list-text"><block ref="b41840dcdd390cc23a6e04dde600cf7b" category="inline-link-rx"></block></block>
+  <block id="cbec0159857226b0512b2b18211eca44" category="paragraph">ONTAP 9.13.1 ONTAP REST API의 기능을 20개 이상의 새로운 API 호출로 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈에서는 보안, 리소스 관리, 향상된 SVM 구성 옵션, 성능 메트릭 등의 개선 사항에 중점을 둡니다.</block>
+  <block id="aecbf8e5ebbb6b089493eac6cb71ca69" category="list-text">리소스 태그 지정</block>
+  <block id="593fee19f1d4b1b19620fdf80753a276" category="list-text">태그를 사용하여 REST API 리소스를 그룹화할 수 있습니다. 이렇게 하면 특정 프로젝트 또는 조직 그룹 내의 관련 자원을 연결할 수 있습니다. 태그를 사용하면 리소스를 보다 효율적으로 구성 및 추적할 수 있습니다.</block>
+  <block id="6c8636b0093a2d3302f979cb09b7bd7d" category="list-text">ONTAP 9.13.1 성능 카운터 데이터의 가용성을 지속적으로 확장합니다. 이제 이 유형의 통계 정보에 액세스하여 정합성 보장 그룹의 기간별 성능 및 용량을 추적할 수 있습니다. 또한 정합성 보장 그룹 간의 상위-하위 관계를 구성 및 관리할 수 있는 향상된 기능도 포함되었습니다.</block>
+  <block id="3910f0fe54e915b906f2c1c1b3fa478e" category="list-text">SVM당 DNS 구성</block>
+  <block id="a5c0a51954c4e8af84ce524380e56477" category="list-text">개별 SVM에 대해 DNS 도메인 및 서버 구성을 수행할 수 있도록 기존 DNS 엔드포인트를 확장하였습니다.</block>
+  <block id="444e0808a8a39a0403934928133d05a6" category="list-text">기존 EMS 지원 기능이 확장되어 역할에 할당된 역할 및 액세스 제어 구성을 관리할 수 있습니다. 이렇게 하면 역할 구성에 따라 이벤트 및 메시지를 제한하거나 필터링할 수 있습니다.</block>
+  <block id="526beab4a02389a85e7476e42b82f603" category="list-text">REST API를 사용하여 SSH를 사용하여 ONTAP에 로그인하고 액세스하는 계정에 대해 TOTP(Time-Based One-Time Password) 프로필을 구성할 수 있습니다. 또한 키 관리자 끝점이 확장되어 지정된 키 관리 서버에서 복구 작업을 제공합니다.</block>
+  <block id="77e3b4a2a04eafcaa392a8fb92b8b98b" category="list-text">SVM당 CIFS 구성</block>
+  <block id="2a448fcc25cf428d2769919718ce218b" category="list-text">특정 SVM에 대한 구성을 업데이트할 수 있도록 기존 CIFS 엔드포인트가 확장되었습니다.</block>
+  <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">기존 S3 버킷 끝점이 규칙 정의를 포함하도록 확장되었습니다. 각 규칙은 목록 오브젝트이며 버킷 내의 오브젝트에 대해 수행할 동작 집합을 정의합니다. 전체적으로 이러한 규칙을 통해 S3 버킷의 라이프사이클을 보다 효율적으로 관리할 수 있습니다.</block>
+  <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
+  <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">블로그 기사를 참조하십시오</block>
 </blocks>
