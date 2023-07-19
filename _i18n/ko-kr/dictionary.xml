@@ -295,7 +295,6 @@
   <block id="ad647e4ae904c7ed54ee93040d8298c7" category="cell">보다 작음</block>
   <block id="cedf8da05466bb54708268b3c694a78f" category="cell">를 누릅니다</block>
   <block id="05824b7be006782aaefd1fdb97c71e06" category="cell">보다 큼</block>
-  <block id="a7eeaea90b4e8312b88abcd178019929" category="cell">=</block>
   <block id="28d1141142e2cbb29e657b69a044ddf4" category="cell">보다 작거나 같음</block>
   <block id="3a1e9b87c94b54dec1202b5ca6539806" category="cell">&gt;=</block>
   <block id="798fe01fcb2754a295b6937ed885a69a" category="cell">보다 크거나 같음</block>
@@ -337,7 +336,6 @@
   <block id="d803d2dd2f39605b0bc879d0532fc5ba" category="paragraph">실제로 반환되는 개체 수는 시스템의 총 개체 수와 개체 수에 대한 관련 제약 조건에 따라 최대 개체수보다 작을 수 있습니다.</block>
   <block id="2dadc767979da8ab1576ee0aa8da5e21" category="list-text">결과 집합 축소</block>
   <block id="317480d31248a2b7b399c7ddbecbf74a" category="list-text">필요한 경우 이러한 두 매개 변수를 추가 쿼리 매개 변수와 결합하여 결과 집합의 범위를 좁힐 수 있습니다. 예를 들어, 지정된 시간 이후에 생성된 최대 10개의 EMS 이벤트가 반환됩니다.</block>
-  <block id="89163f6e2498a9f894e7813e6de46b08" category="paragraph">'시간 =&gt; 2018-04-04T15:41:29.140265Z 및 max_records=10'</block>
   <block id="5394a0e51a0e30e195e0299ede162a02" category="paragraph">여러 요청을 발행하여 객체를 통해 페이지를 이동할 수 있습니다. 이후의 각 API 호출은 마지막 결과 집합의 최신 이벤트를 기반으로 새 시간 값을 사용해야 합니다.</block>
   <block id="050a8c11f48cd555f6e5e6bab96225d6" category="section-title">크기 속성</block>
   <block id="721165b216d0f852ad3d9fd6e430dbe1" category="paragraph">일부 API 호출과 특정 쿼리 매개 변수에 사용되는 입력 값은 숫자입니다. 정수(바이트)를 제공하는 대신 다음 표에 나와 있는 접미사를 선택적으로 사용할 수 있습니다.</block>
@@ -1629,4 +1627,6 @@
   <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">블로그 기사를 참조하십시오</block>
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">클러스터 관리 LIF는 항상 사용해야 합니다. 이렇게 하면 모든 노드에서 API 요청의 로드 밸런싱을 수행하고 오프라인이거나 연결 문제가 발생하는 노드를 피할 수 있습니다. 여러 클러스터 관리 LIF가 구성된 경우 REST API에 액세스하는 것과 동일한 것입니다.</block>
+  <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">=</block>
+  <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
 </blocks>
