@@ -824,15 +824,11 @@
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="list-text">데이터 보호</block>
   <block id="4d3eb4b74688cbcce2793e7fa6452654" category="list-text">애플리케이션 인식 데이터 관리</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c50ee9e545662286884e42e140649f09" category="doc">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리합니다</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">여기</block>
   <block id="7d455208ee42ecd7867fb39b027bcf1c" category="paragraph">ONTAP에서는 SACL(시스템 액세스 제어 목록) 및 DACL(임의 액세스 제어 목록)을 사용하여 파일 개체에 사용 권한을 할당합니다. ONTAP 9.9.1부터 ONTAP REST API에는 파일에 대한 SACL 및 DACL 권한을 할당하고 파일 보안 권한을 자동화하기 위한 엔드포인트가 포함되어 있습니다. (ONTAP 9.9.1 이전 SACL 및 DACL 권한 자동화 옵션에 대해 자세히 알아볼 수 있습니다<block ref="9cac8aefabbfb93ff43b7791e34383b9" category="inline-link-rx"></block>)를 클릭합니다.</block>
@@ -1629,4 +1625,15 @@
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">클러스터 관리 LIF는 항상 사용해야 합니다. 이렇게 하면 모든 노드에서 API 요청의 로드 밸런싱을 수행하고 오프라인이거나 연결 문제가 발생하는 노드를 피할 수 있습니다. 여러 클러스터 관리 LIF가 구성된 경우 REST API에 액세스하는 것과 동일한 것입니다.</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">=</block>
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
+  <block id="2b86317cf346d1bf47abc8c04df6f353" category="section-title">BlueXP 자동화 카탈로그</block>
+  <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp 자동화</block>
+  <block id="8e21735532a19050ed5ad15f3404f1c3" category="paragraph">넷엡<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 는 BlueXP 웹 사용자 인터페이스를 통해 제공됩니다. 이 카탈로그는 ONTAP 및 기타 NetApp 제품의 자동화된 배포 및 통합을 지원하는 솔루션에 액세스할 수 있습니다. 를 참조하십시오<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 자동화 솔루션에 대한 설명을 보려면 설명서를 참조하십시오.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
