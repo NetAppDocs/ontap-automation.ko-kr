@@ -6,8 +6,10 @@ entries:
 - title: 자동화 옵션을 이해합니다
   url: "/get-started/ontap_automation_options.html"
 - title: REST API 사용 준비
-  url: "/get-started/prepare.html"
+  url: "/get-started/prepare_rest.html"
 - title: 클러스터 소프트웨어 버전을 검색합니다
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: 첫 번째 API 호출입니다
   url: "/get-started/first_call.html"
+- title: 워크플로우 사용을 준비하십시오
+  url: "/get-started/prepare_workflows.html"

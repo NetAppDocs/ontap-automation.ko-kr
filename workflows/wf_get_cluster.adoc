@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_get_cluster.html 
+keywords: workflow, get cluster, cluster configuration 
+summary: 특정 필드를 포함하여 ONTAP 클러스터에 대한 구성을 검색할 수 있습니다. 이 작업은 클러스터의 상태를 평가하거나 구성을 업데이트하기 전에 수행할 수 있습니다. 
+---
+= 클러스터 구성을 가져옵니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+특정 필드를 포함하여 ONTAP 클러스터에 대한 구성을 검색할 수 있습니다. 이 작업은 클러스터의 상태를 평가하거나 구성을 업데이트하기 전에 수행할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 가져오기 
+
+
+| 가져오기 | /클러스터 
+|===
+.컬링 예제에 대한 추가 입력 매개 변수
+모든 REST API 호출에 공통되는 매개 변수 외에 다음 매개 변수가 이 단계의 cURL 예에도 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| 필드 | 쿼리 | 아니요 | 반환할 값을 선택합니다. 예를 들면 다음과 같습니다 `contact` 및 `version`. 
+|===
+.curl 예: 클러스터 연락처 정보를 검색합니다
+이 예제에서는 단일 필드를 검색하는 방법을 보여 줍니다. 전체 클러스터 구성을 가져오려면 를 제거해야 합니다 `fields` 쿼리 매개 변수입니다.
+
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/cluster?fields=contact" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 출력 예
+[listing]
+----
+{
+  "contact": "support@company-demo.com"
+}
+----

@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_list_svms.html 
+keywords: workflow, list SVMs 
+summary: 'ONTAP 클러스터 내에 정의된 SVM(스토리지 가상 머신)을 표시할 수 있습니다. 이 작업은 특정 SVM의 식별자를 찾거나 새로운 SVM을 생성하기 전에 이름이 고유한지 확인할 때 수행할 수 있습니다.' 
+---
+= SVM을 나열합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP 클러스터 내에 정의된 SVM(스토리지 가상 머신)을 표시할 수 있습니다. 이 작업은 특정 SVM의 식별자를 찾거나 새로운 SVM을 생성하기 전에 이름이 고유한지 확인할 때 수행할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 가져오기 
+
+
+| 가져오기 | /svm/SVM을 사용합니다 
+|===
+.컬의 예
+[source, curl]
+----
+curl --location --include \
+--request GET "https://$FQDN_IP/api/svm/svms" \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 출력 예
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "71bd74f8-40dc-11ee-b51a-005056aee9fa",
+      "name": "vs0",
+      "_links": {
+          "self": {
+            "href": "/api/svm/svms/71bd74f8-40dc-11ee-b51a-005056aee9fa"
+          }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/svm/svms"
+    }
+  }
+}
+----
