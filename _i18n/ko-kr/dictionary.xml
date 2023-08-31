@@ -1663,7 +1663,6 @@
   <block id="fe675d9d322274e9cc5a016dc13952d0" category="paragraph">curl을 사용할 때 다른 옵션은 권한 부여 헤더를 제거하고 대신 curl * user * 매개 변수를 사용하는 것입니다. 예를 들면 다음과 같습니다.</block>
   <block id="2ce89c4ab048c9d719169c11cda31579" category="paragraph"><block ref="784832b5a8f97e143e4744b38ce2ea72" prefix="" category="inline-code"></block></block>
   <block id="64f444a853187a8c5bb3d8507d2ba64f" category="paragraph">사용자 환경에 적합한 자격 증명을 대체해야 합니다. 이 매개 변수를 사용하여 curl 명령을 실행하면 Authorization 헤더가 생성됩니다.</block>
-  <block id="76b8f173097880ead5a0f4cfd6e0618c" category="section-title">Bash 셸에 curl 예제 사용</block>
   <block id="70ce4cad9d30893dd103460ed8538167" category="paragraph">워크플로 컬 예제를 직접 사용하는 경우 해당 변수에 포함된 변수를 환경에 적합한 값으로 업데이트해야 합니다. 예제를 수동으로 편집하거나 아래 설명된 대로 Bash 셸을 사용하여 대신 사용할 수 있습니다.</block>
   <block id="f2e6cc557c48559ec2b9ae2a12ddd1c6" category="admonition">Bash를 사용하면 curl 명령마다 한 번 설정하는 대신 셸 세션에서 한 번 변수 값을 설정할 수 있다는 이점이 있습니다.</block>
   <block id="1e5ad8f157b0c54185ce7c5af4fe8bbd" category="list-text">Linux 또는 유사한 운영 체제와 함께 제공되는 Bash 셸을 엽니다.</block>
@@ -1676,10 +1675,8 @@
   <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">클러스터 연락처를 업데이트하고 작업 상태를 확인합니다</block>
   <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되므로 연결된 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">1단계: 클러스터 연락처 정보를 업데이트합니다</block>
-  <block id="5b65398d9afd1a14a452f4645c7fb774" category="paragraph">API 호출을 통해 연락처 정보를 업데이트할 수 있습니다.</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 메서드 및 끝점입니다</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.</block>
-  <block id="75e17ff813d0ed4dba4fcb32abc673e6" category="paragraph">작업 객체에 대한 식별자가 반환됩니다. ID 값을 저장하여 다음 단계에서 변수 $JOB_ID로 사용해야 합니다.</block>
   <block id="8bcf2b807fe961fb45913f99dea0b662" category="section-title">2단계: 작업 상태를 검색합니다</block>
   <block id="be81401da9da70cf197e1449ca61043d" category="paragraph">비동기 요청이 성공적으로 완료되었는지 확인하려면 작업의 상태를 검색해야 합니다.</block>
   <block id="4044a674901deb07947f235775f9654d" category="paragraph">상태 값과 기타 필드는 반환된 작업 오브젝트에 포함됩니다.</block>
@@ -1696,7 +1693,6 @@
   <block id="66c1b4c7f3dc385b68a9fa903ccd016d" category="cell">쿼리</block>
   <block id="a734854ee8bdd547b3a1a8eeee4f56a8" category="cell">반환할 값을 선택합니다. 예를 들면 다음과 같습니다<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block> 및<block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block>.</block>
   <block id="d68c817e523bebfd3bb5d6e6aed3c2f7" category="paragraph-title">curl 예: 클러스터 연락처 정보를 검색합니다</block>
-  <block id="defb04d386d33eda3cf981695c9da0e8" category="paragraph">이 예제에서는 단일 필드를 검색하는 방법을 보여 줍니다. 전체 클러스터 구성을 가져오려면 를 제거해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 쿼리 매개 변수입니다.</block>
   <block id="361f902ffbf6412778b4224d2f0f31a2" category="section-title">경로 변수</block>
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">각 REST API 호출에 사용되는 끝점 경로에는 다양한 식별자가 포함될 수 있습니다. 각 ID는 특정 리소스 인스턴스에 해당합니다. 예를 들어 클러스터 ID 및 SVM ID가 있습니다.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">기본 인증은 base64 문자열로 인코딩된 사용자 이름과 암호로 설정되어야 합니다. 예를 들면 다음과 같습니다.</block>
@@ -1706,4 +1702,15 @@
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">클러스터 구성을 가져옵니다</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">클러스터 연락처를 업데이트합니다</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">SVM 나열</block>
+  <block id="c17ef84c021b2307b064e8e24b8013a6" category="paragraph">간단한 curl 명령을 실행하여 ONTAP REST API를 사용하여 시작하고 가용성을 확인할 수 있습니다.</block>
+  <block id="a98b00db4ce1fec40c21222810430c05" category="section-title">JSON 입력 예</block>
+  <block id="09e5af60e7e961d326ecb94915481554" category="paragraph">POST 또는 패치를 사용하는 경우와 같은 일부 REST API 호출에는 요청 본문에 대해 JSON 입력이 필요합니다. JSON 입력 예는 명확한 구별을 위해 컬링 예와 별도로 제시됩니다. JSON 입력 예제를 아래 설명된 기술 중 하나와 함께 사용할 수 있습니다.</block>
+  <block id="4d8521855bcfebae2c0518f634b5dcbd" category="paragraph-title">로컬 파일에 저장</block>
+  <block id="399feb8e89d476ceeca1f9a576fb97ef" category="paragraph">JSON 예제를 파일로 복사하여 로컬에 저장할 수 있습니다. curl 명령은 를 사용하는 파일을 참조합니다<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 로 파일 이름을 나타내는 값을 가진 매개 변수입니다<block ref="518ed29525738cebdac49c49e60ea9d3" prefix=" " category="inline-code"></block> 접두어.</block>
+  <block id="4ee40cd4d378b7de61905cb45f1009f5" category="paragraph-title">컬링 예제 다음에 터미널에 붙여 넣습니다</block>
+  <block id="d44e4ebc435b8a720eca9d2dce5b7c87" category="paragraph">먼저 curl 예제를 복사하여 터미널 쉘에 붙여 넣어야 합니다. 그런 다음 예제를 편집하여 를 완전히 제거합니다<block ref="c579f384f53351a66c689bf14353d49c" prefix=" " category="inline-code"></block> 끝에 매개 변수를 지정하고 로 바꿉니다<block ref="3165aa3b2ee77197f8cfd2cc80c7278f" prefix=" " category="inline-code"></block> 매개 변수. 마지막으로 CURL 명령과 업데이트된 매개 변수 뒤에 오도록 JSON 예제에 복사하여 붙여 넣습니다.</block>
+  <block id="12c6401fb02cab85d072b4b981f50e87" category="section-title">Bash와 함께 예제 사용</block>
+  <block id="b5cda5e8b7bc8b7e8457fef21d91230b" category="paragraph">API 호출을 실행하여 클러스터 연락처 정보를 업데이트할 수 있습니다.</block>
+  <block id="a8a1e002536d347b924b548b0ac40eaa" category="paragraph">작업 객체가 반환됩니다. 다음 단계에서 사용할 작업 식별자를 $JOB_ID 변수로 저장해야 합니다.</block>
+  <block id="8c95ed01afcec406b4d0570ec3d3ff18" category="paragraph">이 예제에서는 단일 필드를 검색하는 방법을 보여 줍니다. 전체 클러스터 개체 및 구성을 가져오려면 를 제거해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 쿼리 매개 변수입니다.</block>
 </blocks>

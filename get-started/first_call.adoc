@@ -14,7 +14,7 @@ summary: curl 명령을 실행하여 ONTAP REST API를 사용하여 시작하고
 
 
 [role="lead"]
-curl 명령을 실행하여 ONTAP REST API를 사용하여 시작하고 가용성을 확인할 수 있습니다.
+간단한 curl 명령을 실행하여 ONTAP REST API를 사용하여 시작하고 가용성을 확인할 수 있습니다.
 
 .시작하기 전에
 워크스테이션에서 curl 유틸리티를 사용할 수 있을 뿐 아니라 다음이 필요합니다.
