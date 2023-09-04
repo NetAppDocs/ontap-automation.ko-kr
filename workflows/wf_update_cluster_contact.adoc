@@ -38,8 +38,9 @@ API 호출을 실행하여 클러스터 연락처 정보를 업데이트할 수 
 .컬의 예
 [source, curl]
 ----
-curl --location --include \
---request PATCH "https://$FQDN_IP/api/cluster" \
+curl --request PATCH \
+--location "https://$FQDN_IP/api/cluster" \
+--include \
 --header "Content-Type: application/json" \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
@@ -89,8 +90,9 @@ curl --location --include \
 .컬의 예
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/cluster/$JOB_ID" \
+curl --request GET \
+--location "https://$FQDN_IP/api/cluster/jobs/$JOB_ID" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
@@ -112,3 +114,8 @@ curl --location --include \
   }
 }
 ----
+
+
+== 3단계: 클러스터 연락처 정보 확인
+
+워크플로우를 수행합니다 link:../workflows/wf_get_cluster.html["클러스터 구성을 가져옵니다"]. 를 설정해야 합니다 `fields` 에 쿼리 매개 변수 `contact`.

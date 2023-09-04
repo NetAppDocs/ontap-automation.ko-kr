@@ -29,8 +29,9 @@ ONTAP 클러스터 내에 정의된 SVM(스토리지 가상 머신)을 표시할
 .컬의 예
 [source, curl]
 ----
-curl --location --include \
---request GET "https://$FQDN_IP/api/svm/svms" \
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms" \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH"
 ----
