@@ -509,7 +509,6 @@
   <block id="b26d022aeb288cb83538385118383ca5" category="paragraph">특정 SNMP 트랩 호스트를 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.7에서 도입되었습니다.</block>
   <block id="c3b7775b2eccd350a3b590c2c1c7e7a3" category="paragraph">SNMP 사용자를 정의하고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.7에서 도입되었습니다.</block>
   <block id="b6fc3f4cebfd4495ccd03b001112b524" category="paragraph">엔진 ID가 관리 SVM 또는 데이터 SVM과 관련된 특정 SNMP 사용자를 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.7에서 도입되었습니다.</block>
-  <block id="7de269085c4e23e4ff26c31b7122144d" category="paragraph">이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되기 때문에 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="cell">경로</block>
   <block id="249694a485fc5d3289c38986b4f8e887" category="cell">클러스터</block>
   <block id="e95402dceacd5260b74e758bf2e748ef" category="cell">/클러스터</block>
@@ -1660,8 +1659,6 @@
   <block id="1eaec3fd5985d760443b0386d2ee593a" category="list-text">Enter * 키를 누르면 다음 작업이 수행됩니다.</block>
   <block id="198b3154f73c4a62a05f7a0089ea4f3a" category="list-text">설정한 변수 값으로 대체합니다</block>
   <block id="9a6c9ba6963e8edb0564d74a05262568" category="list-text">curl 명령을 실행합니다</block>
-  <block id="ba73b1e2f51518a93f594eedbae7551e" category="doc">클러스터 연락처를 업데이트하고 작업 상태를 확인합니다</block>
-  <block id="9c06a14d4914d8244b17d64ba72bb24b" category="paragraph">이 워크플로우에서 클러스터 연락처 정보를 업데이트합니다. 요청이 비동기적으로 처리되므로 연결된 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
   <block id="8d14eea70d7cb75d7edf6e297701e7c1" category="section-title">1단계: 클러스터 연락처 정보를 업데이트합니다</block>
   <block id="aeeec844965e3df4410c1eb088d94a03" category="paragraph-title">HTTP 메서드 및 끝점입니다</block>
   <block id="0b0231c1815d06ad4701a091ce91a740" category="paragraph">이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.</block>
@@ -1685,7 +1682,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">각 REST API 호출에 사용되는 끝점 경로에는 다양한 식별자가 포함될 수 있습니다. 각 ID는 특정 리소스 인스턴스에 해당합니다. 예를 들어 클러스터 ID 및 SVM ID가 있습니다.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">기본 인증은 base64 문자열로 인코딩된 사용자 이름과 암호로 설정되어야 합니다. 예를 들면 다음과 같습니다.</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>.</block>
-  <block id="8e69453af156d83ee85c0320efa52ea2" category="list-text"><block ref="8e69453af156d83ee85c0320efa52ea2" category="inline-link-macro-rx"></block></block>
   <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6 ~ ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">클러스터 구성을 가져옵니다</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">클러스터 연락처를 업데이트합니다</block>
@@ -1715,4 +1711,8 @@
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">실행할 컬링 예제에 포함된 변수 값을 설정합니다. 예를 들면 다음과 같습니다.</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">3단계: 클러스터 연락처 정보 확인</block>
   <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">워크플로우를 수행합니다 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>. 를 설정해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 에 쿼리 매개 변수<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
+  <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">클러스터 연락처를 업데이트하고 작업 상태를 확인합니다</block>
+  <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
+  <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">클러스터의 연락처 정보를 업데이트할 수 있습니다. 요청이 비동기적으로 처리되기 때문에 이 워크플로는 연결된 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
+  <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Rest 자원 요약</block>
 </blocks>

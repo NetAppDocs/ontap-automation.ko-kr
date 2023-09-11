@@ -5,10 +5,10 @@ entries:
 - title: 클러스터
   entries:
   - title: 클러스터 구성을 가져옵니다
-    url: "/workflows/wf_get_cluster.html"
+    url: "/workflows/wf_cls_get_cluster.html"
   - title: 클러스터 연락처를 업데이트합니다
-    url: "/workflows/wf_update_cluster_contact.html"
+    url: "/workflows/wf_cls_update_contact.html"
 - title: SVM
   entries:
   - title: SVM 나열
-    url: "/workflows/wf_list_svms.html"
+    url: "/workflows/wf_svm_list_svms.html"
