@@ -118,4 +118,4 @@ curl --request GET \
 
 == 3단계: 클러스터 연락처 정보 확인
 
-워크플로우를 수행합니다 link:../workflows/wf_get_cluster.html["클러스터 구성을 가져옵니다"]. 를 설정해야 합니다 `fields` 에 쿼리 매개 변수 `contact`.
+워크플로우를 수행합니다 link:../workflows/wf_cls_get_cluster.html["클러스터 구성을 가져옵니다"]. 를 설정해야 합니다 `fields` 에 쿼리 매개 변수 `contact`.

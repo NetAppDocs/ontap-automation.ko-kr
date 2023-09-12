@@ -1669,7 +1669,6 @@
   <block id="8febb780900dedf3c9e7802be64e20b8" category="doc">SVM을 나열합니다</block>
   <block id="e713e270523baa8c3aca351e280ceba0" category="cell">/svm/SVM을 사용합니다</block>
   <block id="a3d2e020750395446da7d89e6da9765d" category="summary">특정 필드를 포함하여 ONTAP 클러스터에 대한 구성을 검색할 수 있습니다. 이 작업은 클러스터의 상태를 평가하거나 구성을 업데이트하기 전에 수행할 수 있습니다.</block>
-  <block id="a01b413c1a87a4e0b5a27f7477459347" category="doc">클러스터 구성을 가져옵니다</block>
   <block id="0510f6e6bd78b2ec3d88fb42187ae328" category="paragraph-title">컬링 예제에 대한 추가 입력 매개 변수</block>
   <block id="a9ea431a49179a653fb353a3d8027b29" category="paragraph">모든 REST API 호출에 공통되는 매개 변수 외에 다음 매개 변수가 이 단계의 cURL 예에도 사용됩니다.</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">매개 변수</block>
@@ -1710,9 +1709,9 @@
   <block id="8bf3778ef40518b21cade909ac39bb88" category="paragraph">사용자 환경에 적합한 자격 증명을 대체해야 합니다. 자격 증명은 base64로 인코딩되지 않습니다. 이 매개 변수를 사용하여 curl 명령을 실행하면 문자열이 인코딩되고 Authorization 헤더가 생성됩니다.</block>
   <block id="cb607a6c7e4c50ffa4ecc75254227d82" category="list-text">실행할 컬링 예제에 포함된 변수 값을 설정합니다. 예를 들면 다음과 같습니다.</block>
   <block id="88c3404621959196699b6d5e21481f01" category="section-title">3단계: 클러스터 연락처 정보 확인</block>
-  <block id="d6e97a74db077b800b27092e142ea420" category="paragraph">워크플로우를 수행합니다 <block ref="7fc6abcb7d64eb85778fdfad2da4ab1a" category="inline-link-macro-rx"></block>. 를 설정해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 에 쿼리 매개 변수<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
   <block id="3522d2e743ab2fd440e2280ea09b6946" category="inline-link-macro">클러스터 연락처를 업데이트하고 작업 상태를 확인합니다</block>
   <block id="3c2bc619ddaef1bedada529634c6826d" category="list-text"><block ref="3c2bc619ddaef1bedada529634c6826d" category="inline-link-macro-rx"></block></block>
   <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">클러스터의 연락처 정보를 업데이트할 수 있습니다. 요청이 비동기적으로 처리되기 때문에 이 워크플로는 연결된 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Rest 자원 요약</block>
+  <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">워크플로우를 수행합니다 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>. 를 설정해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 에 쿼리 매개 변수<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
 </blocks>
