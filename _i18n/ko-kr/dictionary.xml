@@ -193,7 +193,6 @@
   <block id="5f6f9da8cb335b242fa16ae86bdd0b2d" category="paragraph">Vscan 정책을 사용하면 필요에 따라 또는 정해진 일정에 따라 파일 개체를 즉시 스캔할 수 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="611195abdbd7da41ddc1c888f9f1885e" category="paragraph">ONTAP와 외부 바이러스 검사 서버 간의 연결을 관리하는 데 사용되는 일련의 속성입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="c63c72a4f34ffdf5a780e1fc0e879ca8" category="paragraph">외부 바이러스 검사 서버의 상태입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="bf07f432276ee2fe7e55f9ea12c2ba5a" category="doc">자세한 정보를 확인하십시오</block>
   <block id="f09943979dc3457d406cfb7e8205a032" category="paragraph">ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 대한 자세한 내용을 확인하고 도움을 받을 수 있는 몇 가지 추가 리소스가 있습니다.</block>
   <block id="f372ae3b2fda116fe4b7463cbac902c0" category="section-title">ONTAP 9 리소스</block>
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">ONTAP 및 ONTAP 시스템 관리자 리소스</block>
@@ -238,7 +237,6 @@
   <block id="09b61c4c135233e31eb7b12d4a296b18" category="paragraph">ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. REST API에 직접 액세스하거나 NetApp Python 클라이언트 라이브러리를 통해 액세스할 수 있습니다. 또한, NetApp은 Ansible을 사용한 ONTAP 자동화와 기타 고급 소프트웨어 추상화를 지원합니다.</block>
   <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">네트워크 관리 SDK 또는 ZAPI라고도 하는 ONTAPI API API는 ONTAP 스토리지 시스템을 프로그래밍 방식으로 액세스 및 관리하기 위한 레거시 기술입니다. ONTAP REST API는 이제 전략적 기술이며 가능한 경우 선택해야 합니다.</block>
   <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">ONTAP REST API에 기본적으로 액세스</block>
-  <block id="17332aa1fd5861b55b1cfe91240e73d1" category="inline-link-macro">REST API 시작하기</block>
   <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">REST를 사용하도록 레거시 ONTAPI 코드를 조정합니다</block>
   <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">ONTAPI API를 사용하는 기존 코드가 있는 경우 NetApp은 코드를 변환하여 최신 ONTAP REST API를 사용하도록 지원합니다. 을 참조하십시오<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> ONTAPI 호출을 동등한 REST API 호출에 매핑하는 방법에 대한 자세한 내용은</block>
   <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">NetApp Python 클라이언트 라이브러리 사용</block>
@@ -555,10 +553,6 @@
   <block id="6353689d5872d03a15424fcc44ff9a38" category="admonition">NetApp은 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. Python 클라이언트 라이브러리를 사용하여 샘플에 액세스하려면 _examples_folder로 이동할 수 있습니다.</block>
   <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">ONTAP REST Python GitHub 리포지토리</block>
   <block id="62277cb84205b149ab77912513497f3a" category="paragraph"><block ref="62277cb84205b149ab77912513497f3a" category="inline-link-rx"></block></block>
-  <block id="b3d01b53079f4b9fbda29e6a55f54947" category="paragraph">ONTAP REST API 사용을 준비하기 위해 몇 가지 단계를 수행해야 합니다.</block>
-  <block id="edca3acbd939d4adbc6fd1775e2aa7d0" category="inline-link">ONTAP 9 개념</block>
-  <block id="7f22baf1d1c4dbcf7e51a6ce50ea7bcb" category="paragraph">ONTAP 9에 대한 경험이 있어야 합니다. 여기에는 기본 개념 및 용어에 대한 이해와 시스템 관리 경험이 포함됩니다. 을 참조하십시오<block ref="fe839e5e9dcf42e7a7beb586cd30f140" category="inline-link-rx"></block> 시작하십시오.</block>
-  <block id="a02beec7b8a899e8a4e50ec1d2df453e" category="paragraph">하나 이상의 프로그래밍 언어 및 curl과 같은 일반적인 유틸리티를 포함하여 소프트웨어 개발 기술 및 프로세스에 대한 약간의 경험이 있으면 도움이 됩니다.</block>
   <block id="cae712fa1badd396170b95946efaaab8" category="doc">스토리지 리소스에 대한 성능 메트릭</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">ONTAP은 선택한 SVM 스토리지 오브젝트 및 프로토콜에 대한 성능 메트릭을 수집하고 REST API를 통해 이 정보를 보고합니다. 이 데이터를 사용하여 ONTAP 시스템의 성능을 모니터링할 수 있습니다.</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">특정 스토리지 오브젝트 또는 프로토콜에서 성능 데이터는 다음 세 가지 범주로 분류됩니다.</block>
@@ -699,11 +693,7 @@
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">관련 링크</block>
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">나머지 리소스 요약</block>
   <block id="64b6ec9f9d366c873d08fe8bc6ed4cff" category="section-title">ONTAP API 설명서 페이지에 액세스합니다</block>
-  <block id="1273c6d3912948b5c61164da6ba4c3ab" category="paragraph">ONTAP REST API 및 기타 자동화 기술을 사용하여 빠르게 시작할 수 있습니다. 기본 요청 응답 흐름을 준비하고 이해한 후 curl을 사용하여 간단한 API 호출을 실행할 수 있습니다. 이 준비에서는 라이브 시스템에서 더 복잡한 워크플로우를 사용하기 전에 필요한 도입 및 관점을 제공합니다.</block>
-  <block id="625c92078d49d59bd332d26752459a1c" category="doc">ONTAP REST API 사용 준비</block>
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API를 참조하십시오</block>
-  <block id="be156535e85658a14f21eed0945afff8" category="paragraph">반드시 검토하십시오 <block ref="ccb6647c24ffc2522d48edc97b2b7273" category="inline-link-macro-rx"></block> REST 개념과 ONTAP REST API의 설계 방식에 대한 자세한 내용을 확인하십시오.</block>
-  <block id="2bb2ed6116b46f438fbcd4a9a0bad6fd" category="paragraph">에 나와 있는 추가 정보 리소스를 숙지해야 합니다 <block ref="91f6d3295d7ae30385e2f3285f307e42" category="inline-link-macro-rx"></block>.</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">ONTAP 자동화 옵션을 이해합니다</block>
   <block id="ae77e4f93e27bd095e1158ccc1bb27f8" category="paragraph">REST 클라이언트를 지원하는 모든 프로그래밍 언어를 사용하여 ONTAP REST API에 직접 액세스할 수 있습니다. Python, PowerShell, Java 등 다양한 언어가 제공됩니다. 먼저 이 사이트의 모든 문서를 검토해야 합니다.</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python 클라이언트 라이브러리</block>
@@ -735,7 +725,6 @@
   <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">REST API 사용 준비</block>
   <block id="015f8c34f52b6ef8a3361958660f5e88" category="sidebar">추가 고려 사항</block>
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">자동화</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">더 많은 리소스</block>
   <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">NetApp DevNet을 참조하십시오</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">ONTAP 9 문서</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">ONTAP Select 문서</block>
@@ -1147,7 +1136,6 @@
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9 제품군에 대한 문서를 제공합니다.</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리할 수 있습니다.</block>
   <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">REST API를 이용하여 ONTAP EMS 설정을 관리할 수 있다.</block>
-  <block id="4ede72f0f2827c7ddcbfe1866b200a34" category="summary">ONTAP REST API 및 기타 자동화 기술을 사용하여 빠르게 시작할 수 있습니다. 기본 요청 응답 흐름을 준비하고 이해한 후 curl을 사용하여 간단한 API 호출을 실행할 수 있습니다.</block>
   <block id="166d9995800bde3bddfef3d2294b5aa9" category="summary">ONTAP 구축을 자동화할 때 다양한 기술과 접근 방식을 이해하는 데 도움이 되는 여러 블로그 문서가 있습니다.</block>
   <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI는 ONTAP 스토리지 시스템 관리에 사용할 수 있는 네트워크 관리 SDK를 통해 제공되는 API 호출 집합입니다. REST API와 ONTAPI API 호출은 물론 REST API와 ONTAP CLI 간에는 차이점이 있습니다.</block>
   <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API는 ONTAP 시스템 관리 자동화를 위한 주요 전략적 선택입니다. 현재 ONTAPI API를 사용 중인 경우 REST API로 마이그레이션을 고려해야 합니다. NetApp은 ONTAPI에서 REST로의 마이그레이션을 지원하는 매핑 문서를 제공합니다. 을 참조하십시오 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
@@ -1418,9 +1406,6 @@
   <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">NetApp 및 Ansible 시작하기: Ansible을 설치하십시오</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP 요청</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP 응답입니다</block>
-  <block id="59382e918ffb6e6d1580a8b17e6e1e2c" category="paragraph-title">ONTAP 9를 사용해 보십시오</block>
-  <block id="0182974655f974e8429fb64bb3d15eb2" category="paragraph-title">REST 개념 및 구현을 검토합니다</block>
-  <block id="848c9ae1e7e981016f6df28d16d2cedd" category="paragraph-title">소프트웨어 개발 배경</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">작업을 마친 후</block>
   <block id="a4ed418f7517459e684626971cd74fba" category="paragraph-title">ONTAP 9.7 ~ 9.10.1</block>
@@ -1714,4 +1699,8 @@
   <block id="1adca2e27b8e8a9864351adf6119bafb" category="summary">클러스터의 연락처 정보를 업데이트할 수 있습니다. 요청이 비동기적으로 처리되기 때문에 이 워크플로는 연결된 백그라운드 작업이 성공적으로 완료되었는지 확인하는 방법도 보여 줍니다.</block>
   <block id="3a434b661b7a5e9113a6b4de74efe1a0" category="sidebar">Rest 자원 요약</block>
   <block id="3cf1284c45d0adfeed6003bf3d9bfe2e" category="paragraph">워크플로우를 수행합니다 <block ref="f8ef83534bba2e0fcad9a980050577d2" category="inline-link-macro-rx"></block>. 를 설정해야 합니다<block ref="d05b6ed7d2345020440df396d6da7f73" prefix=" " category="inline-code"></block> 에 쿼리 매개 변수<block ref="2f8a6bf31f3bd67bd2d9720c58b19c9a" prefix=" " category="inline-code"></block>.</block>
+  <block id="8cd58c89ff3d51a256ecfe3fe8bab20f" category="doc">추가 리소스</block>
+  <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
+  <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">현재 릴리즈에 대한 정보가 포함된 ONTAP 9 릴리즈 노트</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
 </blocks>

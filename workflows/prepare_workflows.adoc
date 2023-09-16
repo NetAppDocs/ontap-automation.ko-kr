@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: get-started/prepare_workflows.html 
+permalink: workflows/prepare_workflows.html 
 keywords: workflows, preparation, prepare to use workflows 
 summary: ONTAP 워크플로를 라이브 배포와 함께 사용하기 전에 해당 워크플로의 구조와 형식을 잘 알고 있어야 합니다. 
 ---

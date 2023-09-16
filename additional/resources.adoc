@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: additional/get_more_information.html 
+permalink: additional/resources.html 
 keywords: more information, additional resources 
 summary: ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 대한 자세한 내용을 확인하고 도움을 받을 수 있는 몇 가지 추가 리소스가 있습니다. 
 ---
-= 자세한 정보를 확인하십시오
+= 추가 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -23,6 +23,10 @@ ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 �
 * https://docs.netapp.com/us-en/ontap-family/["ONTAP 9 제품 설명서"^]
 +
 ONTAP 9 제품군에 대한 문서를 제공합니다.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^]
++
+현재 릴리즈에 대한 정보가 포함된 ONTAP 9 릴리즈 노트
 
 * https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx["ONTAP 및 ONTAP 시스템 관리자 리소스"^]
 +

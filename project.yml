@@ -28,11 +28,9 @@ homepage:
   - title: 시작하십시오
     links:
     - title: 릴리즈 노트
-      url: "/rn/whats_new.html"
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: ONTAP 자동화 옵션
       url: "/get-started/ontap_automation_options.html"
-    - title: REST API 사용 준비
-      url: "/get-started/prepare_rest.html"
     - title: 첫 번째 API 호출입니다
       url: "/get-started/first_call.html"
   - title: ONTAP REST API를 참조하십시오
@@ -63,10 +61,10 @@ homepage:
       url: "/migrate/performance-counters.html"
     - title: 블로그 기사를 참조하십시오
       url: "/migrate/blogs.html"
-  - title: 더 많은 리소스
+  - title: 지식 및 지원
     links:
-    - title: 자세한 정보를 확인하십시오
-      url: "/additional/get_more_information.html"
+    - title: 추가 리소스
+      url: "/additional/resources.html"
     - title: NetApp DevNet을 참조하십시오
       url: https://devnet.netapp.com/restapi.php
     - title: ONTAP 9 문서
