@@ -52,7 +52,7 @@ API에 직접 액세스할 때 도메인 또는 IP 주소에 * API * 를 추가�
 
 `https://ontap.demo-example.com/api`
 
-을 참조하십시오 link:../rest/access_rest_api.html["ONTAP REST API 액세스 방법"] 를 참조하십시오.
+을 참조하십시오 link:../get-started/access_rest_api.html["ONTAP REST API 액세스 방법"] 를 참조하십시오.
 
 
 

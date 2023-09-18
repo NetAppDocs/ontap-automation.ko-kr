@@ -6,10 +6,6 @@ entries:
   entries:
   - title: REST 웹 서비스 기반
     url: "/rest/rest_web_services_foundation.html"
-  - title: ONTAP REST API 버전 관리
-    url: "/rest/rest_api_versioning.html"
-  - title: REST API 액세스 방법
-    url: "/rest/access_rest_api.html"
   - title: 기본 작동 특성
     url: "/rest/operational_characteristics.html"
   - title: 입력 변수

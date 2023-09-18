@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: rest/access_rest_api.html 
+permalink: get-started/access_rest_api.html 
 keywords: accessing the rest api, lif 
 summary: 여러 가지 방법으로 ONTAP REST API에 액세스할 수 있습니다. 
 ---

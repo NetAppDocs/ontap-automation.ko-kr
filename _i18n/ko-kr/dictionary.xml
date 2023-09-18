@@ -423,10 +423,6 @@
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">클러스터 구성을 검색하는 스크립트입니다</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">다음 스크립트는 Python 클라이언트 라이브러리를 사용하는 방법의 간단한 예를 제공합니다. CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP 클러스터 구성을 검색할 수 있습니다.</block>
   <block id="62e19745c2e31bc4e7e9e3351516716c" category="summary">ONTAP 자동화 문서 포털에 오신 것을 환영합니다.</block>
-  <block id="645796c14f90a49c10fe89ef0d9036f0" category="doc">ONTAP REST API 버전 관리</block>
-  <block id="a131529b4b9e76bc39353ef1aa209dd9" category="paragraph">ONTAP 9에 포함된 REST API에는 ONTAP 릴리즈 번호와 독립적인 버전 번호가 할당됩니다. ONTAP 릴리스에 포함된 API 버전과 API 사용에 어떤 영향을 줄 수 있는지 알고 있어야 합니다.</block>
-  <block id="8797a71e8a89cb9c915f588f435aa882" category="admonition">ONTAP 9의 모든 버전은 동일한 버전의 REST API를 사용합니다.</block>
-  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">버전 1</block>
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">산</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">이러한 API 호출을 사용하여 SAN(Storage Area Networking) 리소스를 관리할 수 있습니다.</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel 로그인은 ONTAP에 로그인한 Fibre Channel 이니시에이터에 의해 형성된 접속을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -704,7 +700,6 @@
   <block id="84cd295cbbbd691b40d7d06df51912a3" category="list-text"><block ref="84cd295cbbbd691b40d7d06df51912a3" category="inline-link-macro-rx"></block></block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP 릴리즈 노트</block>
-  <block id="fa229fc458ab35ecd4519d4dcca0e7bb" category="list-text"><block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block></block>
   <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">ONTAP REST API 및 자동화의 새로운 기능</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 ONTAP REST API를 정기적으로 업데이트합니다.</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
@@ -1666,7 +1661,6 @@
   <block id="847793b45951d6e2be78711a2dcc9cbc" category="paragraph">각 REST API 호출에 사용되는 끝점 경로에는 다양한 식별자가 포함될 수 있습니다. 각 ID는 특정 리소스 인스턴스에 해당합니다. 예를 들어 클러스터 ID 및 SVM ID가 있습니다.</block>
   <block id="cca8864630faf59781a9627c4ff42b91" category="list-text">기본 인증은 base64 문자열로 인코딩된 사용자 이름과 암호로 설정되어야 합니다. 예를 들면 다음과 같습니다.</block>
   <block id="d4a75631c199e30063c5b55330d690dc" category="paragraph"><block ref="20e17731e08bc5284461439422e12e1a" prefix="" category="inline-code"></block>.</block>
-  <block id="29ca978338507bc932aabe7888d4b362" category="list-text">ONTAP 9.6 ~ ONTAP 9.13.1</block>
   <block id="a9cf0528ce80a52d0d018708afdefd2b" category="sidebar">클러스터 구성을 가져옵니다</block>
   <block id="64893f12dbe0e133d03e0bed1c70559e" category="sidebar">클러스터 연락처를 업데이트합니다</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">SVM 나열</block>
@@ -1682,7 +1676,6 @@
   <block id="39b13b297edf030e2a6f8316d1a33f56" category="paragraph">라이브 ONTAP 배포와 함께 사용하기 전에 워크플로의 구조와 형식을 잘 알고 있어야 합니다.</block>
   <block id="0ee204047e3ff10a0e6d606b38224615" category="paragraph">워크플로는 한 단계만 포함할 수 있습니다. 이러한 _단일 단계 워크플로_는 여러 단계가 포함된 워크플로와 약간 다르게 형식이 지정됩니다. 예를 들어, 명시적인 단계 이름이 제거됩니다. 작업 또는 작업은 워크플로 제목에 따라 명확해야 합니다.</block>
   <block id="8d197ea17b19bf5b877d0bca6b13aa1c" category="paragraph">curl 또는 프로그래밍 언어를 통해 ONTAP REST API에 직접 액세스할 수 있습니다. 이 경우 기본 URL이 ONTAP 온라인 설명서 또는 System Manager에 액세스할 때 사용하는 URL과 다릅니다.</block>
-  <block id="96dc946163c536a828ef3f6ac5ab199d" category="paragraph">을 참조하십시오 <block ref="fd12ec3737d055cdf76a7f06b5b60e9a" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="8b601595dec3f885a40ef9fec71f259d" category="paragraph">특정 REST API 호출에 추가 매개 변수가 필요한 경우 각 워크플로에 대한 curl 예제에 대한 추가 입력 매개 변수 * 섹션에 해당 매개 변수가 포함됩니다.</block>
   <block id="dc9f325cca41d07c0fa65042753d1c30" category="paragraph">워크플로우 예제에 사용되는 ID 값과 기타 변수는 불투명하며 ONTAP 클러스터마다 다를 수 있습니다. 예제의 가독성을 높이기 위해 실제 값은 사용되지 않습니다. 변수가 대신 사용됩니다. 일관된 형식과 예약된 이름을 기반으로 하는 이 접근 방식은 다음과 같은 이점을 제공합니다.</block>
   <block id="5fdcf5dc19660a9231d7bb52846ce0da" category="paragraph">다음은 일반적인 변수 키워드 중 일부입니다. 이 목록은 완전하지 않으며 필요에 따라 추가 변수가 사용됩니다. 그들의 의미는 상황에 따라 분명해야 합니다.</block>
@@ -1703,4 +1696,5 @@
   <block id="d70430e3ce6fd2f61524c5b7b9d27cb4" category="list-text"><block ref="d70430e3ce6fd2f61524c5b7b9d27cb4" category="inline-link-rx"></block></block>
   <block id="3f5e5352c860872dbfb2b2a52bd08d4c" category="paragraph">현재 릴리즈에 대한 정보가 포함된 ONTAP 9 릴리즈 노트</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">지식 및 지원</block>
+  <block id="f792317fd7e11e74c29e5d363e4e430d" category="paragraph">을 참조하십시오 <block ref="431fa54c68c6c490a4d44973df3ba937" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
 </blocks>

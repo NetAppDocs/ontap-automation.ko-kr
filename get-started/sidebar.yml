@@ -4,6 +4,8 @@ title: 시작하십시오
 entries:
 - title: 자동화 옵션을 이해합니다
   url: "/get-started/ontap_automation_options.html"
+- title: REST API 액세스 방법
+  url: "/get-started/access_rest_api.html"
 - title: 클러스터 소프트웨어 버전을 검색합니다
   url: "/get-started/retrieve_cluster_software_version.html"
 - title: 첫 번째 API 호출입니다
