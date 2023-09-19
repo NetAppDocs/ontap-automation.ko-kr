@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_data_protection.html 
+keywords:  
+summary: XXX 
+---
+= 데이터 보호 관리 활성화
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+경우에 따라 사용자에게 제한된 데이터 보호 기능을 제공할 수 있습니다.
+
+.이 워크플로 정보
+생성된 전통적인 역할은 다음과 같은 특성을 가지고 정의됩니다.
+
+* SnapMirror 관계를 업데이트할 뿐만 아니라 스냅샷을 생성 및 삭제할 수 있습니다
+* 볼륨 또는 SVM과 같은 상위 레벨의 객체를 생성하거나 수정할 수 없습니다
+
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 게시 | /API/보안/역할 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON 입력 예
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "volume snapshot create", "access": "all"},
+      {"path": "volume snapshot delete", "access": "all"},
+      {"path": "volume show", "access": "readonly"},
+      {"path": "vserver show", "access": "readonly"},
+      {"path": "snapmirror show", "access": "readonly"},
+      {"path": "snapmirror update", "access": "all"}
+  ]
+}
+----

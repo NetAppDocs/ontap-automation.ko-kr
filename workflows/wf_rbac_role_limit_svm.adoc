@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_limit_svm.html 
+keywords:  
+summary: SVM 내에서 스토리지 볼륨 관리를 제한하는 역할을 정의할 수 있습니다. 
+---
+= SVM 볼륨 작업으로 액세스 제한
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SVM 내에서 스토리지 볼륨 관리를 제한하는 역할을 정의할 수 있습니다.
+
+.이 워크플로 정보
+먼저 복제를 제외한 모든 주요 볼륨 관리 기능에 액세스할 수 있도록 기존 역할이 생성됩니다. 역할은 다음과 같은 특성으로 정의됩니다.
+
+* 가져오기, 생성, 수정 및 삭제를 포함한 모든 CRUD 볼륨 작업을 수행할 수 있습니다
+* 볼륨 클론을 생성할 수 없습니다
+
+
+그런 다음 필요에 따라 역할을 업데이트할 수 있습니다. 이 워크플로우에서는 두 번째 단계에서 사용자가 볼륨 클론을 생성할 수 있도록 역할이 변경됩니다.
+
+
+
+== 1단계: 역할을 만듭니다
+
+API 호출을 실행하여 RBAC 역할을 생성할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 게시 | /API/보안/역할 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON 입력 예
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== 2단계: 역할을 업데이트합니다
+
+API 호출을 실행하여 기존 역할을 업데이트할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 게시 | /API/보안/역할 
+|===
+.컬링 예제에 대한 추가 입력 매개 변수
+모든 REST API 호출에 공통되는 매개 변수 외에 다음 매개 변수가 이 단계의 cURL 예에도 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| $SVM_ID입니다 | 경로 | 예 | 역할 정의가 포함된 SVM의 UUID입니다. 
+
+
+| $ROLE_NAME입니다 | 경로 | 예 | 업데이트할 SVM 내에서 역할의 이름입니다. 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+-- include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON 입력 예
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----

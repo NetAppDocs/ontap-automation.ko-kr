@@ -17,6 +17,9 @@ summary: 기본적인 RBAC 기능을 이해한 후에는 ONTAP 역할 및 사용
 기본적인 RBAC 기능을 이해한 후에는 ONTAP 역할 및 사용자 작업을 시작할 수 있습니다.
 
 
+NOTE: 을 참조하십시오 link:../workflows/wf_rbac_prepare.html["RBAC 워크플로"] ONTAP REST API를 사용하여 역할을 생성하고 사용하는 방법의 예를 참조하십시오.
+
+
 
 == 관리 액세스
 

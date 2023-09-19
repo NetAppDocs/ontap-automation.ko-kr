@@ -10,6 +10,20 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: 클러스터 연락처를 업데이트합니다
     url: "/workflows/wf_cls_update_contact.html"
+- title: RBAC
+  entries:
+  - title: RBAC를 사용하도록 준비합니다
+    url: "/workflows/wf_rbac_prepare.html"
+  - title: 역할을 생성합니다
+    entries:
+    - title: SVM 볼륨 작업 제한
+      url: "/workflows/wf_rbac_limit_svm.html"
+    - title: 데이터 보호 향상
+      url: "/workflows/wf_rbac_data_protection.html"
+    - title: ONTAP 보고서 생성을 허용합니다
+      url: "/workflows/wf_rbac_ontap_reports.html"
+  - title: 역할을 가진 사용자를 생성합니다
+    url: "/workflows/wf_rbac_user_role.html"
 - title: SVM
   entries:
   - title: SVM 나열

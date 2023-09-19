@@ -30,7 +30,7 @@ API 호출을 실행하여 클러스터 연락처 정보를 업데이트할 수 
 | HTTP 메소드 | 경로 
 
 
-| 패치 | /클러스터 
+| 패치 | /api/클러스터 
 |===
 .처리 유형
 비동기식
@@ -82,7 +82,7 @@ curl --request PATCH \
 | HTTP 메소드 | 경로 
 
 
-| 가져오기 | /cluster/jobs/{uuid} 
+| 가져오기 | /api/cluster/job/{uuid} 
 |===
 .처리 유형
 동기식이다

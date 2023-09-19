@@ -30,8 +30,4 @@ entries:
     url: "/rest/rbac_overview.html"
   - title: 역할 및 사용자 작업
     url: "/rest/rbac_roles_users.html"
-  - title: 역할 정의 예
-    url: "/rest/rbac_sample_roles.html"
-  - title: 역할을 가진 사용자를 생성합니다
-    url: "/rest/rbac_wf_create_user.html"
 - section: resources
