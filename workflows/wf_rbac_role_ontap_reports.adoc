@@ -38,7 +38,7 @@ REST 역할을 생성하여 사용자에게 ONTAP 보고서를 생성할 수 있
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput

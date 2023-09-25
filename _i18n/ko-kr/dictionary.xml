@@ -1688,7 +1688,6 @@
   <block id="18a5ea643c715c0e45aa53077e8f1429" category="cell">업데이트할 SVM 내의 역할 이름입니다.</block>
   <block id="4fa346713b0e13aa5afd8dc51d0ddecb" category="section-title">6단계: 사용자 생성</block>
   <block id="3c597ed3165c87f6539fd81a53a11876" category="paragraph">사용자 계정 생성을 위해 다음 REST API 호출을 수행합니다. 위에서 생성한 * dprole1 * 역할은 새 사용자와 연결됩니다.</block>
-  <block id="a2268d991f8aa28dc9e9d9d830cfcd50" category="admonition">역할 없이 사용자를 포함할 수 있습니다. 이 경우 사용자를 수정하여 역할을 할당해야 합니다.</block>
   <block id="e3abdda2fcce71a97b7507b852418cf4" category="doc">ONTAP 보고서 생성을 허용합니다</block>
   <block id="c6ef9b731f6fad8f77a915b2ed739e76" category="paragraph">REST 역할을 생성하여 사용자에게 ONTAP 보고서를 생성할 수 있는 기능을 제공할 수 있습니다.</block>
   <block id="fddc78544f7292e6a6fd31d26110db0d" category="paragraph">생성된 역할은 다음과 같은 특성으로 정의됩니다.</block>
@@ -1710,4 +1709,13 @@
   <block id="79a64e91efbdc6837abaf1d324269070" category="sidebar">SVM 볼륨 작업 제한</block>
   <block id="5379ed2904fea688a27b53224909e1fe" category="sidebar">데이터 보호 향상</block>
   <block id="58bd5f4d333ce0475b1c1a65bffe5bda" category="sidebar">ONTAP 보고서 생성을 허용합니다</block>
+  <block id="0819bf309b404c2690cae22900701126" category="admonition">역할 없이 사용자를 만들 수 있습니다. 이 경우 사용자에게 기본 역할(둘 중 하나)이 할당됩니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 또는<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>) 사용자가 클러스터 또는 SVM 범위로 정의되었는지 여부에 따라 결정됩니다. 다른 역할을 할당하도록 사용자를 수정해야 합니다.</block>
+  <block id="d5e0a7e21dd7c4bd9ee909a636487786" category="summary">ONTAP 클러스터에 설치된 인증서를 나열할 수 있습니다. 이렇게 하면 특정 인증서를 사용할 수 있는지 확인하거나 전체 인증서를 검색할 수 있는 특정 인증서의 ID를 가져올 수 있습니다.</block>
+  <block id="85dc6bfe81f58a9d2d9fdae56a1e1032" category="doc">인증서를 나열합니다</block>
+  <block id="b6902213d797ad7a6157aee6a1fc91fb" category="paragraph">ONTAP 클러스터에 설치된 인증서를 나열할 수 있습니다. 이렇게 하면 특정 인증서를 사용할 수 있는지 확인하거나 특정 인증서의 ID를 가져올 수 있습니다.</block>
+  <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/security/certificates 를 참조하십시오</block>
+  <block id="1f1b6cbe92673a03d06060259142dbc4" category="listing-title">curl 예: 인증서 3개를 반환합니다</block>
+  <block id="cf441294e2d78d04b4374f90141413f6" category="admonition">ONTAP 릴리스에서 사용하려는 워크플로에서 모든 API 호출을 지원하는지 확인해야 합니다. 을 참조하십시오 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">인증서 및 키</block>
+  <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">인증서 나열</block>
 </blocks>

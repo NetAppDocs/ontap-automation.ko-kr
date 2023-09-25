@@ -46,7 +46,7 @@ API 호출을 실행하여 RBAC 역할을 생성할 수 있습니다.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput
@@ -100,7 +100,7 @@ API 호출을 실행하여 기존 역할을 업데이트할 수 있습니다.
 ----
 curl --request POST \
 --location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
--- include \
+--include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
 --data @JSONinput

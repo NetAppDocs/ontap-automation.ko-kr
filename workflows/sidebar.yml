@@ -4,6 +4,10 @@ title: 워크플로우
 entries:
 - title: 워크플로우 사용을 준비하십시오
   url: "/workflows/prepare_workflows.html"
+- title: 인증서 및 키
+  entries:
+  - title: 인증서 나열
+    url: "/workflows/wf_cert_list_certificates.html"
 - title: 클러스터
   entries:
   - title: 클러스터 구성을 가져옵니다
