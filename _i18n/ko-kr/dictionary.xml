@@ -1095,7 +1095,6 @@
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. REST 역할을 생성하면 기존의 _mapping_role이 자동으로 생성됩니다.</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">온라인으로 ONTAP에 액세스할 수 있습니다 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> API 사용 방법의 예를 포함한 자세한 내용은 설명서를 참조하십시오.</block>
   <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="d1b92a4930d50c6ed1038655db0d2684" category="sidebar">모든 ONTAP 제품 설명서</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9 제품 설명서</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9 제품군에 대한 문서를 제공합니다.</block>
@@ -1718,4 +1717,6 @@
   <block id="010b2cb4a9a7014437b7b05617f3e98e" category="sidebar">인증서 및 키</block>
   <block id="3002e63504efe4acf7cd736f92c22ec0" category="sidebar">인증서 나열</block>
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">설치된 인증서를 나열합니다</block>
+  <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">Max_records(최대 레코드</block>
+  <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">반환할 레코드 수를 지정합니다.</block>
 </blocks>
