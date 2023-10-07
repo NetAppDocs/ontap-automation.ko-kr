@@ -1719,4 +1719,14 @@
   <block id="b74cf40de9fee3f0ba4a3b37a59ed082" category="doc">설치된 인증서를 나열합니다</block>
   <block id="f69688cd7802eb62a67f6a56384b3d93" category="cell">Max_records(최대 레코드</block>
   <block id="09548bddb5b6b060a8ff9db149caf9b5" category="cell">반환할 레코드 수를 지정합니다.</block>
+  <block id="b933168f11c5a1fef62b427e5c4faba9" category="summary">ONTAP 클러스터에 서명된 X.509 인증서를 설치할 수 있습니다. 강력한 인증이 필요한 ONTAP 기능이나 프로토콜을 구성할 때 이 작업을 수행할 수 있습니다.</block>
+  <block id="86ba127d49846ec207c19190730b16ac" category="doc">인증서를 설치합니다</block>
+  <block id="5c88f057b69ff938c461962eab9693dc" category="paragraph">설치할 인증서가 있어야 합니다. 또한 필요에 따라 중간 인증서가 설치되어 있는지 확인해야 합니다.</block>
+  <block id="6a9cd64c223b26e7117c3bc5cd084d43" category="admonition">아래에 포함된 JSON 입력 예제를 사용하기 전에 를 업데이트해야 합니다<block ref="d73414ceb92d4d043000a5e640fd38a8" prefix=" " category="inline-code"></block> 환경에 대한 인증서를 사용하여 얻을 수 있습니다.</block>
+  <block id="bc81a95e520df56e073aa3da00713e6b" category="section-title">1단계: 인증서를 설치합니다</block>
+  <block id="7b92d99be03324f62f907c845be5b97c" category="paragraph">API 호출을 실행하여 인증서를 설치할 수 있습니다.</block>
+  <block id="2a277cc2a72e1e678197b2173c54ece4" category="listing-title">curl 예: 클러스터 수준에서 루트 CA 인증서를 설치합니다</block>
+  <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">2단계: 인증서가 설치되었는지 확인합니다</block>
+  <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">워크플로우를 수행합니다 <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> 인증서를 사용할 수 있는지 확인합니다.</block>
+  <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">인증서 설치</block>
 </blocks>
