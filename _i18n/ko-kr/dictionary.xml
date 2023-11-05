@@ -602,13 +602,10 @@
   <block id="3869128f90019baba527314ae533f075" category="paragraph">사용할 LIF는 HTTPS 관리 프로토콜을 지원하도록 구성해야 합니다. 또한 네트워크의 방화벽 구성에서 HTTPS 트래픽을 허용해야 합니다.</block>
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">ONTAP API 온라인 설명서 페이지</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">최신 버전의 API에 대한 설명서 페이지에 액세스하는 데 사용되는 URL 형식은 다음과 같습니다.</block>
-  <block id="5577746582bcb9358092e3471e9dbcbb" category="paragraph">"https://&lt;cluster_mgmt_ip_address&gt;/docs/api`</block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">사용자 정의 소프트웨어 및 도구</block>
   <block id="6e70b7cc1cd3e6a65b37dbcdde8ecd4a" category="paragraph">여러 가지 프로그래밍 언어 및 도구를 사용하여 ONTAP API에 액세스할 수 있습니다. Python, Java, Curl, PowerShell을 비롯한 다양한 옵션이 제공됩니다. API를 사용하는 프로그램, 스크립트 또는 도구는 REST 웹 서비스 클라이언트로 작동합니다. 프로그래밍 언어를 사용하면 API를 보다 심층적으로 이해할 수 있으며 ONTAP 관리를 자동화할 수 있습니다.</block>
   <block id="9670d5b867b93341fdec8b7aadfdba79" category="paragraph">최신 버전의 API에 직접 액세스하는 데 사용되는 기본 URL의 형식은 다음과 같습니다.</block>
-  <block id="eb58b311b3cd61c57c1148d0c5ba0129" category="paragraph">"https://&lt;cluster_mgmt_ip_address&gt;/api`</block>
   <block id="433c12a33fdba27dd646123b380a2c4e" category="paragraph">여러 버전이 지원되는 특정 API 버전에 액세스하려면 URL 형식은 다음과 같습니다.</block>
-  <block id="8b27cc8fdbb4b1dea164580b7fa49b37" category="paragraph">"https://&lt;cluster_mgmt_ip_address&gt;/api/v1`</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="70d9e3c68d42d6ec42ab792e06c44357" category="doc">NVMe를 참조하십시오</block>
@@ -1729,4 +1726,7 @@
   <block id="f6c0383d899dc40b8c8d016d4b5f85de" category="section-title">2단계: 인증서가 설치되었는지 확인합니다</block>
   <block id="5b3cfccbac20b0363f1d4e2d4431ab0e" category="paragraph">워크플로우를 수행합니다 <block ref="cf365ce6cd35c6dbd8b87fe3303f2226" category="inline-link-macro-rx"></block> 인증서를 사용할 수 있는지 확인합니다.</block>
   <block id="1346018f60bf3711f3e704204dc2db96" category="sidebar">인증서 설치</block>
+  <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
+  <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
+  <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
 </blocks>

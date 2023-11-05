@@ -40,7 +40,7 @@ ONTAP API 온라인 설명서 페이지는 웹 브라우저를 사용할 때 액
 
 최신 버전의 API에 대한 설명서 페이지에 액세스하는 데 사용되는 URL 형식은 다음과 같습니다.
 
-"https://<cluster_mgmt_ip_address>/docs/api`
+`\https://<cluster_mgmt_ip_address>/docs/api`
 
 
 
@@ -50,8 +50,8 @@ ONTAP API 온라인 설명서 페이지는 웹 브라우저를 사용할 때 액
 
 최신 버전의 API에 직접 액세스하는 데 사용되는 기본 URL의 형식은 다음과 같습니다.
 
-"https://<cluster_mgmt_ip_address>/api`
+`\https://<cluster_mgmt_ip_address>/api`
 
 여러 버전이 지원되는 특정 API 버전에 액세스하려면 URL 형식은 다음과 같습니다.
 
-"https://<cluster_mgmt_ip_address>/api/v1`
+`\https://<cluster_mgmt_ip_address>/api/v1`
