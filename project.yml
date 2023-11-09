@@ -11,7 +11,8 @@ sidebar:
   entries:
   - title: ONTAP 자동화 문서
     url: "/index.html"
-  - section: rn
+  - title: 새로운 소식
+    url: "/whats_new.html"
   - section: get-started
   - section: rest
   - section: workflows

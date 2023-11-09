@@ -700,7 +700,6 @@
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
   <block id="ec033dcf5fdadae0c2ee4fad5b7980ac" category="doc">ONTAP 자동화 문서</block>
   <block id="a91c898dc88158a371c7ff70b0baa9e0" category="paragraph">ONTAP REST API 및 명령줄 인터페이스는 근본적으로 다른 디자인을 가지고 있습니다. CLI 명령 및 매개 변수는 REST API 호출에 직접 매핑되지 않습니다. 유사성이 있는 경우에도 입력 매개 변수의 세부 정보는 다를 수 있습니다. 예를 들어, 숫자 단위는 바이트로 지정하거나 접미사(예: KB)를 사용할 수 있습니다. 을(를) 검토해야 합니다 <block ref="3715d1b1602da53d0f380910b6dd9205" category="inline-link-macro-rx"></block> 뿐만 아니라 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="e5adab4baa780b014bfe7130066b2a36" category="paragraph">자세한 내용은 를 참조하십시오 <block ref="fa229fc458ab35ecd4519d4dcca0e7bb" category="inline-link-macro-rx"></block>.</block>
   <block id="430e01911dcacc88e4a83d838ae504e2" category="paragraph"><block ref="430e01911dcacc88e4a83d838ae504e2" category="inline-link-macro-rx"></block></block>
   <block id="54a05230a9d83fc20a3024afd1148c81" category="doc">REST API를 통해 ONTAP CLI에 액세스합니다</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="paragraph">REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 웹 서비스 API의 설계에 적용될 경우 서버 기반 리소스를 노출하고 상태를 관리하기 위한 일련의 기술을 설정합니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.</block>
@@ -905,14 +904,6 @@
   <block id="f74fb34c9f03e41b8c43158d192c2d00" category="cell">host_adapter_1</block>
   <block id="5179155001c9f520ffb99f72e2b20b26" category="cell">Host_adapter_2</block>
   <block id="e963b19eb0f4d2b1cf056e63183513d8" category="cell">Host_adapter_3</block>
-  <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
-  <block id="b5ec85c168694921a9de5eadfa6243a8" category="paragraph">ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다. 이러한 제한 사항은 아래에 설명되어 있습니다. 일반적으로 REST API를 사용할 수 있는 지원되는 모든 ONTAP 릴리스에 각각 적용됩니다. 자세한 내용은 _ONTAP 릴리스_ 필드를 참조하십시오.</block>
-  <block id="3428b552896ca875d0afc0a87f353a49" category="admonition">REST API는 ONTAP 9.6에서 처음 사용할 수 있게 되었습니다.</block>
-  <block id="3a7bd150a3b127f640a55f3e4295ae12" category="paragraph">_ONTAP 릴리스: 지원되는 모든 _</block>
-  <block id="3806b2980e70701200d32d0a7249795f" category="paragraph">모든 REST API 클라이언트 요청은 ONTAP에 의해 수신되고 처리 전에 입력 대기열에 배치됩니다. 도착 속도가 매우 높은 경우 이러한 API 요청을 보유하는 입력 대기 큐가 일시적으로 가득 찰 수 있습니다. 이 경우 각각의 추가 오버플로 요청이 거부됩니다. 다음과 같은 경우:</block>
-  <block id="b313d34412fbec083537488efb6a7265" category="list-text">ONTAP는 들어오는 연결이 대기 대기열 길이를 초과함을 인식하고 연결에 실패했다는 메시지를 기록합니다.</block>
-  <block id="b497355f60941f025ea8887fd49f2692" category="list-text">REST 클라이언트는 실패한 연결을 관찰하지만 정확한 동작은 클라이언트에 따라 다를 수 있습니다. 예를 들어 NMSDK 클라이언트에서 "SSL에 연결하지 못했습니다."라는 메시지가 표시됩니다.</block>
-  <block id="ba9b38c8f7abd73c0e9a44d75391a449" category="paragraph">REST API 입력 대기 큐가 채워지는 경우는 드뭅니다. 그러나 과도한 요청을 거부하면 DOS 공격에 대한 보호가 제공됩니다.</block>
   <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">인증 오류로 인해 액세스가 거부되었습니다.</block>
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다. 이와 관련하여 대량 스냅샷 복사본을 생성 및 관리할 수 있는 지원이 제공됩니다.</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI 보고 도구</block>
@@ -1103,7 +1094,6 @@
   <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">CLI 및 ONTAPI API 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP은 CLI에 액세스할 수 있는 REST 엔드포인트를 제공합니다. 이 통과 연결 기능을 사용하여 모든 CLI 명령을 실행할 수 있습니다.</block>
   <block id="5c1a8f35406088e0d21c8beb1a46d2c4" category="summary">REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">비동기적으로 실행되도록 설계된 API 요청을 실행하면 작업 객체가 항상 생성되어 호출자에게 반환됩니다. 이 작업에서는 요청을 처리하는 백그라운드 작업을 설명하고 앵커를 지정합니다.</block>
-  <block id="f06d994dc2c76601280d13d092043991" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. 을 참조하십시오 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 및 <block ref="5c7637441553bbdd364a0c84153850ad" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST API 액세스 방법</block>
   <block id="b1999685ab0c81075d0f943a5d06a018" category="summary">모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다.</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다. 이 그림에서는 클러스터에서 사용하는 ONTAP 소프트웨어의 버전을 검색하는 방법을 보여 줍니다.</block>
@@ -1115,7 +1105,6 @@
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다. 적절한 ONTAP 릴리스를 선택합니다.</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">사용합니다. NetApp ONTAP</block>
   <block id="f1414234dbf1c874f89997d3c54bcfbc" category="list-text"><block ref="f1414234dbf1c874f89997d3c54bcfbc" category="inline-link-rx"></block></block>
-  <block id="d45d9e85cc7b83745a3636a19ac8b2bb" category="summary">ONTAP REST API에는 API 사용과 자동화 코드 개발에 영향을 미칠 수 있는 특정 제한 또는 제한이 있습니다.</block>
   <block id="eb0cda77424e206695a7e1df680678f7" category="paragraph">ONTAP 9.12.1은 40개 이상의 새로운 API 호출을 통해 ONTAP REST API의 기능을 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈는 보안 및 NAS 기능 향상에 중점을 둡니다.</block>
   <block id="5f6c185eb38c56187fc699dfbe62654b" category="list-text">보안 강화</block>
   <block id="02225fa77795933e713b9af48999c77d" category="list-text">Amazon Web Services에는 키 및 기타 비밀에 대한 보안 저장소를 제공하는 키 관리 서비스가 포함되어 있습니다. REST API를 통해 이 서비스에 액세스하여 ONTAP에서 클라우드에 암호화 키를 안전하게 저장할 수 있습니다. 또한 NetApp Storage Encryption에 사용되는 인증 키를 생성하고 나열할 수 있습니다.</block>
@@ -1389,11 +1378,9 @@
   <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI - REST 매핑</block>
   <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">ONTAP API에서 ONTAP REST API로 자동화 전환</block>
   <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI에서 전환</block>
-  <block id="21aec37d095265f9895a6901a6c9b4be" category="paragraph-title">입력 대기열이 가득 차면 REST API 요청이 거부됩니다</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">첫 번째 API 호출입니다</block>
   <block id="75c90b2d1f920512c61cb6505fb520e4" category="paragraph">ONTAP REST API를 통해 사용 가능한 리소스는 ONTAP API 온라인 설명서에 나와 있는 것처럼 범주별로 구성되어 있습니다. 각 리소스에 대한 간략한 설명과 함께 해당되는 경우 추가적인 사용 고려 사항이 아래에 나와 있습니다.</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
-  <block id="d9f8d52d6d6ec5ead10f99c5fd6ae4ae" category="paragraph">이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 <block ref="26eaa6b7897a71145f335345df4a84a2" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.</block>
   <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
   <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
@@ -1729,4 +1716,8 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
+  <block id="3b4eb2c2464d0801cad28a2ce6319a1c" category="paragraph">이 요약에 설명된 나머지 리소스는 최신 버전의 제품을 기반으로 합니다. 이전 릴리스의 변경 사항을 이해해야 하는 경우 를 참조하십시오 <block ref="eea437b9922115b60f36debdfc0ed4d0" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
+  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">또한 를 검토해야 합니다<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 알려진 제한 사항 또는 문제를 포함한 추가 정보</block>
+  <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. 을 참조하십시오 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 및 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="f3b85d23635afa201e61913278969401" category="paragraph">자세한 내용은 를 참조하십시오<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
 </blocks>
