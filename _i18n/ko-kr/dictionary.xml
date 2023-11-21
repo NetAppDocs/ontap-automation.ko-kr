@@ -413,11 +413,9 @@
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">보안</block>
   <block id="a0c340ff7c895ce6a1d571f1f55df890" category="paragraph">REST API와 함께 제공되는 보안은 주로 ONTAP에서 사용할 수 있는 기존 보안 기능을 기반으로 합니다. 다음 보안은 API에서 사용됩니다.</block>
   <block id="14a55e8a26db2705a0ffd20ba0427338" category="list-text">전송 계층 보안</block>
-  <block id="efe99011e665b49448af280693e74e6c" category="paragraph">ONTAP LIF와 클라이언트 간에 네트워크를 통해 전송되는 모든 트래픽은 일반적으로 ONTAP 구성 설정에 따라 TLS를 사용하여 암호화됩니다.</block>
   <block id="234b7702b17d750d0199947820d83481" category="list-text">클라이언트 인증</block>
   <block id="e3f07bfd552c9d40285bc289e8e95e1a" category="paragraph">ONTAP System Manager 및 네트워크 관리 SDK에서 사용할 수 있는 인증 옵션과 동일한 인증 옵션을 ONTAP REST API에서도 사용할 수 있습니다.</block>
   <block id="b19cfdc6ba6a94190ea654a5c325673c" category="list-text">HTTP 인증</block>
-  <block id="fba54022e3b47aa328af3bc5b2fd6c5b" category="paragraph">HTTP 수준에서는 API 트랜잭션에 기본 인증이 사용됩니다. base64 문자열에 사용자 이름과 암호가 있는 HTTP 헤더가 각 요청에 추가됩니다.</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">ONTAP 인증</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">ONTAP는 역할 기반 인증 모델을 구현합니다. ONTAP REST API 또는 API 설명서 페이지에 액세스할 때 사용하는 계정에 적절한 권한이 있어야 합니다.</block>
   <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">클러스터 구성을 검색하는 스크립트입니다</block>
@@ -426,17 +424,14 @@
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">산</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">이러한 API 호출을 사용하여 SAN(Storage Area Networking) 리소스를 관리할 수 있습니다.</block>
   <block id="21b818347e867034bff06df47c6638ed" category="paragraph">Fibre Channel 로그인은 ONTAP에 로그인한 Fibre Channel 이니시에이터에 의해 형성된 접속을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="b125a3961f250d22b3eed929040d8e9a" category="paragraph">FCP(파이버 채널 프로토콜) 서비스는 SVM을 위한 파이버 채널 대상의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="bec2206da79fc1b03bfc7f4f6c7bda42" category="paragraph">WWPN(World Wide Port Name)은 파이버 채널 포트를 고유하게 식별하는 64비트 값입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="68c0fd93c2b023ed4f45e053c2c0475e" category="paragraph">이니시에이터 그룹(igroup)은 호스트 이니시에이터를 식별하는 파이버 채널 WWPN(전 세계 포트 이름), iSCSI IQN(정규화된 이름) 및 iSCSI EUI(확장된 고유 식별자)의 모음입니다. 이 리소스 유형은 원래 ONTAP 9.6에서 도입되었습니다.</block>
   <block id="2b77121b57a073f6a912696b1d7a31d8" category="paragraph">중첩된 igroup은 ONTAP 9.9의 새로운 기능이며 REST API에도 지원이 추가되었습니다. 이 REST 리소스 유형은 ONTAP 9.9에 도입되었습니다.</block>
   <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI 자격 증명 객체에는 이니시에이터와 ONTAP에서 사용하는 인증 자격 증명이 포함되어 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="1dfd42e3c5ed950e1ad51c88566f0777" category="paragraph">iSCSI 서비스는 SVM을 위한 iSCSI 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI 세션은 iSCSI 이니시에이터와 iSCSI 타겟을 연결하는 하나 이상의 TCP 연결입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="5863e0f99ad1402d808798b272c35423" category="paragraph">LUN 특성은 LUN과 함께 선택적으로 저장할 수 있는 호출자 정의 이름/값 쌍입니다. 특성은 적은 양의 애플리케이션별 메타데이터를 저장하는 데 사용할 수 있으며 ONTAP에서 해석되지 않습니다. 엔드포인트를 사용하면 LUN의 특성을 생성, 업데이트, 삭제 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
   <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN 매핑은 LUN과 이니시에이터 그룹 간의 연결입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="602c3dee864ac1118043c79730115b22" category="paragraph">보고 노드는 매핑된 LUN에 대한 네트워크 경로가 ONTAP의 선택적 LUN 맵(SLM) 기능의 일부로 SAN 프로토콜을 사용하여 광고되는 클러스터 노드입니다. 새 엔드포인트를 사용하면 LUN 매핑의 보고 노드를 추가, 제거 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
-  <block id="cf304f8d071581c8a16443a669547c31" category="paragraph">LUN은 SAN(Storage Area Network)에 있는 스토리지의 논리적 표현입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">포트 세트는 _포트셋_스토리지 VM과 연결된 Fibre Channel 또는 iSCSI 네트워크 인터페이스의 모음입니다. 이 기능은 이전 릴리스의 ONTAP에 포함되어 있지만 이제 REST API에 지원이 추가되었습니다. 이 REST 리소스 유형은 ONTAP 9.9에 도입되었습니다.</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VVol(VMware Virtual Volume) 바인딩은 클래스 "protocol_endpoint"의 LUN과 클래스 "vVol"의 LUN 간의 연관입니다. VVOL 바인딩 REST API를 사용하여 VVOL 바인딩을 생성, 삭제 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
   <block id="d828aac2af8d57c06b48e251182e288b" category="admonition">나머지 대부분의 끝점에서는 UUID 키를 경로 문자열의 일부로 포함하여 특정 개체 인스턴스를 액세스할 수 있습니다. 그러나 쿼리 매개 변수의 속성 값을 사용하여 개체에 액세스할 수도 있습니다.</block>
@@ -456,7 +451,6 @@
   <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">이 API 호출 집합을 사용하여 IPSec 배포에 적용되는 정책을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">이 API 호출 집합을 사용하여 IPSec 배포에 적용되는 보안 연결을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">이러한 끝점을 사용하면 키 관리자에 대한 구성을 검색하고 업데이트할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</block>
-  <block id="8e534dc2397390aadbe32ec748d96a3d" category="paragraph">키 저장소는 키 관리자의 유형을 설명합니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</block>
   <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">이러한 API 호출은 클러스터 LDAP 서버 구성을 검색하고 관리하는 데 사용됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">ONTAP에서 사용하는 로그인 메시지를 표시하고 관리하는 데 사용됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="0435d401767ed66c66ec6b98940edb55" category="paragraph">이러한 설정은 클러스터 NIS 서버 구성을 검색하고 관리하는 데 사용됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -512,8 +506,6 @@
   <block id="c16737a4e599bb09d061c55a7ecad532" category="paragraph">이더넷 브로드캐스트 도메인은 동일한 물리적 네트워크에 속하는 것으로 보이는 물리적 포트 집합입니다. 모든 포트는 도메인의 포트 중 하나에서 브로드캐스트될 때 패킷을 수신합니다. 각 브로드캐스트 도메인은 IPspace의 일부입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="af23f5cf37eca36a088ece4df6d53de0" category="paragraph">이더넷 포트는 물리적 또는 가상 네트워킹 엔드포인트입니다. 포트를 LAG(Link Aggregate Group)로 결합하거나 VLAN(Virtual LAN)을 사용하여 분리할 수 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
   <block id="9d47789045e3c6c4eea55da48da63763" category="paragraph">이더넷 스위치의 포트 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
-  <block id="1fbb0cc82af906c09c88b2ff07a9af6b" category="paragraph">파이버 채널 인터페이스는 SVM과 관련된 논리 엔드포인트입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
-  <block id="9491a7372139acacd450acd17119ed0a" category="paragraph">Fibre Channel 포트는 Fibre Channel 네트워크에 연결하는 데 사용되는 ONTAP 노드의 물리적 어댑터입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
   <block id="75bbbcd48175f605a8ab4e577fb5834d" category="paragraph">SVM 또는 클러스터 IPSpace에 대해 HTTP 프록시를 구성할 수 있습니다. 이 리소스 유형은 ONTAP 9.7에서 도입되었습니다.</block>
   <block id="59ebb6ef1a0a1fc8f946c90ef14db7ae" category="paragraph">Border Gateway Protocol 피어 그룹을 만들고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.7에서 도입되었습니다.</block>
   <block id="3db65e1e11eace7de9f98bf448ab6551" category="paragraph">논리 인터페이스(LIF)는 추가 구성 특성을 가진 IP 주소입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
@@ -612,11 +604,9 @@
   <block id="26480427f609b5d339095df99aa09f7c" category="paragraph">이러한 API 호출을 사용하여 비휘발성 메모리 익스프레스(NVMe)를 지원하는 리소스를 관리할 수 있습니다.</block>
   <block id="2935855efa69a27eefb72573bc4066e1" category="paragraph">Fibre Channel 로그인은 ONTAP에 로그인한 Fibre Channel 이니시에이터가 구성한 접속을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="574ab269e7caa83c4f904627c177d111" category="paragraph">NVMe 인터페이스는 NVMe-oF(NVMe over Fabrics) 프로토콜을 지원하도록 구성된 네트워크 인터페이스입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="d7135e19354e1577f81ff90fca13afcd" category="paragraph">NVMe 서비스는 SVM을 위한 NVMe 컨트롤러 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="055c2c82f5f90d21db7da7a6ed60c13e" category="paragraph">NVMe 하위 시스템 컨트롤러는 호스트와 스토리지 솔루션 간의 동적 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="816c0720f92a2711cb0cd082d1076aa6" category="paragraph">NVMe 하위 시스템 맵은 NVMe 서브시스템과 NVMe 네임스페이스를 연관한 것입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="fb8f24dc4fe86e198d8b55ea44102fe4" category="paragraph">NVMe 하위 시스템은 NVMe 연결 호스트 세트에 대한 구성 상태 및 네임스페이스 액세스 제어를 유지합니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="ce9f5c2bc40cd88e3ff682c6b88a8186" category="paragraph">NVMe 네임스페이스는 NVMe over Fabrics 프로토콜을 사용하여 SVM에 연결된 호스트에 제공되는 주소 지정 가능한 논리 블록의 모음입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다.</block>
   <block id="53cb0643f3f1046c67b92faf9e6e0cf3" category="paragraph">이러한 API 호출을 사용하여 ONTAP 클러스터와 관련 리소스를 관리할 수 있습니다.</block>
   <block id="c374efd8a5043c884177979a9179dd43" category="paragraph">용량 풀 라이센스 모델을 사용하면 공유 풀에서 각 클러스터 노드의 스토리지 용량을 라이센스할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="99b820b11503d1ddcde3fda74f356736" category="paragraph">섀시는 클러스터를 지원하는 하드웨어 프레임워크입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -1570,9 +1560,7 @@
   <block id="bf50d5e661106d0abe925af3c2e6f7e7" category="cell">머리글</block>
   <block id="7d8953ad437c7a74fa7c3eaa1037c286" category="cell">HTTP 기본 인증에 사용되는 자격 증명 문자열입니다.</block>
   <block id="71d08941d68cdfdc2782675a59475359" category="section-title">인증 옵션</block>
-  <block id="189c9092755b5ec9acf4ef1fb0b54d46" category="paragraph">ONTAP 9.13.1을 통해 REST API에 사용할 수 있는 기본 인증 방법은 기본 인증입니다.</block>
   <block id="5f7f2e03d053c151ec8a08fd76564f5a" category="section-title">HTTP 기본 인증</block>
-  <block id="dc248dc9e4f71e5475b8cecc054f14d4" category="paragraph">기본 인증을 사용할 때는 모든 HTTP 요청에 사용자 자격 증명을 포함해야 합니다. 자격 증명을 보내는 방법에는 두 가지가 있습니다.</block>
   <block id="303374a8533b38fb7d98a5790a54237c" category="paragraph-title">HTTP 요청 헤더를 생성합니다</block>
   <block id="de502eeb74b9db18547f010273db3a03" category="list-text">사용자 및 암호 값을 콜론으로 연결합니다.</block>
   <block id="4f765dee7c913da188ec3feb5803b2eb" category="paragraph"><block ref="4a88e1f19c3245879ff3b041cf65f2c0" prefix="" category="inline-code"></block></block>
@@ -1720,4 +1708,59 @@
   <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">또한 를 검토해야 합니다<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 알려진 제한 사항 또는 문제를 포함한 추가 정보</block>
   <block id="72679fae292d57bf767f718c146bf6a1" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. 을 참조하십시오 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 및 <block ref="44134cd34c398895e571223ccabdd386" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="f3b85d23635afa201e61913278969401" category="paragraph">자세한 내용은 를 참조하십시오<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
+  <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1용 NetApp PCL 설명서</block>
+  <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
+  <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoS 옵션</block>
+  <block id="c3b594acaa0d2b7973545bc9cb6b6045" category="paragraph">클러스터에 대한 QoS 옵션을 검색하고 설정할 수 있도록 엔드포인트가 도입되었습니다. 예를 들어 백그라운드 작업에 사용 가능한 시스템 처리 리소스의 백분율을 예약할 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
+  <block id="ab5d89910deed604b9cb2e757ec2b2e1" category="paragraph">FCP(파이버 채널 프로토콜) 서비스는 SVM을 위한 파이버 채널 대상의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="6430db21988dbbdfca7783c89a7710df" category="paragraph-title">이니시에이터</block>
+  <block id="e3d33d6f93f2da7210eecf1bf47f611a" category="paragraph">이니시에이터는 호스트 엔드포인트를 식별하는 FC(Fibre Channel) WWPN(World Wide Port Name), IQN(iSCSI Qualified Name) 또는 iSCSI EUI(Extended Unique Identifier)입니다. 클러스터 또는 특정 SVM에 대한 이니시에이터를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
+  <block id="131003e164df711c2c8b54e9164645ce" category="paragraph">iSCSI 서비스는 SVM을 위한 iSCSI 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="824ff803a2e59191d84de2a5883e3817" category="paragraph">LUN은 SAN(Storage Area Network)에 있는 스토리지의 논리적 표현입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="d88d836b0f6abd268649d467ed5ed4a0" category="paragraph-title">Cisco 듀오</block>
+  <block id="7dff8926a1636f9c9eb5aafc4933fb51" category="paragraph">Duo는 SSH 로그인에 대해 2단계 인증을 제공합니다. Duo가 ONTAP 클러스터 또는 SVM 레벨에서 작동하도록 구성할 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
+  <block id="2f857b00dd40b78c001830e145e6e9ed" category="paragraph">키 저장소는 키 관리자의 유형을 설명합니다. 이 리소스 유형은 ONTAP 9.10에 새로 추가되었습니다. ONTAP 9.14에는 향상된 제어를 지원하는 끝점이 추가되었습니다.</block>
+  <block id="81965b7bd1ea175b46252dfed91f5375" category="paragraph-title">OAuth 2.0 을 참조하십시오</block>
+  <block id="3e1b68a51cd18c85f6633a372eaa47d5" category="paragraph">OAuth 2.0(Open Authorization)은 ONTAP 스토리지 리소스에 대한 액세스를 제한하는 데 사용할 수 있는 토큰 기반 프레임워크입니다. REST API를 통해 ONTAP에 액세스하는 클라이언트와 함께 사용할 수 있습니다. REST API를 포함한 모든 ONTAP 관리 인터페이스를 사용하여 구성을 수행할 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
+  <block id="27702643aae403db95bb8d5766d42ba2" category="paragraph">파이버 채널 인터페이스는 SVM과 관련된 논리 엔드포인트입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="47232f83862f7c73f2dc299c2cb2a804" category="paragraph">Fibre Channel 포트는 Fibre Channel 네트워크에 연결하는 데 사용되는 ONTAP 노드의 물리적 어댑터입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="e9460f386e193d8153ce3a30cbeae0a2" category="paragraph">NVMe 네임스페이스는 NVMe over Fabrics 프로토콜을 사용하여 SVM에 연결된 호스트에 제공되는 주소 지정 가능한 논리 블록의 모음입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었으며 ONTAP 9.8로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="e1212fe9c627f41d39c2fb26db4535c9" category="paragraph">NVMe 서비스는 SVM을 위한 NVMe 컨트롤러 타겟의 속성을 정의합니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다. ONTAP 9.14에 성능 메트릭 데이터 검색에 대한 지원이 추가되었습니다.</block>
+  <block id="a51892b5a4bcf216a56450a792184174" category="paragraph-title">FPolicy 영구 저장소</block>
+  <block id="ecfa04d0e47a1a9e2cf0144187c21054" category="paragraph">ONTAP FPolicy 구성 및 이벤트에 대한 영구 저장소를 구성하고 관리할 수 있습니다. 각 SVM에는 SVM 내 여러 정책에 대해 공유되는 하나의 영구 저장소가 있을 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
+  <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14.1</block>
+  <block id="b7c3bd1301d054c8520873802dd18cfb" category="list-text"><block ref="b7c3bd1301d054c8520873802dd18cfb" category="inline-link-rx"></block></block>
+  <block id="19040d6ab7164538566763cb6e559f8a" category="paragraph">REST API에 사용할 수 있는 기본 인증 기술은 HTTP 기본 인증입니다. ONTAP 9.14부터 토큰 기반 인증 및 권한 부여와 함께 OAuth 2.0(Open Authorization) 프레임워크를 사용할 수도 있습니다.</block>
+  <block id="a1780de7da7bbe961dafcd25f2acce5f" category="paragraph">기본 인증을 사용할 때는 각 HTTP 요청에 사용자 자격 증명을 포함해야 합니다. 자격 증명을 보내는 방법에는 두 가지가 있습니다.</block>
+  <block id="71c946f737aae822b9ee4169f06b784f" category="inline-link">ONTAP OAuth 2.0 구축 개요</block>
+  <block id="1b0b903a9566a5744a2b1ac1619f7022" category="paragraph">OAuth 2.0을 사용하는 경우 외부 인증 서버에서 액세스 토큰을 요청하고 각 HTTP 요청에 포함시켜야 합니다. 기본적인 상위 단계는 아래에 설명되어 있습니다. 도 참조하십시오<block ref="5bb8a5528675151a3bb0019caff877ea" category="inline-link-rx"></block> OAuth 2.0에 대한 자세한 내용 및 ONTAP와 함께 사용하는 방법</block>
+  <block id="d514d2b0ea875e281a924be2987193f2" category="paragraph-title">ONTAP 환경을 준비합니다</block>
+  <block id="1eca2aa236ac231cec489235624a47b7" category="paragraph">REST API를 사용하여 ONTAP에 액세스하기 전에 ONTAP 환경을 준비하고 구성해야 합니다. 상위 수준에서는 다음과 같은 단계가 포함됩니다.</block>
+  <block id="734782d9ddec20aa61a423604d65ef26" category="list-text">ONTAP로 보호되는 리소스 및 클라이언트 식별</block>
+  <block id="de1b191de53683ea60d6ae5c3650295b" category="list-text">기존 ONTAP REST 역할 및 사용자 정의를 검토합니다</block>
+  <block id="6cbcddd9ef9c2fcdff112cb0b74aa030" category="list-text">인증 서버를 설치하고 구성합니다</block>
+  <block id="354b069b0f18efe2843f5e3cb7dcae65" category="list-text">클라이언트 권한 부여 정의를 설계하고 구성합니다</block>
+  <block id="f32bc251d7ca8430717b0c2283a718b2" category="list-text">ONTAP를 구성하고 OAuth 2.0을 활성화합니다</block>
+  <block id="3e55f8cb6c3c62549dbefbe26c15a020" category="paragraph-title">액세스 토큰을 요청합니다</block>
+  <block id="0753972aea61365eef6badd463bd2e43" category="paragraph">ONTAP 및 인증 서버가 정의되고 활성화되어 있으면 OAuth 2.0 토큰을 사용하여 REST API 호출을 수행할 수 있습니다. 첫 번째 단계는 인증 서버에서 액세스 토큰을 요청하는 것입니다. 이 작업은 서버에 기반한 여러 가지 다른 기술 중 하나를 사용하여 ONTAP 외부에서 수행됩니다. ONTAP는 액세스 토큰을 발급하거나 리디렉션을 수행하지 않습니다.</block>
+  <block id="77447de57e7dbcfde744823200577fe6" category="paragraph">액세스 토큰을 얻은 후 권한 부여 헤더를 생성하고 HTTP 요청에 포함할 수 있습니다. curl 또는 프로그래밍 언어를 사용하여 REST API에 액세스하든 관계없이 모든 클라이언트 요청에 헤더를 포함해야 합니다. 다음과 같이 헤더를 생성할 수 있습니다.</block>
+  <block id="51296595424b33101155651a10564387" category="paragraph"><block ref="53f780ac405331a2fbd496e5b643b5ba" prefix="" category="inline-code"></block></block>
+  <block id="35f3790d46f0259d732abe98f2b0bdd4" category="paragraph">ONTAP 9.14.1 릴리즈에는 ONTAP REST API의 기능을 계속 확장하는 24개 이상의 새로운 API 호출이 포함되어 있습니다. 이러한 끝점은 여러 가지 새로운 ONTAP 기능과 기존 기능에 대한 업데이트를 지원합니다. 이 릴리스에서는 주로 보안 개선 사항에 중점을 두지만 NAS, QoS 및 성능 메트릭의 개선 사항이 포함되어 있습니다.</block>
+  <block id="641555d3d770ea22835d8832f7b5abc8" category="list-text">ONTAP 9.14.1에 도입된 두 가지 주요 보안 기능이 있습니다. OAuth 2.0(Open Authorization)은 ONTAP 스토리지 리소스에 대한 액세스를 제한하는 데 사용할 수 있는 토큰 기반 프레임워크입니다. REST API를 통해 ONTAP에 액세스하는 클라이언트와 함께 사용할 수 있습니다. REST API를 포함한 모든 ONTAP 관리 인터페이스를 사용하여 구성을 수행할 수 있습니다. ONTAP 9.14.1 릴리스에는 SSH 로그인에 대한 2단계 인증을 제공하는 Cisco Duo 지원도 포함되어 있습니다. Duo가 ONTAP 클러스터 또는 SVM 레벨에서 작동하도록 구성할 수 있습니다. 이 두 가지 새로운 기능 외에도 키 저장소에 대한 제어를 개선하기 위해 여러 개의 끝점이 추가되었습니다.</block>
+  <block id="d1da20b888223de4d787257b0ae5aa46" category="list-text">FPolicy 영구 스토리지</block>
+  <block id="d5daf86a515bbfa343f46bd91a5d7305" category="list-text">FPolicy는 ONTAP 정책 관리를 위한 플랫폼을 제공합니다. 이벤트 및 정책 엔진과 같은 다양한 구성 요소나 요소에 대한 컨테이너를 제공합니다. 이제 REST API를 사용하여 ONTAP FPolicy 구성 및 이벤트에 대한 영구 저장소를 구성하고 관리할 수 있습니다. 각 SVM에는 SVM 내 여러 정책에 대해 공유되는 하나의 영구 저장소가 있을 수 있습니다.</block>
+  <block id="3fad336057e3a048c877232a639dee5d" category="list-text">클러스터에 대한 QoS 옵션을 검색하고 설정할 수 있도록 두 개의 엔드포인트가 도입되었습니다. 예를 들어 백그라운드 작업에 사용 가능한 시스템 처리 리소스의 백분율을 예약할 수 있습니다.</block>
+  <block id="e2e6f514a423f7cfe97845b24dae97b3" category="list-text">성능 메트릭</block>
+  <block id="1b924770cbb530a95f9a4b37ebe44510" category="list-text">ONTAP는 시스템의 작동 특성에 대한 통계 정보를 유지 관리합니다. 이 정보는 테이블과 행으로 구성된 데이터베이스 형식으로 표시됩니다. ONTAP 9.14.1에서는 파이버 채널, iSCSI, LUN, NVMe를 비롯한 여러 리소스 범주에 메트릭 데이터가 추가되었습니다. 이 추가 메트릭 데이터는 ONTAP REST API를 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티에 더 가깝게 제공합니다.</block>
+  <block id="cd2cdc53f29e0d1cb7f1d3bdd0513782" category="list-text">기타 개선 사항</block>
+  <block id="1b3fb59c31316efb7c8c3e6f1d3591d9" category="list-text">사용자 환경에 따라 유용한 몇 가지 추가 개선 사항이 있습니다. 이러한 새 엔드포인트는 SAN 이니시에이터에 대한 액세스와 호스트 캐시 설정 제어를 개선하고 개별 AutoSupport 메시지에 대한 액세스를 활성화합니다.</block>
+  <block id="967410f03c47bdd33958d361e0817573" category="list-text">클라이언트와 ONTAP LIF 간에 네트워크를 통해 전송되는 모든 트래픽은 ONTAP 구성 설정에 따라 TLS를 사용하여 암호화됩니다.</block>
+  <block id="c1b4860e30e5f16fbbaa10a97391e5fa" category="list-text">예를 들어, HTTP 레벨에서 ONTAP REST API에 직접 액세스하는 경우 아래에 설명된 대로 두 가지 인증 옵션이 있습니다. 각 경우에 HTTP 권한 부여 헤더를 만들어 각 요청에 포함시켜야 합니다.</block>
+  <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">옵션을 선택합니다</block>
+  <block id="5cbeb623c773120c62a805165bcb60c8" category="cell">ONTAP 사용자 이름과 암호는 콜론으로 연결됩니다. 문자열은 base64로 변환되고 요청 헤더에 포함됩니다.</block>
+  <block id="e9732853ae6c10d2977789c3027f6be2" category="cell">ONTAP 9.14부터 외부 권한 부여 서버에서 액세스 토큰을 요청하여 요청 헤더에 베어러 토큰으로 포함할 수 있습니다.</block>
+  <block id="d7c448e959284e2bd2b21fe2375fe20c" category="paragraph">OAuth 2.0에 대한 자세한 내용과 ONTAP에서 구현하는 방법은 을 참조하십시오<block ref="5bb8a5528675151a3bb0019caff877ea" category="inline-link-rx"></block>. 도 참조하십시오 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block> 이 사이트의 아래.</block>
+  <block id="f393f584e27f669b011040984c1c9496" category="inline-link">ONTAP 9.14.1 성능 카운터 매핑</block>
+  <block id="49ffd7a8d8266844e2ec7c32f18e5cb1" category="list-text"><block ref="49ffd7a8d8266844e2ec7c32f18e5cb1" category="inline-link-rx"></block></block>
+  <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
 </blocks>
