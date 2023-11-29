@@ -1446,8 +1446,6 @@
   <block id="4482877c1310ddfbbba9fb22dc7df61b" category="paragraph">이 REST API 호출을 사용하여 테이블의 모든 행을 볼 수 있습니다. Counter Manager 개체의 인스턴스를 나타냅니다.</block>
   <block id="fcecf68c3a713225f78b4de16ac6df03" category="section-title">예제 4: 특정 테이블의 단일 행</block>
   <block id="0aeaf5f6b15f47a8487668e4d5e041f2" category="paragraph">이 REST API 호출을 사용하여 테이블의 특정 Counter Manager 인스턴스에 대한 성능 카운터 값을 볼 수 있습니다. 이 예에서는 호스트 어댑터 중 하나에 대한 성능 데이터가 요청됩니다.</block>
-  <block id="19a9062545fe4aec02e4bb9d69d9e65d" category="inline-link">9.13.1 용 NetApp PCL 설명서</block>
-  <block id="99984697846692a3881d97799a42681d" category="list-text"><block ref="99984697846692a3881d97799a42681d" category="inline-link-rx"></block></block>
   <block id="963d435d638b3d71d80951dc73d9e301" category="paragraph">정합성 보장 그룹은 스냅샷과 같은 특정 작업을 수행할 때 함께 그룹화되는 볼륨 세트입니다. 이 기능은 단일 볼륨 작업에서 동일한 충돌 일관성 및 데이터 무결성을 단일 볼륨 작업으로 확장합니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었으며 9.12로 업데이트되었습니다. ONTAP 9.13을 사용하여 메트릭 성능 및 용량 데이터를 검색하는 엔드포인트가 추가되었습니다.</block>
   <block id="a8b23618c319cee164fb5e3f52338ae8" category="paragraph">키 관리자를 사용하면 ONTAP 내의 클라이언트 모듈이 안전하게 저장된 키를 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.6에 도입되었으며 ONTAP 9.7에 맞게 업데이트되었습니다. 인증 키를 지원하기 위해 ONTAP 9.12가 설치된 또 다른 업데이트가 있습니다. ONTAP 9.13에 복원 기능이 추가되었습니다.</block>
   <block id="f677f9a733e2a55d249253e8ee3e8921" category="paragraph-title">TOTPS 를 참조하십시오</block>
@@ -1461,8 +1459,6 @@
   <block id="718f01f530b26a630c97ea9d3dabf463" category="paragraph">태그를 사용하여 REST API 리소스를 그룹화할 수 있습니다. 이렇게 하면 특정 프로젝트 또는 조직 그룹 내의 관련 자원을 연결할 수 있습니다. 태그를 사용하면 리소스를 보다 효율적으로 구성 및 추적할 수 있습니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
   <block id="6e35f32cbbb6f9e4f935f3e9092771f0" category="paragraph-title">S3 버킷 규칙</block>
   <block id="6bc2fc1d1d82b40d53835f8a9db33179" category="paragraph">S3 버킷에는 규칙 정의가 포함될 수 있습니다. 각 규칙은 목록 오브젝트이며 버킷 내의 오브젝트에 대해 수행할 동작 집합을 정의합니다. 이 리소스 유형은 ONTAP 9.13에서 도입되었습니다.</block>
-  <block id="5f6bf2fac8af69fcf38f9b1b785e910e" category="inline-link">PyPI: NetApp ONTAP 9.13.1</block>
-  <block id="1d6690c7f751b90aee685c57c28ea355" category="list-text"><block ref="1d6690c7f751b90aee685c57c28ea355" category="inline-link-rx"></block></block>
   <block id="3d1c384a3746b6aef27889dab20ca2a0" category="doc">툴 및 소프트웨어</block>
   <block id="0a88f9e4d64baf56329012472f2f7f1c" category="paragraph">NetApp에서 샘플 Python 스크립트 및 기타 관련 소프트웨어를 제공하여 ONTAPI에서 ONTAP REST API로 마이그레이션하는 데 도움이 됩니다. 이 샘플들 중 가장 중요한 것은 아래에 설명되어 있습니다.</block>
   <block id="2025f1a4ba0e95c1bd1bd27f08690087" category="inline-link">NetApp ONTAP REST Python</block>
@@ -1763,4 +1759,6 @@
   <block id="f393f584e27f669b011040984c1c9496" category="inline-link">ONTAP 9.14.1 성능 카운터 매핑</block>
   <block id="49ffd7a8d8266844e2ec7c32f18e5cb1" category="list-text"><block ref="49ffd7a8d8266844e2ec7c32f18e5cb1" category="inline-link-rx"></block></block>
   <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
+  <block id="2cea11979f1d383a5921860d201ed868" category="inline-link">PyPI:NetApp ONTAP 9.14.1</block>
+  <block id="90412d82652a0008df94a427a205c033" category="list-text"><block ref="90412d82652a0008df94a427a205c033" category="inline-link-rx"></block></block>
 </blocks>

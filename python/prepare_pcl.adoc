@@ -34,7 +34,7 @@ PiP를 사용하여 Python Package Index(PyPi) 웹 사이트에서 NetApp_ONTAP 
 설명서 및 기타 리소스에 대한 링크는 _NetApp 개발자 네트워크_를 참조하십시오.
 
 .관련 정보
-* https://pypi.org/project/netapp-ontap["PyPI: NetApp ONTAP 9.13.1"^]
-* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1 용 NetApp PCL 설명서"^]
+* https://pypi.org/project/netapp-ontap["PyPI:NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1용 NetApp PCL 설명서"^]
 * https://devnet.netapp.com/restapi.php["NetApp 개발자 네트워크: ONTAP RESTful API"^]
 
