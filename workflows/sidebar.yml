@@ -16,6 +16,8 @@ entries:
     url: "/workflows/wf_cls_get_cluster.html"
   - title: 클러스터 연락처를 업데이트합니다
     url: "/workflows/wf_cls_update_contact.html"
+  - title: 작업 인스턴스를 가져옵니다
+    url: "/workflows/wf_jobs_get_job.html"
 - title: RBAC
   entries:
   - title: RBAC를 사용하도록 준비합니다
