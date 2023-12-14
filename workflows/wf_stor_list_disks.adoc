@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_disks.html 
+keywords: workflow, storage, disks, list disks 
+summary:  
+---
+= 디스크 나열
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클러스터에서 디스크 목록을 검색할 수 있습니다. 이렇게 하면 애그리게이트를 생성할 때 사용할 스페어를 하나 이상 찾을 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 가져오기 | /api/스토리지/디스크 
+|===
+.처리 유형
+동기식이다
+
+.Curl 예제의 추가 입력 매개변수
+모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| 상태 | 쿼리 | 아니요 | 새 애그리게이트에 사용할 수 있는 스페어 디스크를 식별하는 데 사용할 수 있습니다. 
+|===
+.curl 예: 모든 디스크를 반환합니다
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.curl 예: 스페어 디스크를 반환합니다
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks?state=spare" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 출력 예
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "name": "NET-1.20",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.20"
+        }
+      }
+    },
+    {
+      "name": "NET-1.12",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.12"
+        }
+      }
+    },
+    {
+      "name": "NET-1.7",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.7"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/storage/disks?state=spare"
+    }
+  }
+}
+----
+====
