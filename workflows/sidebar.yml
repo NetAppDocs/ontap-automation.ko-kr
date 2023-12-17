@@ -18,6 +18,10 @@ entries:
     url: "/workflows/wf_net_list_ip_lifs.html"
 - title: 보안
   entries:
+  - title: 계정
+    entries:
+    - title: 계정 나열
+      url: "/workflows/wf_sec_list_accounts.html"
   - title: 인증서 및 키
     entries:
     - title: 인증서 나열
@@ -40,6 +44,8 @@ entries:
       url: "/workflows/wf_rbac_user_role.html"
 - title: 스토리지
   entries:
+  - title: 애그리게이트를 나열합니다
+    url: "/workflows/wf_stor_list_aggrs.html"
   - title: 디스크 나열
     url: "/workflows/wf_stor_list_disks.html"
 - title: SVM

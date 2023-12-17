@@ -281,9 +281,6 @@
   <block id="973ab3cad185dec8eac7662330e49f1c" category="paragraph">요청 본문의 내용은 특정 호출에 따라 달라집니다. HTTP 요청 본문은 다음 중 하나로 구성됩니다.</block>
   <block id="b86f5c6ed2b7d52e2940495dc8a984f4" category="list-text">입력 변수가 있는 JSON 개체입니다</block>
   <block id="ac860c2e604ebd01436860da72828954" category="section-title">오브젝트 필터링</block>
-  <block id="0438b035fcfcfd3b3c333dd8d993e532" category="paragraph">Get을 사용하는 API 호출을 실행할 때 모든 특성에 따라 반환된 객체를 제한하거나 필터링할 수 있습니다. 예를 들어, 다음과 같이 정확하게 일치하는 값을 지정할 수 있습니다.</block>
-  <block id="1fc998fba92eac6c354078a63d749232" category="paragraph">'&lt;field&gt;=&lt;query value&gt;'</block>
-  <block id="7d306d43ad9025b540f138ad516bc09f" category="paragraph">정확한 일치 항목 외에도 다른 연산자를 사용하여 값 범위에 있는 개체 집합을 반환할 수 있습니다. ONTAP REST API는 아래 표에 나와 있는 필터링 연산자를 지원합니다.</block>
   <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">운영자</block>
   <block id="43ec3e5dee6e706af7766fffea512721" category="cell">=</block>
   <block id="495c04002891bebf41bc3b56507f6d6b" category="cell">같음</block>
@@ -1768,7 +1765,6 @@
   <block id="0b741905860f34a10d74010f462f6dab" category="paragraph-title">Curl 예제의 추가 입력 매개변수</block>
   <block id="8ad1007adda12ebaacc83f24d677e5e6" category="paragraph">모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.</block>
   <block id="dfcd3526cb1256fb8b0242048ce8f6fe" category="cell">관련 구성 값의 제한된 목록을 반환합니다.</block>
-  <block id="c7d3a12d9cd219818b942ce7b79635d9" category="listing-title">curl 예: 기본 구성 값으로 모든 LIF를 반환합니다</block>
   <block id="533043f9cd78f3216839a884ba0b162b" category="listing-title">curl 예: 4가지 특정 구성 값을 가진 모든 LIF를 반환합니다</block>
   <block id="5060abb5e8980122d0dc1c35e9f85efd" category="doc">디스크 나열</block>
   <block id="9e414eeae313ebca6ec1a78d41b6aa68" category="paragraph">클러스터에서 디스크 목록을 검색할 수 있습니다. 이렇게 하면 애그리게이트를 생성할 때 사용할 스페어를 하나 이상 찾을 수 있습니다.</block>
@@ -1777,4 +1773,32 @@
   <block id="6e5a184a338e990223b90751d5dce3fa" category="cell">새 애그리게이트에 사용할 수 있는 스페어 디스크를 식별하는 데 사용할 수 있습니다.</block>
   <block id="9c049e1832aad88667dcc17e261acc9c" category="listing-title">curl 예: 모든 디스크를 반환합니다</block>
   <block id="2f16f01d47fc5581920b2b69e5a6cdc2" category="listing-title">curl 예: 스페어 디스크를 반환합니다</block>
+  <block id="2a11f21f5d4741d58b7d14923d4e08f9" category="doc">계정을 나열합니다</block>
+  <block id="4394c7ebecc609175a50f72d74a0557f" category="paragraph">계정 목록을 검색할 수 있습니다. 보안 환경을 평가하거나 새 계정을 생성하기 전에 이 작업을 수행할 수 있습니다.</block>
+  <block id="47a8ff2921d745ff1e85c78a7811f188" category="doc">애그리게이트를 나열합니다</block>
+  <block id="490c2fcb0f7a2efc0e882e344265c316" category="paragraph">클러스터에서 애그리게이트 목록을 검색할 수 있습니다. 이를 통해 활용도와 성능을 평가할 수 있습니다.</block>
+  <block id="6edce6e6c5993cbcc3356de83eed68df" category="cell">node.name</block>
+  <block id="586ba6b164fb68d2e277e5509c3d920e" category="cell">각 애그리게이트가 연결된 노드를 식별하는 데 사용될 수 있습니다.</block>
+  <block id="d77215a29f7c4c57074e8278a01cb44d" category="listing-title">curl 예: 기본 구성 값으로 모든 애그리게이트를 반환합니다</block>
+  <block id="3d13cd0551da6b0edbb329a4192f28a3" category="listing-title">curl 예: 특정 구성 값으로 모든 애그리게이트를 반환합니다</block>
+  <block id="902758a99886ee9a4b12dd38cc667f95" category="doc">IP 인터페이스를 나열합니다</block>
+  <block id="1220a442fc15fd5c171980b6a6315040" category="listing-title">curl 예: 기본 구성 값으로 모든 LIF를 반환합니다</block>
+  <block id="36e958b717916175c77e1c0a9bd8a51d" category="doc">디스크를 나열합니다</block>
+  <block id="c4acc246007fa7e427ad78bab2246d93" category="cell">$JOB_ID입니다</block>
+  <block id="e62ba1f7e88de861aba828d64f793b2f" category="cell">요청되는 작업을 식별하는 데 필요합니다.</block>
+  <block id="542fcd84c10c6cf94d17a2aec683b3f3" category="paragraph">Get 메서드를 사용하여 API 호출을 실행할 때 쿼리 매개 변수를 사용하여 모든 특성을 기준으로 반환된 객체를 제한하거나 필터링할 수 있습니다.</block>
+  <block id="955b7d9243f52aec4fa2071a7e7ad288" category="paragraph-title">쿼리 매개 변수 구문 분석 및 해석</block>
+  <block id="9450bd9053706a256157ab8cc92adf52" category="paragraph">하나 이상의 매개 변수 집합을 뒤에 오는 URL 문자열에 추가할 수 있습니다<block ref="d1457b72c3fb323a2671125aef3eab5d" prefix=" " category="inline-code"></block> 문자. 둘 이상의 매개 변수가 제공된 경우 쿼리 매개 변수는 을 기반으로 분할됩니다<block ref="c2249209343ab488c055da76368f04a0" prefix=" " category="inline-code"></block> 문자. 매개 변수의 각 키와 값은 에서 분할됩니다<block ref="43ec3e5dee6e706af7766fffea512721" prefix=" " category="inline-code"></block> 문자.</block>
+  <block id="95fa08f73714767c61e4cea7b8a20379" category="paragraph">예를 들어 등호를 사용하여 정확히 일치하는 값을 지정할 수 있습니다.</block>
+  <block id="74f6abd0177ccf8e12b99c549ea3b6d9" category="paragraph"><block ref="be5382cb5b9ec38c8c64155f50b2673c" prefix="" category="inline-code"></block></block>
+  <block id="3d0d077df6fbc6a8dacd58d0e3a43157" category="paragraph">보다 복잡한 쿼리의 경우 추가 연산자는 등호 뒤에 배치됩니다. 예를 들어 일부 값보다 크거나 같은 특정 필드를 기준으로 개체 집합을 선택하려면 쿼리는 다음과 같습니다.</block>
+  <block id="1b978b08d514ad8048572a85cc260aaa" category="paragraph"><block ref="5ab924ec7238940346c80a48f8d1f72a" prefix="" category="inline-code"></block></block>
+  <block id="a2d3029446b19abc06285a2799e13be1" category="paragraph-title">필터링 연산자</block>
+  <block id="13b6a9b0d5425b920127d4f9acaf22a8" category="paragraph">위에 제공된 예제 외에 값 범위에 걸쳐 개체를 반환하는 추가 연산자를 사용할 수 있습니다. ONTAP REST API가 지원하는 필터링 연산자에 대한 요약은 아래 표와 같다.</block>
+  <block id="d67829f213cbca0faa82b58361450353" category="paragraph-title">워크플로 예</block>
+  <block id="dc131215a5de282bcdc24d4b9a1a79c0" category="paragraph">이 사이트의 REST API 워크플로에 포함된 몇 가지 예가 아래에 나와 있습니다.</block>
+  <block id="2a47586adb0d57af3895f5a0dd2cebc4" category="list-text"><block ref="2a47586adb0d57af3895f5a0dd2cebc4" category="inline-link-macro-rx"></block></block>
+  <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">를 기준으로 필터링합니다<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 스페어 디스크를 선택하는 변수입니다.</block>
+  <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">계정 나열</block>
+  <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">애그리게이트를 나열합니다</block>
 </blocks>

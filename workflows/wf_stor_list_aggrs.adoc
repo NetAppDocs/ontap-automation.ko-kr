@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_aggrs.html 
+keywords: workflow, storage, aggregates, list aggregates 
+summary:  
+---
+= 애그리게이트를 나열합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클러스터에서 애그리게이트 목록을 검색할 수 있습니다. 이를 통해 활용도와 성능을 평가할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 가져오기 | /api/스토리지/디스크 
+|===
+.처리 유형
+동기식이다
+
+.Curl 예제의 추가 입력 매개변수
+모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| node.name | 쿼리 | 아니요 | 각 애그리게이트가 연결된 노드를 식별하는 데 사용될 수 있습니다. 
+|===
+.curl 예: 기본 구성 값으로 모든 애그리게이트를 반환합니다
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.curl 예: 특정 구성 값으로 모든 애그리게이트를 반환합니다
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 출력 예
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====
