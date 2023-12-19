@@ -629,7 +629,6 @@
   <block id="364c42d2725eeecf011214a366b6186d" category="paragraph">Python 클라이언트 라이브러리 패키지의 이름은 * NetApp-ONTAP * 입니다. 패키지에 연결된 버전은 ONTAP 릴리스 내의 클라이언트에 대한 부 버전과 함께 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호의 조합입니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.</block>
   <block id="85ca39724867fb05bf4fd74b5fcac448" category="paragraph">PiP를 사용하여 Python Package Index(PyPi) 웹 사이트에서 NetApp_ONTAP 패키지를 설치해야 합니다.</block>
   <block id="eed64ccdcc26c24adc6af0459bcbd582" category="paragraph">설명서 및 기타 리소스에 대한 링크는 _NetApp 개발자 네트워크_를 참조하십시오.</block>
-  <block id="57416e369db3fa6709c6114a5d28e38f" category="doc">클러스터 소프트웨어 버전을 검색하는 중입니다</block>
   <block id="15fc2d856a08b9dcaa71e500a1ab83c5" category="inline-image-macro">간단한 REST API 호출 그림</block>
   <block id="902052a0ca25bce54cba73bea386b28e" category="paragraph"><block ref="902052a0ca25bce54cba73bea386b28e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2a3074658911bf1de23b5d225e3e531" category="paragraph">클라이언트에서 서버로 보낸 요청은 다음과 같이 구성됩니다.</block>
@@ -702,7 +701,6 @@
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">개요</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">클러스터 구성을 검색하는 스크립트입니다</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">자동화 옵션을 이해합니다</block>
-  <block id="5201581c33f8ca3c8850ac4a788dbda3" category="sidebar">클러스터 소프트웨어 버전을 검색합니다</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">REST API 액세스 방법</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">입력 변수</block>
@@ -1064,10 +1062,8 @@
   <block id="146b7b24c2b30a9357470549802fee41" category="summary">ONTAPI는 ONTAP 스토리지 시스템 관리에 사용할 수 있는 네트워크 관리 SDK를 통해 제공되는 API 호출 집합입니다. REST API와 ONTAPI API 호출은 물론 REST API와 ONTAP CLI 간에는 차이점이 있습니다.</block>
   <block id="8ac01f6d772ed92eb16c7e67bbf562e3" category="paragraph">REST API는 ONTAP 시스템 관리 자동화를 위한 주요 전략적 선택입니다. 현재 ONTAPI API를 사용 중인 경우 REST API로 마이그레이션을 고려해야 합니다. NetApp은 ONTAPI에서 REST로의 마이그레이션을 지원하는 매핑 문서를 제공합니다. 을 참조하십시오 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="2f652c73d7c77f77ad56e43e82a5a33c" category="summary">CLI 및 ONTAPI API 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP은 CLI에 액세스할 수 있는 REST 엔드포인트를 제공합니다. 이 통과 연결 기능을 사용하여 모든 CLI 명령을 실행할 수 있습니다.</block>
-  <block id="5c1a8f35406088e0d21c8beb1a46d2c4" category="summary">REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">비동기적으로 실행되도록 설계된 API 요청을 실행하면 작업 객체가 항상 생성되어 호출자에게 반환됩니다. 이 작업에서는 요청을 처리하는 백그라운드 작업을 설명하고 앵커를 지정합니다.</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST API 액세스 방법</block>
-  <block id="b1999685ab0c81075d0f943a5d06a018" category="summary">모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다.</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다. 이 그림에서는 클러스터에서 사용하는 ONTAP 소프트웨어의 버전을 검색하는 방법을 보여 줍니다.</block>
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. REST API에 직접 액세스하거나 NetApp Python 클라이언트 라이브러리를 통해 액세스할 수 있습니다.</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.</block>
@@ -1799,4 +1795,5 @@
   <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">ONTAP 자동화 코드를 REST API로 전환할 수 있도록 NetApp에서 API 매핑 문서를 제공합니다. 이 참조에는 ONTAPI 호출 목록과 각각에 해당하는 REST API 호출 목록이 포함되어 있습니다. 새 ONTAP 9.9.1 API 끝점을 포함하도록 매핑 문서가 업데이트되었습니다. 을 참조하십시오 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI 자동화를 업데이트할 수 있도록 NetApp에서는 하나 이상의 입력 매개 변수가 필요한 ONTAPI 호출 목록과 해당 호출을 동등한 ONTAP 9 REST API 호출에 대한 매핑을 제공합니다. 을 참조하십시오 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="9cebbf9729f76658642974e19c057421" category="paragraph">ONTAPI API를 사용하는 기존 코드가 있는 경우 NetApp은 코드를 변환하여 최신 ONTAP REST API를 사용하도록 지원합니다. 을 참조하십시오 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> ONTAPI 호출을 동등한 REST API 호출에 매핑하는 방법에 대한 자세한 내용은</block>
+  <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">일반적인 REST API 트랜잭션입니다</block>
 </blocks>

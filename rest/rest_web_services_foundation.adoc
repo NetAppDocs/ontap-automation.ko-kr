@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest/rest_web_services_foundation.html 
-keywords: REST, web services 
-summary: 'REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.' 
+keywords: REST, web services, transaction, API transaction, request, response 
+summary: 'REST(Representational State Transfer)는 분산된 웹 애플리케이션을 만드는 스타일입니다. 웹 서비스 API의 설계에 적용될 경우 서버 기반 리소스를 노출하고 상태를 관리하기 위한 일련의 기술을 설정합니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 ONTAP 클러스터 관리를 위한 유연한 기반을 제공합니다.' 
 ---
 = REST 웹 서비스 기반
 :hardbreaks:
@@ -52,3 +52,28 @@ HTTP(Hypertext Transfer Protocol)는 웹 서비스 클라이언트 및 서버가
 == JSON 형식
 
 여러 가지 방법으로 웹 서비스 클라이언트와 서버 간에 정보를 구성 및 전송할 수 있지만 가장 일반적인 옵션은 JSON(JavaScript Object Notation)입니다. JSON은 단순 데이터 구조를 일반 텍스트로 나타내는 업계 표준이며 리소스를 설명하는 상태 정보를 전송하는 데 사용됩니다. ONTAP REST API는 JSON을 사용하여 각 HTTP 요청 및 응답의 본문으로 전송되는 데이터를 포맷합니다.
+
+
+
+== 일반적인 REST API 트랜잭션입니다
+
+모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다. 이 그림에서는 클러스터에서 사용하는 ONTAP 소프트웨어의 버전을 검색하는 방법을 보여 줍니다.
+
+image:rest_call_01.png["간단한 REST API 호출 그림"]
+
+.HTTP 요청
+클라이언트에서 서버로 보낸 요청은 다음과 같이 구성됩니다.
+
+* 동사 보기
+* 클러스터의 URL 경로입니다
+* 쿼리 매개 변수(필드)
+* 승인을 포함한 요청 헤더
+
+
+.HTTP 응답입니다
+서버에서 클라이언트로 전송되는 응답은 다음과 같이 구성됩니다.
+
+* 상태 코드 200
+* 응답 헤더
+* 클러스터 소프트웨어 버전이 포함된 응답 본체입니다
+
