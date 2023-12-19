@@ -20,7 +20,6 @@ sidebar:
   - section: python
   - section: migrate
   - section: reference
-  - section: automate
   - section: additional
   - title: 법적 고지
     url: "/legal-notices.html"
@@ -48,10 +47,6 @@ homepage:
     links:
     - title: Python 클라이언트 라이브러리
       url: "/python/overview_pcl.html"
-    - title: ONTAP 및 Ansible
-      url: "/automate/ontap_ansible.html"
-    - title: 자동화 블로그
-      url: "/automate/blogs.html"
   - title: REST API로 마이그레이션합니다
     links:
     - title: ONTAPI 비활성화

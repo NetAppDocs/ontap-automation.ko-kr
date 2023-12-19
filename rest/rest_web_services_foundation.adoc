@@ -10,7 +10,7 @@ summary: 'REST(Representational State Transfer)는 분산된 웹 애플리케이
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
