@@ -198,8 +198,6 @@
   <block id="8574bd76a1428c3bf08d97dadd4ae77c" category="inline-link">ONTAP 및 ONTAP 시스템 관리자 리소스</block>
   <block id="ef6786259f693365fcfb0cc5f63f3f4e" category="list-text"><block ref="ef6786259f693365fcfb0cc5f63f3f4e" category="inline-link-rx"></block></block>
   <block id="1d5be002ec12a8cee5e18879d77b8f22" category="section-title">ONTAP 9 개발자 리소스</block>
-  <block id="ec99af624b0dd923250ecbec162bcc59" category="inline-link">ONTAPI를 통한 REST API 매핑 정보</block>
-  <block id="8159db13d1fb608175963a59674de159" category="list-text"><block ref="8159db13d1fb608175963a59674de159" category="inline-link-rx"></block></block>
   <block id="3c7d0c806ed3155c89dbd1e259689a6c" category="paragraph">PyPI의 NetApp Python 클라이언트 라이브러리 패키지</block>
   <block id="8f3b394b3596fb5977bc82383618f11f" category="paragraph">NetApp Python 클라이언트 라이브러리 문서</block>
   <block id="b597994ba1223810c3ac8977cffacb37" category="inline-link">NetApp 개발자 네트워크: ONTAP RESTful API</block>
@@ -238,7 +236,6 @@
   <block id="7510bbb3e3ce7994c1993c8698e3169e" category="admonition">네트워크 관리 SDK 또는 ZAPI라고도 하는 ONTAPI API API는 ONTAP 스토리지 시스템을 프로그래밍 방식으로 액세스 및 관리하기 위한 레거시 기술입니다. ONTAP REST API는 이제 전략적 기술이며 가능한 경우 선택해야 합니다.</block>
   <block id="15e78d6a83c3d71d5182a7da2df9e39e" category="section-title">ONTAP REST API에 기본적으로 액세스</block>
   <block id="e0a486c1db61aeef50827b2a95dbb216" category="section-title">REST를 사용하도록 레거시 ONTAPI 코드를 조정합니다</block>
-  <block id="4c557aa1edc9db8b42f1265ae600f253" category="paragraph">ONTAPI API를 사용하는 기존 코드가 있는 경우 NetApp은 코드를 변환하여 최신 ONTAP REST API를 사용하도록 지원합니다. 을 참조하십시오<block ref="3f8b8a296b98a2427cd0fe076ddc5c7d" category="inline-link-rx"></block> ONTAPI 호출을 동등한 REST API 호출에 매핑하는 방법에 대한 자세한 내용은</block>
   <block id="8d7959a7c68ad22c23c0308240cea7ad" category="section-title">NetApp Python 클라이언트 라이브러리 사용</block>
   <block id="47139a5580026883093b61e1de623719" category="section-title">Ansible 사용</block>
   <block id="a8f88f602880c7c7c74079d3f99ff931" category="inline-link-macro">ONTAP 및 Ansible 자동화</block>
@@ -720,7 +717,6 @@
   <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">ONTAP 9.9.1은 ONTAP REST API의 기능을 계속 확장합니다. SAN 포트 세트 및 SVM 파일 디렉토리 보안을 비롯한 기존 ONTAP 기능을 위한 새로운 API 엔드포인트가 있습니다. 또한 새로운 ONTAP 9.9.1 기능 및 향상된 기능을 지원하기 위해 끝점이 추가되었습니다. 또한 관련 문서도 개선되었습니다. 개선 사항에 대한 요약은 아래에 나와 있습니다.</block>
   <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">ONTAP 9 REST API에 ONTAPI 매핑</block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="inline-link">ONTAPI를 REST API 매핑에 매핑</block>
-  <block id="5576a121543ddb1cc6d1fd0dd6bbc8ce" category="list-text">ONTAP 자동화 코드를 REST API로 전환할 수 있도록 NetApp에서 API 매핑 문서를 제공합니다. 이 참조에는 ONTAPI 호출 목록과 각각에 해당하는 REST API 호출 목록이 포함되어 있습니다. 새 ONTAP 9.9.1 API 끝점을 포함하도록 매핑 문서가 업데이트되었습니다. 을 참조하십시오<block ref="5dba316c85ac11066d0b9336552c6287" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="5a3b858ecd9ec9c186ad254f07cd1d33" category="list-text">새로운 ONTAP 9.9.1 코어 기능의 API 엔드포인트</block>
   <block id="07e5c3418b383cfa2bebed08d44aefc3" category="list-text">ONTAPI API를 통해 사용할 수 없는 새로운 ONTAP 9.9.1 기능이 REST API에 추가되었습니다. 여기에는 중첩된 igroup 및 Google Cloud Key Management Services에 대한 지원이 포함됩니다.</block>
   <block id="d621c5d40a054b36a3f1e180f7fc170d" category="list-text">ONTAPI에서 REST로 전환하기 위한 지원이 향상되었습니다</block>
@@ -729,7 +725,6 @@
   <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">이제 ONTAP 온라인 설명서 참조 페이지에는 ONTAP 9.9.1의 새로운 기능을 포함하여 각 REST 엔드포인트 또는 매개 변수가 도입되었을 때 ONTAP 릴리스를 나타내는 레이블이 포함되어 있습니다.</block>
   <block id="2abfff2974f589f7a217325f304e0ec5" category="section-title">ONTAP 9.8</block>
   <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">ONTAP 9.8은 ONTAP REST API의 폭과 깊이를 크게 확장합니다. 이 솔루션에는 ONTAP 스토리지 시스템의 구축 및 관리를 자동화할 수 있도록 향상된 몇 가지 새로운 기능이 포함되어 있습니다. 또한 기존 ONTAPI API에서 REST로의 전환을 지원하기 위해 지원이 향상되었습니다.</block>
-  <block id="0f1777fe9d7503978fa560d01dc6f49a" category="list-text">ONTAPI 자동화를 업데이트할 수 있도록 NetApp에서는 하나 이상의 입력 매개 변수가 필요한 ONTAPI 호출 목록과 해당 호출을 동등한 ONTAP 9 REST API 호출에 대한 매핑을 제공합니다. 을 참조하십시오<block ref="b7822a036760b0668f0d2b8313956600" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">새로운 ONTAP 9.8 핵심 기능을 위한 API 엔드포인트</block>
   <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">REST API에는 ONTAPI를 통해 사용할 수 없는 새로운 핵심 ONTAP 9.8 기능에 대한 지원이 추가되었습니다. 여기에는 ONTAP S3 버킷 및 서비스, SnapMirror 비즈니스 연속성 및 파일 시스템 분석에 대한 REST API 지원이 포함됩니다.</block>
   <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">강화된 보안을 위한 지원 확대</block>
@@ -1058,15 +1053,8 @@
   <block id="485855357f10b438740d2ed039caaa84" category="admonition">로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp에서 유지 관리하는 문서의 정적 복사본에 액세스할 수 있습니다.</block>
   <block id="308a46df03e8f034edfbfa1c4085e95d" category="section-title">ONTAP REST API 참조 설명서 사본에 액세스합니다</block>
   <block id="3796c63d5f5eb6188d8856f65563d4a4" category="paragraph">아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.</block>
-  <block id="dabf3cc81191d48460fa3508e371a53c" category="list-text"><block ref="dabf3cc81191d48460fa3508e371a53c" category="inline-link-rx"></block></block>
-  <block id="c0076edc80c1407ceda2d5911e6d288b" category="list-text"><block ref="c0076edc80c1407ceda2d5911e6d288b" category="inline-link-rx"></block></block>
-  <block id="e12d5fae570ab26cdfadd64c30e4ae21" category="list-text"><block ref="e12d5fae570ab26cdfadd64c30e4ae21" category="inline-link-rx"></block></block>
-  <block id="f7c5a1bcb357ec457e5da54b44ff52d8" category="list-text"><block ref="f7c5a1bcb357ec457e5da54b44ff52d8" category="inline-link-rx"></block></block>
-  <block id="87a1e5bb26fa6c8f049bab63283cd932" category="list-text"><block ref="87a1e5bb26fa6c8f049bab63283cd932" category="inline-link-rx"></block></block>
-  <block id="92ecf2461519a0850a03fefd557a9caa" category="list-text"><block ref="92ecf2461519a0850a03fefd557a9caa" category="inline-link-rx"></block></block>
   <block id="57ffddb99e11d6096024019ec78a7294" category="cell">나머지 역할은 ONTAP 9.6으로 도입되었으며, REST API를 통해 ONTAP에 액세스하는 사용자에게 일반적으로 적용된다. REST 역할을 생성하면 기존의 _mapping_role이 자동으로 생성됩니다.</block>
   <block id="9c72cbdda2c8bbec859c44a2f9ca219c" category="admonition">온라인으로 ONTAP에 액세스할 수 있습니다 <block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block> API 사용 방법의 예를 포함한 자세한 내용은 설명서를 참조하십시오.</block>
-  <block id="0fdbfb1fe714496cb439bf652e454595" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. READ_CREATE 및 READ_MODIFY과 같은 REST 역할에 대해 새로운 액세스 수준을 사용할 수 있습니다. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="cf7871643c6e047cdf46579054e4d5c1" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="476bf6fc5e4a2d37b00403ec863106ac" category="inline-link">ONTAP 9 제품 설명서</block>
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9 제품군에 대한 문서를 제공합니다.</block>
@@ -1084,7 +1072,6 @@
   <block id="748bf9f08649deb2201e70da703c7de8" category="summary">ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. REST API에 직접 액세스하거나 NetApp Python 클라이언트 라이브러리를 통해 액세스할 수 있습니다.</block>
   <block id="1474d65709aff61f7e01ec29740e4346" category="summary">API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.</block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">ONTAP 9.12.1</block>
-  <block id="a7ff89ff57425e5ce3eeb375d968dbe6" category="list-text"><block ref="a7ff89ff57425e5ce3eeb375d968dbe6" category="inline-link-rx"></block></block>
   <block id="a60f928eab9c8ac4756a146853b7b27e" category="list-text"><block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block></block>
   <block id="25f413c15047133feb7268cff95a6db2" category="paragraph">키 ONTAPI 호출 및 동등한 REST API 호출에 대한 매핑을 제공합니다. 적절한 ONTAP 릴리스를 선택합니다.</block>
   <block id="8a931880f5b86cd8e245987c19c7acb1" category="inline-link">사용합니다. NetApp ONTAP</block>
@@ -1497,7 +1484,6 @@
   <block id="2a448fcc25cf428d2769919718ce218b" category="list-text">특정 SVM에 대한 구성을 업데이트할 수 있도록 기존 CIFS 엔드포인트가 확장되었습니다.</block>
   <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">기존 S3 버킷 끝점이 규칙 정의를 포함하도록 확장되었습니다. 각 규칙은 목록 오브젝트이며 버킷 내의 오브젝트에 대해 수행할 동작 집합을 정의합니다. 전체적으로 이러한 규칙을 통해 S3 버킷의 라이프사이클을 보다 효율적으로 관리할 수 있습니다.</block>
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="6b6a02ad27b147c17d7a65dc825f0954" category="list-text"><block ref="6b6a02ad27b147c17d7a65dc825f0954" category="inline-link-rx"></block></block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">블로그 기사를 참조하십시오</block>
   <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">클러스터 관리 LIF는 항상 사용해야 합니다. 이렇게 하면 모든 노드에서 API 요청의 로드 밸런싱을 수행하고 오프라인이거나 연결 문제가 발생하는 노드를 피할 수 있습니다. 여러 클러스터 관리 LIF가 구성된 경우 REST API에 액세스하는 것과 동일한 것입니다.</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">=</block>
@@ -1713,7 +1699,6 @@
   <block id="a51892b5a4bcf216a56450a792184174" category="paragraph-title">FPolicy 영구 저장소</block>
   <block id="ecfa04d0e47a1a9e2cf0144187c21054" category="paragraph">ONTAP FPolicy 구성 및 이벤트에 대한 영구 저장소를 구성하고 관리할 수 있습니다. 각 SVM에는 SVM 내 여러 정책에 대해 공유되는 하나의 영구 저장소가 있을 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다.</block>
   <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14.1</block>
-  <block id="b7c3bd1301d054c8520873802dd18cfb" category="list-text"><block ref="b7c3bd1301d054c8520873802dd18cfb" category="inline-link-rx"></block></block>
   <block id="19040d6ab7164538566763cb6e559f8a" category="paragraph">REST API에 사용할 수 있는 기본 인증 기술은 HTTP 기본 인증입니다. ONTAP 9.14부터 토큰 기반 인증 및 권한 부여와 함께 OAuth 2.0(Open Authorization) 프레임워크를 사용할 수도 있습니다.</block>
   <block id="a1780de7da7bbe961dafcd25f2acce5f" category="paragraph">기본 인증을 사용할 때는 각 HTTP 요청에 사용자 자격 증명을 포함해야 합니다. 자격 증명을 보내는 방법에는 두 가지가 있습니다.</block>
   <block id="71c946f737aae822b9ee4169f06b784f" category="inline-link">ONTAP OAuth 2.0 구축 개요</block>
@@ -1801,4 +1786,17 @@
   <block id="b9fa03b6deb6ff800a98be430195fdf0" category="paragraph">를 기준으로 필터링합니다<block ref="9ed39e2ea931586b6a985a6942ef573e" prefix=" " category="inline-code"></block> 스페어 디스크를 선택하는 변수입니다.</block>
   <block id="a095881e994974280881b1e5dd2a89a9" category="sidebar">계정 나열</block>
   <block id="075cb19bc679ad9261b9031c5f0c7d2f" category="sidebar">애그리게이트를 나열합니다</block>
+  <block id="b140235cfdd8fa15bee3204f61084c80" category="list-text"><block ref="b140235cfdd8fa15bee3204f61084c80" category="inline-link-rx"></block></block>
+  <block id="7e197581fc9d26d936a9975f22ed1691" category="list-text"><block ref="7e197581fc9d26d936a9975f22ed1691" category="inline-link-rx"></block></block>
+  <block id="bb9b70274970528e9419f3fc6991b7de" category="list-text"><block ref="bb9b70274970528e9419f3fc6991b7de" category="inline-link-rx"></block></block>
+  <block id="87c314454e19330a274b47c3a57a8b80" category="list-text"><block ref="87c314454e19330a274b47c3a57a8b80" category="inline-link-rx"></block></block>
+  <block id="8ec7335e6525b3d07614d1c9c722568f" category="list-text"><block ref="8ec7335e6525b3d07614d1c9c722568f" category="inline-link-rx"></block></block>
+  <block id="6c645a069d50633d36d4e222dc6c9355" category="list-text"><block ref="6c645a069d50633d36d4e222dc6c9355" category="inline-link-rx"></block></block>
+  <block id="fca52401410a3b119815eb6666d6e4a1" category="list-text"><block ref="fca52401410a3b119815eb6666d6e4a1" category="inline-link-rx"></block></block>
+  <block id="3b4dfc8add89b5b87470e0473d10bb44" category="list-text"><block ref="3b4dfc8add89b5b87470e0473d10bb44" category="inline-link-rx"></block></block>
+  <block id="c03c22aa3c11c989e8d97f1d84df52ee" category="list-text"><block ref="c03c22aa3c11c989e8d97f1d84df52ee" category="inline-link-rx"></block></block>
+  <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">RBAC(ONTAP 역할 기반 액세스 제어) 기능이 더 세분화하여 개선되었습니다. REST API를 통해 필요에 따라 기존 역할을 사용하거나 새 사용자 지정 역할을 생성할 수 있습니다. 모든 역할은 하나 이상의 권한과 연결되며, 각 권한은 액세스 수준과 함께 REST API 호출 또는 CLI 명령을 식별합니다. 등의 REST 역할에 대해 새 액세스 수준을 사용할 수 있습니다<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> 및<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>. 이러한 향상 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 패리티를 제공하고 REST API로 고객 마이그레이션을 지원합니다. 을 참조하십시오 <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">ONTAP 자동화 코드를 REST API로 전환할 수 있도록 NetApp에서 API 매핑 문서를 제공합니다. 이 참조에는 ONTAPI 호출 목록과 각각에 해당하는 REST API 호출 목록이 포함되어 있습니다. 새 ONTAP 9.9.1 API 끝점을 포함하도록 매핑 문서가 업데이트되었습니다. 을 참조하십시오 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI 자동화를 업데이트할 수 있도록 NetApp에서는 하나 이상의 입력 매개 변수가 필요한 ONTAPI 호출 목록과 해당 호출을 동등한 ONTAP 9 REST API 호출에 대한 매핑을 제공합니다. 을 참조하십시오 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="9cebbf9729f76658642974e19c057421" category="paragraph">ONTAPI API를 사용하는 기존 코드가 있는 경우 NetApp은 코드를 변환하여 최신 ONTAP REST API를 사용하도록 지원합니다. 을 참조하십시오 <block ref="a60f928eab9c8ac4756a146853b7b27e" category="inline-link-macro-rx"></block> ONTAPI 호출을 동등한 REST API 호출에 매핑하는 방법에 대한 자세한 내용은</block>
 </blocks>

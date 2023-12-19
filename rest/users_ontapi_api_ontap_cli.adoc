@@ -51,5 +51,5 @@ ONTAP 릴리즈 간 SnapDiff API 가용성은 다음과 같이 정의됩니다.
 
 .관련 정보
 * link:../rest/input_variables.html["API 요청을 제어하는 입력 변수입니다"]
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2879870["ONTAPI를 통한 REST API 매핑 정보"^]
+* link:../migrate/mapping.html["ONTAPI를 REST API 매핑에 매핑"]
 
