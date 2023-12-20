@@ -1,0 +1,12 @@
+---
+section: sw-tools
+title: 소프트웨어 도구
+entries:
+- title: Python 클라이언트 라이브러리
+  entries:
+  - title: 개요
+    url: "/python/overview_pcl.html"
+  - title: Python 클라이언트 라이브러리를 사용할 준비를 합니다
+    url: "/python/prepare_pcl.html"
+  - title: 클러스터 구성을 검색하는 스크립트입니다
+    url: "/python/script_retrieve_cluster_configuration.html"

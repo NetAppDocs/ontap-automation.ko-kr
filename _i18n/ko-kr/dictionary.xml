@@ -678,9 +678,7 @@
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
   <block id="0c5518b5db3a9e2425db3b5de6d30634" category="sidebar">ONTAP 자동화 옵션</block>
   <block id="ec8bc6c5f8fe5dc6045b9edfffae614a" category="sidebar">REST API 사용 준비</block>
-  <block id="015f8c34f52b6ef8a3361958660f5e88" category="sidebar">추가 고려 사항</block>
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">자동화</block>
-  <block id="16761f90ea92726a06e16dfb23549c0a" category="sidebar">NetApp DevNet을 참조하십시오</block>
   <block id="98bf123aa3933daaa4019109c98c08eb" category="sidebar">ONTAP 9 문서</block>
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">ONTAP Select 문서</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">개요</block>
@@ -1445,8 +1443,6 @@
   <block id="89bbd9a5e14ece77e8729df33cc56559" category="paragraph">NetApp은 처음에 ONTAP 9.6과 함께 REST API를 도입했습니다. 그 이후로 REST API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 구축 관리를 자동화할 때 선호하는 전략적 옵션을 제공합니다. 마이그레이션을 지원하는 데 사용할 수 있는 많은 유용한 리소스와 도구가 있습니다.</block>
   <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 가용성 종료: ONTAPI</block>
   <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
-  <block id="43b4a2745f58846c59587466ca441f41" category="inline-link">NetApp DevNet: ONTAP REST API</block>
-  <block id="d5925e110eea01252505453208400570" category="list-text"><block ref="d5925e110eea01252505453208400570" category="inline-link-rx"></block></block>
   <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1 성능 카운터 매핑</block>
   <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
@@ -1789,4 +1785,7 @@
   <block id="16109e56f76ab0efaf7b92775cbe1b12" category="list-text">이 동영상은 에서 NetApp TV를 통해서도 볼 수 있습니다 <block ref="0fbd1fba292ef7e8dc7c843e65ec1153" category="inline-link-macro-rx"></block>.</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Ansible 인증 모듈을 살펴보십시오.</block>
   <block id="47df15a6cd9dfe893d2aabb6bbfb82d6" category="paragraph">Ansible은 프로비저닝, 구성 관리, 애플리케이션 배포를 지원하는 오픈 소스 소프트웨어 툴입니다. RedHat이 출시하고 이후 인수한 이후 계속 인기를 끌고 있습니다. NetApp은 고객이 ONTAP 스토리지 시스템 관리를 자동화하는 데 사용할 수 있는 Ansible 인증 모듈을 제공합니다. 먼저 이 사이트에서 설명서를 검토해야 합니다.</block>
+  <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">CPC용 ZAPI에서 ONTAP REST API 변환에 대한 FAQ</block>
+  <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
+  <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">소프트웨어 도구</block>
 </blocks>

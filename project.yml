@@ -17,7 +17,7 @@ sidebar:
   - section: rest
   - section: workflows
   - section: manage
-  - section: python
+  - section: sw-tools
   - section: migrate
   - section: reference
   - section: additional
@@ -37,14 +37,16 @@ homepage:
     links:
     - title: REST 구현 세부 정보
       url: "/rest/rest_web_services_foundation.html"
-    - title: 추가 고려 사항
-      url: "/rest/object_references_and_access.html"
+    - title: RBAC 보안
+      url: "/rest/rbac_overview.html"
     - title: Rest 자원 요약
       url: "/resources/overview_categories.html"
     - title: API 참조입니다
       url: "/reference/api_reference.html"
   - title: 자동화
     links:
+    - title: 워크플로우
+      url: "/workflows/prepare_workflows.html"
     - title: Python 클라이언트 라이브러리
       url: "/python/overview_pcl.html"
   - title: REST API로 마이그레이션합니다
@@ -61,8 +63,6 @@ homepage:
     links:
     - title: 추가 리소스
       url: "/additional/resources.html"
-    - title: NetApp DevNet을 참조하십시오
-      url: https://devnet.netapp.com/restapi.php
     - title: ONTAP 9 문서
       url: https://docs.netapp.com/us-en/ontap/
     - title: ONTAP Select 문서
