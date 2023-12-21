@@ -16,10 +16,6 @@ entries:
     url: "/rest/asynchronous_processing.html"
   - title: 개체 참조 및 액세스
     url: "/rest/object_references_and_access.html"
-  - title: ONTAPI API 및 ONTAP CLI 사용자
-    url: "/rest/users_ontapi_api_ontap_cli.html"
-  - title: ONTAP CLI에 액세스합니다
-    url: "/rest/access_ontap_cli.html"
   - title: 스토리지 리소스에 대한 성능 메트릭
     url: "/rest/performance_metrics.html"
 - title: RBAC 보안

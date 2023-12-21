@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: migrate/migration-considerations.html 
+keywords: migrate, mirgate to rest api, snapdiff 
+summary: 'ONTAPI API(ZAPI) 또는 ONTAP CLI에서 ONTAP REST API로 마이그레이션하기 전에 몇 가지 문제를 고려해야 합니다.' 
+---
+= 마이그레이션 고려 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAPI API(ZAPI) 또는 ONTAP CLI에서 ONTAP REST API로 마이그레이션하기 전에 몇 가지 문제를 고려해야 합니다.
+
+
+
+== 일반적인 설계 차이점
+
+ONTAP REST API 및 명령줄 인터페이스는 근본적으로 다른 디자인을 가지고 있습니다. CLI 명령 및 매개 변수는 REST API 호출에 직접 매핑되지 않습니다. 유사성이 있는 경우에도 입력 매개 변수의 세부 정보는 다를 수 있습니다. 예를 들어, 숫자 단위는 바이트로 지정하거나 접미사(예: KB)를 사용할 수 있습니다. 을 참조하십시오 link:../rest/input_variables.html["API 요청을 제어하는 입력 변수입니다"] 및 link:../reference/api_reference.html["API 참조입니다"] 를 참조하십시오.
+
+
+
+== REST API를 통해 표시되는 데이터 SVM
+
+ONTAP은 다양한 유형의 SVM(스토리지 가상 머신)을 지원합니다. 하지만 ONTAP REST API를 통해 데이터 SVM만 직접 표시됩니다. REST API를 통해 클러스터와 노드를 설명하는 구성 정보를 사용할 수 있지만 클러스터와 노드는 별도의 SVM으로 취급되지 않습니다.
+
+
+
+== REST API를 통해 ONTAP CLI에 액세스합니다
+
+ONTAP는 ONTAPI API 및 CLI 사용자가 ONTAP REST API로 전환할 때 ONTAP CLI에 액세스할 수 있는 REST 엔드포인트를 제공합니다. 이 통과 연결 기능을 사용하여 모든 CLI 명령을 실행할 수 있습니다.  NetApp이 REST API의 격차를 파악하고 향후 ONTAP 릴리즈를 개선할 수 있도록 REST 엔드포인트의 사용이 AutoSupport 데이터로 반환됩니다.
+
+CLI 명령을 실행하려면 다음과 같은 규칙에 따라 적절하게 구성된 REST API 호출을 해야 합니다.
+
+* 리소스 경로
+* 필드 이름
+* HTTP 메서드
+
+
+CLI 액세스를 위한 기본 리소스 경로는 입니다 `/private/cli`. REST API를 통해 CLI에 액세스하는 방법에 대한 자세한 내용은 ONTAP API 온라인 설명서 페이지를 참조하십시오. 또한 NetApp는 코드 샘플 및 기타 유용한 정보가 들어 있는 GitHub 리포지토리를 유지 관리합니다. 을 참조하십시오 https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["ONTAP REST Python GitHub 리포지토리 - CLI passthrough 샘플"^] 를 참조하십시오.
+
+
+
+== ONTAPI에서 SnapDiff 가용성 변경
+
+ONTAP 9.10.1부터 SnapDiff v1 및 v2 ONTAPI 호출은 호출할 수 없습니다. SnapDiff v1 또는 v2 ONTAPI 호출을 호출하는 타사 응용 프로그램은 ONTAP 9.10.1부터 작동하지 않습니다. ONTAP 사용자는 ONTAP 9.10.1로 업그레이드하기 전에 백업 응용 프로그램이 SnapDiff v3 REST 호출을 지원하는지 확인해야 합니다.
+
+ONTAP 릴리즈 간 SnapDiff API 가용성은 다음과 같이 정의됩니다.
+
+* ONTAP 9.7 및 이전 릴리즈: v1 및 v2(ONTAPI만 해당)
+* ONTAP 9.8–9.9.1:v1, v2 및 v3(ONTAPI와 REST API 모두)
+* ONTAP 9.10.1:v3만 해당(REST API만 해당)
+
+
+도 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^] 를 참조하십시오.

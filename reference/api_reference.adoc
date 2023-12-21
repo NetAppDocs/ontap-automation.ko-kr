@@ -52,7 +52,7 @@ ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 
 [role="lead"]
 아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.
 
-* https://docs.netapp.com/us-en/ontap-restapi-9141/["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9121/["ONTAP 9.12.1"^]
 * https://docs.netapp.com/us-en/ontap-restapi-9111/["ONTAP 9.11.1"^]
