@@ -48,6 +48,18 @@ entries:
     url: "/workflows/wf_stor_list_aggrs.html"
   - title: 디스크 나열
     url: "/workflows/wf_stor_list_disks.html"
+- title: 지원
+  entries:
+  - title: 있습니다
+    entries:
+    - title: EMS 사용 준비
+      url: "/workflows/wf_ems_prepare.html"
+    - title: 로그 이벤트를 나열합니다
+      url: "/workflows/wf_ems_list_log_events.html"
+    - title: EMS 구성을 가져옵니다
+      url: "/workflows/wf_ems_get_configuration.html"
+    - title: EMS Notification 생성
+      url: "/workflows/wf_ems_create_notification.html"
 - title: SVM
   entries:
   - title: SVM 나열

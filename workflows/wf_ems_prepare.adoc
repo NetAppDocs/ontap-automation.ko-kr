@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_prepare.html 
+keywords: support, ems, event management system, event notifications, notifications 
+summary: 'ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고 필요에 따라 EMS 메시지를 조회할 수 있다.' 
+---
+= EMS 지원 서비스 관리 준비
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고 필요에 따라 EMS 메시지를 조회할 수 있다.
+
+
+
+=== 개요
+
+ONTAP EMS 서비스 사용 방법을 보여 주는 몇 가지 예제 워크플로가 있습니다. 워크플로우를 사용하고 REST API 호출을 전송하기 전에 를 검토하십시오 link:../workflows/prepare_workflows.html["워크플로우 사용을 준비하십시오"].
+
+파이썬을 사용한다면, 성경도 참조하십시오 https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["events.py"^] 일부 EMS 관련 작업을 자동화하는 방법에 대한 예를 참조하십시오.
+
+
+
+=== ONTAP REST API와 ONTAP CLI 명령 비교
+
+대부분의 작업에서 ONTAP REST API를 사용할 경우 동일한 ONTAP CLI 명령보다 더 적은 수의 호출을 필요로 합니다. 아래 표에는 API 호출 목록과 각 작업에 필요한 CLI 명령 목록이 나와 있습니다.
+
+[cols="30,70"]
+|===
+| ONTAP REST API를 참조하십시오 | ONTAP CLI를 참조하십시오 
+
+
+| GET/SUPPORT/EMS | 이벤트 구성 쇼 
+
+
+| POST/SUPPORT/EMS/목적지  a| 
+. 이벤트 알림 메시지 목적지 작성
+. 이벤트 알림 작성
+
+
+
+
+| 'Get/support/EMS/events | 이벤트 로그 쇼 
+
+
+| 'POST/support/EMS/filters  a| 
+. '이벤트 필터 생성 - 필터 이름 <filtername>'
+. '이벤트 필터 규칙 add-filter-name <filtername>'
+
+
+|===
+.관련 정보
+* https://github.com/NetApp/ontap-rest-python/blob/master/examples/rest_api/events.py["EMS를 설명하는 Python 스크립트"^]
+* https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API: 심각도가 높은 이벤트 자동 알림"^]
+

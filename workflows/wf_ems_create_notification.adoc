@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_create_notification.html 
+keywords: support, ems, event management system, create ems, create ems notification 
+summary: 다음 워크플로를 사용하여 선택한 이벤트 메시지를 수신할 새 EMS 알림 대상을 만들 수 있습니다. 
+---
+= EMS Notification을 생성한다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+다음 워크플로를 사용하여 선택한 이벤트 메시지를 수신할 새 EMS 알림 대상을 만들 수 있습니다.
+
+
+
+== 1단계: 시스템 전체 이메일 설정을 구성합니다
+
+다음 API 호출을 실행하여 시스템 전체 이메일 설정을 구성할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 패치 | /api/support/EMS 
+|===
+.처리 유형
+동기식이다
+
+.Curl 예제의 추가 입력 매개변수
+모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| 메일_보낸 사람 | 쿼리 | 예 | 를 설정합니다 `from` 알림 전자 메일 메시지의 필드입니다. 
+
+
+| 메일_서버 | 쿼리 | 예 | 대상 SMTP 메일 서버를 구성합니다. 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request PATCH \
+--location "https://$FQDN_IP/api/support/ems?mail_from=administrator@mycompany.com&mail_server=mail@mycompany.com" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+
+
+== 2단계: 메시지 필터 정의
+
+API 호출을 실행하여 메시지와 일치하는 필터 규칙을 정의할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 게시 | /api/support/ems/filters 를 참조하십시오 
+|===
+.처리 유형
+동기식이다
+
+.Curl 예제의 추가 입력 매개변수
+모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| 필터 | 바디 | 예 | 필터 구성에 대한 값을 포함합니다. 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/filters" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON 입력 예
+[source, json]
+----
+{
+  "name": "test-filter",
+  "rules.type": ["include"],
+  "rules.message_criteria.severities": ["emergency"]
+}
+----
+
+
+== 3단계: 메시지 대상을 만듭니다
+
+API 호출을 실행하여 메시지 대상을 생성할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 게시 | /api/support/ems/destinations 를 참조하십시오 
+|===
+.처리 유형
+동기식이다
+
+.Curl 예제의 추가 입력 매개변수
+모든 REST API 호출에서 일반적으로 사용되는 매개 변수 외에도 이 단계의 curl 예제에도 다음 매개 변수가 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| 대상 구성 | 바디 | 예 | 이벤트 대상에 대한 값을 포함합니다. 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/destinations" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.JSON 입력 예
+[source, curl]
+----
+{
+  "name": "test-destination",
+  "type": "email",
+  "destination": "administrator@mycompany.com",
+  "filters.name": ["important-events"]
+}
+----

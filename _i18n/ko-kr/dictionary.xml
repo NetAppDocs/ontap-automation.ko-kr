@@ -758,24 +758,7 @@
   <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="e27a275b9610ff6148df553179ccf77f" category="inline-link">ONTAP REST API와 함께 전용 CLI 패스스루 사용(ONTAP 9.9.1 이전 버전의 경우)</block>
   <block id="194ed1689d54a84f11e8266e9e92d197" category="list-text"><block ref="194ed1689d54a84f11e8266e9e92d197" category="inline-link-rx"></block></block>
-  <block id="5b4f03d6bb02bf1a4943d2fd721bca50" category="doc">ONTAP REST API로 EMS 이벤트 알림 관리</block>
-  <block id="7ae7146ab14a911070a9b67bb88d3193" category="paragraph">ONTAP REST API를 사용하여 중요한 EMS(이벤트 관리 시스템) 이벤트 알림이 전송되는 방식을 구성할 수 있으며, 모든 EMS 메시지 또는 특정 속성을 가진 특정 메시지를 검색할 수 있습니다. REST API를 사용하여 EMS 관련 작업을 자동화하여 다른 EMS 메시지 작업 방법에 비해 시간을 절약할 수 있습니다.</block>
-  <block id="619a84d9c14dd4e8431c29139707919c" category="paragraph">다음 예에서는 ONTAP REST API를 사용하여 EMS 메시지를 사용하는 방법을 보여 줍니다. 각 예제에서는 표시된 대괄호 &lt;&gt;에 정보를 입력합니다. 샘플을 참조할 수도 있습니다<block ref="93282e4588c19699b4435477b6d0187b" category="inline-link-rx"></block> 이를 통해 여러 EMS 관련 활동을 자동화하는 방법을 확인할 수 있습니다.</block>
-  <block id="c25e3541a8e8d23fbd7bc417366e087a" category="section-title">특정 이벤트 로그를 봅니다</block>
-  <block id="53d5e5ab3f1018d37b93775c447bf8c5" category="paragraph">Get/support/EMS/events API call을 이용하여 최신 메시지, 특정 text가 포함된 메시지, 특정 severity의 메시지 등 특정 event message를 조회할 수 있다.</block>
-  <block id="f615b69d52993b779bce7b1c6728c21d" category="listing-title">요청 예: 최신 메시지를 검색합니다</block>
-  <block id="ce82b9076790e11cac5d1aa3bcd41aa5" category="listing-title">요청 예: 특정 텍스트 및 심각도를 포함하는 메시지를 검색합니다</block>
-  <block id="0cc4ccc760bba90b3392a98e6a6ec9e5" category="section-title">기존 EMS 설정을 확인한다</block>
-  <block id="11bd634909ab0002d27896579c235553" category="paragraph">Get/support/EMS/ API call을 이용하여 기존 EMS notification 설정 정보를 조회할 수 있다.</block>
-  <block id="5415ddffb113099234fe3c0d76f7749a" category="section-title">새 EMS 알림 설정을 생성한다</block>
-  <block id="9bf42ad17c089dd9891c431d5a1c5c2f" category="paragraph">여러 API 호출을 함께 사용하여 새 EMS 구성을 만들어 메시지 수신 방법과 시기를 사용자 지정할 수 있습니다.</block>
-  <block id="2b24417cd71c7c073f9c43c6702b281e" category="list-text">시스템 전체 이메일 설정을 구성합니다. 예를 들면 다음과 같습니다.</block>
-  <block id="d6a7eb66a65f3937689937ed206de56a" category="list-text">특정 메시지를 일치시키기 위해 특정 규칙을 사용하는 필터를 정의합니다. 예를 들면 다음과 같습니다.</block>
-  <block id="4d3eb0a7fcad51868e2c47187c83128f" category="list-text">메시지의 대상을 만듭니다. 예를 들면 다음과 같습니다.</block>
-  <block id="304905cae974c3b05217421398eee9f1" category="paragraph">ONTAP REST API를 사용하면 대부분의 작업에서 ONTAP CLI보다 더 적은 수의 명령으로 워크플로우를 자동화할 수 있습니다. 예를 들어, 여러 개의 CLI 명령을 사용하는 대신 단일 POST API 메서드를 사용하여 필터를 만들 수 있습니다. 다음 표에는 일반 EMS 작업과 해당 REST API 호출을 완료하는 데 필요한 CLI 명령이 나와 있습니다.</block>
-  <block id="2368af484e43b6e0fc7814eb71cba236" category="cell">'Get/support/EMS</block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell">이벤트 구성 쇼</block>
-  <block id="9f14a0e7f948d7c4687191b2963b4b88" category="cell">'POST/support/EMS/destinations</block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text">이벤트 알림 메시지 목적지 작성</block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text">이벤트 알림 작성</block>
   <block id="67263db3668d1ed303c86b613bbb802c" category="cell">'Get/support/EMS/events</block>
@@ -783,12 +766,9 @@
   <block id="7f1ea7967a4a624ec172c4dbad038d5a" category="cell">'POST/support/EMS/filters</block>
   <block id="9b8f1b89d54261f317c44e8ccd1c91cd" category="list-text">'이벤트 필터 생성 - 필터 이름 &lt;filtername&gt;'</block>
   <block id="42d9b7d3455dfaa83fb3e81bad6cce7c" category="list-text">'이벤트 필터 규칙 add-filter-name &lt;filtername&gt;'</block>
-  <block id="3b580ecb7e3414e24089f175032dabf3" category="inline-link">ONTAP REST API EMS 예제 Python 스크립트</block>
-  <block id="acfce8bc71a552130aa0ccb8784fe895" category="list-text"><block ref="acfce8bc71a552130aa0ccb8784fe895" category="inline-link-rx"></block></block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">ONTAP REST API: 심각도가 높은 이벤트 자동 알림</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="list-text"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
   <block id="f543ca5c2e4e8371b14327b0c907dce3" category="sidebar">REST API를 사용하여 ONTAP 관리</block>
-  <block id="f719347e95688149977dfc1399128cfd" category="sidebar">EMS 이벤트 알림</block>
   <block id="31be5a65a5bd0c7e64b5cc0f6b8790c7" category="sidebar">DACL 및 SACL 권한</block>
   <block id="7f96f0bc5330ed5d9909cdd2f6f0d480" category="paragraph">ONTAP 9를 계획, 관리 및 지원하는 데 필요한 설명서 및 기타 유용한 링크가 포함되어 있습니다.</block>
   <block id="623d61e11a58f706cc63211cbeef400b" category="inline-link">ONTAP 9 제품 라이브러리</block>
@@ -1020,7 +1000,6 @@
   <block id="ea13735c00bcda944bfcad2caa280467" category="list-text"><block ref="ea13735c00bcda944bfcad2caa280467" category="inline-link-rx"></block></block>
   <block id="c68677933ee8c7cbe8b88c055e440e45" category="paragraph">ONTAP 9 제품군에 대한 문서를 제공합니다.</block>
   <block id="31817b4bbc4ed43fb341069fc6561074" category="summary">ONTAP REST API를 사용하여 DACL 및 SACL 파일 권한을 관리할 수 있습니다.</block>
-  <block id="ad9f7732b9d0e85f76fbaca84e9328ae" category="summary">REST API를 이용하여 ONTAP EMS 설정을 관리할 수 있다.</block>
   <block id="783fed6bd9b06a289bc35d1ce6d3e28c" category="summary">비동기적으로 실행되도록 설계된 API 요청을 실행하면 작업 객체가 항상 생성되어 호출자에게 반환됩니다. 이 작업에서는 요청을 처리하는 백그라운드 작업을 설명하고 앵커를 지정합니다.</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">ONTAP REST API 액세스 방법</block>
   <block id="a198ee594703276bc71a03301b58b8a2" category="paragraph">모든 API 트랜잭션은 HTTP 요청과 관련 응답으로 구성됩니다. 이 그림에서는 클러스터에서 사용하는 ONTAP 소프트웨어의 버전을 검색하는 방법을 보여 줍니다.</block>
@@ -1782,4 +1761,52 @@
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
   <block id="1654311dbef1756ea54a3a10080ed337" category="paragraph">Ansible은 프로비저닝, 구성 관리, 애플리케이션 배포를 지원하는 오픈 소스 소프트웨어 툴입니다. RedHat이 출시하고 이후 인수한 이후 계속 인기를 끌고 있습니다. NetApp은 고객이 ONTAP 스토리지 시스템 관리를 자동화하는 데 사용할 수 있는 Ansible 인증 모듈을 제공합니다. 을 참조하십시오 <block ref="c23236ff2a6fe1c72a62ffc77c7c00ed" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">넷엡<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 는 BlueXP 웹 사용자 인터페이스를 통해 제공됩니다. 이 카탈로그에서는 ONTAP를 다른 제품과 통합하고 배포하는 데 도움이 되는 패키지 솔루션에 액세스할 수 있습니다. 을 참조하십시오<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 을 참조하십시오.</block>
+  <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고 필요에 따라 EMS 메시지를 조회할 수 있다.</block>
+  <block id="90aef0d7524722ffd0dc0cb8fa364d96" category="doc">EMS 지원 서비스 관리 준비</block>
+  <block id="af129edd8d2b529838378e328200ea64" category="paragraph">ONTAP EMS 서비스 사용 방법을 보여 주는 몇 가지 예제 워크플로가 있습니다. 워크플로우를 사용하고 REST API 호출을 전송하기 전에 를 검토하십시오 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>.</block>
+  <block id="f3bd9688dec070eec4b4332373791cf4" category="inline-link">events.py</block>
+  <block id="85215b1290359f4664d37f38216d2256" category="paragraph">파이썬을 사용한다면, 성경도 참조하십시오<block ref="643db497504332dea05c67888bb57b20" category="inline-link-rx"></block> 일부 EMS 관련 작업을 자동화하는 방법에 대한 예를 참조하십시오.</block>
+  <block id="e9e8fc0a404ed0a61c1fa104ebb28bf6" category="paragraph">대부분의 작업에서 ONTAP REST API를 사용할 경우 동일한 ONTAP CLI 명령보다 더 적은 수의 호출을 필요로 합니다. 아래 표에는 API 호출 목록과 각 작업에 필요한 CLI 명령 목록이 나와 있습니다.</block>
+  <block id="da7abcfccfd8f5465b37263afe3831d7" category="cell">GET/SUPPORT/EMS</block>
+  <block id="1062b444cc77d8ad6e425665a210f471" category="cell">POST/SUPPORT/EMS/목적지</block>
+  <block id="882aca4326d752010b772b8158e8baa0" category="inline-link">EMS를 설명하는 Python 스크립트</block>
+  <block id="cece6a40b70715f2a63bbd9c0b1372bd" category="list-text"><block ref="cece6a40b70715f2a63bbd9c0b1372bd" category="inline-link-rx"></block></block>
+  <block id="eb230b030eac22517ebd137fbd7025a9" category="summary">다음 워크플로를 사용하여 선택한 이벤트 메시지를 수신할 새 EMS 알림 대상을 만들 수 있습니다.</block>
+  <block id="b4d8401916bcfe9d487b43317e141180" category="doc">EMS Notification을 생성한다</block>
+  <block id="4b6b43bf6462be74bc77a76514b73254" category="section-title">1단계: 시스템 전체 이메일 설정을 구성합니다</block>
+  <block id="1186c8ad3d5fa7fe5bc14196b7869208" category="paragraph">다음 API 호출을 실행하여 시스템 전체 이메일 설정을 구성할 수 있습니다.</block>
+  <block id="ef891763ba7048887e2e72131878e76c" category="cell">/api/support/EMS</block>
+  <block id="9e35acb7edddb1772b2efd7d781ddcff" category="cell">메일_보낸 사람</block>
+  <block id="8a756bee0e76039a357517c3ec68baa8" category="cell">를 설정합니다<block ref="d98a07f84921b24ee30f86fd8cd85c3c" prefix=" " category="inline-code"></block> 알림 전자 메일 메시지의 필드입니다.</block>
+  <block id="3a39d1bd30ebdc1346f3852bee919a32" category="cell">메일_서버</block>
+  <block id="0e7ed5767e88d46eb334e785e803029a" category="cell">대상 SMTP 메일 서버를 구성합니다.</block>
+  <block id="ca56c3d35b83a8f15d7479ec57deb841" category="section-title">2단계: 메시지 필터 정의</block>
+  <block id="1f3d6e417923726ce667adaba59cd9e5" category="paragraph">API 호출을 실행하여 메시지와 일치하는 필터 규칙을 정의할 수 있습니다.</block>
+  <block id="04ab7b0f96aa4ed5c4daa4003b776460" category="cell">/api/support/ems/filters 를 참조하십시오</block>
+  <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">필터</block>
+  <block id="ac101b32dda4448cf13a93fe283dddd8" category="cell">바디</block>
+  <block id="eddb87129144f52bc2371d54624f3585" category="cell">필터 구성에 대한 값을 포함합니다.</block>
+  <block id="03fc49787cddf4ed88e0caaf2007ff6d" category="section-title">3단계: 메시지 대상을 만듭니다</block>
+  <block id="13f2851313b707564d2819b992656595" category="paragraph">API 호출을 실행하여 메시지 대상을 생성할 수 있습니다.</block>
+  <block id="0221d81fa5719220847a0d6b07fa7833" category="cell">/api/support/ems/destinations 를 참조하십시오</block>
+  <block id="5af5cc7f9522d6ed61830a95fdd63cae" category="cell">대상 구성</block>
+  <block id="cfbbc7b9438bc32708cb12da6986b172" category="cell">이벤트 대상에 대한 값을 포함합니다.</block>
+  <block id="49d9b762ced33c4a64540c0502fa12ae" category="summary">ONTAP 클러스터에 대한 현재 EMS 구성을 조회할 수 있다. 구성을 업데이트하거나 새 EMS 알림을 생성하기 전에 이 작업을 수행할 수 있습니다.</block>
+  <block id="bf68501f440a0b26f1bce42df8f87f61" category="doc">EMS 구성을 가져옵니다</block>
+  <block id="321af4d0ee1843b9eb21c75179cd5a5a" category="summary">모든 이벤트 알림 메시지 또는 특정 특성을 가진 메시지를 검색할 수 있습니다.</block>
+  <block id="13a19e32980ac43fd75e6a9645a8b411" category="doc">EMS 로그 이벤트 나열</block>
+  <block id="077c58e0d7282761a97c6c03fcd5f677" category="paragraph">모든 이벤트 알림 메시지 또는 특정 특성을 가진 메시지만 검색할 수 있습니다.</block>
+  <block id="b098fa166f68e99b9f901b465347c595" category="cell">/api/support/ems/events 를 참조하십시오</block>
+  <block id="51f996d6bdce27d5d9c364daf9452884" category="cell">응답에 포함할 특정 필드를 요청하는 데 사용됩니다.</block>
+  <block id="f4abba9bb52bad37accc0150f9554249" category="cell">단일 요청에서 반환되는 레코드 수를 제한하는 데 사용할 수 있습니다.</block>
+  <block id="324ae438d51fef5c0ef842b1ae03b061" category="cell">로그_메시지</block>
+  <block id="457f3ac0d864daefc37f956ecde87f36" category="cell">특정 텍스트 값을 검색하고 일치하는 메시지만 반환하는 데 사용됩니다.</block>
+  <block id="4c171cc7d3dc158650998f518afaaf33" category="cell">message.severity</block>
+  <block id="e61413d2e7f87f9d206a86d29576165b" category="cell">반환된 메시지를 과 같은 특정 심각도의 메시지로 제한합니다<block ref="7ed21143076d0cca420653d4345baa2f" prefix=" " category="inline-code"></block>.</block>
+  <block id="0525d9b2a094d7ff164a2c00a881e661" category="listing-title">curl 예: 최신 메시지와 이름 값을 반환합니다</block>
+  <block id="385fbeb68ce09e6c918240872da38a13" category="listing-title">curl 예: 특정 텍스트와 심각도가 포함된 메시지를 반환합니다</block>
+  <block id="20b8470cecac07ba9530bb746a9f64e4" category="sidebar">EMS 사용 준비</block>
+  <block id="8d8818fd01745d22f1212838417a2a3f" category="sidebar">로그 이벤트를 나열합니다</block>
+  <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">EMS 구성을 가져옵니다</block>
+  <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">EMS Notification 생성</block>
 </blocks>
