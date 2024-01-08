@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
-permalink: workflows/wf_rbac_limit_svm.html 
-keywords:  
+permalink: workflows/wf_rbac_role_limit_svm.html 
+keywords: rbac, role, storage volume, limited storage volume administration 
 summary: SVM 내에서 스토리지 볼륨 관리를 제한하는 역할을 정의할 수 있습니다. 
 ---
 = SVM 볼륨 작업으로 액세스 제한

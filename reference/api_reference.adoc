@@ -23,7 +23,6 @@ NOTE: 로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp�
 
 == ONTAP API 설명서 페이지에 액세스합니다
 
-[role="lead"]
 로컬 ONTAP 시스템에서 ONTAP API 온라인 설명서 페이지에 액세스할 수 있습니다.
 
 .시작하기 전에
@@ -49,7 +48,6 @@ ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 
 
 == ONTAP REST API 참조 설명서 사본에 액세스합니다
 
-[role="lead"]
 아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.
 
 * https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
