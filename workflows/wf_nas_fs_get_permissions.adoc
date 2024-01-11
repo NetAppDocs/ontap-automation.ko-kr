@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_get_permissions.html 
+keywords: nas, file security, effective permissions 
+summary: 특정 파일 또는 폴더에 대한 현재 유효 권한을 검색할 수 있습니다. 
+---
+= 파일에 대한 유효 사용 권한을 얻습니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+특정 파일 또는 폴더에 대한 현재 유효 권한을 검색할 수 있습니다.
+
+.HTTP 메서드 및 끝점입니다
+이 REST API 호출은 다음과 같은 메소드와 엔드포인트를 사용합니다.
+
+[cols="25,75"]
+|===
+| HTTP 메소드 | 경로 
+
+
+| 가져오기 | /api/protocols/file-security/effective-permissions/{svm.uuid}/{path} 
+|===
+.처리 유형
+동기식이다
+
+.컬링 예제에 대한 추가 입력 매개 변수
+모든 REST API 호출에 공통되는 매개 변수 외에 다음 매개 변수가 이 단계의 cURL 예에도 사용됩니다.
+
+[cols="25,10,10,55"]
+|===
+| 매개 변수 | 유형 | 필수 요소입니다 | 설명 
+
+
+| $SVM_ID입니다 | 경로 | 예 | 파일이 포함된 SVM의 UUID입니다. 
+
+
+| $FILE_PATH입니다 | 경로 | 예 | 파일 또는 폴더의 경로입니다. 
+|===
+.컬의 예
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/effective-permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.JSON 출력 예
+[listing]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----
