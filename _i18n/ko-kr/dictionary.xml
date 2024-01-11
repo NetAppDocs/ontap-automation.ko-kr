@@ -1816,4 +1816,5 @@
   <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">감사 정보 가져오기</block>
   <block id="a0b064f87e86d15d09bd439eeac8859d" category="sidebar">사용 권한을 적용합니다</block>
   <block id="982b873024de716ae33d5ad3f5fc8e1a" category="sidebar">보안 설명자를 업데이트합니다</block>
+  <block id="db5695cffdc658d54a90f935d7e8495e" category="section-title">1단계: ACE를 삭제합니다</block>
 </blocks>
