@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference/api_reference.html 
-keywords: reference, API reference, ONTAP API documentation 
-summary: API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다. 
+keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
+summary: API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다. 
 ---
 = API 참조입니다
 :hardbreaks:
@@ -14,16 +14,33 @@ summary: API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비
 
 
 [role="lead"]
-API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 비롯한 모든 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
+API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다.
 
 
-NOTE: 로컬 ONTAP 시스템에서 온라인 API 참조 콘텐츠 또는 NetApp에서 유지 관리하는 문서의 정적 복사본에 액세스할 수 있습니다.
+NOTE: REST API 참조 문서는 ONTAP 릴리즈에 기반한 여러 사이트 중 하나에서 액세스할 수 있습니다. 해당 문서의 사본은 로컬 ONTAP 시스템의 Swagger UI를 통해서도 제공됩니다.
 
 
 
-== ONTAP API 설명서 페이지에 액세스합니다
+== 온라인으로 ONTAP API 참조 문서에 액세스합니다
 
-로컬 ONTAP 시스템에서 ONTAP API 온라인 설명서 페이지에 액세스할 수 있습니다.
+아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. 문서는 ONTAP 릴리스에서 관리합니다.
+
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.10.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.9.1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.8"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.7"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.6"^]
+
+
+
+
+== Swagger UI를 통해 ONTAP API 참조 문서에 액세스합니다
+
+로컬 ONTAP 시스템에서 Swagger UI를 통해 ONTAP REST API 설명서에 액세스할 수 있습니다.
 
 .시작하기 전에
 다음 항목이 있어야 합니다.
@@ -43,23 +60,3 @@ ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 
 
 . 개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.
 
-
-
-
-== ONTAP REST API 참조 설명서 사본에 액세스합니다
-
-아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. API 참조 문서는 ONTAP 릴리즈에서 관리합니다.
-
-* https://docs.netapp.com/us-en/ontap-restapi/["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/["ONTAP 9.8"^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/["ONTAP 9.7"^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/["ONTAP 9.6"^]
-
-
-.관련 정보
-https://devnet.netapp.com/restapi.php["NetApp DevNet: ONTAP REST API"^]
