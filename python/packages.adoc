@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: python/packages.html 
+keywords: packages, documentation 
+summary:  
+---
+= 패키지 및 설명서
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Python 클라이언트 라이브러리는 9.6부터 각 ONTAP 릴리스에 사용할 수 있습니다. 사용 중인 ONTAP 릴리스에 따라 PyPI 패키지와 문서에 액세스해야 합니다.
+
+.ONTAP 9.14.1
+* https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI:NetApp ONTAP 9.14.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["9.14.1용 NetApp PCL 설명서"^]
+
+
+.ONTAP 9.13.1
+* https://pypi.org/project/netapp-ontap/9.13.1.0/["PyPI: NetApp ONTAP 9.13.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["9.13.1 용 NetApp PCL 설명서"^]
+
+
+.ONTAP 9.12.1
+* https://pypi.org/project/netapp-ontap/9.12.1.0/["PyPI:NetApp ONTAP 9.12.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["9.12.1용 NetApp PCL 문서"^]
+
+
+.ONTAP 9.11.1
+* https://pypi.org/project/netapp-ontap/9.11.1.0/["PyPI:NetApp ONTAP 9.11.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["9.11.1용 NetApp PCL 문서"^]
+
+
+.ONTAP 9.10.1
+* https://pypi.org/project/netapp-ontap/9.10.1.0/["PyPI:NetApp ONTAP 9.10.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["9.10.1용 NetApp PCL 설명서"^]
+
+
+.ONTAP 9.9.1
+* https://pypi.org/project/netapp-ontap/9.9.1/["PyPI:NetApp ONTAP 9.9.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html["9.9.9.1용 NetApp PCL 문서"^]
+
+
+.ONTAP 9.8
+* https://pypi.org/project/netapp-ontap/9.8.0/["PyPI:NetApp ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html["9.8용 NetApp PCL 문서"^]
+
+
+.ONTAP 9.7
+* https://pypi.org/project/netapp-ontap/9.7.3/["PyPI: NetApp ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html["9.7용 NetApp PCL 설명서"^]
+
+
+.ONTAP 9.6
+* https://pypi.org/project/netapp-ontap/9.6.0/["PyPI:NetApp ONTAP 9.6"^]
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html["9.6용 NetApp PCL 문서"^]
+

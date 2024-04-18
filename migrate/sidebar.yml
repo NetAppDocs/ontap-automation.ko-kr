@@ -1,9 +1,9 @@
 ---
 section: migrate
-title: REST API로 마이그레이션합니다
+title: ONTAPI에서 REST API로 마이그레이션합니다
 entries:
 - title: ONTAPI 비활성화
-  url: "/migrate/overview.html"
+  url: "/migrate/ontapi_disablement.html"
 - title: 마이그레이션 고려 사항
   url: "/migrate/migration-considerations.html"
 - title: REST 매핑에 대한 ONTAPI
@@ -13,4 +13,4 @@ entries:
 - title: 툴 및 소프트웨어
   url: "/migrate/software.html"
 - title: 블로그 기사를 참조하십시오
-  url: "/migrate/blogs.html"
+  url: "/migrate/blogs_migrate.html"

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: migrate/overview.html 
+permalink: migrate/ontapi_disablement.html 
 keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
 summary: 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화됩니다. ONTAPI를 사용하는 경우 ONTAP REST API로의 마이그레이션을 계획해야 합니다. 
 ---

@@ -19,5 +19,7 @@ NetApp ONTAP Python 클라이언트 라이브러리는 ONTAP REST API에 액세�
 
 NOTE: NetApp은 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. Python 클라이언트 라이브러리를 사용하여 샘플에 액세스하려면 _examples_folder로 이동할 수 있습니다.
 
-.관련 링크
-https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub 리포지토리"^]
+.관련 정보
+* https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub 리포지토리"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["ONTAP REST Python 클라이언트 라이브러리 예"^]
+

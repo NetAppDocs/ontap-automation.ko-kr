@@ -19,7 +19,10 @@ NetApp에서 샘플 Python 스크립트 및 기타 관련 소프트웨어를 제
 
 NOTE: 모든 Python 코드 샘플은 에서 사용할 수 있습니다 https://github.com/NetApp/ontap-rest-python["NetApp ONTAP REST Python"^] GitHub 리포지토리.
 
-.ONTAPI 사용 보고 도구
+
+
+== ONTAPI 사용 보고 도구
+
 ONTAPI 사용 보고 툴은 NetApp 프로페셔널 서비스, 고객 및 파트너가 ONTAP 환경에서 ONTAPI 사용을 식별할 수 있도록 설계되었습니다. 스크립트는 아래 표에 설명된 세 가지 사용 사례에 대해 제공됩니다.
 
 [cols="20,80"]
@@ -35,14 +38,26 @@ ONTAPI 사용 보고 툴은 NetApp 프로페셔널 서비스, 고객 및 파트�
 
 | zapi_to_rest.py | 전달된 ONTAPI 호출 및 속성의 나머지 세부 정보를 추출하기 위한 스크립트입니다 
 |===
-을 참조하십시오 https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["ONTAPI 사용 보고 도구"^] 를 참조하십시오.
+에 액세스할 수 있습니다 https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["ONTAPI 사용 보고 도구"^] 시작하십시오. 도 참조하십시오 https://www.youtube.com/watch?v=gJSWerW9S7o["데모"^] 보고 도구 및 사용 방법
 
-.전용 CLI를 통과합니다
+
+
+== 전용 CLI를 통과합니다
+
 REST API는 ONTAP에서 사용할 수 있는 다양한 기능과 시설을 제공합니다. 그러나 REST API를 통해 ONTAP CLI에 직접 액세스하는 것이 유용한 경우가 있을 수 있습니다.
 
 이 기능에 대한 소개는 를 참조하십시오 link:../rest/access_ontap_cli.html["REST API를 통해 ONTAP CLI에 액세스합니다"]. Python 샘플은 을 참조하십시오 https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["REST CLI 통과 샘플입니다"^].
 
-.Python 클라이언트 라이브러리
+
+
+== Python 클라이언트 라이브러리
+
 Python 클라이언트 라이브러리는 Python을 사용하여 ONTAP REST API에 설치하고 액세스하는 데 사용할 수 있는 패키지입니다. 이를 통해 ONTAP 배포를 자동화하기 위한 강력한 코드를 빠르게 개발할 수 있습니다.
 
 Python 클라이언트 라이브러리에 대한 소개는 을 참조하십시오 link:../python/overview_pcl.html["Python 클라이언트 라이브러리 개요"]. Python 샘플은 을 참조하십시오 https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Python 클라이언트 라이브러리의 예"^].
+
+
+
+== ONTAP PowerShell 툴킷
+
+NetApp.ONTAP PowerShell Toolkit에는 2,400개 이상의 cmdlet이 포함된 모듈로 로컬 PowerShell 환경을 개선합니다. 이를 통해 Windows 호스트용 코드를 빠르게 개발하여 ONTAP 배포를 자동화할 수 있습니다. 자세한 내용은 을 참조하십시오 link:../pstk/overview_pstk.html["PowerShell Toolkit 개요"].

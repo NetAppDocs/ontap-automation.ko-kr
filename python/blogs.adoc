@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: python/blogs_pcl.html 
+keywords: blogs, blog articles 
+summary: Python 클라이언트 라이브러리를 사용하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 기사와 비디오가 있습니다. 
+---
+= 블로그 기사를 참조하십시오
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Python 클라이언트 라이브러리를 사용하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 문서가 있습니다.
+
+.Python 클라이언트 라이브러리를 사용하여 ONTAP REST API 사용을 간소화합니다
+이 블로그에서는 ONTAP 파이썬 클라이언트 라이브러리의 기능에 대해 소개합니다.
+
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["www.netapp.com/blog/simplify-ontap-rest-api-consumption"^]
+
+.ONTAP REST API 파이썬 클라이언트 라이브러리 시작하기
+Python 클라이언트 라이브러리에 대한 자세한 내용을 다루는 3부작 블로그 시리즈입니다.
+
+파트 1: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["NetApp.io/2020/06/09/ontap-rest-api-python-client-library-pt1"^]
+
+2부: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["NetApp.io/2020/06/09/ontap-rest-api-python-client-library-pt2/"^]
+
+3부: https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["NetApp.io/2020/06/09/ontap-rest-api-python-client-library-pt3"^]

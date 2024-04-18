@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: migrate/blogs.html 
+permalink: migrate/blogs_migrate.html 
 keywords: blogs, blog articles 
 summary: ONTAPI에서 ONTAP REST API로 마이그레이션하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 문서가 있습니다. 
 ---
-= ONTAP REST API로의 마이그레이션에 대한 블로그
+= 블로그 기사를 참조하십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

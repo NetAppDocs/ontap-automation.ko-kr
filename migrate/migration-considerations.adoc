@@ -57,3 +57,9 @@ ONTAP 릴리즈 간 SnapDiff API 가용성은 다음과 같이 정의됩니다.
 
 
 도 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^] 를 참조하십시오.
+
+
+
+== REST API 갭을 위해 ONTAPI를 제출하십시오
+
+NetApp은 고객이 ONTAPI에서 ONTAP REST API로 마이그레이션할 수 있도록 지원하기 위해 노력하고 있습니다. REST API에 누락된 사항이 있는 경우 알려 주십시오. 에서 이러한 격차와 다른 아이디어를 제출할 수 있습니다 https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u["ONTAPI에서 REST API로"^] 페이지.
