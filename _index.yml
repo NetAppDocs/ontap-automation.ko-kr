@@ -1,0 +1,54 @@
+---
+indexpage:
+  title: ONTAP 자동화
+  summary: 사용 가능한 여러 옵션 중 하나를 사용하여 ONTAP 스토리지 시스템의 구축 및 관리를 자동화할 수 있습니다.
+  keywords: automation, ontap automation, rest, rest api, migrate, migration
+  lead: 사용 가능한 여러 옵션 중 하나를 사용하여 ONTAP 스토리지 시스템의 구축 및 관리를 자동화할 수 있습니다. ONTAP REST API는
+    자동화 기술을 위한 1차 기반을 제공합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리즈 노트
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: ONTAP 자동화 옵션
+      url: "/get-started/ontap_automation_options.html"
+    - title: 첫 번째 API 호출입니다
+      url: "/get-started/first_call.html"
+  - title: ONTAP REST API를 참조하십시오
+    links:
+    - title: REST 구현 세부 정보
+      url: "/rest/rest_web_services_foundation.html"
+    - title: RBAC 보안
+      url: "/rest/rbac_overview.html"
+    - title: Rest 자원 요약
+      url: "/resources/overview_categories.html"
+    - title: API 참조입니다
+      url: "/reference/api_reference.html"
+  - title: 자동화
+    links:
+    - title: 워크플로우
+      url: "/workflows/prepare_workflows.html"
+    - title: Python 클라이언트 라이브러리
+      url: "/python/overview_pcl.html"
+    - title: PowerShell 툴킷
+      url: "/pstk/overview_pstk.html"
+    - title: NetApp 관리 SDK
+      url: "/sw-tools/nmsdk.html"
+  - title: REST API로 마이그레이션합니다
+    links:
+    - title: ONTAPI 비활성화
+      url: "/migrate/ontapi_disablement.html"
+    - title: REST 매핑에 대한 ONTAPI
+      url: "/migrate/mapping.html"
+    - title: 성능 카운터
+      url: "/migrate/performance-counters.html"
+    - title: 블로그 기사를 참조하십시오
+      url: "/migrate/blogs_migrate.html"
+  - title: 지식 및 지원
+    links:
+    - title: 자세한 정보
+      url: "/additional/learn_more.html"
+    - title: ONTAP 9 문서
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: ONTAP Select 문서
+      url: https://docs.netapp.com/us-en/ontap-select/

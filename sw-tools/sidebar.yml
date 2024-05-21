@@ -20,3 +20,5 @@ entries:
     url: "/pstk/overview_pstk.html"
   - title: 다운로드 및 설치
     url: "/pstk/install_pstk.html"
+- title: NetApp 관리 SDK
+  url: "/sw-tools/nmsdk.html"

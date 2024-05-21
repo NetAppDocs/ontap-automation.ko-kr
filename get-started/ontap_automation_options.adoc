@@ -20,13 +20,13 @@ ONTAP 스토리지 시스템의 구축과 관리를 자동화하는 몇 가지 �
 
 == ONTAP REST API를 참조하십시오
 
-ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. 그 이후로 REST API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 구축 관리를 자동화할 때 선호하는 전략적 옵션을 제공합니다. ONTAP REST API를 사용할 때는 몇 가지 사항을 고려해야 합니다.
+ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. 그 이후로 REST API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 구축 관리를 자동화할 때 선호하는 전략적 옵션을 제공합니다.
 
 .REST API에 기본적으로 액세스합니다
 REST 클라이언트를 지원하는 모든 프로그래밍 언어를 사용하여 ONTAP REST API에 직접 액세스할 수 있습니다. Python, PowerShell, Java 등 다양한 언어가 제공됩니다.
 
 .REST를 사용하도록 레거시 ONTAPI 코드를 마이그레이션합니다
-ONTAPI API API(ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 원래 독점 호출 집합으로, 데이터 스토리지 관리 및 관리 작업의 자동화를 지원합니다. 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화됩니다. ONTAPI API API를 사용하는 기존 코드가 있는 경우 ONTAPI에서 마이그레이션할 계획을 세워야 합니다. NetApp는 최신 ONTAP REST API를 사용하도록 코드를 변환할 수 있도록 지원합니다. 을 참조하십시오 link:../migrate/ontapi_disablement.html["REST API로 마이그레이션합니다"] 를 참조하십시오.
+ONTAPI API API(Zephyr API 또는 ZAPI)는 데이터 스토리지 관리 및 관리 작업의 자동화를 지원하기 위해 NetApp ONTAP 소프트웨어에 포함된 독창적인 호출 세트입니다. API는 의 일부입니다 link:../sw-tools/nmsdk.html["NetApp 관리 SDK"]. 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화될 것으로 예상됩니다. ONTAPI API API를 사용하는 기존 코드가 있는 경우 ONTAPI에서 마이그레이션할 계획을 세워야 합니다. NetApp는 최신 ONTAP REST API를 사용하도록 코드를 변환할 수 있도록 지원합니다. 을 참조하십시오 link:../migrate/ontapi_disablement.html["ONTAPI에서 REST API로 마이그레이션합니다"] 를 참조하십시오.
 
 
 
