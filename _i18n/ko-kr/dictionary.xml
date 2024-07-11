@@ -167,7 +167,6 @@
   <block id="7e70a3f5fe5680525cb2b864b84dd895" category="paragraph">이러한 API 호출을 사용하여 클러스터와 SVM에 대한 CIFS 및 NFS 설정을 관리할 수 있습니다.</block>
   <block id="7f10c6261c4b6c29a47a7c3f7a01e279" category="paragraph">NAS 감사 이벤트를 특정 SVM으로 리디렉션할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="8e6ea104d132bd3ac592317ab098eb8b" category="paragraph">CIFS 서버의 SMB 사용자에 대한 홈 디렉토리는 각 사용자에 대한 개별 SMB 공유를 생성하지 않고 생성할 수 있습니다. 홈 디렉토리 검색 경로는 SVM 루트에서 연결되는 절대 경로 집합입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
-  <block id="55b828992334f8fd2faac07a1d3c6e1e" category="paragraph">CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었으며 ONTAP 9.7로 업데이트되었습니다.</block>
   <block id="71a26588e1c1d8e12094fdd21dc0d287" category="paragraph">이 API를 사용하여 CIFS 세션에 대한 자세한 정보를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.8 REST API에 도입되었으며 ONTAP 9.9로 향상되었습니다.</block>
   <block id="d5f4fec8a6c653ca7e90ff237d4a4316" category="paragraph">CIFS 서버에 정의된 SMB 공유입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="f0f651567e26868dafe0ee9cc161686c" category="paragraph">CIFS 공유의 폴더 및 파일에 대한 액세스를 제어하는 ACL(액세스 제어 목록)입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -1915,7 +1914,6 @@
   <block id="f3d744cfa0520002045d6f43144f6d48" category="list-text"><block ref="f3d744cfa0520002045d6f43144f6d48" category="inline-link-rx"></block></block>
   <block id="430f1c1df2cd64a3c4f965b8d9c49566" category="list-text"><block ref="430f1c1df2cd64a3c4f965b8d9c49566" category="inline-link-rx"></block></block>
   <block id="35edae61aca91aae4cbd46b48209e29c" category="list-text"><block ref="35edae61aca91aae4cbd46b48209e29c" category="inline-link-rx"></block></block>
-  <block id="6a7c5e7366ffed370462b891c0a9ae2c" category="paragraph">ONTAP 9.15.1은 ONTAP REST API의 기능을 계속 확장해 나가고 있습니다. 이 릴리스의 업데이트는 새로운 기능을 지원하는 세 개의 새로운 엔드포인트를 통해 비교적 소량입니다.</block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">이 피처에는 세 개의 새 끝점이 있습니다. 이러한 API 호출을 실행하여 TLS 인터페이스를 통한 모든 NFS를 검색하고 UUID로 특정 인터페이스를 검색하고 TLS 인터페이스에 대한 구성 속성을 업데이트할 수 있습니다. 이러한 API 호출은 집합과 동일한 기능을 제공합니다<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> CLI 명령.</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">NFS over TLS는 ONTAP 9.15.1에서 공개 미리 보기로 제공됩니다. 미리 보기 오퍼링으로, 이 기능은 ONTAP 9.15.1을 사용하는 운영 워크로드에는 지원되지 않습니다.</block>
   <block id="b302321652be9f7bc5eab2d6b2eb58f6" category="sidebar">사용 가능한 여러 옵션 중 하나를 사용하여 ONTAP 스토리지 시스템의 구축 및 관리를 자동화할 수 있습니다. ONTAP REST API는 자동화 기술을 위한 1차 기반을 제공합니다.</block>
@@ -1931,4 +1929,8 @@
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">ONTAP Select 문서</block>
   <block id="9a48142f39a67f56da7343e45f9a5f6a" category="paragraph">NetApp ONTAP PowerShell 툴킷을 다운로드하고 설치하는 데 사용할 수 있는 두 가지 옵션이 있습니다.</block>
   <block id="d61a36a5306e6c21551315a0807bb00a" category="paragraph">NetApp입니다. ONTAP PowerShell 툴킷에는 NetApp ONTAP용 PowerShell 모듈이 포함되어 있습니다. 이 툴킷은 NetApp AFF 및 FAS 시스템, 일반 하드웨어 및 클라우드를 비롯한 다양한 환경에서 실행되는 ONTAP를 지원합니다. 이 모듈에는 Windows 호스트에서 스토리지 관리를 종합적으로 지원하는 2,400개 이상의 cmdlet이 포함되어 있습니다.</block>
+  <block id="7e20d550033609efe814483eaca98482" category="paragraph">CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에 도입되었으며 ONTAP 9.7 및 9.15로 업데이트되었습니다.</block>
+  <block id="25c2f3f417194f8a4327550b96839461" category="paragraph">ONTAP 9.15.1은 ONTAP REST API의 기능을 계속 확장해 나가고 있습니다. 이 릴리스의 업데이트는 두 가지 새로운 기능을 지원하므로 비교적 적절합니다.</block>
+  <block id="df1b9eeca7fff049392b594c09b8d79c" category="list-text">Windows 백업 애플리케이션 및 Unix 스타일 symlink</block>
+  <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">Windows 백업 응용 프로그램에서 Unix 스타일의 심볼 링크(symlink)를 발견하면 링크가 트래버링되고 ONTAP에서 데이터가 반환되어 백업됩니다. ONTAP 9.15.1부터 symlink가 가리키는 데이터 대신 해당 symlink를 백업할 수 있는 옵션도 있습니다. 이를 통해 백업 애플리케이션의 향상된 성능을 비롯한 여러 가지 이점을 얻을 수 있습니다. 개체에 새 매개 변수를 포함하도록 끝점이<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 업데이트되었습니다<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block><block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> .</block>
 </blocks>
