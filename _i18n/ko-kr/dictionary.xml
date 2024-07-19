@@ -1776,10 +1776,8 @@
   <block id="bfe5d32b02621a0adb06ef0719b339f9" category="section-title">기술 교육 및 이벤트</block>
   <block id="0e58850b3d57f50238400b261118a678" category="list-text">Insight 2022 프레젠테이션(26분)</block>
   <block id="b2b8de6a3c3bf80d8c2caabcb4925413" category="inline-link">ONTAP REST API로 ONTAP 스토리지 관리를 현대화하십시오</block>
-  <block id="e19c44cb32d93cadb9615cce84b02ebf" category="paragraph"><block ref="e19c44cb32d93cadb9615cce84b02ebf" category="inline-link-rx"></block></block>
   <block id="e9930ef688b9c712d956fe54c341824d" category="list-text">INSIGHT 2021 프레젠테이션(31분)</block>
   <block id="d179249207be943a8870bd6215e63e34" category="inline-link">NetApp ONTAP: REST API를 사용하여 시간을 절약하고 단순화합니다</block>
-  <block id="07132e4f3463e79d28225b3205678d4d" category="paragraph"><block ref="07132e4f3463e79d28225b3205678d4d" category="inline-link-rx"></block></block>
   <block id="5da2d15e5ed96882dfddf6695345366f" category="list-text">NetApp 학습 서비스:</block>
   <block id="ff0e39f8c14072a133c51dcb06ebf74c" category="inline-link">ONTAP REST API 및 Ansible을 사용하여 스토리지 관리 자동화</block>
   <block id="31b6ea8a88845f72f0b8acf957d34bf2" category="paragraph"><block ref="31b6ea8a88845f72f0b8acf957d34bf2" category="inline-link-rx"></block></block>
@@ -1933,4 +1931,7 @@
   <block id="25c2f3f417194f8a4327550b96839461" category="paragraph">ONTAP 9.15.1은 ONTAP REST API의 기능을 계속 확장해 나가고 있습니다. 이 릴리스의 업데이트는 두 가지 새로운 기능을 지원하므로 비교적 적절합니다.</block>
   <block id="df1b9eeca7fff049392b594c09b8d79c" category="list-text">Windows 백업 애플리케이션 및 Unix 스타일 symlink</block>
   <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">Windows 백업 응용 프로그램에서 Unix 스타일의 심볼 링크(symlink)를 발견하면 링크가 트래버링되고 ONTAP에서 데이터가 반환되어 백업됩니다. ONTAP 9.15.1부터 symlink가 가리키는 데이터 대신 해당 symlink를 백업할 수 있는 옵션도 있습니다. 이를 통해 백업 애플리케이션의 향상된 성능을 비롯한 여러 가지 이점을 얻을 수 있습니다. 개체에 새 매개 변수를 포함하도록 끝점이<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 업데이트되었습니다<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block><block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> .</block>
+  <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
+  <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
+  <block id="a6fd48ff460bdb9f9b5bd42c615526ae" category="sidebar">ONTAP REST API의 새로운 기능</block>
 </blocks>

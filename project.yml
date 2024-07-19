@@ -12,7 +12,9 @@ sidebar:
   - title: ONTAP 자동화 문서
     url: "/index.html"
   - title: 새로운 소식
-    url: "/whats-new.html"
+    entries:
+    - title: ONTAP REST API의 새로운 기능
+      url: "/whats-new.html"
   - section: get-started
   - section: rest
   - section: workflows

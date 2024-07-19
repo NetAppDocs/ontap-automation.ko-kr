@@ -88,11 +88,15 @@ https://www.youtube.com/playlist?list=PLHSh2r3A9gQRG1kkAcx1MmtVYPimyxOp_["NetApp
 
 * Insight 2022 프레젠테이션(26분)
 +
-https://www.netapp.tv/details/29670["ONTAP REST API로 ONTAP 스토리지 관리를 현대화하십시오"^]
+https://media.netapp.com/video-detail/152137a0-4153-59dc-ad7d-232af1785dd5/modernize-your-ontap-storage-management-with-ontap-rest-apis-1837["ONTAP REST API로 ONTAP 스토리지 관리를 현대화하십시오"^]
+
+
 
 * INSIGHT 2021 프레젠테이션(31분)
 +
-https://www.netapp.tv/details/28343["NetApp ONTAP: REST API를 사용하여 시간을 절약하고 단순화합니다"^]
+https://media.netapp.com/video-detail/f353c28a-2364-5e5e-bf86-5d7ef66360fe/netapp-ontap-save-time-and-simplify-using-rest-apis-brk-1103-3["NetApp ONTAP: REST API를 사용하여 시간을 절약하고 단순화합니다"^]
+
+
 
 * NetApp 학습 서비스:
 +
