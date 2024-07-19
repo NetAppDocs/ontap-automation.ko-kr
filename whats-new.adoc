@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: new features, new in release 
 summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 ONTAP REST API를 정기적으로 업데이트합니다. 
 ---
-= ONTAP REST API 및 자동화의 새로운 기능
+= ONTAP REST API의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

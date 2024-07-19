@@ -606,7 +606,6 @@
   <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">자원 범주 개요</block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP 릴리즈 노트</block>
-  <block id="e9019ae8c9c4fb4acd7eba0895e32433" category="doc">ONTAP REST API 및 자동화의 새로운 기능</block>
   <block id="b5ad0fadac714409796245d1b58f5199" category="paragraph">NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 ONTAP REST API를 정기적으로 업데이트합니다.</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
   <block id="54a05230a9d83fc20a3024afd1148c81" category="doc">REST API를 통해 ONTAP CLI에 액세스합니다</block>
@@ -1879,7 +1878,6 @@
   <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">ONTAP REST API를 통해 사용 가능한 리소스는 범주로 구성됩니다. 각 리소스 범주에는 간단한 설명과 함께 필요에 따라 추가적인 사용 고려 사항이 포함되어 있습니다.</block>
   <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">나머지 대부분의 끝점에서는 UUID 키를 경로 문자열의 일부로 포함하여 특정 개체 인스턴스를 액세스할 수 있습니다. 그러나 대부분의 경우 쿼리 매개 변수의 속성 값을 사용하여 개체에 액세스할 수도 있습니다.</block>
   <block id="72cb412397232628600f03c53da4faf9" category="paragraph">이러한 API 호출을 사용하여 클러스터 및 SVM 보안 설정을 관리할 수 있습니다.</block>
-  <block id="12149ef13bbca8b5b9ef6c7969b51bdb" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. 을 참조하십시오 <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block> 및 <block ref="719fb5b8ac08da8fa53ff24d277d30a0" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="list-title">ONTAP 9.15.1</block>
   <block id="75d0655a3007155c5cee6673326640b8" category="inline-link">PyPI:NetApp ONTAP 9.15.1</block>
   <block id="88f0364b032c766b6224cbd9e9d86861" category="list-text"><block ref="88f0364b032c766b6224cbd9e9d86861" category="inline-link-rx"></block></block>
@@ -1933,5 +1931,6 @@
   <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">Windows 백업 응용 프로그램에서 Unix 스타일의 심볼 링크(symlink)를 발견하면 링크가 트래버링되고 ONTAP에서 데이터가 반환되어 백업됩니다. ONTAP 9.15.1부터 symlink가 가리키는 데이터 대신 해당 symlink를 백업할 수 있는 옵션도 있습니다. 이를 통해 백업 애플리케이션의 향상된 성능을 비롯한 여러 가지 이점을 얻을 수 있습니다. 개체에 새 매개 변수를 포함하도록 끝점이<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 업데이트되었습니다<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block><block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> .</block>
   <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
   <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
-  <block id="a6fd48ff460bdb9f9b5bd42c615526ae" category="sidebar">ONTAP REST API의 새로운 기능</block>
+  <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
+  <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block>자세한 내용은 및 <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
 </blocks>
