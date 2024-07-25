@@ -4,7 +4,7 @@ permalink: get-started/first_call.html
 keywords: first REST API call, test REST API 
 summary: curl 명령을 실행하여 ONTAP REST API를 사용하여 시작하고 가용성을 확인할 수 있습니다. 
 ---
-= 첫 번째 API 호출입니다
+= 첫 번째 ONTAP REST API 호출
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1792,13 +1792,10 @@
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell을 사용합니다</block>
   <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">PowerShell은 작업 자동화 및 구성 관리에 사용할 수 있는 Microsoft의 프로그램입니다. 여기에는 스크립트 언어뿐만 아니라 명령줄 셸 환경이 포함되어 있습니다.</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">NetApp ONTAP PowerShell 툴킷</block>
-  <block id="58e663c52068f671ebd2ded87406b54b" category="doc">PowerShell Toolkit을 다운로드하여 설치합니다</block>
   <block id="0659d428df833a806e29e65e632d380a" category="paragraph-title">NetApp 지원</block>
   <block id="abbe6086a8dd2213ec443ee7529470ed" category="paragraph">PowerShell 툴킷은 다음 NetApp Support 사이트에서 다운로드할 수 있습니다.</block>
-  <block id="35b4e347a5f9044d1a2f8b0b36f86a4b" category="paragraph"><block ref="35b4e347a5f9044d1a2f8b0b36f86a4b" category="inline-link-rx"></block></block>
   <block id="1904aecd859f7f23f24c1be156dc343b" category="paragraph-title">PowerShell 갤러리</block>
   <block id="4c6410f017732f17e33613aeeb023d8d" category="paragraph">PowerShell 툴킷은 PowerShell 갤러리에서 다운로드할 수 있습니다.</block>
-  <block id="482315644c67d0facaf402353e1996b3" category="paragraph"><block ref="482315644c67d0facaf402353e1996b3" category="inline-link-rx"></block></block>
   <block id="25485dfbe21d8fd63164750c78164890" category="section-title">REST API 갭을 위해 ONTAPI를 제출하십시오</block>
   <block id="eba6ac0de111e13d8f1a5cb185892a15" category="inline-link">ONTAPI에서 REST API로</block>
   <block id="212a2f3ffae779c6d3e6513e6c77e49d" category="paragraph">NetApp은 고객이 ONTAPI에서 ONTAP REST API로 마이그레이션할 수 있도록 지원하기 위해 노력하고 있습니다. REST API에 누락된 사항이 있는 경우 알려 주십시오. 에서 이러한 격차와 다른 아이디어를 제출할 수 있습니다<block ref="bfaa967fbc75e842a7348bf0a8e34215" category="inline-link-rx"></block> 페이지.</block>
@@ -1806,7 +1803,6 @@
   <block id="2c2d289066c19b061fa5051110ce72bc" category="paragraph">에 액세스할 수 있습니다<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> 시작하십시오. 도 참조하십시오<block ref="ef075c0fbc68ce59cce02cf136cb7c91" category="inline-link-rx"></block> 보고 도구 및 사용 방법</block>
   <block id="18e808da68bb719b1204b8c83712fac3" category="section-title">ONTAP PowerShell 툴킷</block>
   <block id="a44d5f089327249c77efb12dd65462af" category="paragraph">NetApp.ONTAP PowerShell Toolkit에는 2,400개 이상의 cmdlet이 포함된 모듈로 로컬 PowerShell 환경을 개선합니다. 이를 통해 Windows 호스트용 코드를 빠르게 개발하여 ONTAP 배포를 자동화할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block>.</block>
-  <block id="619f7d72d7d52167fd99a9d226984632" category="doc">NetApp 연구소 리소스</block>
   <block id="b2e736bcffbb818aa5d8853b16957107" category="paragraph">NetApp는 ONTAP REST API 및 기타 관련 자동화 기술을 테스트할 수 있는 연구소 환경을 제공합니다.</block>
   <block id="e41eeb18c8b1c48d8645aac00cd5d0da" category="inline-link">Lab on Demand의 약어로</block>
   <block id="42b5bbee3175a5d253bf7e5909af0734" category="paragraph">를 클릭합니다<block ref="d0ac576a8894e6f13fb4390a137a168e" category="inline-link-rx"></block> 는 NetApp 고객 및 파트너에게 제공됩니다. 로그인하여 실습 리소스를 사용하려면 유효한 자격 증명이 필요합니다. 필요한 경우 실습에서 _REST_ 또는 기타 기술을 검색할 수 있습니다.</block>
@@ -1933,4 +1929,10 @@
   <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
   <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
   <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block>자세한 내용은 및 <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="fe6ccd0a0c871758ba9563377db86e13" category="doc">첫 번째 ONTAP REST API 호출</block>
+  <block id="e02870eb3d03aec6ab03fa4fa4f87b65" category="doc">ONTAP REST API 연구소 리소스</block>
+  <block id="b5ca69b3b3ee6f013fa4a87b8fdd4fb5" category="doc">ONTAP PowerShell Toolkit을 다운로드하여 설치합니다</block>
+  <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp 를 참조하십시오. ONTAP PowerShell 툴킷</block>
+  <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
+  <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
 </blocks>
