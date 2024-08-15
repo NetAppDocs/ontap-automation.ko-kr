@@ -1501,7 +1501,6 @@
   <block id="453c37c8e9a76deb2b13d5a2c2c4be7b" category="paragraph"><block ref="71e2add861ef98d4019f3cebd53921c4" prefix="" category="inline-code"></block></block>
   <block id="c22e9379c891fca636de58b50cf46bc3" category="paragraph"><block ref="e27598c7184d00cb3ee9f87da21a55c5" prefix="" category="inline-code"></block></block>
   <block id="adbde3ab61ea5b6041902022caaaeddc" category="paragraph"><block ref="c07b7bd445e059f84d0bc076867fcd31" prefix="" category="inline-code"></block></block>
-  <block id="47c25bc89f41cb229d9f5a0f8cc43df0" category="admonition">또한 를 검토해야 합니다<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 알려진 제한 사항 또는 문제를 포함한 추가 정보</block>
   <block id="bfc2f11bae632428ff628103902f574d" category="inline-link">9.14.1용 NetApp PCL 설명서</block>
   <block id="445f6e03b4e783a323d451f16c8806b1" category="list-text"><block ref="445f6e03b4e783a323d451f16c8806b1" category="inline-link-rx"></block></block>
   <block id="02e64515407e12e7e47189d43e3d39a5" category="paragraph-title">QoS 옵션</block>
@@ -1935,4 +1934,19 @@
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp 를 참조하십시오. ONTAP PowerShell 툴킷</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
+  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp은 각 주요 제품 릴리즈별로 ONTAP REST API를 계속해서 개선하고 업데이트합니다. 이러한 업데이트에는 사용된 매개 변수와 기본값 등 기존 API 호출에 대한 변경 사항이 포함될 수 있습니다. 이러한 변경은 REST API에 액세스하는 소프트웨어에 영향을 미칠 수 있습니다.</block>
+  <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">ONTAP REST API 호출의 변경 사항</block>
+  <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">기존 ONTAP REST API 호출에 대한 변경 사항</block>
+  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">기존 API 호출을 변경하면 REST API에 액세스하는 소프트웨어에 영향을 미칠 수 있습니다. 아래 표의 변경 목록을 검토하여 ONTAP 자동화 환경에 영향을 미치는지 확인해야 합니다. 각 항목에는 적용 가능한 API 끝점, 변경 설명 및 도입된 ONTAP 릴리스가 포함됩니다.</block>
+  <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">변경에 대한 설명</block>
+  <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
+  <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">응답의 *_links * 필드가 이러한 끝점의 이중 그룹에서 제거되었습니다. 권장되는 고객 조치 또는 해결 방법이 없습니다. 이 필드는 향후 ONTAP 릴리즈에서 다시 추가될 예정입니다.</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
+  <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">ONTAP REST API 참조 문서 오류</block>
+  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">NetApp에서 ONTAP REST API를 개선 및 업데이트함에 따라 온라인 참조 문서에 오류가 발생할 수도 있습니다. 이러한 오류는 API를 사용할 때 혼동을 일으킬 수 있지만 일반적으로 ONTAP 자동화 소프트웨어 또는 환경에 영향을 미치거나 영향을 주지 않습니다.</block>
+  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">아래 표에서 오류 목록을 검토해야 합니다. 그러면 ONTAP REST API 참조 문서를 더 잘 이해하고 탐색하는 데 도움이 됩니다. 각 항목에는 해당 API 끝점, 오류에 대한 설명 및 도입된 ONTAP 릴리스가 포함됩니다.</block>
+  <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
+  <block id="79d1f0bd73ced50c557a63343981d432" category="cell">끝점에 대한 REST API 문서는 * specifier * 가 유효한 필드임을 나타냅니다. 그러나 이 끝점에서는 할당량 지정자가 지원되지 않습니다. 권장되는 고객 조치 또는 해결 방법이 없습니다. 이 필드는 향후 ONTAP 릴리스의 API 설명서에서 제거될 예정입니다.</block>
+  <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
+  <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">알려진 제한 사항 또는 문제를 포함한 추가 정보는 를 검토해야<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 합니다. 자동화 소프트웨어에 영향을 줄 수 있는 변경 사항은 를 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 참조하십시오.</block>
 </blocks>

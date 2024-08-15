@@ -15,6 +15,8 @@ sidebar:
     entries:
     - title: ONTAP REST API의 새로운 기능
       url: "/whats-new.html"
+    - title: ONTAP REST API 호출의 변경 사항
+      url: "/api-changes.html"
   - section: get-started
   - section: rest
   - section: workflows

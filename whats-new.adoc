@@ -17,7 +17,7 @@ summary: NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공�
 NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 ONTAP REST API를 정기적으로 업데이트합니다.
 
 
-TIP: 또한 를 검토해야 합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^] 알려진 제한 사항 또는 문제를 포함한 추가 정보
+TIP: 알려진 제한 사항 또는 문제를 포함한 추가 정보는 를 검토해야 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 릴리즈 노트"^] 합니다. 자동화 소프트웨어에 영향을 줄 수 있는 변경 사항은 를 link:api-changes.html["ONTAP REST API 호출의 변경 사항"] 참조하십시오.
 
 
 
