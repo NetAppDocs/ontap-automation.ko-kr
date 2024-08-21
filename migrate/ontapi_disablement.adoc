@@ -18,6 +18,6 @@ ONTAPI API(ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 고유의 호출 �
 
 .관련 정보
 * link:../get-started/ontap_automation_options.html["ONTAP 자동화 옵션을 이해합니다"]
-* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 가용성 종료: ONTAPI"^]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 ONTAPI(ZAPI) 공급 중지 발표"^]
 * https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["CPC용 ZAPI에서 ONTAP REST API 변환에 대한 FAQ"^]
 

@@ -1301,8 +1301,6 @@
   <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Python 클라이언트 라이브러리의 예</block>
   <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Python 클라이언트 라이브러리에 대한 소개는 을 참조하십시오 <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>. Python 샘플은 을 참조하십시오<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>.</block>
   <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI 비활성화</block>
-  <block id="d662068ac363663b595ce3a43cc70a12" category="inline-link">CPC-00410 가용성 종료: ONTAPI</block>
-  <block id="4985f6980a34153c58b9f31390f6ce91" category="list-text"><block ref="4985f6980a34153c58b9f31390f6ce91" category="inline-link-rx"></block></block>
   <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">ONTAP 9.13.1 성능 카운터 매핑</block>
   <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
@@ -1949,4 +1947,6 @@
   <block id="79d1f0bd73ced50c557a63343981d432" category="cell">끝점에 대한 REST API 문서는 * specifier * 가 유효한 필드임을 나타냅니다. 그러나 이 끝점에서는 할당량 지정자가 지원되지 않습니다. 권장되는 고객 조치 또는 해결 방법이 없습니다. 이 필드는 향후 ONTAP 릴리스의 API 설명서에서 제거될 예정입니다.</block>
   <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">알려진 제한 사항 또는 문제를 포함한 추가 정보는 를 검토해야<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 합니다. 자동화 소프트웨어에 영향을 줄 수 있는 변경 사항은 를 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 참조하십시오.</block>
+  <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPC-00410 ONTAPI(ZAPI) 공급 중지 발표</block>
+  <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
 </blocks>
