@@ -1890,7 +1890,6 @@
   <block id="d87719184e085166d3d845048810dd21" category="paragraph-title">SDK를 다운로드합니다</block>
   <block id="100168388acf5b00a071ca6e015323e0" category="paragraph">NetApp Support 사이트 에서 NetApp 관리 SDK를 다운로드할 수 있습니다. SDK는 클라이언트측에서 Python, PowerShell, C, C++, 자바, C#, VB. 네트, 루비. NetApp 관리 SDK에 대한 자세한 내용과 현재 사용 중인 ONTAP 버전에서 지원되는 방법은 상호 운용성 매트릭스 툴을 검토하십시오.</block>
   <block id="8a9c78330b74df288ffa23c3c916c9d4" category="paragraph-title">OnCommand Workflow Automation를 사용합니다</block>
-  <block id="5e956e5c034d62bc54b3db5e88c7f216" category="paragraph">또한 SDK와 함께 제공되는 API를 사용하여 스크립트를 작성하지 않고도 관리 작업을 자동화할 수 있습니다. OnCommand Workflow Automation(OnCommand WFA)는 관리 작업을 구축하고 실행하기 위해 사전 패키지화된 여러 워크플로우를 제공합니다. NetApp 스토리지 자동화 스토어 에서 OnCommand WFA 패키지를 다운로드할 수 있습니다.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
   <block id="74ca9f2037f85f9bee172d20503c7375" category="list-text"><block ref="74ca9f2037f85f9bee172d20503c7375" category="inline-link-rx"></block></block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 상호 운용성 매트릭스 툴</block>
@@ -1949,4 +1948,5 @@
   <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">알려진 제한 사항 또는 문제를 포함한 추가 정보는 를 검토해야<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 합니다. 자동화 소프트웨어에 영향을 줄 수 있는 변경 사항은 를 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="d22eb7366a95f4b359ba96e0653153f2" category="inline-link">CPC-00410 ONTAPI(ZAPI) 공급 중지 발표</block>
   <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
+  <block id="22c2d1f13363659c32e6085b79534d7a" category="paragraph">또한 SDK와 함께 제공되는 API를 사용하여 스크립트를 작성하지 않고도 관리 작업을 자동화할 수 있습니다. OnCommand Workflow Automation(OnCommand WFA)는 관리 작업을 구축하고 실행하기 위해 사전 패키지화된 여러 워크플로우를 제공합니다.</block>
 </blocks>
