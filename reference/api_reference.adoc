@@ -23,19 +23,7 @@ NOTE: REST API 참조 문서는 ONTAP 릴리즈에 기반한 여러 사이트 �
 
 == 온라인으로 ONTAP API 참조 문서에 액세스합니다
 
-아래 링크를 통해 ONTAP REST API 참조 설명서 사본에 액세스할 수 있습니다. 문서는 ONTAP 릴리스에서 관리합니다.
-
-* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.8"^]
-* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.7"^]
-* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.6"^]
-
+온라인에서 최신 설명서에 액세스할 수 https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP REST API 참조"^] 있습니다. 또한 ONTAP 릴리스에 따라 이전 버전의 문서에 액세스할 수 있는 버전 선택기를 사용할 수 있습니다.
 
 
 

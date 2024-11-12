@@ -10,7 +10,7 @@ summary: SVM 내에서 스토리지 볼륨 관리를 제한하는 역할을 정�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

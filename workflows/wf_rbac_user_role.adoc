@@ -10,7 +10,7 @@ summary: 이 워크플로를 사용하여 연결된 REST 역할을 가진 사용
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

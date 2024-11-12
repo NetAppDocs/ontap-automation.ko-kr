@@ -10,7 +10,7 @@ summary: NetApp는 PowerShell을 사용하여 ONTAP 스토리지 시스템 관�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

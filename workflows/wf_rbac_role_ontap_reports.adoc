@@ -10,7 +10,7 @@ summary: REST 역할을 생성하여 사용자에게 ONTAP 보고서를 생성�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

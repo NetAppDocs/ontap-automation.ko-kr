@@ -10,7 +10,7 @@ summary: 특정 파일이나 폴더에 새 보안 설명자를 적용할 수 있
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

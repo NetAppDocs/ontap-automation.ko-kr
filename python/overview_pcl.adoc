@@ -10,7 +10,7 @@ summary: NetApp ONTAP Python 클라이언트 라이브러리는 ONTAP REST API�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

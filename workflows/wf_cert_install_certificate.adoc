@@ -10,7 +10,7 @@ summary: ONTAP 클러스터에 서명된 X.509 인증서를 설치할 수 있습
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

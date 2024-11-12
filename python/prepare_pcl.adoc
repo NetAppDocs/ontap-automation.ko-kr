@@ -10,7 +10,7 @@ summary: Python 클라이언트 라이브러리를 사용하기 전에 로컬 �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

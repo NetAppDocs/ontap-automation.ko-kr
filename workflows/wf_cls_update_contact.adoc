@@ -10,7 +10,7 @@ summary: 클러스터의 연락처 정보를 업데이트할 수 있습니다. �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

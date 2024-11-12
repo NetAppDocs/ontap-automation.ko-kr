@@ -10,7 +10,7 @@ summary: 'ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

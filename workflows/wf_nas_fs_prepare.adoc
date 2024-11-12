@@ -10,7 +10,7 @@ summary: ONTAP 클러스터 내에서 SVM을 통해 사용할 수 있는 파일�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

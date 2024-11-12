@@ -10,7 +10,7 @@ summary: 특정 파일 또는 폴더에 대한 모든 감사 정보를 검색할
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: migrate/mapping.html 
-keywords: ONTAPI, REST API, mapping, mapping documentation 
-summary: NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는 방법을 설명하는 문서를 제공합니다. 
+keywords: ontapi, rest api, mapping, mapping documentation, zapi 
+summary: ONTAP REST API에는 대부분의 분야에서 ONTAPI와 동일한 기능이 포함되어 있습니다. NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는 방법을 설명하는 문서를 제공합니다. 
 ---
 = ONTAPI를 REST API 매핑에 매핑
 :hardbreaks:
@@ -16,14 +16,4 @@ summary: NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는
 [role="lead"]
 ONTAP REST API에는 대부분의 분야에서 ONTAPI와 동일한 기능이 포함되어 있습니다. NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는 방법을 설명하는 문서를 제공합니다.
 
-API 매핑 설명서는 ONTAP 릴리즈에 따라 달라집니다.
-
-* https://docs.netapp.com/us-en/ontap-restmap["ONTAP 9.15.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9141["ONTAP 9.14.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9131["ONTAP 9.13.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9121["ONTAP 9.12.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9111["ONTAP 9.11.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-9101["ONTAP 9.10.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-991["ONTAP 9.9.1"^]
-* https://docs.netapp.com/us-en/ontap-restmap-98["ONTAP 9.8"^]
-
+온라인에서 최신 설명서에 액세스할 수 https://docs.netapp.com/us-en/ontap-restmap/["ONTAP ONTAPI-REST 매핑"^] 있습니다. 또한 ONTAP 릴리스에 따라 이전 버전의 문서에 액세스할 수 있는 버전 선택기를 사용할 수 있습니다.

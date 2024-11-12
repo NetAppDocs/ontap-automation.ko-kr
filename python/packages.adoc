@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: python/packages.html 
-keywords: packages, documentation 
-summary:  
+keywords: python, pypi, pcl, packages, documentation 
+summary: Python 클라이언트 라이브러리는 9.6부터 각 ONTAP 릴리스에 사용할 수 있습니다. 사용 중인 ONTAP 릴리스에 따라 PyPI 패키지와 문서에 액세스해야 합니다. 
 ---
 = 패키지 및 설명서
 :hardbreaks:
@@ -10,11 +10,16 @@ summary:
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 Python 클라이언트 라이브러리는 9.6부터 각 ONTAP 릴리스에 사용할 수 있습니다. 사용 중인 ONTAP 릴리스에 따라 PyPI 패키지와 문서에 액세스해야 합니다.
+
+.ONTAP 9.16.1
+* https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPI: NetApp ONTAP 9.16.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["9.16.9.1용 NetApp PCL 문서"^]
+
 
 .ONTAP 9.15.1
 * https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI:NetApp ONTAP 9.15.1"^]

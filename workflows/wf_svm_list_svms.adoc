@@ -10,7 +10,7 @@ summary: 'ONTAP 클러스터 내에 정의된 SVM(스토리지 가상 머신)을
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

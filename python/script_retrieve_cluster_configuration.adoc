@@ -10,7 +10,7 @@ summary: CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

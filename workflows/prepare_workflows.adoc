@@ -10,7 +10,7 @@ summary: ONTAP 워크플로를 라이브 배포와 함께 사용하기 전에 �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

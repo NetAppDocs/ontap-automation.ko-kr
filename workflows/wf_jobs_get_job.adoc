@@ -10,7 +10,7 @@ summary: 특정 ONTAP 작업의 인스턴스를 검색할 수 있습니다. 일�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

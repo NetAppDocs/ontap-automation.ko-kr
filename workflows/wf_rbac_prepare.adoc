@@ -10,7 +10,7 @@ summary: ONTAP RBAC 기능은 환경에 따라 여러 가지 방법으로 사용
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

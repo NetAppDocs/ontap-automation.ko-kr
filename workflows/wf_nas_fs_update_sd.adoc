@@ -10,7 +10,7 @@ summary: 기본 소유자, 그룹 또는 컨트롤 플래그를 포함하여 특
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

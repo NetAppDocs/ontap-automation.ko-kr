@@ -10,7 +10,7 @@ summary: 클러스터에서 디스크 목록을 검색할 수 있습니다. 이�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

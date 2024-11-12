@@ -10,7 +10,7 @@ summary: ONTAP 클러스터에 대한 현재 EMS 구성을 조회할 수 있다.
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

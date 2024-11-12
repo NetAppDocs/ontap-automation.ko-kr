@@ -10,7 +10,7 @@ summary: 특정 필드를 포함하여 ONTAP 클러스터에 대한 구성을 �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

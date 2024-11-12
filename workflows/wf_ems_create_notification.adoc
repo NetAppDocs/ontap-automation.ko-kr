@@ -10,7 +10,7 @@ summary: 다음 워크플로를 사용하여 선택한 이벤트 메시지를 �
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

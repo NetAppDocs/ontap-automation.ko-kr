@@ -10,7 +10,7 @@ summary: '특정 파일 또는 폴더에서 기존 ACE(액세스 cotrol 항목)�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
