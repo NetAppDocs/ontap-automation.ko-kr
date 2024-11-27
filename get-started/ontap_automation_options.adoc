@@ -38,7 +38,7 @@ NetApp는 ONTAP REST API를 추상화하여 자동화 코드를 더 쉽게 생�
 Python 클라이언트 라이브러리는 스크립트를 작성하여 ONTAP REST API에 액세스할 때 사용할 수 있는 패키지입니다. 연결 관리, 비동기 요청 처리 및 예외 처리를 비롯한 여러 기본 서비스에 대한 지원을 제공합니다. Python 클라이언트 라이브러리를 사용하면 ONTAP 자동화 목표를 지원하는 강력한 코드를 빠르게 개발할 수 있습니다. 을 참조하십시오 link:../python/overview_pcl.html["Python 클라이언트 라이브러리"] 를 참조하십시오.
 
 .PowerShell 툴킷
-NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 을 참조하십시오 https://review.docs.netapp.com/us-en/ontap-automation_devnet-update/pstk/overview_pstk.html["PowerShell Toolkit 개요"^] 를 참조하십시오.
+NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 을 link:../pstk/overview_pstk.html["PowerShell Toolkit 개요"] 참조하십시오.
 
 
 

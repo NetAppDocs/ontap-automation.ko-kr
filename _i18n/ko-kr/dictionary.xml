@@ -1762,7 +1762,6 @@
   <block id="14e68e201b8f0e56ae0d9578c982a27e" category="inline-link">Lab on Demand를 준비하여 샘플 스크립트를 실행합니다</block>
   <block id="44285685546e8a285061253138136305" category="paragraph">검토도 합니다<block ref="5a0195c863eb934ee5e5002fb412c453" category="inline-link-rx"></block> 시작하십시오.</block>
   <block id="895d9f6334617339bb786f62f4a5c67f" category="paragraph-title">PowerShell 툴킷</block>
-  <block id="600c764bdcc8f9d03c6a1f6ddeb1eb60" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 을 참조하십시오<block ref="a392538979ff10b567cebfb1b03839f9" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="b2ee0232c3d3f9b1b42c01b23f2304c4" category="paragraph">Ansible은 프로비저닝, 구성 관리, 애플리케이션 배포를 지원하는 오픈 소스 소프트웨어 툴입니다. RedHat이 출시하고 이후 인수한 이후 계속 인기를 끌고 있습니다. NetApp은 고객이 ONTAP 스토리지 시스템 관리를 자동화하는 데 사용할 수 있는 Ansible 인증 모듈을 제공합니다. 을 참조하십시오 <block ref="8e7a6d97666e30efff2393bbc1610342" category="inline-link-macro-rx"></block> 및<block ref="1b4969cc73ff961c9b216f73f676bf04" category="inline-link-rx"></block> 자세한 내용은 를 참조하십시오.</block>
   <block id="3bf379567e5ff2ee0ebd31f7d516b365" category="summary">Python 클라이언트 라이브러리를 사용하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 기사와 비디오가 있습니다.</block>
   <block id="86670b28b0a0c13eeda3cbeec2b6362d" category="paragraph">Python 클라이언트 라이브러리를 사용하는 방법을 더 잘 이해하는 데 도움이 되는 몇 가지 블로그 문서가 있습니다.</block>
@@ -1954,4 +1953,5 @@
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 및 이전 릴리즈: v1 및 v2(ONTAPI만 해당)</block>
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8–9.9.1:v1, v2 및 v3(ONTAPI와 REST API 모두)</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10.1 이상: v3 전용(REST API만 해당)</block>
+  <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> 참조하십시오.</block>
 </blocks>
