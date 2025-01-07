@@ -29,5 +29,5 @@ NetApp Support 사이트 에서 NetApp 관리 SDK를 다운로드할 수 있습�
 * https://mysupport.netapp.com/site/["NetApp Support 사이트"^]
 * https://www.netapp.com/company/interoperability/["NetApp 상호 운용성 매트릭스 툴"^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["NetApp Manageability SDK 설명서"^]
-* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["OnCommand Workflow Automation 설명서"^]
+* https://docs.netapp.com/us-en/workflow-automation/["OnCommand Workflow Automation 설명서"^]
 
