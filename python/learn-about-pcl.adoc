@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: python/learn-about-pcl.html 
+keywords: learn about python client library, learn about pcl, pcl overview, pcl 
+summary: NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다. 
+---
+= ONTAP Python 클라이언트 라이브러리에 대해 알아봅니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다.
+
+.장점 및 기능
+Python 클라이언트 라이브러리를 사용하면 ONTAP 구축 관리를 자동화하는 강력한 코드를 신속하게 개발할 수 있습니다. 다음과 같은 몇 가지 기본 서비스를 제공합니다.
+
+* 연결 관리
+* 비동기 처리
+* 예외 처리
+* 균일한 오류 메시지
+
+
+.패키지 이름 및 버전
+Python 클라이언트 라이브러리 패키지의 이름은 * NetApp-ONTAP * 입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.
+
+.설치
+파이썬 패키지 인덱스(PyPi) 사이트에서 NetApp_ONTAP 패키지를 설치하려면 * PIP * 유틸리티를 사용해야 합니다.
+
+.ONTAP 릴리즈의 패키지 및 문서
+9.6부터 시작되는 각 ONTAP 릴리스에는 PyPI 패키지와 관련 문서가 포함되어 있습니다. 자세한 내용은 을 link:../python/packages.html["패키지 및 설명서"] 참조하십시오. 설치 요구 사항은 각 패키지에 포함되어 있으며 다음과 같은 다른 버전을 지정합니다.
+
+* 파이썬
+* 요청
+* 요청 - 도구 벨트
+* 마쉬멜로
+
+
+.코드 샘플
+NetApp는 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. Python 클라이언트 라이브러리를 사용하여 샘플에 액세스하려면 _examples_folder로 이동할 수 있습니다. 자세한 내용은 GitHub에서 다음 위치를 참조하십시오.
+
+* https://github.com/NetApp/ontap-rest-python["ONTAP REST Python GitHub 리포지토리"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["ONTAP REST Python 클라이언트 라이브러리 예"^]
+

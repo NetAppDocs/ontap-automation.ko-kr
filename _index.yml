@@ -29,7 +29,7 @@ indexpage:
     - title: 워크플로우
       url: "/workflows/prepare_workflows.html"
     - title: Python 클라이언트 라이브러리
-      url: "/python/overview_pcl.html"
+      url: "/python/learn-about-pcl.html"
     - title: PowerShell 툴킷
       url: "/pstk/overview_pstk.html"
     - title: NetApp 관리 SDK
