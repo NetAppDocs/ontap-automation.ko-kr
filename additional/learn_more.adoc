@@ -4,7 +4,7 @@ permalink: additional/learn_more.html
 keywords: learn, learn more, more information, additional resources 
 summary: ONTAP 스토리지 시스템의 구축 및 관리를 자동화하는 방법에 대한 자세한 내용을 확인하고 도움을 받을 수 있는 몇 가지 추가 리소스가 있습니다. 
 ---
-= 자세한 정보
+= ONTAP REST API에 대해 자세히 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,17 +20,15 @@ ONTAP 스토리지 시스템의 구축과 관리를 자동화하는 데 도움�
 
 == 블로그 기사를 참조하십시오
 
+블로그 문서는 주제에 따라 여러 섹션으로 정렬됩니다.
+
+
+
+=== 일반
+
 * 현재 ONTAP 자동화 기술에 대한 요약
 +
 https://www.netapp.com/blog/new-normal-for-automation["새로운 업계 표준이 도입되었습니다"^]
-
-* ONTAP REST API용 GitHub에서 Python 샘플 스크립트 액세스 및 사용 소개
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["GitHub에서 샘플 스크립트를 사용해 보십시오"^]
-
-* CLI passthrough는 REST API를 사용하여 ONTAP CLI 명령을 실행하는 기술을 제공합니다.
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api["전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다"^]
 
 * ONTAP 자동화를 위해 Ansible을 처음 사용하는 경우, 시작하는 것이 좋습니다.
 +
@@ -48,11 +46,7 @@ https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API: �
 +
 https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST API를 사용한 RBAC(역할 기반 액세스 제어"^]
 
-* NetApp는 ONTAP REST API를 사용하기 위한 Python 샘플 스크립트를 제공합니다.
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 샘플 스크립트를 이제 GitHub에서 사용할 수 있습니다!"^]
-
-* 커피는 휴식 (6 에피소드).
+* 휴식(6회):
 +
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-1-Basics-of-ONTAP-REST-APIs/m-p/167852["ONTAP REST API 기초"^]
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-2-Features-of-ONTAP-REST-APIs/m-p/168168/highlight/true#M208["ONTAP REST API의 기능"^]
@@ -61,6 +55,49 @@ https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 샘플 스�
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-5-Private-CLI-Passthrough/m-p/435293["전용 CLI 패스스루"^]
 ** https://community.netapp.com/t5/ONTAP-Rest-API-Discussions/Coffee-breaks-with-REST-Episode-6-5-magical-features-that-make-ONTAP-storage/m-p/435604["ONTAP 스토리지를 간편하게 자동화해 주는 5가지 강력한 기능!"^]
 
+
+
+
+
+
+=== Python 클라이언트 라이브러리
+
+* NetApp가 ONTAP REST API에 액세스하기 위해 GitHub에서 제공하는 Python 샘플 스크립트 사용에 대한 소개
++
+https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 샘플 스크립트를 이제 GitHub에서 사용할 수 있습니다!"^]
+
+* 이 블로그에서는 ONTAP 파이썬 클라이언트 라이브러리의 기능에 대해 소개합니다.
++
+https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Python 클라이언트 라이브러리를 사용하여 ONTAP REST API 사용을 간소화합니다"^]
+
+* 다음은 Python 클라이언트 라이브러리 시작에 대한 3부작 블로그 시리즈입니다.
++
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["1부"^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["2부"^]
+** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["3부"^]
+
+
+
+
+
+
+=== REST API로 마이그레이션
+
+* NetApp은 매핑 문서를 통해 독점 ONTAPI API API에서 ONTAP REST API로 이동할 수 있도록 지원합니다.
++
+https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI - REST 매핑"^]
+
+* REST API를 기반으로 ONTAP 자동화 환경을 변환하는 데 사용할 수 있는 몇 가지 기술이 있습니다.
++
+https://www.netapp.com/blog/transform-automation-ontap-rest-api/["ONTAP API에서 ONTAP REST API로 자동화 전환"^]
+
+* CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.
++
+https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다"^]
+
+* NetApp은 고객과 파트너가 ONTAP REST API로 전환할 수 있도록 지원합니다.
++
+https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["ONTAPI Usage Reporting Tool을 사용하여 ONTAPI(ZAPI)에서 전환"^]
 
 
 

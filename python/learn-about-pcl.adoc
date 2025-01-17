@@ -16,6 +16,9 @@ summary: NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONT
 [role="lead"]
 NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다.
 
+
+NOTE: 에서 사용할 수 있는 리소스도 검토해야 link:../additional/learn_more.html["ONTAP REST API에 대해 자세히 알아보십시오"]합니다.
+
 .장점 및 기능
 Python 클라이언트 라이브러리를 사용하면 ONTAP 구축 관리를 자동화하는 강력한 코드를 신속하게 개발할 수 있습니다. 다음과 같은 몇 가지 기본 서비스를 제공합니다.
 

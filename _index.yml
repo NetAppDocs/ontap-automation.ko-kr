@@ -42,8 +42,6 @@ indexpage:
       url: "/migrate/mapping.html"
     - title: 성능 카운터
       url: "/migrate/performance-counters.html"
-    - title: 블로그 기사를 참조하십시오
-      url: "/migrate/blogs_migrate.html"
   - title: 지식 및 지원
     links:
     - title: 자세한 정보

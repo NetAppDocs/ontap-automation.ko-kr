@@ -10,8 +10,6 @@ entries:
     url: "/python/packages.html"
   - title: 클러스터 구성을 검색하는 스크립트입니다
     url: "/python/script_retrieve_cluster_configuration.html"
-  - title: 블로그 기사를 참조하십시오
-    url: "/python/blogs_pcl.html"
 - title: PowerShell 툴킷
   entries:
   - title: 개요
