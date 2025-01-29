@@ -4,7 +4,7 @@ permalink: migrate/performance-counters.html
 keywords: performance, performance counters, mapping 
 summary: ONTAP 카운터 관리자는 각 ONTAP 시스템의 성능에 대한 광범위한 정보를 유지합니다. 이 데이터는 ONTAP 시스템의 성능을 평가하고 성능 목표를 달성하는 데 사용할 수 있는 성능 카운터 세트로 내보냅니다. 
 ---
-= 성능 카운터
+= ONTAP REST API에 성능 카운터 사용
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

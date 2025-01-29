@@ -4,7 +4,7 @@ permalink: reference/api_reference.html
 keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
 summary: API 참조에는 HTTP 메서드, 입력 매개 변수 및 응답을 포함하여 ONTAP REST API 호출에 대한 세부 정보가 포함되어 있습니다. 이 전체 참조는 REST API를 사용하여 자동화 응용 프로그램을 개발할 때 유용합니다. 
 ---
-= API 참조입니다
+= ONTAP REST API에 대한 참조입니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
