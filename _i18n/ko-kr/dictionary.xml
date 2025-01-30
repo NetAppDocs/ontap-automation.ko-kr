@@ -14,7 +14,6 @@
   <block id="19f05b47f4b958662678fc11fd0ce414" category="paragraph">HTTP(Hypertext Transfer Protocol)는 웹 서비스 클라이언트 및 서버가 리소스에 대한 요청 및 응답 메시지를 교환하기 위해 사용하는 프로토콜입니다. 웹 서비스 응용 프로그램 설계의 일환으로 HTTP 메서드는 리소스 및 해당 상태 관리 작업에 매핑됩니다. HTTP는 상태 비저장 입니다. 따라서 관련 요청 및 응답 집합을 하나의 트랜잭션으로 연결하려면 요청 및 응답 데이터 플로우와 함께 전달된 HTTP 헤더에 추가 정보가 포함되어야 합니다.</block>
   <block id="bd4c8bbdccbcb7826a3bc4ae421c0604" category="section-title">JSON 형식</block>
   <block id="171bf5afc5734ab1982f0d1e37b2b5e9" category="paragraph">여러 가지 방법으로 웹 서비스 클라이언트와 서버 간에 정보를 구성 및 전송할 수 있지만 가장 일반적인 옵션은 JSON(JavaScript Object Notation)입니다. JSON은 단순 데이터 구조를 일반 텍스트로 나타내는 업계 표준이며 리소스를 설명하는 상태 정보를 전송하는 데 사용됩니다. ONTAP REST API는 JSON을 사용하여 각 HTTP 요청 및 응답의 본문으로 전송되는 데이터를 포맷합니다.</block>
-  <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">API 응답을 해석합니다</block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="paragraph">각 API 요청은 클라이언트에 대한 응답을 다시 생성합니다. 응답을 검토하여 성공 여부를 확인하고 필요에 따라 추가 데이터를 검색해야 합니다.</block>
   <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">HTTP 상태 코드입니다</block>
   <block id="9cc7f2c4c4cb3a083eaa0fa002427217" category="paragraph">ONTAP REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.</block>
@@ -332,7 +331,6 @@
   <block id="99efb2d280df5dfb88ff3974d6ba377a" category="list-text">쿼리 기반 가져오기 - 컬렉션을 검색합니다</block>
   <block id="b493da72818f74a4523850f1316fabdc" category="list-text">컬렉션의 각 개체에 대한 패치 또는 삭제 호출의 일련 번호 시퀀스입니다</block>
   <block id="d42ef5aeeeac3bae2faf89cff30ba1b2" category="paragraph">작업 제한 시간은 기본값 15초로 RETURN_TIMEOUT으로 설정할 수 있다. 시간 초과 전에 완료되지 않은 경우 응답에는 다음 객체에 대한 링크가 포함됩니다. 작업을 계속하려면 다음 링크를 사용하여 동일한 HTTP 메서드를 다시 실행해야 합니다.</block>
-  <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">기본 작동 특성</block>
   <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">REST는 일반적인 기술과 모범 사례를 설정하지만 각 API의 세부 사항은 설계 선택에 따라 달라질 수 있습니다.</block>
   <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">요청 및 응답 API 트랜잭션</block>
   <block id="52cbf28bd4927df9cf59c3544b5ae581" category="paragraph">모든 REST API 호출은 클라이언트에 대한 관련 응답을 생성하는 ONTAP 시스템에 대한 HTTP 요청으로 수행됩니다. 이 요청/응답 쌍은 API 트랜잭션으로 간주됩니다. API를 사용하기 전에 요청 및 응답 출력의 내용을 제어하는 데 사용할 수 있는 입력 변수에 대해 잘 알고 있어야 합니다.</block>
@@ -475,7 +473,6 @@
   <block id="00f95d14ec52f3905a8ed85a9a48dcc2" category="list-text">CIFS 도메인에 대한 지원이 클러스터 및 SVM 레벨에서 추가되었습니다. 도메인 구성을 검색할 뿐만 아니라 기본 도메인 컨트롤러를 만들고 제거할 수도 있습니다.</block>
   <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">ONTAP REST Python GitHub 리포지토리</block>
   <block id="62277cb84205b149ab77912513497f3a" category="paragraph"><block ref="62277cb84205b149ab77912513497f3a" category="inline-link-rx"></block></block>
-  <block id="cae712fa1badd396170b95946efaaab8" category="doc">스토리지 리소스에 대한 성능 메트릭</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="paragraph">ONTAP은 선택한 SVM 스토리지 오브젝트 및 프로토콜에 대한 성능 메트릭을 수집하고 REST API를 통해 이 정보를 보고합니다. 이 데이터를 사용하여 ONTAP 시스템의 성능을 모니터링할 수 있습니다.</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">특정 스토리지 오브젝트 또는 프로토콜에서 성능 데이터는 다음 세 가지 범주로 분류됩니다.</block>
   <block id="79073619fba8242703524f16870ff858" category="list-text">IOPS</block>
@@ -589,7 +586,6 @@
   <block id="0ec641cfacd36c8e22a334135e2abdac" category="inline-link-macro">ONTAP REST API를 참조하십시오</block>
   <block id="f5b0a8cfa60a7e477b09b70b9c77ee98" category="doc">ONTAP 자동화 옵션을 이해합니다</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="inline-link-macro">Python 클라이언트 라이브러리</block>
-  <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">자원 범주 개요</block>
   <block id="10fd548eb0773eced2b1f8455835ae29" category="list-text"><block ref="10fd548eb0773eced2b1f8455835ae29" category="inline-link-macro-rx"></block></block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link-macro">ONTAP 릴리즈 노트</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="section-title">ONTAP 9.10.1</block>
@@ -609,7 +605,6 @@
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">REST API 액세스 방법</block>
   <block id="a02956d1e8bd45f8818a7c63426eceba" category="sidebar">입력 변수</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">API 응답을 해석합니다</block>
-  <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">작업 개체를 사용한 비동기 처리</block>
   <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">볼륨 분석 확장</block>
   <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">추가 엔드포인트를 통해 볼륨 분석 및 메트릭이 확장되어 상위 파일, 디렉토리 및 사용자를 지원합니다.</block>
   <block id="faa07c048822900bcf8537b1c474345f" category="list-text">지원 개선 사항</block>
@@ -722,7 +717,6 @@
   <block id="8df9e8f24b204c91ad0a9031f9c09a16" category="cell">인증 오류로 인해 액세스가 거부되었습니다.</block>
   <block id="806c6eb26fec67050c86278775f0a3ff" category="list-text">SnapMirror 기능은 예약을 비롯한 여러 영역에서 개선되었습니다. SnapVault 관계 패리티는 ONTAP 9.11.1과 DP 관계에 추가되었으며, REST API에서 사용할 수 있는 스로틀 기능은 Data ONTAP API(ONTAPI 또는 ZAPI)와 동일합니다. 이와 관련하여 대량 스냅샷 복사본을 생성 및 관리할 수 있는 지원이 제공됩니다.</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">ONTAPI 보고 도구</block>
-  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">RBAC 보안 개요</block>
   <block id="58722e059e2f5bb0441a986407122c33" category="paragraph">ONTAP에는 강력하고 확장 가능한 RBAC(역할 기반 액세스 제어) 기능이 포함되어 있습니다. REST API 및 CLI를 통해 노출된 리소스에 대한 사용자의 액세스를 제어하는 역할을 각 계정에 다르게 할당할 수 있습니다. 이 역할은 다양한 ONTAP 사용자에 대해 서로 다른 수준의 관리 액세스를 정의합니다.</block>
   <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">RBAC 발전 요약</block>
   <block id="8964641d12d0ef111bd01efe34f212c2" category="section-title">ONTAP 역할</block>
@@ -1954,4 +1948,16 @@
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">ONTAP REST API를 지원하는 툴 및 소프트웨어</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API에 대한 참조입니다</block>
   <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">ONTAP REST API 워크플로우를 사용할 준비를 합니다</block>
+  <block id="bcc9a2132297815fc027add5a436948a" category="doc">ONTAP REST API의 애플리케이션 리소스</block>
+  <block id="eec2cbc696ccc578df798a96160bf183" category="doc">ONTAP REST API의 리소스 범주 개요</block>
+  <block id="efcb5f574c1de0467f4e66c4a07add5f" category="doc">ONTAP REST API를 통한 비동기 처리</block>
+  <block id="9b2df43e4bec630fa4504501800e1b6b" category="doc">ONTAP REST API 요청에 대한 입력 변수입니다</block>
+  <block id="1b0bd65580a152f66ee09f993666fc14" category="doc">ONTAP REST API 응답을 해석합니다</block>
+  <block id="f5e837ffcba4ed9f59e55e708b69b4b2" category="doc">ONTAP REST API 개체 참조 및 액세스</block>
+  <block id="ea29eadd59b6ae07ee97408fb3e9d88c" category="doc">ONTAP REST API의 작동 특성입니다</block>
+  <block id="fd59abbb2badcd8fdfa670e39e0c6619" category="doc">ONTAP REST API를 통해 성능 메트릭에 액세스할 수 있습니다</block>
+  <block id="79f078dac9397adc5e4d383ab0f49eea" category="doc">ONTAP REST API를 사용한 RBAC 보안 개요</block>
+  <block id="98dce57b0664e78870d257a648e96612" category="doc">ONTAP REST API에서 역할 및 사용자와 함께 작업합니다</block>
+  <block id="8e7104f8cdaf55507f25e0b9a816f34b" category="doc">ONTAP REST API를 사용하여 클러스터 구성 가져오기</block>
+  <block id="19ca54acf953a715866f203d447d92ef" category="sidebar">작동 특성</block>
 </blocks>

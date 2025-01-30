@@ -4,7 +4,7 @@ permalink: rest/object_references_and_access.html
 keywords: objects, access paths, uuid, uuidv4, collections, object collection 
 summary: ONTAP REST API를 통해 노출된 리소스 인스턴스 또는 개체는 여러 가지 방법으로 참조되고 액세스할 수 있습니다. 
 ---
-= 개체 참조 및 액세스
+= ONTAP REST API 개체 참조 및 액세스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -6,17 +6,17 @@ entries:
   entries:
   - title: REST 웹 서비스 기반
     url: "/rest/rest_web_services_foundation.html"
-  - title: 기본 작동 특성
+  - title: 작동 특성
     url: "/rest/operational_characteristics.html"
   - title: 입력 변수
     url: "/rest/input_variables.html"
   - title: API 응답을 해석합니다
     url: "/rest/interpret_api_response.html"
-  - title: 작업 개체를 사용한 비동기 처리
+  - title: 비동기 처리
     url: "/rest/asynchronous_processing.html"
   - title: 개체 참조 및 액세스
     url: "/rest/object_references_and_access.html"
-  - title: 스토리지 리소스에 대한 성능 메트릭
+  - title: 성능 메트릭
     url: "/rest/performance_metrics.html"
 - title: RBAC 보안
   entries:

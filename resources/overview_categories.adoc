@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: resources/overview_categories.html 
 keywords: resources, resource categories 
-summary:  
+summary: ONTAP REST API를 통해 사용 가능한 리소스는 범주로 구성됩니다. 각 리소스 범주에는 간단한 설명과 함께 필요에 따라 추가적인 사용 고려 사항이 포함되어 있습니다. 
 ---
-= 자원 범주 개요
+= ONTAP REST API의 리소스 범주 개요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
