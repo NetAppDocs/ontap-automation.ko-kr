@@ -4,7 +4,7 @@ permalink: resources/snapmirror.html
 keywords: snapmirror resources 
 summary: 이러한 API 호출을 사용하여 SnapMirror 데이터 보호 기술을 관리할 수 있습니다. 
 ---
-= SnapMirror를 참조하십시오
+= ONTAP REST API의 SnapMirror 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

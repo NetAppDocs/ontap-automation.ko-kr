@@ -4,7 +4,7 @@ permalink: resources/nas.html
 keywords: nas resources 
 summary: 이러한 API 호출을 사용하여 클러스터와 SVM에 대한 CIFS 및 NFS 설정을 관리할 수 있습니다. 
 ---
-= NAS
+= ONTAP REST API의 NAS 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

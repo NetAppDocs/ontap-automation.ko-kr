@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_list_certificates.html
 keywords: workflow, list certificates 
 summary: ONTAP 클러스터에 설치된 인증서를 나열할 수 있습니다. 이렇게 하면 특정 인증서를 사용할 수 있는지 확인하거나 전체 인증서를 검색할 수 있는 특정 인증서의 ID를 가져올 수 있습니다. 
 ---
-= 설치된 인증서를 나열합니다
+= ONTAP REST API를 사용하여 설치된 인증서를 나열합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

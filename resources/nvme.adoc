@@ -4,7 +4,7 @@ permalink: resources/nvme.html
 keywords: nvme resources 
 summary: 이러한 API 호출을 사용하여 NVMe를 지원하는 리소스를 관리할 수 있습니다. 
 ---
-= NVMe를 참조하십시오
+= ONTAP REST API의 NVMe 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

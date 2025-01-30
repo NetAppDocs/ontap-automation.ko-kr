@@ -4,7 +4,7 @@ permalink: workflows/wf_jobs_get_job.html
 keywords: workflow, job, job state 
 summary: 특정 ONTAP 작업의 인스턴스를 검색할 수 있습니다. 일반적으로 이 작업을 수행하여 작업 및 관련 작업이 성공적으로 완료되었는지 확인할 수 있습니다. 
 ---
-= 작업 인스턴스를 가져옵니다
+= ONTAP REST API를 사용하여 작업 인스턴스를 가져옵니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

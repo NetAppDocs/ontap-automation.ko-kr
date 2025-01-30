@@ -4,7 +4,7 @@ permalink: workflows/wf_cert_install_certificate.html
 keywords: workflow, install certificate, x509, x.509 
 summary: ONTAP 클러스터에 서명된 X.509 인증서를 설치할 수 있습니다. 강력한 인증이 필요한 ONTAP 기능이나 프로토콜을 구성할 때 이 작업을 수행할 수 있습니다. 
 ---
-= 인증서를 설치합니다
+= ONTAP REST API를 사용하여 인증서를 설치합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

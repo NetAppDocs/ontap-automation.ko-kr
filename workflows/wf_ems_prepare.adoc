@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_prepare.html
 keywords: support, ems, event management system, event notifications, notifications 
 summary: 'ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고 필요에 따라 EMS 메시지를 조회할 수 있다.' 
 ---
-= EMS 지원 서비스 관리 준비
+= ONTAP REST API를 사용하여 EMS 지원 서비스 관리 준비
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

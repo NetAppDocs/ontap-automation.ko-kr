@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_prepare.html
 keywords: nas, file security, sacl, dacl, prepare 
 summary: ONTAP 클러스터 내에서 SVM을 통해 사용할 수 있는 파일에 대한 권한 및 감사 정책을 관리할 수 있습니다. 
 ---
-= 파일 보안 및 감사 정책 관리 준비
+= ONTAP REST API를 사용하여 파일 보안 및 감사 정책을 관리할 준비를 합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: resources/ndmp.html
 keywords: ndmp resources 
 summary: 이러한 API 호출을 사용하여 NDMP 서비스를 관리할 수 있습니다. 
 ---
-= NDMP
+= ONTAP REST API의 NDMP 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: resources/networking.html
 keywords: networking resources 
 summary: 이러한 API 호출을 사용하여 클러스터와 함께 사용되는 물리적 및 논리적 네트워킹 리소스를 관리할 수 있습니다. 
 ---
-= 네트워킹
+= ONTAP REST API의 네트워킹 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

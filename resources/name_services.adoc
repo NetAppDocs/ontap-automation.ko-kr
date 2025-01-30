@@ -4,7 +4,7 @@ permalink: resources/name_services.html
 keywords: name services resources 
 summary: 이러한 API 호출을 사용하여 ONTAP에서 지원하는 이름 서비스를 관리할 수 있습니다. 
 ---
-= 네임 서비스
+= ONTAP REST API에 서비스 리소스의 이름을 지정할 수 있습니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

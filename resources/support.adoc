@@ -4,7 +4,7 @@ permalink: resources/support.html
 keywords: support resources 
 summary: 이러한 API 호출을 사용하여 클러스터를 지원하는 데 사용되는 ONTAP 기능을 관리할 수 있습니다. 
 ---
-= 지원
+= ONTAP REST API의 지원 리소스를 참조하십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

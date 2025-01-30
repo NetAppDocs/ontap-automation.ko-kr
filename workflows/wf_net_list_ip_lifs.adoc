@@ -4,7 +4,7 @@ permalink: workflows/wf_net_list_ip_lifs.html
 keywords: workflow, job, job state 
 summary:  
 ---
-= IP 인터페이스를 나열합니다
+= ONTAP REST API를 사용하는 IP 인터페이스를 나열합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

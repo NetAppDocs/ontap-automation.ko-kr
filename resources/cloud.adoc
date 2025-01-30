@@ -4,7 +4,7 @@ permalink: resources/cloud.html
 keywords: cloud resources 
 summary: 이러한 API 호출을 사용하여 클라우드의 오브젝트 스토리지 리소스에 대한 연결을 관리할 수 있습니다. 
 ---
-= 클라우드
+= ONTAP REST API의 클라우드 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

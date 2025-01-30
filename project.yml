@@ -1,6 +1,6 @@
 ---
 settings:
-  name: ONTAP Automation
+  name: ONTAP automation
   internal:
     pdf_enabled: true
   prod:
@@ -26,3 +26,6 @@ sidebar:
   - section: additional
   - title: 법적 고지
     url: "/legal-notices.html"
+product-family:
+  name: ONTAP
+  repo: ontap-family

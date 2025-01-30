@@ -4,7 +4,7 @@ permalink: resources/cluster.html
 keywords: cluster resources 
 summary: 이러한 API 호출을 사용하여 ONTAP 클러스터와 관련 리소스를 관리할 수 있습니다. 
 ---
-= 클러스터
+= ONTAP REST API의 클러스터 리소스
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
