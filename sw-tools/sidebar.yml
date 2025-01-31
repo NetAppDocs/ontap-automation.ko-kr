@@ -11,10 +11,6 @@ entries:
   - title: 클러스터 구성을 검색하는 스크립트입니다
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShell 툴킷
-  entries:
-  - title: 개요
-    url: "/pstk/overview_pstk.html"
-  - title: 다운로드 및 설치
-    url: "/pstk/install_pstk.html"
+  url: "/pstk/learn-about-pstk.html"
 - title: NetApp 관리 SDK
-  url: "/sw-tools/nmsdk.html"
+  url: "/sw-tools/learn-about-nmsdk.html"
