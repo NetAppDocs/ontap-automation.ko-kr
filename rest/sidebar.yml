@@ -4,8 +4,6 @@ title: ONTAP REST API를 참조하십시오
 entries:
 - title: REST 구현 세부 정보
   entries:
-  - title: REST 웹 서비스 기반
-    url: "/rest/rest_web_services_foundation.html"
   - title: 작동 특성
     url: "/rest/operational_characteristics.html"
   - title: 입력 변수

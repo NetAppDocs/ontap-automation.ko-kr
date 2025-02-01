@@ -17,7 +17,7 @@ indexpage:
   - title: ONTAP REST API를 참조하십시오
     links:
     - title: REST 구현 세부 정보
-      url: "/rest/rest_web_services_foundation.html"
+      url: "/rest/operational_characteristics.html"
     - title: RBAC 보안
       url: "/rest/rbac_overview.html"
     - title: Rest 자원 요약
@@ -31,9 +31,9 @@ indexpage:
     - title: Python 클라이언트 라이브러리
       url: "/python/learn-about-pcl.html"
     - title: PowerShell 툴킷
-      url: "/pstk/overview_pstk.html"
+      url: "/pstk/learn-about-pstk.html"
     - title: NetApp 관리 SDK
-      url: "/sw-tools/nmsdk.html"
+      url: "/sw-tools/learn-about-nmsdk.html"
   - title: REST API로 마이그레이션합니다
     links:
     - title: ONTAPI 비활성화
