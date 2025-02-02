@@ -6,8 +6,6 @@ entries:
   entries:
   - title: Python 클라이언트 라이브러리에 대해 알아봅니다
     url: "/python/learn-about-pcl.html"
-  - title: 패키지 및 설명서
-    url: "/python/packages.html"
   - title: 클러스터 구성을 검색하는 스크립트입니다
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: PowerShell 툴킷

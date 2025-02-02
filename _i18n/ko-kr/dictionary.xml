@@ -361,7 +361,6 @@
   <block id="b19cfdc6ba6a94190ea654a5c325673c" category="list-text">HTTP 인증</block>
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">ONTAP 인증</block>
   <block id="ecada31be49896665065d57659291715" category="paragraph">ONTAP는 역할 기반 인증 모델을 구현합니다. ONTAP REST API 또는 API 설명서 페이지에 액세스할 때 사용하는 계정에 적절한 권한이 있어야 합니다.</block>
-  <block id="89a63df60ff51ecd284dbabc7f893d79" category="doc">클러스터 구성을 검색하는 스크립트입니다</block>
   <block id="954b2e160c60b05e0b5bcd88116d6dee" category="paragraph">다음 스크립트는 Python 클라이언트 라이브러리를 사용하는 방법의 간단한 예를 제공합니다. CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP 클러스터 구성을 검색할 수 있습니다.</block>
   <block id="62a0282d39568be094470486eaf70c4f" category="doc">산</block>
   <block id="d026d48ac10030a378a0074cde689bc7" category="paragraph">이러한 API 호출을 사용하여 SAN(Storage Area Networking) 리소스를 관리할 수 있습니다.</block>
@@ -1136,8 +1135,6 @@
   <block id="0a783c3ce00e8d3af4931704ca629ba3" category="paragraph-title">기본 제공 역할 중 하나가 충분합니까, 아니면 사용자 지정 역할이 필요합니까?</block>
   <block id="531201515c1ec0bfadb1f37e57c2222d" category="paragraph-title">어떤 유형의 역할이 필요합니까?</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">처리 유형</block>
-  <block id="11593a40313671a88f29e6475859f238" category="paragraph-title">패키지 이름 및 버전</block>
-  <block id="7cd8fb6e31cc946c078d2740c76a9899" category="paragraph-title">설치</block>
   <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI - REST 매핑</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">첫 번째 API 호출입니다</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
@@ -1707,7 +1704,6 @@
   <block id="82285d8d320aa0ca532320803369535d" category="inline-link">ONTAP REST Python 클라이언트 라이브러리 예</block>
   <block id="5ba737ef4be217f04eef26090cbae251" category="list-text"><block ref="5ba737ef4be217f04eef26090cbae251" category="inline-link-rx"></block></block>
   <block id="e7847c34369de18fbc7a45ef5f19f0b9" category="doc">패키지 및 설명서</block>
-  <block id="b4d70452d65da9fcd38a4b8098a88b3d" category="paragraph">Python 클라이언트 라이브러리는 9.6부터 각 ONTAP 릴리스에 사용할 수 있습니다. 사용 중인 ONTAP 릴리스에 따라 PyPI 패키지와 문서에 액세스해야 합니다.</block>
   <block id="9fc11a41fe68e489096a222c7c265dec" category="list-text"><block ref="9fc11a41fe68e489096a222c7c265dec" category="inline-link-rx"></block></block>
   <block id="5f6bf2fac8af69fcf38f9b1b785e910e" category="inline-link">PyPI: NetApp ONTAP 9.13.1</block>
   <block id="319c0b86b933606552d8b765ac942409" category="list-text"><block ref="319c0b86b933606552d8b765ac942409" category="inline-link-rx"></block></block>
@@ -1741,11 +1737,6 @@
   <block id="4c421ca686c08a2f5117b9c8cac019a0" category="list-text"><block ref="4c421ca686c08a2f5117b9c8cac019a0" category="inline-link-rx"></block></block>
   <block id="f358359db0f64d4f6246e5efe7bf61cd" category="inline-link">9.6용 NetApp PCL 문서</block>
   <block id="c6b6406d472f50178a7d6d34c51c2828" category="list-text"><block ref="c6b6406d472f50178a7d6d34c51c2828" category="inline-link-rx"></block></block>
-  <block id="7f2ab26d3f83b0c07dfcecd8c4e4d730" category="paragraph-title">ONTAP 릴리즈의 패키지 및 문서</block>
-  <block id="23eeeb4347bdd26bfc6b7ee9a3b755dd" category="list-text">파이썬</block>
-  <block id="3298f13049d19cffaa37ca931dd4d421" category="list-text">요청</block>
-  <block id="4f11865970671ba7b86c9b6eda8a46ed" category="list-text">요청 - 도구 벨트</block>
-  <block id="104004214ebf2a9e7840ed8d280a887d" category="list-text">마쉬멜로</block>
   <block id="6c271a07c1fe500a9af8e4bb8e005441" category="sidebar">ONTAPI에서 REST API로 마이그레이션합니다</block>
   <block id="326737de1766f7c8b80a5acde0f18651" category="sidebar">다운로드 및 설치</block>
   <block id="10c96e88b9c4e92d1c2ae63f9eade937" category="paragraph">이러한 API 호출을 사용하여 ONTAP SnapLock 기능을 관리할 수 있습니다.</block>
@@ -1880,16 +1871,12 @@
   <block id="a370e7923c07d85d87e81fefb3ea1979" category="list-text"><block ref="a370e7923c07d85d87e81fefb3ea1979" category="inline-link-rx"></block></block>
   <block id="4194600c450cd5967951e54d38f6d438" category="paragraph">Python 클라이언트 라이브러리는 스크립트를 작성하여 ONTAP REST API에 액세스할 때 사용할 수 있는 패키지입니다. 연결 관리, 비동기 요청 처리 및 예외 처리를 비롯한 여러 기본 서비스에 대한 지원을 제공합니다. Python 클라이언트 라이브러리를 사용하면 ONTAP 자동화 목표를 지원하는 강력한 코드를 빠르게 개발할 수 있습니다. 자세한 내용은 을 <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="c05717e9174f828651b78317f146b66b" category="paragraph">Python 클라이언트 라이브러리는 Python을 사용하여 ONTAP REST API에 설치하고 액세스하는 데 사용할 수 있는 패키지입니다. 이를 통해 ONTAP 배포를 자동화하기 위한 강력한 코드를 빠르게 개발할 수 있습니다. Python 클라이언트 라이브러리에 대한 자세한 내용은 을 <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="cca5d0ba9969f6743317e980adb3c9e1" category="summary">NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다.</block>
   <block id="460a180d16bdae0c968e9ef22e4c7936" category="doc">ONTAP Python 클라이언트 라이브러리에 대해 알아봅니다</block>
-  <block id="13ce983c03db476a78e9bb2eaaa5cdcc" category="paragraph-title">장점 및 기능</block>
   <block id="95b1610941323127f65cb3db6cff1ca1" category="paragraph">Python 클라이언트 라이브러리를 사용하면 ONTAP 구축 관리를 자동화하는 강력한 코드를 신속하게 개발할 수 있습니다. 다음과 같은 몇 가지 기본 서비스를 제공합니다.</block>
   <block id="35a07dde4cdfcf3565f03875ee748ac6" category="list-text">연결 관리</block>
   <block id="8fe3bb19a244ccfeddfe93062360622d" category="list-text">예외 처리</block>
   <block id="06856d0d21cf25fed37bf8f01dd8e070" category="list-text">균일한 오류 메시지</block>
   <block id="4eabbfd21dbe2c323da49bedb2a5c62c" category="paragraph">Python 클라이언트 라이브러리 패키지의 이름은 * NetApp-ONTAP * 입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.</block>
-  <block id="472bdbf647fdfc94078ab6f39ba1a11e" category="paragraph">파이썬 패키지 인덱스(PyPi) 사이트에서 NetApp_ONTAP 패키지를 설치하려면 * PIP * 유틸리티를 사용해야 합니다.</block>
-  <block id="5316c1611ca1b378546362193d538427" category="paragraph">9.6부터 시작되는 각 ONTAP 릴리스에는 PyPI 패키지와 관련 문서가 포함되어 있습니다. 자세한 내용은 을 <block ref="75af8f7877b901b5fed8d9ea10b7425b" category="inline-link-macro-rx"></block> 참조하십시오. 설치 요구 사항은 각 패키지에 포함되어 있으며 다음과 같은 다른 버전을 지정합니다.</block>
   <block id="05ccfbea6601dcca671775f24a6b14d3" category="paragraph-title">코드 샘플</block>
   <block id="2284945e609b7e5c75ffeed3e93b30dc" category="paragraph">NetApp는 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. Python 클라이언트 라이브러리를 사용하여 샘플에 액세스하려면 _examples_folder로 이동할 수 있습니다. 자세한 내용은 GitHub에서 다음 위치를 참조하십시오.</block>
   <block id="a9672c1d2a17caa13c69c68927db925b" category="sidebar">Python 클라이언트 라이브러리에 대해 알아봅니다</block>
@@ -1914,7 +1901,6 @@
   <block id="15cf2f6738a770890a0ba990f1543d8d" category="inline-link">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI(ZAPI)에서 전환</block>
   <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">모든 Python 코드 샘플은 GitHub 리포지토리에서 사용할 수<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> 있습니다. 에서 사용할 수 있는 리소스도 검토해야 <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>합니다.</block>
-  <block id="afadfcc5e8834b85c88b2a5e94fdf7bc" category="admonition">에서 사용할 수 있는 리소스도 검토해야 <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST API에 대한 법적 고지 사항</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPI-ONTAP REST API 매핑</block>
   <block id="484b32b038170aab3e10173e4c46ac03" category="doc">ONTAP REST API에 대한 마이그레이션 고려 사항</block>
@@ -1982,4 +1968,11 @@
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell은 작업 자동화 및 구성 관리에 사용할 수 있는 Microsoft의 프로그래밍 언어입니다. 여기에는 스크립트 언어뿐만 아니라 명령줄 셸 환경이 포함되어 있습니다.</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">NetApp Manageability SDK에 대해 알아보십시오</block>
   <block id="40165cda75e3c737682e919501eec98c" category="doc">REST 웹 서비스에 대해 알아봅니다</block>
+  <block id="4c720a0398276ed3f84fdbaf97711b7d" category="summary">NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다. PyPi(PyPi) 사이트에서 NetApp_ONTAP 패키지를 설치하려면 _PIP_유틸리티를 사용해야 합니다.</block>
+  <block id="7bafad8d0c182e2b6b31ac4018784823" category="list-text"><block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>..</block>
+  <block id="35ae08a314ffffc02580e3c3fbfad924" category="section-title">기능 및 이점</block>
+  <block id="b310094d4525ad8d1f7d1dab174a4148" category="section-title">ONTAP 릴리즈별로 패키지를 분리합니다</block>
+  <block id="4411cc32563b58d1d479aff384140f24" category="paragraph">9.6부터 시작되는 각 ONTAP 릴리스에는 PyPI 패키지와 관련 문서가 포함되어 있습니다. 설치 요구 사항은 각 패키지에 포함되어 있으며 python, 요청, 요청-도구 벨트 및 marshmallow의 다른 버전을 지정합니다.</block>
+  <block id="075eb829f6ad7e0f3047f5e1b0db251b" category="example-title">패키지 및 설명서 목록</block>
+  <block id="04e844fe21e462953e1fe26128de4115" category="doc">Python 클라이언트 라이브러리를 사용하여 클러스터 구성을 검색하기 위한 스크립트입니다</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: python/script_retrieve_cluster_configuration.html
 keywords: Python, sample script, Python example 
 summary: CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP 클러스터 구성을 검색할 수 있습니다. 
 ---
-= 클러스터 구성을 검색하는 스크립트입니다
+= Python 클라이언트 라이브러리를 사용하여 클러스터 구성을 검색하기 위한 스크립트입니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -27,7 +27,7 @@ summary: CLI에서 Python 3을 사용하여 스크립트를 실행하여 ONTAP �
 # python3 get_cluster.py
 #
 #
-# (C) Copyright 2024 NetApp, Inc.
+# (C) Copyright 2025 NetApp, Inc.
 #
 # This sample code is provided AS IS, with no support or warranties of
 # any kind, including but not limited for warranties of merchantability
