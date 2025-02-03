@@ -10,7 +10,7 @@ summary: 각 ONTAP 릴리즈에서는 새로운 기능, 개선 사항 및 버그
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

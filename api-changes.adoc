@@ -10,7 +10,7 @@ summary: NetApp은 각 주요 제품 릴리즈별로 ONTAP REST API를 계속해
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
