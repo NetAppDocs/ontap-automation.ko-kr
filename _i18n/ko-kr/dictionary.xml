@@ -1808,7 +1808,6 @@
   <block id="68d26d1aac1d90ae670aa8a5fe3415f3" category="summary">ONTAP 카운터 관리자는 각 ONTAP 시스템의 성능에 대한 광범위한 정보를 유지합니다. 이 데이터는 ONTAP 시스템의 성능을 평가하고 성능 목표를 달성하는 데 사용할 수 있는 성능 카운터 세트로 내보냅니다.</block>
   <block id="08d2a25d52e092c6c253545968ce5bb5" category="inline-link">ONTAP 성능 카운터 매핑</block>
   <block id="91b54891dd280b62b83af7ec4c8e3979" category="paragraph">온라인에서 최신 설명서에 액세스할 수<block ref="9d8aae4b84eb6e74ade1e0afd2ee1664" category="inline-link-rx"></block> 있습니다. 또한 ONTAP 릴리스에 따라 이전 버전의 문서에 액세스할 수 있는 버전 선택기를 사용할 수 있습니다.</block>
-  <block id="d9c24a6b276d26b3ed8aa4df515da6c8" category="paragraph"><block ref="d9c24a6b276d26b3ed8aa4df515da6c8" category="inline-link-rx"></block></block>
   <block id="31272abf1c9209ab4acd0bf10f129338" category="list-title">ONTAP 9.16.1</block>
   <block id="0c06f2efbe678ca8c3e4cd68189cf2ae" category="inline-link">PyPI: NetApp ONTAP 9.16.1</block>
   <block id="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="list-text"><block ref="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="inline-link-rx"></block></block>
@@ -1973,4 +1972,5 @@
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit에는 2,400개 이상의 cmdlet이 포함된 모듈로 로컬 PowerShell 환경을 개선합니다. 이를 통해 Windows 호스트용 코드를 빠르게 개발하여 ONTAP 배포를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">각 릴리스의 여러 지점에서 지원이 철회되었습니다. 여기에는 ONTAP 9.10.1 P11 이상, 9.11.1 P7 이상 및 9.12.1 GA 이상이 포함됩니다. 자세한 내용은 를<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
 </blocks>
