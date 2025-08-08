@@ -1232,7 +1232,6 @@
   <block id="0446fa4ca147c362e3712c199d31f607" category="paragraph">REST API는 ONTAP에서 사용할 수 있는 다양한 기능과 시설을 제공합니다. 그러나 REST API를 통해 ONTAP CLI에 직접 액세스하는 것이 유용한 경우가 있을 수 있습니다.</block>
   <block id="4dee1eb90de4bde1248e4896c4dc4381" category="inline-link">REST CLI 통과 샘플입니다</block>
   <block id="dfd00e91a832f40b6d730ced03aa0c44" category="paragraph">이 기능에 대한 소개는 를 참조하십시오 <block ref="430c6d579ad9ddc178e54d66821e7597" category="inline-link-macro-rx"></block>. Python 샘플은 을 참조하십시오<block ref="93e4c8d6cc1dc72ab5e25d8c76e6620b" category="inline-link-rx"></block>.</block>
-  <block id="7c3954a6c1ca76b5209bce67c8c332e8" category="doc">ONTAPI 비활성화</block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13.1</block>
   <block id="cbec0159857226b0512b2b18211eca44" category="paragraph">ONTAP 9.13.1 ONTAP REST API의 기능을 20개 이상의 새로운 API 호출로 계속 확장하고 있습니다. 이러한 엔드포인트는 새로운 ONTAP 기능과 기존 기능의 향상된 기능을 지원합니다. 이 릴리즈에서는 보안, 리소스 관리, 향상된 SVM 구성 옵션, 성능 메트릭 등의 개선 사항에 중점을 둡니다.</block>
   <block id="aecbf8e5ebbb6b089493eac6cb71ca69" category="list-text">리소스 태그 지정</block>
@@ -1534,8 +1533,6 @@
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">CPC용 ZAPI에서 ONTAP REST API 변환에 대한 FAQ</block>
   <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">소프트웨어 도구</block>
-  <block id="9053840bf2905b594e6d2189157bff2b" category="summary">향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화됩니다. ONTAPI를 사용하는 경우 ONTAP REST API로의 마이그레이션을 계획해야 합니다.</block>
-  <block id="91a17d4a4fb7a42ae5523bf1ae74ed4c" category="paragraph">ONTAPI API(ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 고유의 호출 세트입니다. API는 Network Manageability SDK를 통해 제공되며 데이터 스토리지 관리 및 관리 작업의 자동화를 지원합니다. 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화됩니다. ONTAPI를 사용하는 경우 ONTAP REST API로의 마이그레이션을 계획해야 합니다.</block>
   <block id="e22a3298a5f97f4069fc3abbf0054a78" category="list-text"><block ref="e22a3298a5f97f4069fc3abbf0054a78" category="inline-link-macro-rx"></block></block>
   <block id="e6a021828131c610a8d1434615483b06" category="summary">ONTAPI API(ZAPI) 또는 ONTAP CLI에서 ONTAP REST API로 마이그레이션하기 전에 몇 가지 문제를 고려해야 합니다.</block>
   <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">마이그레이션 고려 사항</block>
@@ -1550,7 +1547,6 @@
   <block id="efea648fde82cca9a59a6c5e90f3d617" category="section-title">클라이언트 소프트웨어 툴킷</block>
   <block id="9d344c4d689635bee0d71b95de7b0c04" category="paragraph">NetApp는 ONTAP REST API를 추상화하여 자동화 코드를 더 쉽게 생성할 수 있는 클라이언트 툴킷을 제공합니다. 개발 언어 및 환경에 적합한 언어를 선택해야 합니다.</block>
   <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">자동화 프레임워크</block>
-  <block id="045c9b234c3f9802c9287b1b0cd9cebf" category="paragraph">여러 프레임워크 중 하나를 사용하여 자동화 코드를 만들고 배포할 수 있습니다</block>
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
   <block id="74e4ec1fd7e7ec388822465aeff417c4" category="paragraph">넷엡<block ref="24f12c8cdb9e96aedf586081f8419901" category="inline-link-rx"></block> 는 BlueXP 웹 사용자 인터페이스를 통해 제공됩니다. 이 카탈로그에서는 ONTAP를 다른 제품과 통합하고 배포하는 데 도움이 되는 패키지 솔루션에 액세스할 수 있습니다. 을 참조하십시오<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 을 참조하십시오.</block>
   <block id="6896ceb4698b2c86775b4d891be243d5" category="summary">ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고 필요에 따라 EMS 메시지를 조회할 수 있다.</block>
@@ -1682,9 +1678,6 @@
   <block id="abbe6086a8dd2213ec443ee7529470ed" category="paragraph">PowerShell 툴킷은 다음 NetApp Support 사이트에서 다운로드할 수 있습니다.</block>
   <block id="1904aecd859f7f23f24c1be156dc343b" category="paragraph-title">PowerShell 갤러리</block>
   <block id="4c6410f017732f17e33613aeeb023d8d" category="paragraph">PowerShell 툴킷은 PowerShell 갤러리에서 다운로드할 수 있습니다.</block>
-  <block id="25485dfbe21d8fd63164750c78164890" category="section-title">REST API 갭을 위해 ONTAPI를 제출하십시오</block>
-  <block id="eba6ac0de111e13d8f1a5cb185892a15" category="inline-link">ONTAPI에서 REST API로</block>
-  <block id="212a2f3ffae779c6d3e6513e6c77e49d" category="paragraph">NetApp은 고객이 ONTAPI에서 ONTAP REST API로 마이그레이션할 수 있도록 지원하기 위해 노력하고 있습니다. REST API에 누락된 사항이 있는 경우 알려 주십시오. 에서 이러한 격차와 다른 아이디어를 제출할 수 있습니다<block ref="bfaa967fbc75e842a7348bf0a8e34215" category="inline-link-rx"></block> 페이지.</block>
   <block id="f0258b6685684c113bad94d91b8fa02a" category="inline-link">데모</block>
   <block id="2c2d289066c19b061fa5051110ce72bc" category="paragraph">에 액세스할 수 있습니다<block ref="10e3da19ba49cdfd167b1f3dae41bc1c" category="inline-link-rx"></block> 시작하십시오. 도 참조하십시오<block ref="ef075c0fbc68ce59cce02cf136cb7c91" category="inline-link-rx"></block> 보고 도구 및 사용 방법</block>
   <block id="18e808da68bb719b1204b8c83712fac3" category="section-title">ONTAP PowerShell 툴킷</block>
@@ -1742,13 +1735,11 @@
   <block id="88f0364b032c766b6224cbd9e9d86861" category="list-text"><block ref="88f0364b032c766b6224cbd9e9d86861" category="inline-link-rx"></block></block>
   <block id="6448d33fb4777d581fbb9b666f7ac7de" category="inline-link">9.15.1용 NetApp PCL 문서</block>
   <block id="b220d699be7fd0932b3c304fd8648407" category="list-text"><block ref="b220d699be7fd0932b3c304fd8648407" category="inline-link-rx"></block></block>
-  <block id="03496c1105d6ada9b9d9120127a0577c" category="paragraph">ONTAP 9.6부터 ONTAP에는 스토리지 시스템의 배포 및 관리 자동화를 위한 기반을 제공하는 광범위한 REST API가 포함되어 있습니다. 그 이후로 REST API는 계속해서 확장 및 성숙되었습니다. 이제 ONTAP 구축 관리를 자동화할 때 선호하는 전략적 옵션을 제공합니다.</block>
   <block id="c84c0f9609be66cee0d77e9666118367" category="inline-link-macro">NetApp 관리 SDK</block>
   <block id="3df33987b53f76052b03396d19f4cb71" category="paragraph">요약에 설명된 나머지 리소스는 제품의 최신 버전을 기반으로 합니다. 이전 릴리스의 변경 사항에 대한 자세한 내용은 을 참조하십시오 <block ref="364c4ee8563aaa25f3410cba7aa49bfa" category="inline-link-macro-rx"></block> 뿐만 아니라<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
   <block id="4ade1e690485ace608877ec90f1e5fbc" category="paragraph-title">TLS를 통한 NFS</block>
   <block id="e2f136c9b4c07ac93b9d6011ce9b2135" category="paragraph">이 리소스를 사용하면 TLS를 통한 NFS를 사용할 때 인터페이스 구성을 검색하고 업데이트할 수 있습니다. 이 리소스 유형은 ONTAP 9.15에 도입되었습니다.</block>
   <block id="a3eed15ee8905e775b2759eb029fd3c6" category="summary">NetApp 관리 SDK는 ONTAP 스토리지를 모니터링하고 관리하는 애플리케이션을 개발하기 위한 일련의 ONTAPI API API 호출 세트를 제공합니다. SDK는 OnCommand Workflow Automation 패키지와 함께 ONTAP 시스템 관리를 자동화하기 위한 노력을 지원합니다.</block>
-  <block id="0dde9a527826bb160d7dff9bb24c9d4c" category="admonition">NetApp Manageability SDK 및 OnCommand Workflow Automation는 계속 지원되지만, ONTAP REST API는 ONTAP 시스템을 자동화할 때 사용하는 권장 전략적 기술입니다. 을 참조하십시오 <block ref="f6e68f981c2bd1c8f3fe4971bb77d456" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="d87719184e085166d3d845048810dd21" category="paragraph-title">SDK를 다운로드합니다</block>
   <block id="100168388acf5b00a071ca6e015323e0" category="paragraph">NetApp Support 사이트 에서 NetApp 관리 SDK를 다운로드할 수 있습니다. SDK는 클라이언트측에서 Python, PowerShell, C, C++, 자바, C#, VB. 네트, 루비. NetApp 관리 SDK에 대한 자세한 내용과 현재 사용 중인 ONTAP 버전에서 지원되는 방법은 상호 운용성 매트릭스 툴을 검토하십시오.</block>
   <block id="8a9c78330b74df288ffa23c3c916c9d4" category="paragraph-title">OnCommand Workflow Automation를 사용합니다</block>
@@ -1894,7 +1885,6 @@
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST API에 대한 법적 고지 사항</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPI-ONTAP REST API 매핑</block>
   <block id="484b32b038170aab3e10173e4c46ac03" category="doc">ONTAP REST API에 대한 마이그레이션 고려 사항</block>
-  <block id="f785a07ee9c2bffde63d337fdbfba172" category="doc">ONTAPI 비활성화 및 ONTAP REST API</block>
   <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">ONTAP REST API에 성능 카운터 사용</block>
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">ONTAP REST API를 지원하는 툴 및 소프트웨어</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API에 대한 참조입니다</block>
@@ -1964,7 +1954,6 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다. PIPI(Python Package Index) 사이트에서 _PIP_유틸리티를 사용하여 패키지를 설치할 수 있습니다.</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">9.6부터 시작되는 각 ONTAP 릴리스에는 관련 문서가 포함된 PyPI 패키지가 있습니다. 설치 요구 사항은 각 패키지에 포함되어 있으며 python, 요청, 요청-도구 벨트 및 marshmallow와 같은 지원 라이브러리 버전을 지정합니다.</block>
-  <block id="f2885cad6169924223c504ffd3639f43" category="paragraph">ONTAPI API API(Zephyr API 또는 ZAPI)는 데이터 스토리지 관리 및 관리 작업의 자동화를 지원하기 위해 NetApp ONTAP 소프트웨어에 포함된 독창적인 호출 세트입니다. API는 의 <block ref="4465a4dcb9477c65b8928fca416c5a7a" category="inline-link-macro-rx"></block>일부입니다. 향후 버전의 ONTAP에서는 ONTAPI 인터페이스가 비활성화될 것으로 예상됩니다. ONTAPI API API를 사용하는 기존 코드가 있는 경우 ONTAPI에서 마이그레이션할 계획을 세워야 합니다. NetApp는 최신 ONTAP REST API를 사용하도록 코드를 변환할 수 있도록 지원합니다. 자세한 내용은 을 <block ref="3d7fa22cc3253a8ea2b8dc3e58c1e284" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit에는 2,400개 이상의 cmdlet이 포함된 모듈로 로컬 PowerShell 환경을 개선합니다. 이를 통해 Windows 호스트용 코드를 빠르게 개발하여 ONTAP 배포를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="7428add5c3a2dd7025d4c547d124a83f" category="paragraph">각 릴리스의 여러 지점에서 지원이 철회되었습니다. 여기에는 ONTAP 9.10.1 P11 이상, 9.11.1 P7 이상 및 9.12.1 GA 이상이 포함됩니다. 자세한 내용은 를<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 참조하십시오.</block>
@@ -1992,4 +1981,9 @@
   <block id="c5967fcc5e5da6af86d8bc90aef6f9e3" category="list-text">ONTAP REST API를 사용하여 BlueXP 클라우드 서비스에 ping을 보낼 수 있습니다. 또한 기존 엔드포인트에 PATCH 메서드를 사용하여 특정 중재자의 구성을 수정할 수도 있습니다.</block>
   <block id="7534862fabc5c0180ec3f7a8a2dbc22f" category="list-text">NVMe 하위 시스템은 NVMe에 연결된 호스트 집합의 구성 상태 및 네임스페이스 액세스 제어를 유지합니다. ONTAP 9.17.1에서는 기존 엔드포인트에 PATCH 메서드를 사용하여 NVMe 하위 시스템을 수정할 수 있습니다.</block>
   <block id="fda0d96218952424d26fce1f1247ec68" category="list-text">ONTAP 9.17.1의 새로운 기능인 애플리케이션 컨테이너를 사용하면 하나 이상의 스토리지 객체를 프로비저닝할 수 있습니다. 클라이언트의 스토리지 액세스에 필요한 정책과 규칙을 구성할 수 있습니다. FlexCache 볼륨도 프로비저닝할 수 있습니다.</block>
+  <block id="697a9cf1a7fb8de1bc8fa46284d6e0b1" category="paragraph">ONTAP 9.6부터 ONTAP 에는 스토리지 시스템의 배포 및 관리를 자동화하기 위한 기반을 제공하는 강력한 REST API가 포함되어 있습니다.  그 이후로 REST API는 계속 확장되고 발전해 왔습니다.  이제 ONTAP 배포 관리를 자동화할 때 선호되는 전략적 옵션을 제공합니다.</block>
+  <block id="1d53891da31d07b24ac138ba413ecc40" category="paragraph">ONTAPI API(Zephyr API 또는 ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 독점 호출 세트로, 데이터 스토리지 관리 및 관리 작업의 자동화를 지원합니다.  API는 다음의 일부입니다.<block ref="4465a4dcb9477c65b8928fca416c5a7a" category="inline-link-macro-rx"></block> .  ONTAPI API를 사용하는 기존 코드가 있는 경우 REST API에서 제공하는 확장된 기능 세트를 활용하기 위해 ONTAP REST API로 마이그레이션을 계획해야 합니다.  NetApp 최신 ONTAP REST API를 사용하도록 코드를 변환하는 기능을 지원합니다. 보다 <block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
+  <block id="e4b59daa9d219e983c04920265feb123" category="paragraph">여러 프레임워크 중 하나를 사용하여 자동화 코드를 만들고 배포할 수 있습니다.</block>
+  <block id="f78eadeb4930b974373908234c567a7e" category="paragraph">ONTAPI API(ZAPI)는 NetApp ONTAP 소프트웨어에 포함된 원래의 독점 호출 세트입니다.  API는 네트워크 관리 SDK를 통해 제공되며 데이터 저장 관리 및 관리 작업의 자동화를 지원합니다.  ONTAPI를 사용하는 경우 REST API에서 제공하는 확장된 ONTAP 기능 세트를 활용하려면 ONTAP REST API로의 마이그레이션을 계획해야 합니다.</block>
+  <block id="7548b7673e2b60de6d879d6ea446f09b" category="admonition">NetApp Manageability SDK와 OnCommand Workflow Automation 이 계속 지원되는 반면, ONTAP 시스템을 자동화할 때 선호되고 전략적인 기술은 ONTAP REST API입니다. 보다 <block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
 </blocks>

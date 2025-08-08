@@ -17,7 +17,7 @@ summary: NetApp 관리 SDK는 ONTAP 스토리지를 모니터링하고 관리하
 NetApp 관리 SDK는 ONTAP 스토리지를 모니터링하고 관리하는 애플리케이션을 개발하기 위한 일련의 ONTAPI API API 호출 세트를 제공합니다. SDK는 OnCommand Workflow Automation 패키지와 함께 ONTAP 시스템 관리를 자동화하기 위한 노력을 지원합니다.
 
 
-NOTE: NetApp Manageability SDK 및 OnCommand Workflow Automation는 계속 지원되지만, ONTAP REST API는 ONTAP 시스템을 자동화할 때 사용하는 권장 전략적 기술입니다. 을 참조하십시오 link:../migrate/ontapi_disablement.html["ONTAPI 비활성화"] 를 참조하십시오.
+NOTE: NetApp Manageability SDK와 OnCommand Workflow Automation 이 계속 지원되는 반면, ONTAP 시스템을 자동화할 때 선호되고 전략적인 기술은 ONTAP REST API입니다. 보다 link:../migrate/migration-considerations.html["ONTAPI에서 REST API로 마이그레이션합니다"] 자세한 내용은.
 
 .SDK를 다운로드합니다
 NetApp Support 사이트 에서 NetApp 관리 SDK를 다운로드할 수 있습니다. SDK는 클라이언트측에서 Python, PowerShell, C, C++, 자바, C#, VB. 네트, 루비. NetApp 관리 SDK에 대한 자세한 내용과 현재 사용 중인 ONTAP 버전에서 지원되는 방법은 상호 운용성 매트릭스 툴을 검토하십시오.
