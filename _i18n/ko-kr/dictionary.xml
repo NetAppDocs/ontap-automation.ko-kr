@@ -1800,7 +1800,6 @@
   <block id="51a272535291837663b9d29ca43d1aec" category="inline-link">9.16.9.1용 NetApp PCL 문서</block>
   <block id="7bb622625faf5a5e7c3f1cbdc8630d38" category="list-text"><block ref="7bb622625faf5a5e7c3f1cbdc8630d38" category="inline-link-rx"></block></block>
   <block id="8162203e3ec38c896e5f6d688115d731" category="inline-link">ONTAP REST API 참조</block>
-  <block id="7fa54c481eb8ad78d44f6e504e7b4169" category="paragraph">온라인에서 최신 설명서에 액세스할 수<block ref="ef2ba38b04f0d7157a7cd156ad8c1827" category="inline-link-rx"></block> 있습니다. 또한 ONTAP 릴리스에 따라 이전 버전의 문서에 액세스할 수 있는 버전 선택기를 사용할 수 있습니다.</block>
   <block id="129b5712fd60415907d5e6cd819422a0" category="paragraph-title">버킷 스냅샷</block>
   <block id="b7dea6f3fb95fba3243ff8dffff88d5f" category="paragraph">S3 버킷의 스냅샷을 생성하고 관리할 수 있습니다. 이 기능은 ONTAP 9.16.1에 추가되었습니다.</block>
   <block id="335fbde7fdce25596a01b2a19aa07279" category="paragraph">ONTAP는 랜섬웨어 위협이 있을 가능성이 있는 파일을 감지합니다. 여러 종류의 끝점이 있습니다. 이러한 의심되는 파일의 목록을 검색할 수 있을 뿐 아니라 볼륨에서 제거할 수도 있습니다. 이 리소스 유형은 ONTAP 9.10.1에서 도입되었습니다. ONTAP 9.16에서 버전 표시 및 안티 랜섬웨어 패키지 업데이트를 지원했습니다.</block>
@@ -1986,4 +1985,5 @@
   <block id="e0174d9f7e751b49d54489f48cf32123" category="paragraph">NetApp<block ref="4a12798fe83cd7214eaeb76b3be372fa" category="inline-link-rx"></block> 콘솔 웹 사용자 인터페이스를 통해 사용할 수 있습니다.  이 카탈로그는 ONTAP 다른 제품과 함께 배포하고 통합하는 과정을 자동화하는 데 도움이 되는 패키지 솔루션에 대한 액세스를 제공합니다.  보다<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 문서 및 자세한 내용은 여기를 참조하세요.</block>
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetApp 콘솔 클라우드 서비스에 ping을 보낼 수 있습니다. 이 리소스 유형은 ONTAP 9.17.1에 새로 추가되었습니다.</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API를 사용하여 NetApp Console 클라우드 서비스에 ping을 보낼 수 있습니다. 또한 기존 엔드포인트에 PATCH 메서드를 사용하여 특정 중재자의 구성을 수정할 수도 있습니다.</block>
+  <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">현재에 접근할 수 있습니다<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> 온라인 문서. ONTAP 릴리스 기반 문서의 이전 버전에 액세스할 수 있는 버전 선택기도 있습니다.</block>
 </blocks>
