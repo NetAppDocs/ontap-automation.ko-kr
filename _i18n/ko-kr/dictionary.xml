@@ -1986,4 +1986,14 @@
   <block id="e1cd9757f6c7ba13839e049e31754104" category="paragraph">NetApp 콘솔 클라우드 서비스에 ping을 보낼 수 있습니다. 이 리소스 유형은 ONTAP 9.17.1에 새로 추가되었습니다.</block>
   <block id="a224eaaf0639b3174470575f152d95fa" category="list-text">ONTAP REST API를 사용하여 NetApp Console 클라우드 서비스에 ping을 보낼 수 있습니다. 또한 기존 엔드포인트에 PATCH 메서드를 사용하여 특정 중재자의 구성을 수정할 수도 있습니다.</block>
   <block id="f04dab284dad2dc94bb0467cf87dbc58" category="paragraph">현재에 접근할 수 있습니다<block ref="a6269724e00b43d37f924c69c86e7e19" category="inline-link-rx"></block> 온라인 문서. ONTAP 릴리스 기반 문서의 이전 버전에 액세스할 수 있는 버전 선택기도 있습니다.</block>
+  <block id="e3aedd8df3cd69d8e94979676c8a6dd7" category="paragraph-title">클러스터 네트워크 보안</block>
+  <block id="2ba91439b1128ff520cbb5959f73aad8" category="paragraph">인증서를 포함한 클러스터 네트워크 보안 구성을 검색하고 업데이트할 수 있습니다. 이 리소스 유형은 ONTAP 9.18에서 도입되었습니다.</block>
+  <block id="9ca7e83422351da8c70ef542bef87792" category="paragraph-title">HA 네트워크 보안</block>
+  <block id="d5c164ed97644c5e6b46241ecc36ec9c" category="paragraph">HA 네트워크 보안 구성을 검색하고 업데이트할 수 있습니다. 이 리소스 유형은 ONTAP 9.18에서 도입되었습니다.</block>
+  <block id="dcbd4560482ab6a221d6d830ae26a732" category="paragraph-title">FlexCache 연결 상태</block>
+  <block id="32c698ea847d2a277ff9d589cf3e9933" category="paragraph">FlexCache 연결 상태를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.18에서 도입되었습니다.</block>
+  <block id="e48e73e576f724fd4213ab1eca7edb4a" category="section-title">ONTAP 9.18.1</block>
+  <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 릴리스에서는 11개의 새로운 API 호출을 통해 ONTAP REST API의 기능이 계속 확장되었습니다. 향상된 기능은 주로 보안에 중점을 두었지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
+  <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API에는 두 가지 주요 보안 개선 사항이 도입되었습니다. 새로운 클러스터 네트워크 API 엔드포인트를 사용하여 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 클러스터 네트워크를 통한 인증서 관리에 대한 강력한 지원이 포함되어 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 표시하고 업데이트할 수 있습니다.</block>
+  <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache 는 원본 볼륨의 영구 캐시입니다. 팬아웃을 지원하므로 단일 원본 볼륨에서 두 개 이상의 FlexCache 생성할 수 있습니다. REST API에는 캐시 인스턴스와 원본 볼륨 간의 연결 상태를 검색하는 기능이 포함되어 있습니다.</block>
 </blocks>
