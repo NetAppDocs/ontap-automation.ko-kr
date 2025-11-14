@@ -194,7 +194,6 @@
   <block id="ee083ff11ffc430b7230624e8985e88c" category="inline-link-macro">API 요청을 제어하는 입력 변수입니다</block>
   <block id="0f659373042725afb9f92bda18229d9e" category="section-title">REST API를 통해 표시되는 데이터 SVM</block>
   <block id="f01d65d87efa9315f7d78fee0755d570" category="paragraph">ONTAP은 다양한 유형의 SVM(스토리지 가상 머신)을 지원합니다. 하지만 ONTAP REST API를 통해 데이터 SVM만 직접 표시됩니다. REST API를 통해 클러스터와 노드를 설명하는 구성 정보를 사용할 수 있지만 클러스터와 노드는 별도의 SVM으로 취급되지 않습니다.</block>
-  <block id="3232acac3eec8e3d87880c5b41ab690d" category="paragraph">ONTAP 자동화를 위해 Ansible을 처음 사용하는 경우, 시작하는 것이 좋습니다.</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">다음 항목이 있어야 합니다.</block>
   <block id="f9f1769b9ec1d047022000f65ca5c05a" category="list-text">ONTAP 클러스터 관리 LIF의 IP 주소 또는 호스트 이름입니다</block>
   <block id="4c00680cb601dcd1be164318ed4c2a88" category="list-text">ONTAP REST API 액세스 권한이 있는 계정의 사용자 이름 및 암호</block>
@@ -1115,7 +1114,6 @@
   <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3 그룹</block>
   <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3 정책</block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다</block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="paragraph-title">NetApp 및 Ansible 시작하기: Ansible을 설치하십시오</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP 요청</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP 응답입니다</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
@@ -1526,7 +1524,6 @@
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">ONTAPI 자동화를 업데이트할 수 있도록 NetApp에서는 하나 이상의 입력 매개 변수가 필요한 ONTAPI 호출 목록과 해당 호출을 동등한 ONTAP 9 REST API 호출에 대한 매핑을 제공합니다. 을 참조하십시오 <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="a45cab230f2297dd4eb30fef224dd154" category="section-title">일반적인 REST API 트랜잭션입니다</block>
   <block id="f53d66bdb1fa04bbb3f2f929505e7427" category="paragraph">ONTAP 스토리지 시스템의 구축과 관리를 자동화하는 데 도움이 되는 몇 가지 추가 리소스가 있습니다.</block>
-  <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
   <block id="0937dacc143a9ef9a8e961bb05d706cb" category="list-text">NetApp Python 클라이언트 라이브러리에 대한 소개 및 라이브러리를 사용하여 코드 작성을 시작하는 방법</block>
   <block id="c481c55f899fe826c43a53c975e485f0" category="list-text">Ansible 인증 모듈을 살펴보십시오.</block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">CPC용 ZAPI에서 ONTAP REST API 변환에 대한 FAQ</block>
@@ -1996,4 +1993,8 @@
   <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 릴리스에서는 11개의 새로운 API 호출을 통해 ONTAP REST API의 기능이 계속 확장되었습니다. 향상된 기능은 주로 보안에 중점을 두었지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
   <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API에는 두 가지 주요 보안 개선 사항이 도입되었습니다. 새로운 클러스터 네트워크 API 엔드포인트를 사용하여 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 클러스터 네트워크를 통한 인증서 관리에 대한 강력한 지원이 포함되어 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 표시하고 업데이트할 수 있습니다.</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache 는 원본 볼륨의 영구 캐시입니다. 팬아웃을 지원하므로 단일 원본 볼륨에서 두 개 이상의 FlexCache 생성할 수 있습니다. REST API에는 캐시 인스턴스와 원본 볼륨 간의 연결 상태를 검색하는 기능이 포함되어 있습니다.</block>
+  <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
+  <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
+  <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">9.17.1에 대한 NetApp PCL 설명서</block>
+  <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
 </blocks>
