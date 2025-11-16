@@ -516,11 +516,9 @@
   <block id="69e5d40b354916efb315e4d7da2c3224" category="paragraph">SVM 콘텐츠 내에서 특정 NDMP 사용자의 암호를 생성하고 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.8 REST API에 도입되었으며 ONTAP 9.9로 향상되었습니다.</block>
   <block id="3c09024082538b393ae85161883b78ab" category="paragraph">여러 가지 방법으로 ONTAP REST API에 액세스할 수 있습니다.</block>
   <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">네트워크 고려 사항</block>
-  <block id="480df78a66061b5c3b61f69d89342d23" category="paragraph">다음 인터페이스를 통해 REST API에 연결할 수 있습니다.</block>
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">클러스터 관리 LIF</block>
   <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">노드 관리 LIF</block>
   <block id="a954bd55e944d7b65a02512356ab0177" category="list-text">SVM 관리 LIF</block>
-  <block id="3869128f90019baba527314ae533f075" category="paragraph">사용할 LIF는 HTTPS 관리 프로토콜을 지원하도록 구성해야 합니다. 또한 네트워크의 방화벽 구성에서 HTTPS 트래픽을 허용해야 합니다.</block>
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">ONTAP API 온라인 설명서 페이지</block>
   <block id="af945751c0efb1d33830b48e2e17c2e6" category="paragraph">최신 버전의 API에 대한 설명서 페이지에 액세스하는 데 사용되는 URL 형식은 다음과 같습니다.</block>
   <block id="26af4f060203125bc0739a38e9ddfa2b" category="section-title">사용자 정의 소프트웨어 및 도구</block>
@@ -1244,7 +1242,6 @@
   <block id="423daa27c59571ee80d9d7ca9cf5088e" category="list-text">기존 S3 버킷 끝점이 규칙 정의를 포함하도록 확장되었습니다. 각 규칙은 목록 오브젝트이며 버킷 내의 오브젝트에 대해 수행할 동작 집합을 정의합니다. 전체적으로 이러한 규칙을 통해 S3 버킷의 라이프사이클을 보다 효율적으로 관리할 수 있습니다.</block>
   <block id="f9f9079f4f63047ab8997287078e8b41" category="admonition">각 유형의 역할을 사용할 때 장단점이 있습니다. 을 참조하십시오 <block ref="35c80ca1076cc300bab74e8699286675" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="678330802b81d1f1d610daadb5e6f060" category="sidebar">블로그 기사를 참조하십시오</block>
-  <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">클러스터 관리 LIF는 항상 사용해야 합니다. 이렇게 하면 모든 노드에서 API 요청의 로드 밸런싱을 수행하고 오프라인이거나 연결 문제가 발생하는 노드를 피할 수 있습니다. 여러 클러스터 관리 LIF가 구성된 경우 REST API에 액세스하는 것과 동일한 것입니다.</block>
   <block id="9d755089336a033163e3d2d980b0a0c6" category="cell">=</block>
   <block id="e62ced77ec600a0a48c6c84c38cf0e4e" category="paragraph"><block ref="b53150fedbbf0bd1cbc9f3f68a84f43c" prefix="" category="inline-code"></block></block>
   <block id="cd36c9b3be9291a853cd6c8c14966c93" category="inline-link">NetApp 자동화</block>
@@ -1997,4 +1994,6 @@
   <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
   <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">9.17.1에 대한 NetApp PCL 설명서</block>
   <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
+  <block id="7457b2724d298830c8cd4519df6c4264" category="paragraph">여러 유형의 인터페이스 중 하나를 사용하여 ONTAP REST API에 연결할 수 있습니다. 선택한 LIF는 HTTPS 관리 프로토콜을 지원하도록 구성해야 합니다. 또한 네트워크의 방화벽 구성은 HTTPS 트래픽을 허용해야 합니다. 다음 인터페이스가 지원됩니다.</block>
+  <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">이러한 LIF 중 하나를 사용할 수 있지만 가장 권장되는 모범 사례는 클러스터 관리 LIF를 사용하는 것입니다. 이를 통해 클러스터를 단일 논리 단위로 처리할 수 있으며 최고 수준의 복원력과 부하 분산이 제공됩니다. 클러스터 LIF는 계획된 업그레이드, 쿼럼 이벤트 및 기타 연결 문제를 처리하기 위해 필요에 따라 클러스터 내에서 재배치될 수 있습니다. 여러 개의 클러스터 관리 LIF를 구성한 경우 REST API에 대한 액세스와 관련하여 모두 동일합니다. SVM 관리 LIF도 부하 분산되지만 노드 수준에서 범위가 지정된 LIF로 전송된 요청은 로컬에서 처리됩니다.</block>
 </blocks>
