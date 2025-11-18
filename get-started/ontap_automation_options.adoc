@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console, hub 
 summary: ONTAP 스토리지 시스템의 구축과 관리를 자동화하는 몇 가지 옵션을 사용할 수 있습니다. 
 ---
 = ONTAP 자동화 옵션을 이해합니다
@@ -49,5 +49,5 @@ NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP �
 .Ansible
 Ansible은 프로비저닝, 구성 관리, 애플리케이션 배포를 지원하는 오픈 소스 소프트웨어 툴입니다. RedHat이 출시하고 이후 인수한 이후 계속 인기를 끌고 있습니다. NetApp은 고객이 ONTAP 스토리지 시스템 관리를 자동화하는 데 사용할 수 있는 Ansible 인증 모듈을 제공합니다. 을 참조하십시오 link:../additional/learn_more.html["자세한 정보"] 및 https://www.netapp.com/devops-solutions/ansible/["NetApp Ansible DevOps 솔루션"^] 자세한 내용은 를 참조하십시오.
 
-.NetApp 콘솔 자동화 카탈로그
-NetApp https://console.netapp.com/automationCatalog/["NetApp 콘솔 자동화 카탈로그"^] 콘솔 웹 사용자 인터페이스를 통해 사용할 수 있습니다.  이 카탈로그는 ONTAP 다른 제품과 함께 배포하고 통합하는 과정을 자동화하는 데 도움이 되는 패키지 솔루션에 대한 액세스를 제공합니다.  보다 https://docs.netapp.com/us-en/netapp-automation/["NetApp 자동화"^] 문서 및 자세한 내용은 여기를 참조하세요.
+.NetApp Console 자동화 허브
+그만큼 https://console.netapp.com/automationHub["NetApp Console 자동화 허브"^] 콘솔 웹 사용자 인터페이스를 통해 사용할 수 있습니다. 자동화 허브는 ONTAP 을 다른 제품과 함께 배포하고 통합하는 과정을 자동화하는 데 도움이 되는 패키지 솔루션에 대한 액세스를 제공합니다. 보다 https://docs.netapp.com/us-en/netapp-automation/["NetApp 자동화"^] 문서 및 자세한 내용은 여기를 참조하세요.
