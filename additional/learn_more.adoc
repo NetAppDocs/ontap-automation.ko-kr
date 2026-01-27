@@ -30,19 +30,9 @@ ONTAP 스토리지 시스템의 구축과 관리를 자동화하는 데 도움�
 +
 https://www.netapp.com/blog/new-normal-for-automation["새로운 업계 표준이 도입되었습니다"^]
 
-
-
-* ONTAP REST API를 사용하여 파일 보안 및 권한 관리를 탐색할 수 있습니다.
-+
-https://netapp.io/2021/06/28/simplified-management-of-file-security-permissions-with-ontap-rest-apis["ONTAP REST API를 통해 파일 보안 권한 관리 간소화"^]
-
 * ONTAP 이벤트를 모니터링하여 시스템 활동을 계속 파악할 수 있습니다. REST API를 사용하여 이러한 이벤트의 구성 및 관리를 자동화할 수 있습니다.
 +
 https://blog.netapp.com/ontap-rest-apis-automate-notification["ONTAP REST API: 심각도가 높은 이벤트 자동 알림"^]
-
-* REST API를 사용하여 RBAC 보안 환경의 일부로 역할 및 액세스 수준을 구성할 수 있습니다.
-+
-https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST API를 사용한 RBAC(역할 기반 액세스 제어"^]
 
 * 휴식(6회):
 +
@@ -60,20 +50,9 @@ https://netapp.io/2022/06/26/rbac-using-ontap-rest-apis["ONTAP REST API를 사�
 
 === Python 클라이언트 라이브러리
 
-* NetApp가 ONTAP REST API에 액세스하기 위해 GitHub에서 제공하는 Python 샘플 스크립트 사용에 대한 소개
-+
-https://netapp.io/2020/04/23/ontap-rest-apis["ONTAP REST API Python 샘플 스크립트를 이제 GitHub에서 사용할 수 있습니다!"^]
-
 * 이 블로그에서는 ONTAP 파이썬 클라이언트 라이브러리의 기능에 대해 소개합니다.
 +
 https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Python 클라이언트 라이브러리를 사용하여 ONTAP REST API 사용을 간소화합니다"^]
-
-* 다음은 Python 클라이언트 라이브러리 시작에 대한 3부작 블로그 시리즈입니다.
-+
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt1["1부"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt2["2부"^]
-** https://netapp.io/2020/06/09/ontap-rest-api-python-client-library-pt3["3부"^]
-
 
 
 
@@ -81,21 +60,9 @@ https://www.netapp.com/blog/simplify-ontap-rest-api-consumption["Python 클라�
 
 === REST API로 마이그레이션
 
-* NetApp은 매핑 문서를 통해 독점 ONTAPI API API에서 ONTAP REST API로 이동할 수 있도록 지원합니다.
-+
-https://netapp.io/2020/12/17/ontapi-to-rest-mapping/["ONTAPI - REST 매핑"^]
-
 * REST API를 기반으로 ONTAP 자동화 환경을 변환하는 데 사용할 수 있는 몇 가지 기술이 있습니다.
 +
 https://www.netapp.com/blog/transform-automation-ontap-rest-api/["ONTAP API에서 ONTAP REST API로 자동화 전환"^]
-
-* CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.
-+
-https://netapp.io/2020/11/09/private-cli-passthrough-ontap-rest-api/["전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다"^]
-
-* NetApp은 고객과 파트너가 ONTAP REST API로 전환할 수 있도록 지원합니다.
-+
-https://netapp.io/2022/03/21/transitioning-from-ontapizapi-using-ontapi-usage-reporting-tool/["ONTAPI Usage Reporting Tool을 사용하여 ONTAPI(ZAPI)에서 전환"^]
 
 
 
