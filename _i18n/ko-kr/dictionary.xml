@@ -696,9 +696,7 @@
   <block id="b134a801a1a3888498968fc4ea760cf7" category="list-text">요청</block>
   <block id="3d2e7e9224f83f4694b1be45b9e158ba" category="list-text">승인 그룹</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">ONTAP REST API에는 대부분의 분야에서 ONTAPI와 동일한 기능이 포함되어 있습니다. NetApp은 ONTAPI 호출에서 동등한 REST API 호출로 매핑하는 방법을 설명하는 문서를 제공합니다.</block>
-  <block id="934e5799967276baeea05569ba62d8bf" category="paragraph">NetApp은 매핑 문서를 통해 독점 ONTAPI API API에서 ONTAP REST API로 이동할 수 있도록 지원합니다.</block>
   <block id="2ed29ad200a6fbf15d4f57d753e35d13" category="paragraph">REST API를 기반으로 ONTAP 자동화 환경을 변환하는 데 사용할 수 있는 몇 가지 기술이 있습니다.</block>
-  <block id="a744a6f8fd15a39f0d95ce77ce3db16c" category="paragraph">NetApp은 고객과 파트너가 ONTAP REST API로 전환할 수 있도록 지원합니다.</block>
   <block id="6e6432511bc053d1916f5f8f0915598d" category="sidebar">REST API로 마이그레이션합니다</block>
   <block id="9e7684bc06c1628bc838239d69633ef1" category="sidebar">REST 매핑에 대한 ONTAPI</block>
   <block id="8306b094d2e16f41079e29117db4bb23" category="cell">인스턴스 이름</block>
@@ -1129,10 +1127,8 @@
   <block id="0a783c3ce00e8d3af4931704ca629ba3" category="paragraph-title">기본 제공 역할 중 하나가 충분합니까, 아니면 사용자 지정 역할이 필요합니까?</block>
   <block id="531201515c1ec0bfadb1f37e57c2222d" category="paragraph-title">어떤 유형의 역할이 필요합니까?</block>
   <block id="11678e3d67c685db9322ab4433f227a6" category="paragraph-title">처리 유형</block>
-  <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI - REST 매핑</block>
   <block id="88e25761f6eadcead9ced5f76a00e95c" category="doc">첫 번째 API 호출입니다</block>
   <block id="8b650ff756e15491b90bea96a705b16b" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
-  <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">CLI 및 ONTAP 사용자가 ONTAP REST API로 전환할 수 있도록 ONTAP는 모든 CLI 명령에 액세스하는 데 사용할 수 있는 전용 REST API 엔드포인트를 제공합니다.</block>
   <block id="f820365d9bff90a726b9e0e66581d39d" category="paragraph">ONTAP 카운터 관리자는 각 ONTAP 시스템의 성능에 대한 광범위한 정보를 유지합니다. 이 데이터는 _performance 카운터_ 세트로 내보내기되므로 ONTAP 시스템의 성능을 평가하고 성능 목표를 달성하는 데 사용할 수 있습니다.</block>
   <block id="a47c181a1090073afb97b1f1a4307d7d" category="section-title">ONTAP 성능 카운터에 액세스합니다</block>
   <block id="cdbb9578a759a13c2c7134feb12a72ea" category="paragraph">ONTAP 명령줄 인터페이스를 통해뿐만 아니라 두 개의 서로 다른 API를 사용하여 ONTAP 성능 카운터에 액세스할 수 있습니다.</block>
@@ -1626,14 +1622,7 @@
   <block id="e874bfe48b1932682eea5f15cdac547d" category="list-text">현재 ONTAP 자동화 기술에 대한 요약</block>
   <block id="0dd46819f1e5a6578f91522b3ccce0d5" category="inline-link">새로운 업계 표준이 도입되었습니다</block>
   <block id="2459315257ccea8fa6d62e2fb4393e71" category="paragraph"><block ref="2459315257ccea8fa6d62e2fb4393e71" category="inline-link-rx"></block></block>
-  <block id="fa835357fbfbf43ac89809a345631107" category="list-text">ONTAP REST API를 사용하여 파일 보안 및 권한 관리를 탐색할 수 있습니다.</block>
-  <block id="91a2d97cb1dce93a24a0e1d4e0fccd05" category="paragraph"><block ref="91a2d97cb1dce93a24a0e1d4e0fccd05" category="inline-link-rx"></block></block>
   <block id="e79e715e42c36e10134f5afe5466361c" category="list-text">ONTAP 이벤트를 모니터링하여 시스템 활동을 계속 파악할 수 있습니다. REST API를 사용하여 이러한 이벤트의 구성 및 관리를 자동화할 수 있습니다.</block>
-  <block id="798ae5c6621da1def7dfe9ad86f985f2" category="list-text">REST API를 사용하여 RBAC 보안 환경의 일부로 역할 및 액세스 수준을 구성할 수 있습니다.</block>
-  <block id="0ca9887d7651aa13af35dedfbc7ff232" category="inline-link">ONTAP REST API를 사용한 RBAC(역할 기반 액세스 제어</block>
-  <block id="372901dd8cca763e7c848d950ad9aa2a" category="paragraph"><block ref="372901dd8cca763e7c848d950ad9aa2a" category="inline-link-rx"></block></block>
-  <block id="5feaaa740aecb867a44dd31f2ad57c95" category="inline-link">ONTAP REST API Python 샘플 스크립트를 이제 GitHub에서 사용할 수 있습니다!</block>
-  <block id="8672380e8a084cc66d295882a9470f26" category="paragraph"><block ref="8672380e8a084cc66d295882a9470f26" category="inline-link-rx"></block></block>
   <block id="ababb8b6a8734f386dea1560ea9db197" category="inline-link">ONTAP REST API 기초</block>
   <block id="1ba0e6e215c953e85183c8495eb322fb" category="list-text"><block ref="1ba0e6e215c953e85183c8495eb322fb" category="inline-link-rx"></block></block>
   <block id="4da480e8a798230788926916a5db51aa" category="inline-link">ONTAP REST API의 기능</block>
@@ -1649,14 +1638,6 @@
   <block id="b14f0823ef1919b70916eb917808d544" category="list-text">NetApp TechComm TV의 비디오 컬렉션입니다.</block>
   <block id="f25cc755b082b3ec873045ff971fda14" category="inline-link">NetApp ONTAP 관리를 자동화합니다</block>
   <block id="411d667e28e2d91b38e4ffea1e9a1620" category="paragraph"><block ref="411d667e28e2d91b38e4ffea1e9a1620" category="inline-link-rx"></block></block>
-  <block id="bfe5d32b02621a0adb06ef0719b339f9" category="section-title">기술 교육 및 이벤트</block>
-  <block id="0e58850b3d57f50238400b261118a678" category="list-text">Insight 2022 프레젠테이션(26분)</block>
-  <block id="b2b8de6a3c3bf80d8c2caabcb4925413" category="inline-link">ONTAP REST API로 ONTAP 스토리지 관리를 현대화하십시오</block>
-  <block id="e9930ef688b9c712d956fe54c341824d" category="list-text">INSIGHT 2021 프레젠테이션(31분)</block>
-  <block id="d179249207be943a8870bd6215e63e34" category="inline-link">NetApp ONTAP: REST API를 사용하여 시간을 절약하고 단순화합니다</block>
-  <block id="5da2d15e5ed96882dfddf6695345366f" category="list-text">NetApp 학습 서비스:</block>
-  <block id="ff0e39f8c14072a133c51dcb06ebf74c" category="inline-link">ONTAP REST API 및 Ansible을 사용하여 스토리지 관리 자동화</block>
-  <block id="31b6ea8a88845f72f0b8acf957d34bf2" category="paragraph"><block ref="31b6ea8a88845f72f0b8acf957d34bf2" category="inline-link-rx"></block></block>
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="section-title">NetApp 기술 자료</block>
   <block id="5df88274e14e903651820773d3e86455" category="list-text">ONTAP REST API에 문제가 발생한 경우 NetApp에 보고할 수 있습니다.</block>
   <block id="8c794f15d1374d6b379ce22239afcae7" category="inline-link">ONTAP REST API 및 ONTAP REST API Python 클라이언트 라이브러리의 문제를 보고하는 방법</block>
@@ -1758,8 +1739,6 @@
   <block id="7e20d550033609efe814483eaca98482" category="paragraph">CIFS 서버의 핵심 구성입니다. 이 리소스 유형은 ONTAP 9.6에 도입되었으며 ONTAP 9.7 및 9.15로 업데이트되었습니다.</block>
   <block id="df1b9eeca7fff049392b594c09b8d79c" category="list-text">Windows 백업 애플리케이션 및 Unix 스타일 symlink</block>
   <block id="a2edd73d4869c496dcb1c490b5fbe188" category="list-text">Windows 백업 응용 프로그램에서 Unix 스타일의 심볼 링크(symlink)를 발견하면 링크가 트래버링되고 ONTAP에서 데이터가 반환되어 백업됩니다. ONTAP 9.15.1부터 symlink가 가리키는 데이터 대신 해당 symlink를 백업할 수 있는 옵션도 있습니다. 이를 통해 백업 애플리케이션의 향상된 성능을 비롯한 여러 가지 이점을 얻을 수 있습니다. 개체에 새 매개 변수를 포함하도록 끝점이<block ref="232f6f2dc030d628eaaa90ce3e0c958c" prefix=" " category="inline-code"></block> 업데이트되었습니다<block ref="4d13b3f008fbbaa256c8235439cea789" prefix=" " category="inline-code"></block><block ref="93da65a9fd0004d9477aeac024e08e15" prefix=" " category="inline-code"></block> .</block>
-  <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
-  <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
   <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">ONTAP REST API의 새로운 기능</block>
   <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">ONTAP RBAC 기능은 계속 확장되고 ONTAP 9.11.1(및 후속 릴리스)로 크게 향상되었습니다. <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block>자세한 내용은 및 <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="fe6ccd0a0c871758ba9563377db86e13" category="doc">첫 번째 ONTAP REST API 호출</block>
@@ -1856,22 +1835,11 @@
   <block id="a02290eb5e813cedf47247b3adf306c8" category="paragraph">블로그 문서는 주제에 따라 여러 섹션으로 정렬됩니다.</block>
   <block id="0db377921f4ce762c62526131097968f" category="section-title">일반</block>
   <block id="a8f7f4170b418c4edcd8ff5a4c735cf9" category="list-text">휴식(6회):</block>
-  <block id="189695f6b233799c22edeae9ef743a5e" category="list-text">NetApp가 ONTAP REST API에 액세스하기 위해 GitHub에서 제공하는 Python 샘플 스크립트 사용에 대한 소개</block>
   <block id="f790901c0bd3db94c97c95372da93eba" category="inline-link">Python 클라이언트 라이브러리를 사용하여 ONTAP REST API 사용을 간소화합니다</block>
   <block id="c1daf9700f6d042dec0127ce0de95f43" category="paragraph"><block ref="c1daf9700f6d042dec0127ce0de95f43" category="inline-link-rx"></block></block>
-  <block id="c7e50ae6f1278232800cf396d2473ff5" category="list-text">다음은 Python 클라이언트 라이브러리 시작에 대한 3부작 블로그 시리즈입니다.</block>
-  <block id="f3353b172c62b25c5b5749c72b138281" category="inline-link">1부</block>
-  <block id="9a63c9de19a8eb52690f451f08d98966" category="list-text"><block ref="9a63c9de19a8eb52690f451f08d98966" category="inline-link-rx"></block></block>
-  <block id="6417c68d02736b9d6bbccd60d0e3bd39" category="inline-link">2부</block>
-  <block id="abbc3d8dfab1ac762a8c74871f8d356d" category="list-text"><block ref="abbc3d8dfab1ac762a8c74871f8d356d" category="inline-link-rx"></block></block>
-  <block id="09acdc2204c9ba42a05804a7a4ed4f76" category="inline-link">3부</block>
-  <block id="68abb8ef58d33d29d013d34fa31e3f9f" category="list-text"><block ref="68abb8ef58d33d29d013d34fa31e3f9f" category="inline-link-rx"></block></block>
   <block id="be7a051497b75c91b2ec91ffdbdb5cc3" category="section-title">REST API로 마이그레이션</block>
-  <block id="a67b7864a36cd08cc608eba2720d18f7" category="paragraph"><block ref="a67b7864a36cd08cc608eba2720d18f7" category="inline-link-rx"></block></block>
   <block id="e0e8eb9fa6a9c4b6836a42b5f9badc22" category="inline-link">ONTAP API에서 ONTAP REST API로 자동화 전환</block>
   <block id="a8229f2e627898671ea5ee497a4c5489" category="paragraph"><block ref="a8229f2e627898671ea5ee497a4c5489" category="inline-link-rx"></block></block>
-  <block id="15cf2f6738a770890a0ba990f1543d8d" category="inline-link">ONTAPI Usage Reporting Tool을 사용하여 ONTAPI(ZAPI)에서 전환</block>
-  <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">모든 Python 코드 샘플은 GitHub 리포지토리에서 사용할 수<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> 있습니다. 에서 사용할 수 있는 리소스도 검토해야 <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST API에 대한 법적 고지 사항</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPI-ONTAP REST API 매핑</block>
@@ -1985,8 +1953,6 @@
   <block id="dcbd4560482ab6a221d6d830ae26a732" category="paragraph-title">FlexCache 연결 상태</block>
   <block id="32c698ea847d2a277ff9d589cf3e9933" category="paragraph">FlexCache 연결 상태를 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.18에서 도입되었습니다.</block>
   <block id="e48e73e576f724fd4213ab1eca7edb4a" category="section-title">ONTAP 9.18.1</block>
-  <block id="98480199e938c1b0182ce374c8874655" category="paragraph">ONTAP 9.18.1 릴리스에서는 11개의 새로운 API 호출을 통해 ONTAP REST API의 기능이 계속 확장되었습니다. 향상된 기능은 주로 보안에 중점을 두었지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
-  <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">ONTAP 9.18.1 REST API에는 두 가지 주요 보안 개선 사항이 도입되었습니다. 새로운 클러스터 네트워크 API 엔드포인트를 사용하여 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 클러스터 네트워크를 통한 인증서 관리에 대한 강력한 지원이 포함되어 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 표시하고 업데이트할 수 있습니다.</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">NetApp FlexCache 는 원본 볼륨의 영구 캐시입니다. 팬아웃을 지원하므로 단일 원본 볼륨에서 두 개 이상의 FlexCache 생성할 수 있습니다. REST API에는 캐시 인스턴스와 원본 볼륨 간의 연결 상태를 검색하는 기능이 포함되어 있습니다.</block>
   <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
   <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
@@ -1996,4 +1962,12 @@
   <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">이러한 LIF 중 하나를 사용할 수 있지만 가장 권장되는 모범 사례는 클러스터 관리 LIF를 사용하는 것입니다. 이를 통해 클러스터를 단일 논리 단위로 처리할 수 있으며 최고 수준의 복원력과 부하 분산이 제공됩니다. 클러스터 LIF는 계획된 업그레이드, 쿼럼 이벤트 및 기타 연결 문제를 처리하기 위해 필요에 따라 클러스터 내에서 재배치될 수 있습니다. 여러 개의 클러스터 관리 LIF를 구성한 경우 REST API에 대한 액세스와 관련하여 모두 동일합니다. SVM 관리 LIF도 부하 분산되지만 노드 수준에서 범위가 지정된 LIF로 전송된 요청은 로컬에서 처리됩니다.</block>
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">NetApp Console 자동화 허브</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">그만큼<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> 콘솔 웹 사용자 인터페이스를 통해 사용할 수 있습니다. 자동화 허브는 ONTAP 을 다른 제품과 함께 배포하고 통합하는 과정을 자동화하는 데 도움이 되는 패키지 솔루션에 대한 액세스를 제공합니다. 보다<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 문서 및 자세한 내용은 여기를 참조하세요.</block>
+  <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI: NetApp ONTAP 9.18.1</block>
+  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
+  <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL 9.18.1 버전용 설명서</block>
+  <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
+  <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">랜섬웨어 방지 활성화</block>
+  <block id="8decbf8aa6be13f4f523f23aac8e2e6a" category="paragraph">ARP(Autonomous Ransomware Protection) 활성화 기능의 작동을 제어할 수 있습니다. 여기에는 구성 설정 검색 및 수정이 포함됩니다. 이 리소스 유형은 ONTAP 9.18.1에서 도입되었습니다.</block>
+  <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1 릴리스에서는 13개의 새로운 API 호출을 추가하여 ONTAP REST API의 기능을 지속적으로 확장합니다. 이러한 개선 사항은 주로 보안에 중점을 두지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
+  <block id="2b6417c7e24c5efdcdbe136fac22e8b2" category="list-text">ONTAP 9.18.1 REST API에는 여러 가지 보안 강화 기능이 도입되었습니다. 새로운 클러스터 네트워크 엔드포인트를 사용하여 인증서 관리를 포함한 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 관리할 수 있습니다. Autonomous Ransomware Protection(ARP) 기능이 향상되어 활성화 기능을 표시하고 업데이트할 수 있습니다.</block>
 </blocks>
