@@ -1969,5 +1969,5 @@
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">랜섬웨어 방지 활성화</block>
   <block id="8decbf8aa6be13f4f523f23aac8e2e6a" category="paragraph">ARP(Autonomous Ransomware Protection) 활성화 기능의 작동을 제어할 수 있습니다. 여기에는 구성 설정 검색 및 수정이 포함됩니다. 이 리소스 유형은 ONTAP 9.18.1에서 도입되었습니다.</block>
   <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1 릴리스에서는 13개의 새로운 API 호출을 추가하여 ONTAP REST API의 기능을 지속적으로 확장합니다. 이러한 개선 사항은 주로 보안에 중점을 두지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
-  <block id="2b6417c7e24c5efdcdbe136fac22e8b2" category="list-text">ONTAP 9.18.1 REST API에는 여러 가지 보안 강화 기능이 도입되었습니다. 새로운 클러스터 네트워크 엔드포인트를 사용하여 인증서 관리를 포함한 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 관리할 수 있습니다. Autonomous Ransomware Protection(ARP) 기능이 향상되어 활성화 기능을 표시하고 업데이트할 수 있습니다.</block>
+  <block id="b21adb6984316fe52e38ac05c428930c" category="list-text">ONTAP 9.18.1 REST API에는 여러 가지 보안 강화 기능이 도입되었습니다. 새로운 클러스터 네트워크 엔드포인트를 사용하여 인증서 관리를 포함한 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 관리할 수 있습니다. 자율 랜섬웨어 방지(ARP) 기능이 향상되어 자동 활성화 구성의 표시 및 업데이트를 지원합니다.</block>
 </blocks>
