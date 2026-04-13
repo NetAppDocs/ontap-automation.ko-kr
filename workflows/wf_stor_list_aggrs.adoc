@@ -24,7 +24,7 @@ summary:
 | HTTP 메소드 | 경로 
 
 
-| 가져오기 | /api/스토리지/디스크 
+| 가져오기 | /api/storage/aggregates 
 |===
 .처리 유형
 동기식이다
