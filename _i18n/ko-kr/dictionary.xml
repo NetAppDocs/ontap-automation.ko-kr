@@ -370,7 +370,6 @@
   <block id="ff405aa42851c6e5daf11546e79e3980" category="paragraph">iSCSI 자격 증명 객체에는 이니시에이터와 ONTAP에서 사용하는 인증 자격 증명이 포함되어 있습니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="4ec7a22296b883954f318da87ad08cf3" category="paragraph">iSCSI 세션은 iSCSI 이니시에이터와 iSCSI 타겟을 연결하는 하나 이상의 TCP 연결입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="5863e0f99ad1402d808798b272c35423" category="paragraph">LUN 특성은 LUN과 함께 선택적으로 저장할 수 있는 호출자 정의 이름/값 쌍입니다. 특성은 적은 양의 애플리케이션별 메타데이터를 저장하는 데 사용할 수 있으며 ONTAP에서 해석되지 않습니다. 엔드포인트를 사용하면 LUN의 특성을 생성, 업데이트, 삭제 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
-  <block id="c1899d8ac0f131825213c510da4ad1d1" category="paragraph">LUN 매핑은 LUN과 이니시에이터 그룹 간의 연결입니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="602c3dee864ac1118043c79730115b22" category="paragraph">보고 노드는 매핑된 LUN에 대한 네트워크 경로가 ONTAP의 선택적 LUN 맵(SLM) 기능의 일부로 SAN 프로토콜을 사용하여 광고되는 클러스터 노드입니다. 새 엔드포인트를 사용하면 LUN 매핑의 보고 노드를 추가, 제거 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
   <block id="5d3a296c76ec21766a0b62dfec5b3611" category="paragraph">포트 세트는 _포트셋_스토리지 VM과 연결된 Fibre Channel 또는 iSCSI 네트워크 인터페이스의 모음입니다. 이 기능은 이전 릴리스의 ONTAP에 포함되어 있지만 이제 REST API에 지원이 추가되었습니다. 이 REST 리소스 유형은 ONTAP 9.9에 도입되었습니다.</block>
   <block id="1e8e78cbbbce338dff98fbe3933768e2" category="paragraph">VVol(VMware Virtual Volume) 바인딩은 클래스 "protocol_endpoint"의 LUN과 클래스 "vVol"의 LUN 간의 연관입니다. VVOL 바인딩 REST API를 사용하여 VVOL 바인딩을 생성, 삭제 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 도입되었습니다.</block>
@@ -1745,17 +1744,13 @@
   <block id="e02870eb3d03aec6ab03fa4fa4f87b65" category="doc">ONTAP REST API 연구소 리소스</block>
   <block id="940f4511f0af1bd466600a8213691360" category="inline-link">NetApp 를 참조하십시오. ONTAP PowerShell 툴킷</block>
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
-  <block id="0220d9b548f6fab03e4a4e2d9ca818fe" category="summary">NetApp은 각 주요 제품 릴리즈별로 ONTAP REST API를 계속해서 개선하고 업데이트합니다. 이러한 업데이트에는 사용된 매개 변수와 기본값 등 기존 API 호출에 대한 변경 사항이 포함될 수 있습니다. 이러한 변경은 REST API에 액세스하는 소프트웨어에 영향을 미칠 수 있습니다.</block>
   <block id="9edc7f95e01deb6ba7b3322cd44aded4" category="doc">ONTAP REST API 호출의 변경 사항</block>
   <block id="cdfb2103aa97d64dff8d54de4cce7a03" category="section-title">기존 ONTAP REST API 호출에 대한 변경 사항</block>
-  <block id="c54d88e796967d1b66714295a3511fe0" category="paragraph">기존 API 호출을 변경하면 REST API에 액세스하는 소프트웨어에 영향을 미칠 수 있습니다. 아래 표의 변경 목록을 검토하여 ONTAP 자동화 환경에 영향을 미치는지 확인해야 합니다. 각 항목에는 적용 가능한 API 끝점, 변경 설명 및 도입된 ONTAP 릴리스가 포함됩니다.</block>
   <block id="c46f7e527391f67f3805bf7d784fc003" category="cell">변경에 대한 설명</block>
   <block id="b15340b33a8b3cfed1967fb759a31d3a" category="cell"><block ref="653abe1298f355e168ee1393257c84cd" prefix="" category="inline-code"></block><block ref="8b19fc37f7c6865add16f7d29be42f8e" prefix=" " category="inline-code"></block></block>
   <block id="32ad5449f355fd85efafb34fde71a1a6" category="cell">응답의 *_links * 필드가 이러한 끝점의 이중 그룹에서 제거되었습니다. 권장되는 고객 조치 또는 해결 방법이 없습니다. 이 필드는 향후 ONTAP 릴리즈에서 다시 추가될 예정입니다.</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="8b5316cbd81290ae3e906370a7f93751" category="section-title">ONTAP REST API 참조 문서 오류</block>
-  <block id="06da39e83216b4cbe300f130aae4c4f2" category="paragraph">NetApp에서 ONTAP REST API를 개선 및 업데이트함에 따라 온라인 참조 문서에 오류가 발생할 수도 있습니다. 이러한 오류는 API를 사용할 때 혼동을 일으킬 수 있지만 일반적으로 ONTAP 자동화 소프트웨어 또는 환경에 영향을 미치거나 영향을 주지 않습니다.</block>
-  <block id="df8a5d4721acfa7407625ef7e4c36dc6" category="paragraph">아래 표에서 오류 목록을 검토해야 합니다. 그러면 ONTAP REST API 참조 문서를 더 잘 이해하고 탐색하는 데 도움이 됩니다. 각 항목에는 해당 API 끝점, 오류에 대한 설명 및 도입된 ONTAP 릴리스가 포함됩니다.</block>
   <block id="37b6d443585283b17a6c4bb5dcd6e38f" category="cell"><block ref="33829ee32ee08b76bc7ed5eeada2cd50" prefix="" category="inline-code"></block></block>
   <block id="79d1f0bd73ced50c557a63343981d432" category="cell">끝점에 대한 REST API 문서는 * specifier * 가 유효한 필드임을 나타냅니다. 그러나 이 끝점에서는 할당량 지정자가 지원되지 않습니다. 권장되는 고객 조치 또는 해결 방법이 없습니다. 이 필드는 향후 ONTAP 릴리스의 API 설명서에서 제거될 예정입니다.</block>
   <block id="4fa32eb56fb8ae063a3c75b36cb19a62" category="paragraph"><block ref="4fa32eb56fb8ae063a3c75b36cb19a62" category="inline-link-macro-rx"></block></block>
@@ -1784,7 +1779,6 @@
   <block id="9456c82d4c2ff3d63d795770ea0a6835" category="paragraph">그룹 및 역할 간의 매핑 관계를 만들고 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.16에 도입되었습니다.</block>
   <block id="b2d7d79fb0f7b257dcdb51106acc5598" category="paragraph">OAuth 2.0(Open Authorization)은 ONTAP 스토리지 리소스에 대한 액세스를 제한하는 데 사용할 수 있는 토큰 기반 프레임워크입니다. REST API를 통해 ONTAP에 액세스하는 클라이언트와 함께 사용할 수 있습니다. 이 리소스 유형은 ONTAP 9.14에 도입되었습니다. 표준 OAuth 2.0 클레임과 함께 Microsoft Entra ID 인증 서버(이전의 Azure AD)를 지원하여 ONTAP 9 .16으로 향상되었습니다. 또한 UUID 스타일 값에 기반한 Entra ID 표준 그룹 클레임은 새로운 그룹 및 역할 매핑 기능을 통해 지원됩니다. 새로운 외부 역할 매핑 기능도 도입되었습니다. 외부 역할 *, * 그룹 * 및 * 그룹 역할 매핑 * 도 참조하십시오.</block>
   <block id="6c2bedd693b0a3278c427d71a3daceef" category="paragraph-title">웹 인증</block>
-  <block id="bfbaef85d5b976da22129ab320702015" category="paragraph">웹 인증(WebAuthn)은 공개 키 암호화를 기반으로 사용자를 안전하게 인증하기 위한 웹 표준입니다. ONTAP를 통해 System Manager 및 ONTAP REST API를 통한 피싱 방지 MFA 관리를 지원합니다. 이 기능은 ONTAP 9.16에 추가되었습니다.</block>
   <block id="11d592db3e1d98d2daf37961c9dbf17c" category="paragraph">이러한 API 호출을 사용하여 논리적으로 분리된 파일 시스템의 한 유형인 관리 qtree를 호출할 수 있습니다. 이 리소스 유형은 ONTAP 9.6에 도입되었습니다. qtree의 확장 성능 모니터링 기능이 ONTAP 9.16.1에 추가되었습니다.</block>
   <block id="c344b894d7706b83c51639c719e2e442" category="summary">각 ONTAP 릴리즈에서는 새로운 기능, 개선 사항 및 버그 수정을 위해 ONTAP REST API를 업데이트합니다.</block>
   <block id="75a05751d550bce275fb1c4f49e75a9f" category="admonition">알려진 제한 사항이나 문제를 포함한 추가 정보는 를 검토해야<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> 합니다. 자동화 소프트웨어에 영향을 줄 수 있는 변경 사항은 를 <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block> 참조하십시오.</block>
@@ -1971,4 +1965,26 @@
   <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">ONTAP 9.18.1 릴리스에서는 13개의 새로운 API 호출을 추가하여 ONTAP REST API의 기능을 지속적으로 확장합니다. 이러한 개선 사항은 주로 보안에 중점을 두지만 스토리지 관리와 관련된 개선 사항도 포함되어 있습니다.</block>
   <block id="b21adb6984316fe52e38ac05c428930c" category="list-text">ONTAP 9.18.1 REST API에는 여러 가지 보안 강화 기능이 도입되었습니다. 새로운 클러스터 네트워크 엔드포인트를 사용하여 인증서 관리를 포함한 클러스터 네트워크 보안 구성을 표시하고 업데이트할 수 있습니다. 또한 NVLog 트래픽에 대한 HA 네트워크의 보안 구성을 관리할 수 있습니다. 자율 랜섬웨어 방지(ARP) 기능이 향상되어 자동 활성화 구성의 표시 및 업데이트를 지원합니다.</block>
   <block id="9c00c4c82590637bd6e1c6cc201ec33f" category="cell">/api/storage/aggregates</block>
+  <block id="9ce1ca34a32be8906a075d996d66e8cd" category="summary">NetApp은 각 주요 제품 릴리스마다 ONTAP REST API를 지속적으로 개선하고 업데이트합니다. 이러한 업데이트에는 기존 API 호출이 변경되어 ONTAP 기능에 대한 액세스가 중단될 수 있습니다. 또한 API 사용 시 고려해야 할 추가 사항과 일부 문서 오류가 있습니다.</block>
+  <block id="eadbb24dc77b921050380c054bf22efd" category="paragraph">기존 ONTAP REST API 호출(엔드포인트 및 매개변수 등)의 변경 사항은 해당 API를 사용하는 소프트웨어에 영향을 미칠 수 있습니다. 대부분의 경우, 환경에 따라 이러한 변경 사항은 _호환성을 깨뜨리는 변경 사항_으로 간주됩니다. 아래 표의 목록을 검토하여 자동화 환경에 영향이 있는지 확인하십시오. 각 항목에는 해당 API 엔드포인트 또는 영역, 변경 사항에 대한 설명, 그리고 변경 사항이 도입된 ONTAP 릴리스가 포함되어 있습니다.</block>
+  <block id="57441870942a5b83f6cc992928731e73" category="cell">API 엔드포인트 또는 영역</block>
+  <block id="ee1ccb3b4f7ef6fe740b460659eaaa38" category="cell">동작 설명</block>
+  <block id="4afc449216cf41ab44e3307e3f4e9be6" category="cell">Azure Key Vault(AKV)를 활성화 및 비활성화하는 데 사용되는 REST API 엔드포인트가 이제 동기식 대신 비동기식으로 실행됩니다. 이는 AKV 활성화를 위한 POST 작업과 비활성화를 위한 DELETE 작업에 영향을 미칩니다. 이러한 API 호출을 사용하는 클라이언트는 HTTP 상태 코드만 확인하는 대신 작업 상태를 확인하는 방식으로 비동기 응답을 처리하도록 코드를 업데이트해야 합니다. 이 변경 사항은 주로 ONTAP REST API를 통해 Azure Key Vault 구성을 관리하는 Azure NetApp Files(ANF) 환경에 영향을 미칩니다.</block>
+  <block id="aaf58e5a5445d876b8f7b0fe22b5afbf" category="cell">9.19.1</block>
+  <block id="85287325f6954a7b7335b21c3ee03778" category="section-title">추가 REST API 사용 고려 사항</block>
+  <block id="85153dda37bcb3ebf4fd5092ca8cb077" category="paragraph">ONTAP REST API를 사용할 때는 기존 기능을 저해하거나 호환성을 깨뜨리는 변경 사항 외에도 여러 가지 추가 고려 사항이 있습니다. 새로운 API 호출이나 대체 API 호출 도입, ONTAP 내부 처리 방식 변경 등 다양한 유형의 문제가 발생할 수 있습니다. 각 항목에는 해당 API 엔드포인트 또는 영역, 동작 설명, 그리고 해당 기능이 도입된 ONTAP 릴리스 버전이 포함되어 있습니다.</block>
+  <block id="3f4b23ff05ffa4100bd684dc46a7ffee" category="cell"><block ref="b5610b53ff763cfa1cd19607dc37b9e2" prefix="" category="inline-code"></block></block>
+  <block id="24f1fcb467834643525982ccb137d5b6" category="cell">컨테이너 생성에 사용되는 엔드포인트가 개선되어 이전에는<block ref="e4bda0100c995f1a022b02958516473a" prefix=" " category="inline-code"></block>를 통해서만 사용할 수 있었던 여러 볼륨 구성 매개변수를 지원합니다. 이를 통해 특히 Kubernetes 스토리지 오케스트레이션을 위해 NetApp Trident를 사용하는 고객은 영구 볼륨 프로비저닝 시 ONTAP의 균형 배치 기능을 활용할 수 있습니다. 볼륨은 최적의 성능과 용량 활용을 위해 클러스터 노드 전체에 자동으로 분산됩니다. 볼륨 배치, QoS 정책 또는 용량 관리에 대한 세밀한 제어가 필요한 컨테이너화된 애플리케이션을 배포할 때 업데이트된 엔드포인트를 사용해야 합니다. 이는 스토리지 리소스 전반에 걸친 자동 로드 밸런싱이 중요한 대규모 Kubernetes 환경에서 특히 유용합니다.</block>
+  <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
+  <block id="131e71b08dd73776358a31f5b869388f" category="cell">대규모 ONTAP 클러스터(노드 32개 이상)에서 REST API를 통해 라이선스 정보를 조회할 때 응답 속도가 느려질 수 있습니다. 이 문제는 System Manager 라이선스 탭과 모든 라이선스를 동시에 조회하는 자동화된 워크플로에 영향을 미칩니다. 영향을 줄이려면 쿼리 매개변수를 사용하여 특정 기능에 대한 라이선스를 하나씩 가져오거나 CLI 명령<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>을 사용하는 것이 좋습니다. 모든 라이선스를 단일 API 호출로 조회하는 대신 이 방법을 사용하십시오.</block>
+  <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">NetApp이 ONTAP REST API를 개선하고 업데이트하는 과정에서 온라인 참조 문서에 오류가 발생할 수 있습니다. 이러한 오류는 API 사용 시 혼란을 야기할 수 있지만, 일반적으로 ONTAP 자동화 소프트웨어 또는 환경에 영향을 미치거나 중단시키지는 않습니다. 아래 표에 있는 오류 목록을 검토해 보시기 바랍니다. 이를 통해 ONTAP REST API 참조 문서를 더 잘 이해하고 활용할 수 있습니다. 각 항목에는 해당 API 엔드포인트 또는 영역, 오류 설명, 그리고 오류가 발생한 ONTAP 릴리스 버전이 포함되어 있습니다.</block>
+  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">LUN 맵은 LUN과 이니시에이터 그룹 간의 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었고 ONTAP 9.19.1에서 업데이트되었습니다.</block>
+  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">웹 인증(WebAuthn)은 공개 키 암호화를 기반으로 사용자를 안전하게 인증하는 웹 표준입니다. ONTAP를 사용하면 System Manager와 ONTAP REST API를 통해 피싱 방지 MFA 관리를 지원합니다. 이 기능은 ONTAP 9.16에 추가되었고 ONTAP 9.19.1에서 업데이트되었습니다.</block>
+  <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Whoami</block>
+  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">인증된 사용자의 사용자 이름, 역할 및 권한을 포함한 세부 정보를 표시하는 엔드포인트가 제공됩니다. 이 리소스 유형은 ONTAP 9.19.1에서 도입되었습니다.</block>
+  <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
+  <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1 릴리스에는 ONTAP REST API를 지속적으로 개선하고 다듬는 여러 업데이트가 포함되어 있습니다.</block>
+  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">로그인한 사용자의 사용자 이름, 역할 및 권한 정보를 조회하는 새로운<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> 기능이 추가되었습니다. 웹 인증(WebAuthn) 기능 또한 향상되었습니다.</block>
+  <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 맵 관리가 향상된 업데이트 기능으로 업데이트되었습니다.</block>
+  <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 변경 사항 및 고려 사항</block>
 </blocks>
