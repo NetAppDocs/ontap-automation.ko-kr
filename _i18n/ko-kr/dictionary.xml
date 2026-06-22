@@ -651,8 +651,6 @@
   <block id="9a85c4ed4aea58b5cf2264e55823074c" category="list-text">'vserver security file-directory NTFS DACL remove'</block>
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text">'vserver security file-directory NTFS SACL remove'</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">관련 정보</block>
-  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">ONTAP REST API를 통해 파일 보안 권한 관리 간소화</block>
-  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
   <block id="8b64f73d0c930b953467d71771168fcb" category="cell">이벤트 구성 쇼</block>
   <block id="2130e4445c18121e61a0496381717d89" category="list-text">이벤트 알림 메시지 목적지 작성</block>
   <block id="b0f540062794ffac7297b2f00a005457" category="list-text">이벤트 알림 작성</block>
@@ -1108,7 +1106,6 @@
   <block id="bd96d411ebb8705b0ef857c4d7b8c9c9" category="paragraph-title">서비스 버킷</block>
   <block id="8acc0dc5cdc4a547b0826578b2a98b48" category="paragraph-title">S3 그룹</block>
   <block id="29c67008363344d9ca92cd75f29fe2c9" category="paragraph-title">S3 정책</block>
-  <block id="bc00f7a5406f8f98848784d25ca2e573" category="paragraph-title">전용 CLI를 사용하면 ONTAP REST API를 통해 패스스루를 수행할 수 있습니다</block>
   <block id="34aebac80a78170f96dfd325c4320501" category="paragraph-title">HTTP 요청</block>
   <block id="0d5a371e0c92f43305354a7ca5481105" category="paragraph-title">HTTP 응답입니다</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">시작하기 전에</block>
@@ -1598,14 +1595,12 @@
   <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">1단계: 보안 설명자를 업데이트합니다</block>
   <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">ONTAP 클러스터 내에서 SVM을 통해 사용할 수 있는 파일에 대한 권한 및 감사 정책을 관리할 수 있습니다.</block>
   <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">ONTAP에서는 SACL(시스템 액세스 제어 목록) 및 DACL(임의 액세스 제어 목록)을 사용하여 파일 개체에 사용 권한을 할당합니다. ONTAP 9.9.1부터 REST API는 SACL 및 DACL 권한 관리를 지원합니다. API를 사용하여 파일 보안 권한 관리를 자동화할 수 있습니다. 대부분의 경우 여러 CLI 명령 또는 ONTAPI(ZAPI) 호출 대신 단일 REST API 호출을 사용할 수 있습니다.</block>
-  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">9.9.1 이전 버전의 ONTAP 릴리스에서는 CLI 통과 기능을 사용하여 SACL 및 DACL 권한 관리를 자동화할 수 있습니다. 을 참조하십시오 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> 및<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">REST API를 사용하여 ONTAP 파일 보안 서비스를 관리하는 방법을 보여주는 몇 가지 예제 워크플로우를 사용할 수 있습니다. 워크플로우를 사용하고 REST API 호출을 전송하기 전에 를 검토하십시오 <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>.</block>
   <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
   <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">Python을 사용하는 경우 스크립트도 참조하십시오<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> 일부 파일 보안 작업을 자동화하는 방법에 대한 예를 참조하십시오.</block>
   <block id="0207c62847caaa4c5ffaeaf4b00552d6" category="paragraph">대부분의 작업에서 ONTAP REST API를 사용할 경우 동일한 ONTAP CLI 명령 또는 ONTAPI(ZAPI) 호출보다 더 적은 수의 호출이 필요합니다. 아래 표에는 API 호출 목록과 각 작업에 필요한 CLI 명령 목록이 나와 있습니다.</block>
   <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">파일 권한을 보여 주는 Python 스크립트</block>
   <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
-  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
   <block id="a58cf8beb5e4ede8e197f2cc371725fe" category="sidebar">파일 보안 관리를 준비합니다</block>
   <block id="22b4fdae10b975d500f499f9cd7d2659" category="sidebar">효과적인 사용 권한을 얻습니다</block>
   <block id="f520e25b29f7e72fdce54450ea759fc8" category="sidebar">감사 정보 가져오기</block>
@@ -1987,4 +1982,5 @@
   <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">로그인한 사용자의 사용자 이름, 역할 및 권한 정보를 조회하는 새로운<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> 기능이 추가되었습니다. 웹 인증(WebAuthn) 기능 또한 향상되었습니다.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 맵 관리가 향상된 업데이트 기능으로 업데이트되었습니다.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 변경 사항 및 고려 사항</block>
+  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">ONTAP 9.9.1 이전 릴리스의 경우 CLI 패스스루 기능을 사용하여 SACL 및 DACL 권한 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
 </blocks>
