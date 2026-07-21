@@ -18,6 +18,7 @@ ONTAP 클러스터에 대한 EMS(Event Management System) 처리를 설정하고
 
 
 
+[[overview]]
 === 개요
 
 ONTAP EMS 서비스 사용 방법을 보여 주는 몇 가지 예제 워크플로가 있습니다. 워크플로우를 사용하고 REST API 호출을 전송하기 전에 를 검토하십시오 link:../workflows/prepare_workflows.html["워크플로우 사용을 준비하십시오"].
@@ -26,6 +27,7 @@ ONTAP EMS 서비스 사용 방법을 보여 주는 몇 가지 예제 워크플�
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === ONTAP REST API와 ONTAP CLI 명령 비교
 
 대부분의 작업에서 ONTAP REST API를 사용할 경우 동일한 ONTAP CLI 명령보다 더 적은 수의 호출을 필요로 합니다. 아래 표에는 API 호출 목록과 각 작업에 필요한 CLI 명령 목록이 나와 있습니다.

@@ -202,7 +202,6 @@
   <block id="b112c8c17f296b55ffc035363cc1cac3" category="paragraph">"https://&lt;ip_address&gt;/docs/api`</block>
   <block id="86537fad07b98a84cd28189507075143" category="list-text">ONTAP 계정을 사용하여 로그인합니다.</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">ONTAP API 설명서 페이지는 하단의 주요 리소스 범주로 구성된 API 호출과 함께 표시됩니다.</block>
-  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">개별 API 호출의 예로 * cluster * 범주로 스크롤하고 * get/cluster * 를 클릭합니다.</block>
   <block id="fc004b0a2e525fdc279e93342807a662" category="paragraph">HTTP 요청에 설정된 매개 변수와 변수를 통해 API 호출이 처리되는 방식을 제어할 수 있습니다.</block>
   <block id="957a8c35c28e967701ff975f1d7182d5" category="section-title">HTTP 메서드</block>
   <block id="1ca197be3e0d7fcd720e84d7a6a700e2" category="paragraph">ONTAP REST API에서 지원하는 HTTP 메서드는 다음 표에 나와 있습니다.</block>
@@ -384,8 +383,6 @@
   <block id="ad9b161528b083800d5054d4feb9ec8a" category="paragraph">이 API 호출 집합을 사용하면 Google 클라우드 플랫폼 키 관리 서비스를 사용하여 ONTAP 암호화 키를 저장하고 관리할 수 있습니다. 이 리소스 유형은 처음에 ONTAP 9.8 REST API에 도입되었습니다. 그러나 이 기능은 다시 설계되었으므로 ONTAP 9.9에서 새로운 리소스 유형을 사용하는 새로운 기능으로 간주됩니다.</block>
   <block id="c78f0d76ddea2a641c1fd047b64d3b75" category="paragraph">IPSec(인터넷 프로토콜 보안)은 기본 IP 네트워크를 통해 두 엔드포인트 간에 보안을 제공하는 프로토콜 모음입니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="49594609d9f640b0c454c45b305cb943" category="paragraph">IPSec CA 인증서를 추가, 제거 및 검색할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</block>
-  <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">이 API 호출 집합을 사용하여 IPSec 배포에 적용되는 정책을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
-  <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">이 API 호출 집합을 사용하여 IPSec 배포에 적용되는 보안 연결을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다.</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">이러한 끝점을 사용하면 키 관리자에 대한 구성을 검색하고 업데이트할 수 있습니다. 이 리소스 유형은 ONTAP 9.10에서 새로 추가되었습니다.</block>
   <block id="6c6082904240c6ec5957f81a0fbb1d62" category="paragraph">이러한 API 호출은 클러스터 LDAP 서버 구성을 검색하고 관리하는 데 사용됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
   <block id="71a48cbb31530fcbeefc8897151884fc" category="paragraph">ONTAP에서 사용하는 로그인 메시지를 표시하고 관리하는 데 사용됩니다. 이 리소스 유형은 ONTAP 9.6으로 도입되었습니다.</block>
@@ -1952,7 +1949,6 @@
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">NetApp Console 자동화 허브</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">그만큼<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> 콘솔 웹 사용자 인터페이스를 통해 사용할 수 있습니다. 자동화 허브는 ONTAP 을 다른 제품과 함께 배포하고 통합하는 과정을 자동화하는 데 도움이 되는 패키지 솔루션에 대한 액세스를 제공합니다. 보다<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> 문서 및 자세한 내용은 여기를 참조하세요.</block>
   <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI: NetApp ONTAP 9.18.1</block>
-  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
   <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL 9.18.1 버전용 설명서</block>
   <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">랜섬웨어 방지 활성화</block>
@@ -1973,14 +1969,22 @@
   <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
   <block id="131e71b08dd73776358a31f5b869388f" category="cell">대규모 ONTAP 클러스터(노드 32개 이상)에서 REST API를 통해 라이선스 정보를 조회할 때 응답 속도가 느려질 수 있습니다. 이 문제는 System Manager 라이선스 탭과 모든 라이선스를 동시에 조회하는 자동화된 워크플로에 영향을 미칩니다. 영향을 줄이려면 쿼리 매개변수를 사용하여 특정 기능에 대한 라이선스를 하나씩 가져오거나 CLI 명령<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>을 사용하는 것이 좋습니다. 모든 라이선스를 단일 API 호출로 조회하는 대신 이 방법을 사용하십시오.</block>
   <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">NetApp이 ONTAP REST API를 개선하고 업데이트하는 과정에서 온라인 참조 문서에 오류가 발생할 수 있습니다. 이러한 오류는 API 사용 시 혼란을 야기할 수 있지만, 일반적으로 ONTAP 자동화 소프트웨어 또는 환경에 영향을 미치거나 중단시키지는 않습니다. 아래 표에 있는 오류 목록을 검토해 보시기 바랍니다. 이를 통해 ONTAP REST API 참조 문서를 더 잘 이해하고 활용할 수 있습니다. 각 항목에는 해당 API 엔드포인트 또는 영역, 오류 설명, 그리고 오류가 발생한 ONTAP 릴리스 버전이 포함되어 있습니다.</block>
-  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">LUN 맵은 LUN과 이니시에이터 그룹 간의 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었고 ONTAP 9.19.1에서 업데이트되었습니다.</block>
-  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">웹 인증(WebAuthn)은 공개 키 암호화를 기반으로 사용자를 안전하게 인증하는 웹 표준입니다. ONTAP를 사용하면 System Manager와 ONTAP REST API를 통해 피싱 방지 MFA 관리를 지원합니다. 이 기능은 ONTAP 9.16에 추가되었고 ONTAP 9.19.1에서 업데이트되었습니다.</block>
   <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Whoami</block>
-  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">인증된 사용자의 사용자 이름, 역할 및 권한을 포함한 세부 정보를 표시하는 엔드포인트가 제공됩니다. 이 리소스 유형은 ONTAP 9.19.1에서 도입되었습니다.</block>
   <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1 릴리스에는 ONTAP REST API를 지속적으로 개선하고 다듬는 여러 업데이트가 포함되어 있습니다.</block>
-  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">로그인한 사용자의 사용자 이름, 역할 및 권한 정보를 조회하는 새로운<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> 기능이 추가되었습니다. 웹 인증(WebAuthn) 기능 또한 향상되었습니다.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 맵 관리가 향상된 업데이트 기능으로 업데이트되었습니다.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 변경 사항 및 고려 사항</block>
   <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">ONTAP 9.9.1 이전 릴리스의 경우 CLI 패스스루 기능을 사용하여 SACL 및 DACL 권한 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI: NetApp ONTAP 9.19.1</block>
+  <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
+  <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL 9.19.1 버전용 설명서</block>
+  <block id="7203ae9325dee2a32f00ac70dd5380eb" category="list-text"><block ref="7203ae9325dee2a32f00ac70dd5380eb" category="inline-link-rx"></block></block>
+  <block id="f2b97056166d6335cc220aa8ed571bd5" category="list-text"><block ref="f2b97056166d6335cc220aa8ed571bd5" category="inline-link-rx"></block></block>
+  <block id="7396427871824f6e3ab00adb004f3863" category="list-text">개별 API 호출의 예시를 보려면 아래로 스크롤하여 *클러스터* 카테고리를 찾고 *GET /cluster*를 선택하세요.</block>
+  <block id="2cd51d1ef50a2fdcfcd54b6bd7545da6" category="paragraph">LUN 맵은 LUN과 이니시에이터 그룹 간의 연결을 나타냅니다. 이 리소스 유형은 ONTAP 9.6에서 도입되었고 ONTAP 9.19에서 업데이트되었습니다.</block>
+  <block id="5143cbd37fee11e20d0f08ba1a56ffe3" category="paragraph">이 API 호출 세트를 사용하여 IPSec 배포에 적용되는 정책을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다. 9.19 버전에서 클러스터 네트워크에 사용되는 정책을 검색하도록 업데이트되었습니다.</block>
+  <block id="534aa7412e40ee98329aa6cbf7e73921" category="paragraph">이 API 호출 세트를 사용하여 IPSec 배포에 적용되는 보안 연결을 관리할 수 있습니다. 이 리소스 유형은 ONTAP 9.8에서 새로 추가되었습니다. 9.19 버전에서 클러스터 네트워크에 사용되는 보안 연결을 검색하도록 업데이트되었습니다.</block>
+  <block id="1e546dde5ec48b72b17c80c9fd9a4326" category="paragraph">웹 인증(WebAuthn)은 공개 키 암호화를 기반으로 사용자를 안전하게 인증하는 웹 표준입니다. ONTAP를 통해 System Manager와 ONTAP REST API를 통한 피싱 방지 MFA 관리를 지원합니다. 이 기능은 ONTAP 9.16에 추가되었고 ONTAP 9.19에서 업데이트되었습니다.</block>
+  <block id="552a4b441f2408a18f59e549d17ab486" category="paragraph">인증된 사용자의 사용자 이름, 역할 및 권한을 포함한 세부 정보를 표시하는 엔드포인트가 제공됩니다. 이 리소스 유형은 ONTAP 9.19에서 도입되었습니다.</block>
+  <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">새로운<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> 기능이 추가되어 로그인한 사용자의 사용자 이름, 역할 및 권한 정보를 조회할 수 있습니다. 웹 인증(WebAuthn) 기능도 향상되었습니다. IPsec은 클러스터 네트워크에서 사용되는 정책 및 보안 연결을 조회하도록 업데이트되었습니다.</block>
 </blocks>

@@ -18,6 +18,7 @@ summary: 각 API 요청은 클라이언트에 대한 응답을 다시 생성합�
 
 
 
+[[http-status-code]]
 == HTTP 상태 코드입니다
 
 ONTAP REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.
@@ -58,6 +59,7 @@ ONTAP REST API에서 사용하는 HTTP 상태 코드는 다음과 같다.
 |===
 
 
+[[response-headers]]
 == 응답 헤더
 
 ONTAP에서 생성된 HTTP 응답에는 여러 헤더가 포함되어 있습니다.
@@ -68,6 +70,7 @@ ONTAP에서 생성된 HTTP 응답에는 여러 헤더가 포함되어 있습니�
 
 
 
+[[response-body]]
 == 응답 바디
 
 API 요청으로 인한 응답 본문의 내용은 객체, 처리 유형 및 요청의 성공 또는 실패에 따라 달라집니다. 응답은 항상 JSON으로 렌더링됩니다.
@@ -96,12 +99,14 @@ API 호출이 비동기적으로 처리되는 경우 백그라운드 작업을 �
 
 
 
+[[hal-linking]]
 == HAL 연결
 
 ONTAP REST API는 HAL을 HATEOAS(Engine of Application State)로 Hypermedia를 지원하는 메커니즘으로 사용한다. 특정 리소스를 식별하는 객체 또는 속성이 반환되면 HAL로 인코딩된 링크도 포함되어 리소스에 대한 추가 세부 정보를 쉽게 찾아 확인할 수 있습니다.
 
 
 
+[[errors]]
 == 오류
 
 오류가 발생하면 응답 본문에 오류 객체가 반환됩니다.

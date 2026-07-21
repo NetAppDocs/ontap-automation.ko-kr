@@ -22,6 +22,7 @@ NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST A
 
 
 
+[[features-and-benefits]]
 == 기능 및 이점
 
 Python 클라이언트 라이브러리를 사용하면 ONTAP 구축 관리를 자동화하는 강력한 코드를 신속하게 개발할 수 있습니다. 다음과 같은 몇 가지 기본 서비스를 제공합니다.
@@ -34,6 +35,7 @@ Python 클라이언트 라이브러리를 사용하면 ONTAP 구축 관리를 �
 
 
 
+[[packages-and-documentation]]
 == 패키지 및 설명서
 
 Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.
@@ -43,8 +45,13 @@ Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입�
 .패키지 및 설명서 목록
 [%collapsible]
 ====
+.ONTAP 9.19.1
+* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.19.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3383665/html/index.html["NetApp PCL 9.19.1 버전용 설명서"^]
+
+
 .ONTAP 9.18.1
-* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.18.1"^]
+* https://pypi.org/project/netapp-ontap/9.18.1.0["PyPI: NetApp ONTAP 9.18.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html["NetApp PCL 9.18.1 버전용 설명서"^]
 
 
@@ -111,6 +118,7 @@ Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입�
 ====
 
 
+[[code-samples]]
 == 코드 샘플
 
 NetApp는 코드 샘플 및 기타 유용한 정보가 포함된 GitHub 저장소를 유지합니다. Python 클라이언트 라이브러리를 사용하여 샘플에 액세스하려면 _examples_folder로 이동할 수 있습니다. 자세한 내용은 GitHub에서 다음 위치를 참조하십시오.
