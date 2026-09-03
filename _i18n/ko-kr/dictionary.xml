@@ -1881,7 +1881,6 @@
   <block id="598efe1689990327c62503c7c48dbd74" category="doc">ONTAP REST API를 사용하는 SVM을 나열합니다</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">ONTAP 자동화</block>
   <block id="47ac2234b10a714bdea293d370ad2ce1" category="sidebar">ONTAP 자동화 문서</block>
-  <block id="2fa251c44aacb71e26d10444ef2c35d7" category="doc">NetApp PowerShell 툴킷에 대해 자세히 알아보십시오</block>
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">PowerShell은 ONTAP 클러스터의 관리를 자동화하는 또 다른 옵션입니다.</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">PowerShell은 작업 자동화 및 구성 관리에 사용할 수 있는 Microsoft의 프로그래밍 언어입니다. 여기에는 스크립트 언어뿐만 아니라 명령줄 셸 환경이 포함되어 있습니다.</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">NetApp Manageability SDK에 대해 알아보십시오</block>
@@ -1893,8 +1892,6 @@
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다. PIPI(Python Package Index) 사이트에서 _PIP_유틸리티를 사용하여 패키지를 설치할 수 있습니다.</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">9.6부터 시작되는 각 ONTAP 릴리스에는 관련 문서가 포함된 PyPI 패키지가 있습니다. 설치 요구 사항은 각 패키지에 포함되어 있으며 python, 요청, 요청-도구 벨트 및 marshmallow와 같은 지원 라이브러리 버전을 지정합니다.</block>
-  <block id="094ae048e28df3a12a5e4fedaf56a886" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block> 참조하십시오.</block>
-  <block id="4874336dcda30fb0f9d748e03c8e2591" category="paragraph">NetApp.ONTAP PowerShell Toolkit에는 2,400개 이상의 cmdlet이 포함된 모듈로 로컬 PowerShell 환경을 개선합니다. 이를 통해 Windows 호스트용 코드를 빠르게 개발하여 ONTAP 배포를 자동화할 수 있습니다. 자세한 내용은 을 <block ref="989c1f290c32ecf34c3ac0fd6c1ac541" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2d173dfa208c5028d536c08827a33be8" category="paragraph"><block ref="2d173dfa208c5028d536c08827a33be8" category="inline-link-rx"></block></block>
   <block id="55f8a02846727817cdfe8e0382917362" category="summary">NetApp은 ONTAP 스토리지 시스템을 관리하는 데 사용할 수 있는 PowerShell 애플리케이션용 툴킷을 제공합니다. 이 툴킷은 NetApp 개발자에 의해 만들어졌으며 고객 커뮤니티에서 지원합니다.</block>
   <block id="cabfdd624e257c6296d46c502ec2f6a0" category="paragraph-title">애플리케이션 컨테이너</block>
@@ -1987,4 +1984,7 @@
   <block id="b3010b51b71ecf40957b5f39b4beabb1" category="list-text"><block ref="b3010b51b71ecf40957b5f39b4beabb1" category="inline-link-rx"></block></block>
   <block id="004ce315c7fe174848e8698d9ab0331c" category="paragraph">GET 메서드를 사용하여 동일한 유형의 객체 컬렉션에 액세스하는 API 호출을 수행할 때, ONTAP는 두 가지 제약 조건(최대 객체 수, 객체 검색 시간)을 고려하여 가능한 한 많은 객체를 반환하려고 시도합니다. 요청에 추가 쿼리 매개변수를 사용하여 이러한 각 제약 조건을 제어할 수 있습니다. 특정 GET 요청에서 첫 번째 제약 조건에 도달하면 요청이 종료되므로 반환되는 레코드 수가 제한됩니다. 모든 객체를 순회하기 전에 요청이 종료되면 응답에는 다음 레코드 배치를 검색하는 데 필요한 링크가 포함됩니다.</block>
   <block id="fe2491a3e9df98303b4fc686684774b5" category="admonition">API 호출 후 반환된 레코드가 없고 다음 링크도 없는 경우, 레코드를 가져오기 전에 시간 초과가 발생했을 수 있습니다. 이 경우, 더 큰<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> 값 또는 더 작은<block ref="f69688cd7802eb62a67f6a56384b3d93" prefix=" " category="inline-code"></block> 값(또는 둘 다)을 사용하여 요청을 다시 시도할 수 있습니다.</block>
+  <block id="b201a8dd29e4f52f8c7bcba56cc89a4b" category="inline-link-macro">NetApp ONTAP PowerShell Toolkit에 대해 알아보십시오</block>
+  <block id="8b7efead83e22c580ef9c77c4e535a8e" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="8440ec0fb315f7d587b38429a761b612" category="paragraph">NetApp ONTAP PowerShell 툴킷은 2,400개 이상의 cmdlet을 포함하는 모듈로 로컬 PowerShell 환경을 향상시켜 줍니다. 이를 통해 Windows 호스트에서 ONTAP 배포를 자동화하는 코드를 신속하게 개발할 수 있습니다. 자세한 내용은 <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
 </blocks>
