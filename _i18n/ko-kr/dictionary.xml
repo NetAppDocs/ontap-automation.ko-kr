@@ -1823,7 +1823,6 @@
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">모든 Python 코드 샘플은 GitHub 리포지토리에서 사용할 수<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> 있습니다. 에서 사용할 수 있는 리소스도 검토해야 <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">ONTAP REST API에 대한 법적 고지 사항</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPI-ONTAP REST API 매핑</block>
-  <block id="484b32b038170aab3e10173e4c46ac03" category="doc">ONTAP REST API에 대한 마이그레이션 고려 사항</block>
   <block id="7736cc9045eca4ab635dbdd3296019b8" category="doc">ONTAP REST API에 성능 카운터 사용</block>
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">ONTAP REST API를 지원하는 툴 및 소프트웨어</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">ONTAP REST API에 대한 참조입니다</block>
@@ -1964,7 +1963,6 @@
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">ONTAP 9.19.1 릴리스에는 ONTAP REST API를 지속적으로 개선하고 다듬는 여러 업데이트가 포함되어 있습니다.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">LUN 맵 관리가 향상된 업데이트 기능으로 업데이트되었습니다.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">ONTAP REST API 변경 사항 및 고려 사항</block>
-  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">ONTAP 9.9.1 이전 릴리스의 경우 CLI 패스스루 기능을 사용하여 SACL 및 DACL 권한 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI: NetApp ONTAP 9.19.1</block>
   <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
   <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL 9.19.1 버전용 설명서</block>
@@ -1987,4 +1985,7 @@
   <block id="b201a8dd29e4f52f8c7bcba56cc89a4b" category="inline-link-macro">NetApp ONTAP PowerShell Toolkit에 대해 알아보십시오</block>
   <block id="8b7efead83e22c580ef9c77c4e535a8e" category="paragraph">NetApp.ONTAP PowerShell Toolkit을 사용하면 Windows 호스트에서 ONTAP 클러스터 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="8440ec0fb315f7d587b38429a761b612" category="paragraph">NetApp ONTAP PowerShell 툴킷은 2,400개 이상의 cmdlet을 포함하는 모듈로 로컬 PowerShell 환경을 향상시켜 줍니다. 이를 통해 Windows 호스트에서 ONTAP 배포를 자동화하는 코드를 신속하게 개발할 수 있습니다. 자세한 내용은 <block ref="d2abc1459267dbe95f589ada27893a0a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="b6d0a2a842f978459f1bd6e49da11974" category="doc">ONTAP REST API로 마이그레이션하는 방법에 대해 알아보십시오.</block>
+  <block id="249dde32b5b3415eea7043c85ab74e06" category="admonition">ONTAP 9.9.1 이전 릴리스의 경우 CLI 패스스루 기능을 사용하여 SACL 및 DACL 권한 관리를 자동화할 수 있습니다. 자세한 내용은 <block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="76372f20d2a63611bf93c8514dcab6f2" category="sidebar">마이그레이션에 대해 알아보기</block>
 </blocks>
