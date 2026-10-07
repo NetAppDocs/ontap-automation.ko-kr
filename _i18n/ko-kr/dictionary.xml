@@ -1885,7 +1885,6 @@
   <block id="7bafad8d0c182e2b6b31ac4018784823" category="list-text"><block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>..</block>
   <block id="35ae08a314ffffc02580e3c3fbfad924" category="section-title">기능 및 이점</block>
   <block id="075eb829f6ad7e0f3047f5e1b0db251b" category="example-title">패키지 및 설명서 목록</block>
-  <block id="04e844fe21e462953e1fe26128de4115" category="doc">Python 클라이언트 라이브러리를 사용하여 클러스터 구성을 검색하기 위한 스크립트입니다</block>
   <block id="408720b5ef7b85489771db314855817a" category="summary">NetApp ONTAP Python 클라이언트 라이브러리는 설치하고 ONTAP REST API에 액세스하는 스크립트를 빠르게 작성하는 데 사용할 수 있는 패키지입니다. 사용하기 전에 로컬 런타임 환경을 준비해야 합니다. PIPI(Python Package Index) 사이트에서 _PIP_유틸리티를 사용하여 패키지를 설치할 수 있습니다.</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">Python 클라이언트 라이브러리 패키지의 이름은 _NetApp-ONTAP_입니다. 패키지와 연결된 버전은 라이브러리가 생성된 ONTAP 주 버전 번호와 부 버전 번호를 조합한 것으로, ONTAP 릴리스 내의 클라이언트 라이브러리에 대한 부 버전이 함께 제공됩니다. 예를 들어 유효한 버전 번호에는 9.6.1, 9.6.2 및 9.7.1이 포함됩니다.</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">9.6부터 시작되는 각 ONTAP 릴리스에는 관련 문서가 포함된 PyPI 패키지가 있습니다. 설치 요구 사항은 각 패키지에 포함되어 있으며 python, 요청, 요청-도구 벨트 및 marshmallow와 같은 지원 라이브러리 버전을 지정합니다.</block>
@@ -1991,4 +1990,5 @@
   <block id="bda838b652b88a842b6842d75ef9fd57" category="sidebar">REST API에 접근하는 방법</block>
   <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">마이그레이션에 대해 알아보기</block>
   <block id="f84e398074d51e73de507e79d4754e19" category="doc">ONTAP REST API 관련 추가 자료</block>
+  <block id="1ead7860d2e1f85551e49767e066d13c" category="doc">ONTAP Python 클라이언트 라이브러리를 사용하여 클러스터 구성 가져오기</block>
 </blocks>
